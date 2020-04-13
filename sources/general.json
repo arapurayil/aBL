@@ -8,8 +8,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Sun, 12 Apr 2020 20:32:31 GMT",
-            "num_blocked": 2957,
+            "last_modified": "Mon, 13 Apr 2020 10:32:40 GMT",
+            "num_blocked": 2964,
             "num_unblocked": 29
         },
         {
@@ -39,7 +39,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Sun, 12 Apr 2020 20:32:43 GMT",
+            "last_modified": "Mon, 13 Apr 2020 10:32:52 GMT",
             "num_blocked": 1652,
             "num_unblocked": 9
         },
@@ -49,7 +49,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Sun, 12 Apr 2020 20:31:57 GMT",
+            "last_modified": "Mon, 13 Apr 2020 10:32:06 GMT",
             "num_blocked": 947,
             "num_unblocked": 2
         },
@@ -59,8 +59,8 @@
             "url": "https://easylist.to/easylist/easylist.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Sun, 12 Apr 2020 18:59:12 GMT",
-            "num_blocked": 1850,
+            "last_modified": "Mon, 13 Apr 2020 10:20:28 GMT",
+            "num_blocked": 1857,
             "num_unblocked": 2
         },
         {
@@ -69,7 +69,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Sun, 12 Apr 2020 18:59:12 GMT",
+            "last_modified": "Mon, 13 Apr 2020 10:20:28 GMT",
             "num_blocked": 2709,
             "num_unblocked": 0
         },
@@ -119,8 +119,8 @@
             "url": "https://github.com/arapurayil/ABL/raw/master/sources/_block.txt",
             "is_abp": false,
             "is_noblock": false,
-            "last_modified": "W/\"a68514cbd5613cb02982bcda313a2d76eee03cd725d3ba80a5660cd985dd8cfa\"",
-            "num_blocked": 5,
+            "last_modified": false,
+            "num_blocked": 0,
             "num_unblocked": 0
         },
         {
@@ -129,7 +129,7 @@
             "url": "https://github.com/arapurayil/ABL/raw/master/sources/_unblock.txt",
             "is_abp": false,
             "is_noblock": false,
-            "last_modified": "W/\"b4d5b77f9e2ed01836ee2acaa2552cfd3b6a45776be1e1d3c7151b45bdbb1d76\"",
+            "last_modified": false,
             "num_blocked": 0,
             "num_unblocked": 0
         }
