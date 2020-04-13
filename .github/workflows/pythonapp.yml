@@ -11,65 +11,17 @@ on:
 
 jobs:
   build:
-    
-    
-
-    runs-on: ubuntu-latest
-
+    name: Check URLs
+    runs-on: [ubuntu-latest]
     steps:
-    - name: Check URL
-      uses: urlstechie/urlchecker-action@0.1.9
-      continue-on-error: true
-      with:
-        git_path: https://github.com/arapurayil/ABL
-        subfolder: sources
-        file_types: .json
-        retry_count: 3
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Set up GPG
-      run: |
-        echo "${{ secrets.bot_gpg_pvt }}" > private.key
-        gpg --import private.key
-        rm private.key
-    - name: Config Git
-      run: |
-        git config --global user.name ${{ secrets.bot_name }}
-        git config --global user.email ${{ secrets.bot_email }}
-        git config --global user.signingkey ${{ secrets.bot_gpg_id }}
-        git config --global push.followTags true
-    - name: Black
-      run: |
-        pip install black
-        black generator/main.py
-        if ! git diff --no-ext-diff --quiet --exit-code; then
-          git add generator/main.py
-          git commit -S -a -m "Blackened code"
-        fi
-    - name: Run
-      run: |
-        python generator/main.py
-        if ! git diff --no-ext-diff --quiet --exit-code; then
-          git add .
-          git commit -S -a -m "Update"
-        fi
-    - name: Push
-      run: |
-        if ! git diff --no-ext-diff --quiet --exit-code; then
-          git push
-        fi
-    - name: Lint
-      uses: avto-dev/markdown-lint@v1.1.0
-      continue-on-error: true
-      with:
-        fix: false
-        args: .
-
-
+      - name: Checkout
+        uses: actions/checkout@v2.1.0
+      - name: URL
+        uses: urlstechie/urlchecker-action@0.1.9
+        with:
+          subfolder: sources
+          file_types: .json
+          retry_count: 3
+          cleanup: false
+      - name: Black Code Formatter
+        uses: lgeiger/black-action@v1.0.1
