@@ -708,12 +708,12 @@ class BLGenerator:
 
     sources = is_path(Path.joinpath(BASE, "sources"))
 
-#     if dir_empty(sources):
-#         get_default(
-#             sources,
-#             "general.json",
-#             "https://github.com/arapurayil/ABL/raw/master/sample_source.json",
-#         )
+    #     if dir_empty(sources):
+    #         get_default(
+    #             sources,
+    #             "general.json",
+    #             "https://github.com/arapurayil/ABL/raw/master/sample_source.json",
+    #         )
 
     lists = is_path(Path.joinpath(BASE, "lists"))
 
