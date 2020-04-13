@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Checksum: Ldxc9WWNfr1lS5JxbBMrjg
+! Checksum: B0mq8NLxwqKxexewHlyk2w
 ! Title: Adur Block List (ABL) - General List
 ! Author: Zachariah Arapurayil
 ! Description: This is the default list which blocks ads, tracking, telemetry, phishing, malware, cryptojacking and other such undesirables
-! Version: 1.0413.0842
-! Last modified: 13 Apr 2020 08:42:38 IST
+! Version: 1.0413.1124
+! Last modified: 13 Apr 2020 11:24:52 IST
 ! Expires: 4 hours (update frequency)
 !
 ! Repository: https://github.com/arapurayil/ABL
@@ -19324,6 +19324,7 @@
 ||associatesexports.com^
 ||associationlab.co1.qualtrics.com^
 ||asstelde.widget.criteo.com^
+||assumineuron.site^
 ||assys01.fc2.com^
 ||ast.adiquity.com^
 ||astaging.adgear.com^
@@ -31409,6 +31410,7 @@
 ||d17m68fovwmgxj.cloudfront.net^
 ||d17rlarvg2khuc.cloudfront.net^
 ||d188elxamt3utn.cloudfront.net^
+||d18g6t7whf8ejf.cloudfront.net^
 ||d18mealirgdbbz.cloudfront.net^
 ||d18p8z0ptb8qab.cloudfront.net^
 ||d18xeipe1243h6.cloudfront.net^
@@ -72634,6 +72636,7 @@
 ||rydresa.info^
 ||ryeny.gov^
 ||rygbqriezlxuzdpmh1yrzmhskvjnb1504930441.nuid.imrworldwide.com^
+||ryhastille.info^
 ||rykodelkino.mirtesen.ru^
 ||rynkiewicz.com.pl^
 ||rytmybielizny.pl^
