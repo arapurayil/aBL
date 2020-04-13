@@ -63,7 +63,7 @@ jobs:
           version=$(<version.txt)
           rm version.txt
           if ! git diff --no-ext-diff --quiet --exit-code; then
-            git add 'list/*' 'sources/*'
+            git add list sources
             git commit -S -m "Bumped version to v$version"
             git tag v$version -m "version $version"
             git add '*.md'
