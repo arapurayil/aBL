@@ -8,8 +8,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 10:32:40 GMT",
-            "num_blocked": 2964,
+            "last_modified": "Mon, 13 Apr 2020 18:32:30 GMT",
+            "num_blocked": 2968,
             "num_unblocked": 29
         },
         {
@@ -39,8 +39,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 10:32:52 GMT",
-            "num_blocked": 1652,
+            "last_modified": "Mon, 13 Apr 2020 18:32:42 GMT",
+            "num_blocked": 1653,
             "num_unblocked": 9
         },
         {
@@ -49,7 +49,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 10:32:06 GMT",
+            "last_modified": "Mon, 13 Apr 2020 18:31:56 GMT",
             "num_blocked": 947,
             "num_unblocked": 2
         },
@@ -59,8 +59,8 @@
             "url": "https://easylist.to/easylist/easylist.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 10:20:28 GMT",
-            "num_blocked": 1857,
+            "last_modified": "Mon, 13 Apr 2020 19:00:18 GMT",
+            "num_blocked": 1861,
             "num_unblocked": 2
         },
         {
@@ -69,7 +69,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 10:20:28 GMT",
+            "last_modified": "Mon, 13 Apr 2020 19:00:18 GMT",
             "num_blocked": 2709,
             "num_unblocked": 0
         },
