@@ -24,9 +24,24 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Set up GPG
+      run: |
+        echo "${{ secrets.bot_gpg_pvt }}" > private.key
+        gpg --import private.key
+        rm private.key
+    - name: Config Git
+      run: |
+        git config --global user.name ${{ secrets.bot_name }}
+        git config --global user.email ${{ secrets.bot_email }}
+        git config --global user.signingkey ${{ secrets.bot_gpg_id }}
+        git config --global push.followTags true
+    - name: Black
+      run: |
         pip install black
         black generator/main.py
-    - name: Git Commit and Push
-      uses: github-actions-x/commit@v2.5
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        if ! git diff --no-ext-diff --quiet --exit-code; then
+          git add generator/main.py
+          git commit -S -a -m "Blackened code"
+          git push
+        fi
+
