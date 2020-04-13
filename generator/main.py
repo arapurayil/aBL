@@ -420,7 +420,7 @@ def gen_md_category(blg, stats):
         def section_one():
             heading_h1 = f"""# The {blg.list_title}"""
             desc = f"""{textwrap.fill(blg.data_json[blg.j_key.description])}"""
-            content_section_one = chain('\n', heading_h1, '\n\n', desc, '\n')
+            content_section_one = chain("\n", heading_h1, "\n\n", desc, "\n")
             return content_section_one
 
         def section_two():
@@ -428,19 +428,19 @@ def gen_md_category(blg, stats):
             tbl = []
 
             tbl_c1 = "#"
-            len_c1 = len(':---')
+            len_c1 = len(":---")
             tbl_c2 = "Title"
-            len_c2 = len(':---')
+            len_c2 = len(":---")
             tbl_c3 = "Blocked"
-            len_c3 = len(':---')
+            len_c3 = len(":---")
             tbl_c4 = "Unblocked"
-            len_c4 = len(':---')
+            len_c4 = len(":---")
 
             for index, key in enumerate(blg.data_json[blg.j_key.sources]):
                 if len(str({index + 1}).zfill(2)) > len_c1:
                     len_c1 = len(str({index + 1}).zfill(2))
-                if len(str(f'[{key[blg.i_key.title]}]({key[blg.i_key.url]})')) > len_c2:
-                    len_c2 = len(str(f'[{key[blg.i_key.title]}]({key[blg.i_key.url]})'))
+                if len(str(f"[{key[blg.i_key.title]}]({key[blg.i_key.url]})")) > len_c2:
+                    len_c2 = len(str(f"[{key[blg.i_key.title]}]({key[blg.i_key.url]})"))
                 if len(str({key[blg.i_key.num_blocked]})) > len_c3:
                     len_c3 = len(str({key[blg.i_key.num_blocked]}))
                 if len(str({key[blg.i_key.num_unblocked]})) > len_c4:
@@ -461,16 +461,16 @@ def gen_md_category(blg, stats):
 
                 tbl.append(tbl_contents)
 
-            content_section_two = chain('\n', heading_h2, '\n\n', tbl)
+            content_section_two = chain("\n", heading_h2, "\n\n", tbl)
             return content_section_two
 
         def section_three():
             heading_h2 = "### Statistics"
             tbl = []
             tbl_c1 = "Blocked domains"
-            len_c1 = len(':---')
+            len_c1 = len(":---")
             tbl_c2 = "#"
-            len_c2 = len(':---')
+            len_c2 = len(":---")
 
             for key in stats:
                 if len(str({key})) > len_c1:
@@ -479,15 +479,18 @@ def gen_md_category(blg, stats):
                     len_c2 = len(str({stats[key]}))
 
             tbl_title = (
-                f"| {tbl_c1.ljust(len_c1)} | {tbl_c2.ljust(len_c2)} |\n" f"| {':---'.ljust(len_c1, '-')} | {':---'.ljust(len_c2, '-')} |\n"
+                f"| {tbl_c1.ljust(len_c1)} | {tbl_c2.ljust(len_c2)} |\n"
+                f"| {':---'.ljust(len_c1, '-')} | {':---'.ljust(len_c2, '-')} |\n"
             )
             tbl.append(tbl_title)
 
             for key in stats:
-                tbl_contents = f"| {str(key).ljust(len_c1)} | {str(stats[key]).ljust(len_c2)} |\n"
+                tbl_contents = (
+                    f"| {str(key).ljust(len_c1)} | {str(stats[key]).ljust(len_c2)} |\n"
+                )
                 tbl.append(tbl_contents)
 
-            content_section_three = chain('\n', heading_h2, '\n\n', tbl)
+            content_section_three = chain("\n", heading_h2, "\n\n", tbl)
             return content_section_three
 
         md_content = chain(section_one(), section_two(), section_three())
@@ -519,13 +522,11 @@ def gen_md_blocklist(blg):
     :param blg: the main class
     """
     file_about = is_path(Path.joinpath(BASE, "ABOUT.md"))
-    about = read_file(file_about, data_type='str')
+    about = read_file(file_about, data_type="str")
     if about:
         intro = about
     else:
-        intro = (
-            f"\n# {blg.header.title}\n"
-        )
+        intro = f"\n# {blg.header.title}\n"
 
     file_md_blocklist = Path.joinpath(BASE, "README.md")
     with open(file_md_blocklist, "w") as file_output:
@@ -765,11 +766,11 @@ class BLGenerator:
         title = "Adur Block List (ABL)"
         author = "Zachariah Arapurayil"
         version = (
-                str(int(datetime.now().strftime("%y")) - 19)
-                + "."
-                + datetime.now().strftime("%m%d")
-                + "."
-                + datetime.now().strftime("%H%M")
+            str(int(datetime.now().strftime("%y")) - 19)
+            + "."
+            + datetime.now().strftime("%m%d")
+            + "."
+            + datetime.now().strftime("%H%M")
         )
         expires = "4 hours"
         repo = "https://github.com/arapurayil/ABL"
@@ -784,11 +785,11 @@ class BLGenerator:
         self.file_json = file_json
         self.data_json = read_file(file_json)
         self.category = Path(file_json).stem
-        pre = 'Anti-'
-        post = ' Addon'
-        if self.category == 'general':
-            pre = post = ''
-        self.list_title = f'{pre}{self.category.capitalize()}{post} List'
+        pre = "Anti-"
+        post = " Addon"
+        if self.category == "general":
+            pre = post = ""
+        self.list_title = f"{pre}{self.category.capitalize()}{post} List"
         self.dir = is_path(Path.joinpath(self.lists, self.category))
         self.j_key = self.JSONKey
         self.i_key = self.ItemKey
