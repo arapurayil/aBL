@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  job_id:
     name: Check URLs
     runs-on: [ubuntu-latest]
     steps:
@@ -24,6 +24,10 @@ jobs:
           file_types: .json
           retry_count: 3
           cleanup: false
+  build:
+    name: Generate
+    runs-on: [ubuntu-latest]
+    steps:
       - name: Black Code Formatter
         uses: lgeiger/black-action@v1.0.1
         with:
