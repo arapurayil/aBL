@@ -24,6 +24,7 @@ jobs:
         python-version: 3.8
     - name: Check URL
       uses: urlstechie/urlchecker-action@0.1.9
+      continue-on-error: true
       with:
         file_types: .json
         retry_count: 3
