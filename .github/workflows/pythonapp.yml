@@ -43,6 +43,10 @@ jobs:
             git add '*.py'
             git commit -S -a -m "Blackened code"
           fi
+      - name: Setup Python
+        uses: actions/setup-python@v1.2.0
+        with:
+          python-version: '3.8'
       - name: Generate and Commit
         run: |
           python generator/main.py
