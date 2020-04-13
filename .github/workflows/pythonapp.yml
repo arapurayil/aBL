@@ -28,6 +28,8 @@ jobs:
     name: Generate
     runs-on: [ubuntu-latest]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2.1.0
       - name: Black Code Formatter
         uses: lgeiger/black-action@v1.0.1
         with:
