@@ -17,17 +17,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8
     - name: Check URL
       uses: urlstechie/urlchecker-action@0.1.9
       continue-on-error: true
       with:
         file_types: .json
         retry_count: 3
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
