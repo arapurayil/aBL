@@ -28,6 +28,12 @@ jobs:
         uses: lgeiger/black-action@v1.0.1
         with:
           args: .
+      - run: |
+          if ! git diff --no-ext-diff --quiet --exit-code; then
+            git add '*.py'
+            git commit -S -a -m "Blackened code"
+            git push
+          fi
       - name: Set up GPG and Git
         run: |
           echo "${{ secrets.bot_gpg_pvt }}" > private.key
@@ -48,8 +54,6 @@ jobs:
         run: |
           python generator/main.py
           if ! git diff --no-ext-diff --quiet --exit-code; then
-            git add '*.py'
-            git commit -S -a -m "Blackened code"
             git add --all
             git commit -S -a -m "Bumped version to v$(<version.txt)"
             git tag -a v$(<version.txt) -m "version $(<version.txt)"
