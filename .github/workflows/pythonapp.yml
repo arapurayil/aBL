@@ -44,11 +44,13 @@ jobs:
         if ! git diff --no-ext-diff --quiet --exit-code; then
           git add generator/main.py
           git commit -S -a -m "Blackened code"
-          git push
         fi
-    - uses: actions/checkout@v2
     - name: Run
       run: |
         python generator/main.py
+        if ! git diff --no-ext-diff --quiet --exit-code; then
+          git add .
+          git commit -S -a -m "Update"
+        fi
         
 
