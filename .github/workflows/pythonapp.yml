@@ -21,7 +21,7 @@ jobs:
       uses: urlstechie/urlchecker-action@0.1.9
       continue-on-error: true
       with:
-        git_path: https://github.com/arapurayil/ABL-exp-
+        git_path: https://github.com/arapurayil/ABL
         subfolder: sources
         file_types: .json
         retry_count: 3
@@ -60,17 +60,16 @@ jobs:
           git add .
           git commit -S -a -m "Update"
         fi
+    - name: Push
+      run: |
+        if ! git diff --no-ext-diff --quiet --exit-code; then
+          git push
+        fi
     - name: Lint
       uses: avto-dev/markdown-lint@v1.1.0
       continue-on-error: true
       with:
         fix: false
         args: .
-    - name: Commit and Push
-      run: |
-        if ! git diff --no-ext-diff --quiet --exit-code; then
-          git add .
-          git commit -S -a -m "Update md"
-          git push
-        fi
+
 
