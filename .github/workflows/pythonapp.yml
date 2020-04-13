@@ -61,7 +61,7 @@ jobs:
         run: |
           python generator/main.py
           if ! git diff --no-ext-diff --quiet --exit-code; then
-            $version = $(<version.txt)
+            version < (version.txt)
             rm version.txt
             git add list/* sources/*
             git commit -S -m "Bumped version to v$version"
