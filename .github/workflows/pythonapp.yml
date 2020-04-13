@@ -51,6 +51,7 @@ jobs:
         if ! git diff --no-ext-diff --quiet --exit-code; then
           git add .
           git commit -S -a -m "Update"
+          git push
         fi
         
 
