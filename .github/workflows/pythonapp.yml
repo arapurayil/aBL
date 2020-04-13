@@ -60,9 +60,9 @@ jobs:
       - name: Generate and Commit
         run: |
           python generator/main.py
+          version=$(<version.txt)
+          rm version.txt
           if ! git diff --no-ext-diff --quiet --exit-code; then
-            bash version=$(<version.txt)
-            rm version.txt
             git add list/* sources/*
             git commit -S -m "Bumped version to v$version"
             git tag v$version -m "version $version"
