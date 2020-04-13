@@ -1,12 +1,10 @@
 
-# Adur Block List (ABL)
-
-## The General List
+# The General List
 
 This is the default list which blocks ads, tracking, telemetry,
 phishing, malware, cryptojacking and other such undesirables
 
-### Sources
+## Sources
 
 | #    | Title                                                                                                                  | Blocked | Unblocked |
 | :--- | :--------------------------------------------------------------------------------------------------------------------- | :------ | :---- |
@@ -24,28 +22,9 @@ phishing, malware, cryptojacking and other such undesirables
 | 12   | [project-level unblocklist](https://github.com/arapurayil/ABL/raw/master/sources/_unblock.txt)                         | 0       | 0     |
 | 13   | [StevenBlack hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)                                  | 54282   | 0     |
 
-#### Statistics
+### Statistics
 
 | Blocked domains                          | #        |
 | :--------------------------------------- | :------- |
 | unprocessed                              | 111689   |
 | minus duplicates and false positives     | 93850    |
-
-## The Anti-Porn Addon List
-
-Blocks porn
-
-### Sources
-
-| #    | Title                                                                                                                                            | Blocked | Unblocked |
-| :--- | :----------------------------------------------------------------------------------------------------------------------------------------------- | :------ | :--- |
-| 01   | [Chad Mayfield's Porn List Light](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list) | 11868   | 0    |
-| 02   | [Clefspeare13's pornhosts](https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts)                                        | 8930    | 0    |
-| 03   | [Sinfonietta's Pornography Hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                              | 14208   | 0    |
-
-#### Statistics
-
-| Blocked domains                          | #       |
-| :--------------------------------------- | :------ |
-| unprocessed                              | 35006   |
-| minus duplicates and false positives     | 18971   |
