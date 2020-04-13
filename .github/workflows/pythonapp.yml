@@ -26,7 +26,7 @@ jobs:
         pip install -r requirements.txt
         pip install black
         black generator/main.py
-    - name: GitHub Push
-      uses: ad-m/github-push-action@v0.5.0
+    - name: Git Commit and Push
+      uses: github-actions-x/commit@v2.5
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
