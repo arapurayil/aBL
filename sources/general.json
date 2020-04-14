@@ -116,7 +116,7 @@
         {
             "title": "project-level blocklist",
             "description": "Content generated from ABL generator",
-            "url": "https://github.com/arapurayil/ABL/raw/master/sources/_block.txt",
+            "url": "https://github.com/arapurayil/ABL-exp-/raw/master/sources/_block.txt",
             "is_abp": false,
             "is_noblock": false,
             "last_modified": false,
@@ -126,7 +126,7 @@
         {
             "title": "project-level unblocklist",
             "description": "Content generated from ABL generator",
-            "url": "https://github.com/arapurayil/ABL/raw/master/sources/_unblock.txt",
+            "url": "https://github.com/arapurayil/ABL-exp-/raw/master/sources/_unblock.txt",
             "is_abp": false,
             "is_noblock": false,
             "last_modified": false,
