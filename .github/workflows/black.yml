@@ -1,0 +1,32 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Format with Black
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '*.py'
+      - '.github/workflows/black.yml'
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: lgeiger/black-action@v1.0.1
+      with:
+        args: .
+    - run: |
+        echo "${{ secrets.bot_gpg_pvt }}" > private.key
+        gpg --import private.key
+        rm private.key
+        git config --global user.name ${{ secrets.bot_name }}
+        git config --global user.email ${{ secrets.bot_email }}
+        git config --global user.signingkey ${{ secrets.bot_gpg_id }}
+        git config --global push.followTags true
+        if ! git diff --no-ext-diff --quiet --exit-code; then
+          git add '*.py'
+          git commit -S -a -m "Blackened code"
+          git push
+        fi
