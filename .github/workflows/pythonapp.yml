@@ -2,8 +2,11 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
 name: Generate Lists
+  
 
 on:
+  schedule:
+    - cron: '0 */4 * * *'
   push:
     branches: [ master ]
     paths:
@@ -14,61 +17,42 @@ jobs:
     name: Check URLs
     runs-on: [ubuntu-latest]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.0
-      - name: URL
-        uses: urlstechie/urlchecker-action@0.1.9
+      - uses: actions/checkout@v2.1.0
+      - uses: urlstechie/urlchecker-action@0.1.9
         continue-on-error: true
         with:
           subfolder: sources
           file_types: .json
           retry_count: 3
-          cleanup: false
   build:
-    name: Generate
     runs-on: [ubuntu-latest]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.0
-      - name: Black Code Formatter
-        uses: lgeiger/black-action@v1.0.1
-        with:
-          args: .
-      - name: Set up GPG and Git
-        run: |
-          echo "${{ secrets.bot_gpg_pvt }}" > private.key
-          gpg --import private.key
-          rm private.key
-          git config --global user.name ${{ secrets.bot_name }}
-          git config --global user.email ${{ secrets.bot_email }}
-          git config --global user.signingkey ${{ secrets.bot_gpg_id }}
-          git config --global push.followTags true
-      - name: Push Blackened Code
-        run: |
-          if ! git diff --no-ext-diff --quiet --exit-code; then
-            git add '*.py'
-            git commit -S -a -m "Blackened code"
-            git push
-          fi
-      - name: Setup Python
-        uses: actions/setup-python@v1.2.0
+      - uses: actions/checkout@v2.1.0
+      - uses: actions/setup-python@v1
         with:
           python-version: '3.8'
+      - uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
       - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Generate and Commit
-        run: |
           python generator/main.py
           version=$(<version.txt)
-          rm version.txt
           if ! git diff --no-ext-diff --quiet --exit-code; then
-            git add '*.txt'
+            echo "${{ secrets.bot_gpg_pvt }}" > private.key
+            gpg --import private.key
+            rm private.key
+            git config --global user.name ${{ secrets.bot_name }}
+            git config --global user.email ${{ secrets.bot_email }}
+            git config --global user.signingkey ${{ secrets.bot_gpg_id }}
+            git config --global push.followTags true
+            git add --all
             git commit -S -m "Bumped version to v$version"
-            git tag v$version -m "version $version"
-            git add '*.md'
-            git commit -S -m "Updated to reflect v$version"
-            git tag $version -m "version $version"
-            
+            git tag v$version
             git push
           fi
