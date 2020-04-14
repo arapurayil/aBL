@@ -23,7 +23,7 @@ jobs:
           subfolder: sources
           file_types: .json
           retry_count: 3
-  build:
+  gen_lists:
     runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2.1.0
