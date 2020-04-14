@@ -8,8 +8,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 18:32:30 GMT",
-            "num_blocked": 2968,
+            "last_modified": "Tue, 14 Apr 2020 20:32:23 GMT",
+            "num_blocked": 2976,
             "num_unblocked": 29
         },
         {
@@ -29,8 +29,8 @@
             "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
             "is_abp": false,
             "is_noblock": false,
-            "last_modified": "W/\"60a90d1fe7e03efecad9da8dfceeec2dbc166c4dae56618bb6bf56fb53a18167\"",
-            "num_blocked": 54282,
+            "last_modified": "W/\"50e58682ed46c8f1c2d650eeec7a859b4fb7040d7c22f2cd72cd3c646c950a4e\"",
+            "num_blocked": 54240,
             "num_unblocked": 0
         },
         {
@@ -39,8 +39,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 18:32:42 GMT",
-            "num_blocked": 1653,
+            "last_modified": "Tue, 14 Apr 2020 20:32:35 GMT",
+            "num_blocked": 1655,
             "num_unblocked": 9
         },
         {
@@ -49,8 +49,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 18:31:56 GMT",
-            "num_blocked": 947,
+            "last_modified": "Tue, 14 Apr 2020 20:31:49 GMT",
+            "num_blocked": 946,
             "num_unblocked": 2
         },
         {
@@ -59,8 +59,8 @@
             "url": "https://easylist.to/easylist/easylist.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 19:00:18 GMT",
-            "num_blocked": 1861,
+            "last_modified": "Tue, 14 Apr 2020 20:46:14 GMT",
+            "num_blocked": 1862,
             "num_unblocked": 2
         },
         {
@@ -69,8 +69,8 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 19:00:18 GMT",
-            "num_blocked": 2709,
+            "last_modified": "Tue, 14 Apr 2020 20:46:14 GMT",
+            "num_blocked": 2711,
             "num_unblocked": 0
         },
         {
