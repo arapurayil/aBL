@@ -13,8 +13,7 @@ on:
       - '.github/workflows/gen_lists.yml'
 
 jobs:
-  job_id:
-    name: Check URLs
+  check_url:
     runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2.1.0
