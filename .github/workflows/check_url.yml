@@ -19,3 +19,4 @@ jobs:
         with:
           subfolder: sources
           file_types: .json
+          retry_count: 3
