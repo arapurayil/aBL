@@ -28,3 +28,4 @@ phishing, malware, cryptojacking and other such undesirables
 | :--------------------------------------- | :------- |
 | unprocessed                              | 111674   |
 | minus duplicates and false positives     | 93814    |
+| minus redundant sub-domains              | 47689    |

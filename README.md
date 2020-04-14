@@ -30,6 +30,7 @@ phishing, malware, cryptojacking and other such undesirables
 | :--------------------------------------- | :------- |
 | unprocessed                              | 111674   |
 | minus duplicates and false positives     | 93814    |
+| minus redundant sub-domains              | 47689    |
 
 ## The Anti-Porn Addon List
 
@@ -49,3 +50,4 @@ Blocks porn
 | :--------------------------------------- | :------ |
 | unprocessed                              | 35225   |
 | minus duplicates and false positives     | 19170   |
+| minus redundant sub-domains              | 17703   |
