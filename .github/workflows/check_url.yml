@@ -8,18 +8,14 @@ on:
     branches: [ master ]
     paths:
       - 'sources/*'
+      - '.github/workflows/check_url.yml'
 
 jobs:
   check_url:
-    name: Check URL in source files
     runs-on: [ubuntu-latest]
     steps:
-      - id: checkout
-        name: Checkout repo
-        uses: actions/checkout@v2
-      - id: check
-        name: Check URL
-        uses: urlstechie/urlchecker-action@0.2.0
+      - uses: actions/checkout@v2
+      - uses: urlstechie/urlchecker-action@0.2.0
         with:
           subfolder: sources
           file_types: .json
