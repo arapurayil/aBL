@@ -819,7 +819,7 @@ def main():
             progress_bar.set_description(
                 desc=f"Removing redundant sub-domains: {blg.category}", refresh=True
             )
-            # blocked, stats = remove_redundant(blocked, stats)
+#             blocked, stats = remove_redundant(blocked, stats)
             progress_bar.set_description(
                 desc=f"Finalising: {blg.category}", refresh=True
             )
