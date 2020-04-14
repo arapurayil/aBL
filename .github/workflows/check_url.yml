@@ -1,0 +1,25 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Check URL
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'sources/*'
+
+jobs:
+  check_url:
+    name: Check URL in source files
+    runs-on: [ubuntu-latest]
+    steps:
+      - id: checkout
+        name: Checkout repo
+        uses: actions/checkout@v2
+      - id: check
+        name: Check URL
+        uses: urlstechie/urlchecker-action@0.2.0
+        with:
+          subfolder: sources
+          file_types: .json
