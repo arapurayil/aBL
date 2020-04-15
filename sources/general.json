@@ -1,137 +1,587 @@
 {
-    "title": "",
-    "description": "This is the default list which blocks ads, tracking, telemetry, phishing, malware, cryptojacking and other such undesirables",
-    "sources": [
-        {
-            "title": "AdGuard Base filter",
-            "description": "EasyList + AdGuard English filter",
-            "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 11:33:08 GMT",
-            "num_blocked": 2978,
-            "num_unblocked": 29
-        },
-        {
-            "title": "anudeepND whitelist",
-            "url": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt",
-            "description": "Whitelist",
-            "is_abp": false,
-            "is_noblock": true,
-            "last_modified": "W/\"cd6bc6d41f2e93d0c20c1322c0478092c906a31f5fa1d9ad3790bd7209566cc3\"",
-            "do_process": false,
-            "num_blocked": 0,
-            "num_unblocked": 194
-        },
-        {
-            "title": "StevenBlack hosts",
-            "description": "This hosts file is a merged collection of hosts from reputable sources, with a dash of crowd sourcing via GitHub",
-            "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "W/\"50e58682ed46c8f1c2d650eeec7a859b4fb7040d7c22f2cd72cd3c646c950a4e\"",
-            "num_blocked": 54240,
-            "num_unblocked": 0
-        },
-        {
-            "title": "AdGuard Tracking Protection filter",
-            "description": "The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.",
-            "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 11:33:24 GMT",
-            "num_blocked": 1655,
-            "num_unblocked": 9
-        },
-        {
-            "title": "AdGuard Mobile Ads filter",
-            "description": "Filter for all known mobile ad networks. Useful for mobile devices.",
-            "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 11:32:31 GMT",
-            "num_blocked": 946,
-            "num_unblocked": 2
-        },
-        {
-            "title": "EasyList",
-            "description": "EasyList is the primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.",
-            "url": "https://easylist.to/easylist/easylist.txt",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 11:49:43 GMT",
-            "num_blocked": 1862,
-            "num_unblocked": 2
-        },
-        {
-            "title": "EasyPrivacy",
-            "description": "EasyPrivacy is an optional supplementary filter list that completely removes  all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
-            "url": "https://easylist.to/easylist/easyprivacy.txt",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 11:49:43 GMT",
-            "num_blocked": 2712,
-            "num_unblocked": 0
-        },
-        {
-            "title": "Personal Blocklist by WaLLy3K",
-            "description": "Content added to this list has been manually verified, and is updated irregularly",
-            "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "Mon, 30 Mar 2020 08:30:46 GMT",
-            "num_blocked": 739,
-            "num_unblocked": 0
-        },
-        {
-            "title": "anudeepND blacklist",
-            "description": "Host file to block ads, tracking and more! Updated daily",
-            "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "W/\"15b31c271066f8c7653134294cb935c755f28e805509cf9922b7151a979f7452\"",
-            "num_blocked": 38336,
-            "num_unblocked": 0
-        },
-        {
-            "title": "CHEF-KOCH NSABlocklist",
-            "description": "My list is original based on 2007 published Wikileaks documents and includes my own modifications from 2008, 2012, 2014 and 2015.",
-            "url": "https://github.com/CHEF-KOCH/NSABlocklist/raw/master/HOSTS/HOSTS",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "W/\"72627305451c62989977989684085509ec661cba5fce11af086655c6bb096665\"",
-            "num_blocked": 8191,
-            "num_unblocked": 0
-        },
-        {
-            "title": "NextDNS cname-cloaking-blocklist (forked)",
-            "description": "A list of domains used by tracking companies as CNAME destination when disguising third-party trackers as first-party trackers.",
-            "url": "https://github.com/arapurayil/cname-cloaking-blocklist/raw/master/domains",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
-            "num_blocked": 18,
-            "num_unblocked": 0
-        },
-        {
-            "title": "project-level blocklist",
-            "description": "Content generated from ABL generator",
-            "url": "https://github.com/arapurayil/ABL-exp-/raw/master/sources/_block.txt",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": false,
-            "num_blocked": 0,
-            "num_unblocked": 0
-        },
-        {
-            "title": "project-level unblocklist",
-            "description": "Content generated from ABL generator",
-            "url": "https://github.com/arapurayil/ABL-exp-/raw/master/sources/_unblock.txt",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": false,
-            "num_blocked": 0,
-            "num_unblocked": 0
-        }
-    ]
+  "title": "",
+  "description": "This is the default list which blocks ads, tracking, telemetry, phishing, malware, cryptojacking and other such undesirables",
+  "sources": [
+    {
+      "title": "AdGuard Base filter",
+      "description": "EasyList + AdGuard English filter",
+      "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "Wed, 15 Apr 2020 03:32:40 GMT",
+      "num_blocked": 2976,
+      "num_unblocked": 29
+    },
+    {
+      "title": "anudeepND whitelist",
+      "url": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt",
+      "description": "Whitelist",
+      "is_abp": false,
+      "is_noblock": true,
+      "last_modified": "W/\"cd6bc6d41f2e93d0c20c1322c0478092c906a31f5fa1d9ad3790bd7209566cc3\"",
+      "do_process": false,
+      "num_blocked": 0,
+      "num_unblocked": 194
+    },
+    {
+      "title": "StevenBlack hosts",
+      "description": "This hosts file is a merged collection of hosts from reputable sources, with a dash of crowd sourcing via GitHub",
+      "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"50e58682ed46c8f1c2d650eeec7a859b4fb7040d7c22f2cd72cd3c646c950a4e\"",
+      "num_blocked": 54240,
+      "num_unblocked": 0
+    },
+    {
+      "title": "AdGuard Tracking Protection filter",
+      "description": "The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.",
+      "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "Wed, 15 Apr 2020 03:32:52 GMT",
+      "num_blocked": 1655,
+      "num_unblocked": 9
+    },
+    {
+      "title": "AdGuard Mobile Ads filter",
+      "description": "Filter for all known mobile ad networks. Useful for mobile devices.",
+      "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "Wed, 15 Apr 2020 03:32:06 GMT",
+      "num_blocked": 946,
+      "num_unblocked": 2
+    },
+    {
+      "title": "EasyList",
+      "description": "EasyList is the primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.",
+      "url": "https://easylist.to/easylist/easylist.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "Wed, 15 Apr 2020 02:37:31 GMT",
+      "num_blocked": 1862,
+      "num_unblocked": 2
+    },
+    {
+      "title": "EasyPrivacy",
+      "description": "EasyPrivacy is an optional supplementary filter list that completely removes  all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
+      "url": "https://easylist.to/easylist/easyprivacy.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "Wed, 15 Apr 2020 02:37:31 GMT",
+      "num_blocked": 2711,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Personal Blocklist by WaLLy3K",
+      "description": "Content added to this list has been manually verified, and is updated irregularly",
+      "url": "https://v.firebog.net/hosts/static/w3kbl.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "Mon, 30 Mar 2020 08:30:46 GMT",
+      "num_blocked": 739,
+      "num_unblocked": 0
+    },
+    {
+      "title": "anudeepND blacklist",
+      "description": "Host file to block ads, tracking and more! Updated daily",
+      "url": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"15b31c271066f8c7653134294cb935c755f28e805509cf9922b7151a979f7452\"",
+      "num_blocked": 38336,
+      "num_unblocked": 0
+    },
+    {
+      "title": "CHEF-KOCH NSABlocklist",
+      "description": "My list is original based on 2007 published Wikileaks documents and includes my own modifications from 2008, 2012, 2014 and 2015.",
+      "url": "https://github.com/CHEF-KOCH/NSABlocklist/raw/master/HOSTS/HOSTS",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"72627305451c62989977989684085509ec661cba5fce11af086655c6bb096665\"",
+      "num_blocked": 8191,
+      "num_unblocked": 0
+    },
+    {
+      "title": "NextDNS cname-cloaking-blocklist (forked)",
+      "description": "A list of domains used by tracking companies as CNAME destination when disguising third-party trackers as first-party trackers.",
+      "url": "https://github.com/arapurayil/cname-cloaking-blocklist/raw/master/domains",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Disconnect Advertising Filter List",
+      "description": "Blocks advertisements",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Disconnect Malvertising Filter List",
+      "description": "Blocks malvertising",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Disconnect Tracking Filter List",
+      "description": "Blocks trackers",
+      "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "ad-wars",
+      "description": "",
+      "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "yHosts",
+      "description": "AD",
+      "url": "https://raw.githubusercontent.com/vokins/yhosts/master/yhosts.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "hosts-jp",
+      "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts",
+      "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "YousList",
+      "description": "Block filter for advertisements, mainly on Korean sites. This works with Adblock Plus, uBlock Origin, 1Blocker, AdAway, and AdGuard",
+      "url": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "WindowsSpyBlocker (Spy)",
+      "description": "Block spying and tracking on Windows systems",
+      "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Shalla's Blacklists (adv)",
+      "description": "All about advertising: This includes sites offering banners and banner creation as well as sites delivering banners to be shown in webpages. Advertising companies are listed, too",
+      "url": "https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/domains",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Shalla's Blacklists (spyware)",
+      "description": "Sites that tries to actively try to install software (or lure the user in doing so) in order to spy the surfig behaviour (or worse). This category includes trojan and phishing sites. The homecalling site where the collecting information is sent are listed, too",
+      "url": "https://raw.githubusercontent.com/cbuijs/shallalist/master/spyware/domains",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Shalla's Blacklists (tracker)",
+      "description": "Site keeping an eye on where you surf and what you do in a passive. Covers web bugs, counters and other tracking mechanism in web pages that do not interfere with the local computer yet collecting information about the surfing person for later analyis. Sites actively spying out the surfer by installing software or calling home sites are not covered with tracker but with -> spyware",
+      "url": "https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/domains",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Dan Pollock’s hosts file",
+      "description": "Protects you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \\\"web bugs\\\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet",
+      "url": "https://someonewhocares.org/hosts/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Lightswitch05 - Ads & Tracking",
+      "description": "A programmatically expanded list of hosts I've found to not be on other lists",
+      "url": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "CAMELEON",
+      "description": "CAMELEON is a free system that helps Internet users or administrators to blocks web-adverts",
+      "url": "http://sysctl.org/cameleon/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "280blocker",
+      "description": "It's created for Japanese user of domain block.Subdomain is not described",
+      "url": "https://280blocker.net/files/280blocker_domain.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "280blocker",
+      "description": "It's created for Japanese user of domain block.Subdomain is not described",
+      "url": "https://280blocker.net/files/280blocker_domain.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Anti popads.net",
+      "description": "List of popads.net domains",
+      "url": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "ABPindo",
+      "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites",
+      "url": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "ABPVN List",
+      "description": "The ABP advertising filter is built with the mission of improving the browsing experience for users and for the Vietnamese",
+      "url": "https://abpvn.com/android/abpvn.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "bkrucarci turk-adlist",
+      "description": "Ad servers list to block ads on Turkish websites",
+      "url": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Bulgarian adblock list",
+      "description": "Bulgarian list is an affiliated filter list written by Alex that specifically removes adverts on Bulgarian language websites",
+      "url": "https://stanev.org/abp/adblock_bg.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "BarbBlock",
+      "description": "Block sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance",
+      "url": "https://ssl.bblck.me/blacklists/hosts-file.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "UncheckyAds",
+      "description": "Windows installers ads sources",
+      "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "RU AdList",
+      "description": "Russian supplement for EasyList",
+      "url": "https://easylist-downloads.adblockplus.org/advblock.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Peter Lowe's Blocklist",
+      "description": "Blocklist for use with Adblock Plus",
+      "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home",
+      "description": "This is a blocklist to block smart-TVs sending metadata back home, sometimes with the added benefit of blocking interface ads for apps and movie services",
+      "url": "https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV-AGH.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Peter Lowe's Blocklist",
+      "description": "Blocklist for use with Adblock Plus",
+      "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "MVPS HOSTS",
+      "description": "Includes entries for most major parasites, hijackers and unwanted Adware/Spyware programs!",
+      "url": "http://winhelp2002.mvps.org/hosts.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "AdAway Blocking Hosts File for Japan",
+      "description": "AdAwayで使用可能な、日本環境用 広告除去用hostsを公開します。日本環境用に特化しています。",
+      "url": "https://raw.githubusercontent.com/logroid/adaway-hosts/master/hosts_no_white.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Liste FR",
+      "description": "Liste FR is an affiliated filter list written by Lian, Crits and smed79 that specifically removes adverts on French language websites",
+      "url": "https://easylist-downloads.adblockplus.org/liste_fr.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Liste AR",
+      "description": "Liste AR is an affiliated filter list written by smed79 and Crits that specifically removes adverts on Arabic language websites",
+      "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Latvian List",
+      "description": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites",
+      "url": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "hufilter",
+      "description": "Block hungarian ads",
+      "url": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "hostsVN",
+      "description": "Hosts block ads of Vietnamese - Hosts chặn quảng cáo của người Việt",
+      "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "GameIndustry",
+      "description": "Blockieren Sie Spyware, Advertising, Analytics, dem Tracking in Spielen und in dazugehörigen Clients",
+      "url": "https://www.gameindustry.eu/files/hosts.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Frellwit's Swedish Hosts File",
+      "description": "Reduce your exposure to ads, tracking, scams & badware, and occasionally some annoyances on (mostly) Swedish websites",
+      "url": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Finnish Easylist Addition",
+      "description": "Finnish adblock list",
+      "url": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "Fanboy's Enhanced Tracking List",
+      "description": "Fanboy's Enhanced Tracking List blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence",
+      "url": "https://fanboy.co.nz/enhancedstats.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Lithuania",
+      "description": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites",
+      "url": "https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/easylistlithuania.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Italy",
+      "description": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites",
+      "url": "https://easylist-downloads.adblockplus.org/easylistitaly.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Hebrew",
+      "description": "EasyList Hebrew is an affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites",
+      "url": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Germany",
+      "description": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam and Khrin that specifically removes adverts on German language websites",
+      "url": "https://easylist.to/easylistgermany/easylistgermany.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Dutch",
+      "description": "EasyList Dutch is an affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites",
+      "url": "https://easylist-downloads.adblockplus.org/easylistdutch.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList Czech and Slovak",
+      "description": "EasyList Czech and Slovak is an affiliated filter list written by tomasko126 that specifically removes adverts on Czech and Slovak language websites",
+      "url": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "EasyList China",
+      "description": "EasyList China is an affiliated filter list written by John and Li that specifically removes adverts on Chinese language websites",
+      "url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+      "is_abp": true,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "CHEF-KOCH's HOSTS Spotify Ad-Filter List",
+      "description": "Blocks all Spotify Ads, easy peasy lemon squeezy!",
+      "url": "https://raw.githubusercontent.com/CHEF-KOCH/Spotify-Ad-free/master/filters/Spotify-HOSTS.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    },
+    {
+      "title": "CertyficateIT",
+      "description": "Polish ads filter",
+      "url": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt",
+      "is_abp": false,
+      "is_noblock": false,
+      "last_modified": "W/\"8c740785915d5515e60de37aea417e9a8842f59a3a30b332c95a87b02f68894b\"",
+      "num_blocked": 18,
+      "num_unblocked": 0
+    }
+  ]
 }
