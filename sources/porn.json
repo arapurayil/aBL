@@ -13,16 +13,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "Sinfonietta's Pornography Hosts",
-            "description": "A occasionally updated collection of porn domains in hosts file format",
-            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
-            "is_abp": false,
-            "is_noblock": false,
-            "last_modified": "W/\"c10e3cccbf431b547b78a3588d3b9d949e2799747b403aeb869d9d16feba1405\"",
-            "num_blocked": 14427,
-            "num_unblocked": 0
-        },
-        {
             "title": "Clefspeare13's pornhosts",
             "description": "This is an endeavour to find all porn domains and compile them into a single hosts to allow for easy blocking of porn on your local machine or on a network",
             "url": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts",
@@ -30,6 +20,16 @@
             "is_noblock": false,
             "last_modified": "W/\"c7913b63b2524d549a06e5d024ca124c13644932358febb564f1c30c2fb70be4\"",
             "num_blocked": 8930,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta's Pornography Hosts",
+            "description": "A occasionally updated collection of porn domains in hosts file format",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
+            "is_abp": false,
+            "is_noblock": false,
+            "last_modified": "W/\"350f92d9429607b614f9c28299790290af78037eb7e2c10df309cf80c6f168ce\"",
+            "num_blocked": 14433,
             "num_unblocked": 0
         }
     ]

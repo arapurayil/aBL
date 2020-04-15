@@ -8,7 +8,7 @@
             "url": "https://280blocker.net/files/280blocker_domain.txt",
             "is_abp": false,
             "is_noblock": false,
-            "last_modified": "Mon, 13 Apr 2020 13:19:00 GMT",
+            "last_modified": "Tue, 14 Apr 2020 16:19:00 GMT",
             "num_blocked": 1074,
             "num_unblocked": 0
         },
@@ -88,8 +88,8 @@
             "url": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "W/\"c213aee128f2762322ff73a1aeb2a0c133164975a35480cc737171564063c6bf\"",
-            "num_blocked": 11830,
+            "last_modified": "W/\"955bb8bcc1b6a4fc36bcb0c2d063793f7e71666f54204efec123f6ec409d55a9\"",
+            "num_blocked": 11831,
             "num_unblocked": 0
         },
         {
@@ -209,7 +209,7 @@
             "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
             "is_abp": false,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 19:21:14 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:21:47 GMT",
             "num_blocked": 2735,
             "num_unblocked": 0
         },
@@ -239,7 +239,7 @@
             "url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 19:53:22 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:13:23 GMT",
             "num_blocked": 5028,
             "num_unblocked": 12
         },
@@ -259,7 +259,7 @@
             "url": "https://easylist-downloads.adblockplus.org/easylistdutch.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 19:53:22 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:13:23 GMT",
             "num_blocked": 7,
             "num_unblocked": 1
         },
@@ -289,7 +289,7 @@
             "url": "https://easylist-downloads.adblockplus.org/easylistitaly.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 20:01:25 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:21:23 GMT",
             "num_blocked": 63,
             "num_unblocked": 0
         },
@@ -409,7 +409,7 @@
             "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 20:00:13 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:20:13 GMT",
             "num_blocked": 16,
             "num_unblocked": 0
         },
@@ -419,7 +419,7 @@
             "url": "https://easylist-downloads.adblockplus.org/liste_fr.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 19:53:16 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:13:17 GMT",
             "num_blocked": 2802,
             "num_unblocked": 0
         },
@@ -449,7 +449,7 @@
             "url": "https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV-AGH.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "W/\"019999f85dcab46542ea058d2bc95999\"",
+            "last_modified": "W/\"21653a606f4fbf978245cf59bc685d3b\"",
             "num_blocked": 0,
             "num_unblocked": 0
         },
@@ -489,7 +489,7 @@
             "url": "https://easylist-downloads.adblockplus.org/advblock.txt",
             "is_abp": true,
             "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 20:00:16 GMT",
+            "last_modified": "Wed, 15 Apr 2020 20:20:15 GMT",
             "num_blocked": 2272,
             "num_unblocked": 2
         },
