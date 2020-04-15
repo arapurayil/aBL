@@ -13,8 +13,9 @@ from datetime import datetime
 from itertools import chain, groupby
 from pathlib import Path
 
-import regex as re
 import dns.resolver
+import inflect
+import regex as re
 import requests
 from progiter import ProgIter
 from tldextract import tldextract
@@ -543,7 +544,8 @@ def gen_md_blocklist(ins):
 
     def section_one():
         categories = []
-        count = 1
+        formats = ["domains", "ABP block list"]
+        count = 0
         cat_v = "categories"
         for file in ins.list_sources:
             blg = ins(file)
@@ -553,14 +555,14 @@ def gen_md_blocklist(ins):
             count = "a"
             cat_v = "category"
         intro = (
-            f"This project generates lists for {count} {cat_v}: {categories}\n"
-            f"Lists are generated in two formats: domains, ABP block list\n"
+            f"This project generates lists for {inflect.engine().number_to_words(count)} {cat_v}: `{(', '.join(categories))}`\n\n"
+            f"Lists are generated in two formats: `{(', '.join(formats))}`\n\n"
         )
         return intro
 
     def section_two():
         tbl = []
-        tbl_c1 = "CATEGORY"
+        tbl_c1 = "LISTS NAME"
         len_c1 = len("---")
         tbl_c2 = "DESCRIPTION"
         len_c2 = len("---")
@@ -898,7 +900,7 @@ def main():
             progress_bar.set_description(
                 desc=f"Removing redundant sub-domains: {blg.category}", refresh=True
             )
-            # blocked, stats = remove_redundant(blocked, stats)
+            blocked, stats = remove_redundant(blocked, stats)
             progress_bar.set_description(
                 desc=f"Finalising: {blg.category}", refresh=True
             )
