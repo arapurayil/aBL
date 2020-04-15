@@ -10,7 +10,7 @@ phishing, malware, cryptojacking and other such undesirables
 
 | #    | Title                                                                                                                  | Blocked | Unblocked |
 | :--- | :--------------------------------------------------------------------------------------------------------------------- | :------ | :---- |
-| 01   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                     | 2976    | 29    |
+| 01   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                     | 2978    | 29    |
 | 02   | [AdGuard Mobile Ads filter](https://filters.adtidy.org/extension/chromium/filters/11.txt)                              | 946     | 2     |
 | 03   | [AdGuard Tracking Protection filter](https://filters.adtidy.org/extension/chromium/filters/3.txt)                      | 1655    | 9     |
 | 04   | [anudeepND blacklist](https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt)                      | 38336   | 0     |
@@ -28,9 +28,9 @@ phishing, malware, cryptojacking and other such undesirables
 
 | Blocked domains                          | #        |
 | :--------------------------------------- | :------- |
-| unprocessed                              | 111674   |
-| minus duplicates and false positives     | 93814    |
-| minus redundant sub-domains              | 47689    |
+| unprocessed                              | 111676   |
+| minus duplicates and false positives     | 93816    |
+| minus redundant sub-domains              | 47691    |
 
 ## The Anti-Porn Addon List
 
