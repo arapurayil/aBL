@@ -415,6 +415,7 @@ def gen_md_category(blg, stats):
     blg.data_json[blg.j_key.sources] = sorted(
         blg.data_json[blg.j_key.sources], key=lambda x: x[blg.i_key.title].upper()
     )
+    write_file(blg.data_json, blg.file_json)
 
     def data_md():
         def section_one():
@@ -424,17 +425,27 @@ def gen_md_category(blg, stats):
             return content_section_one
 
         def section_two():
-            heading_h2 = "## Sources"
+            heading_h2 = f"## Sources for the {blg.list_title}"
             tbl = []
 
             tbl_c1 = "#"
-            len_c1 = len(":---")
             tbl_c2 = "Title"
-            len_c2 = len(":---")
             tbl_c3 = "Blocked"
-            len_c3 = len(":---")
             tbl_c4 = "Unblocked"
-            len_c4 = len(":---")
+            len_c1, len_c2, len_c3, len_c4 = (
+                len(":---"),
+                len(":---"),
+                len(":---"),
+                len(":---"),
+            )
+            if len_c1 < len(tbl_c1):
+                len_c1 = len(tbl_c1)
+            if len_c2 < len(tbl_c2):
+                len_c2 = len(tbl_c2)
+            if len_c3 < len(tbl_c3):
+                len_c3 = len(tbl_c3)
+            if len_c4 < len(tbl_c4):
+                len_c4 = len(tbl_c4)
 
             for index, key in enumerate(blg.data_json[blg.j_key.sources]):
                 if len(str({index + 1}).zfill(2)) > len_c1:
@@ -454,10 +465,7 @@ def gen_md_category(blg, stats):
             tbl.append(tbl_title)
 
             for index, key in enumerate(blg.data_json[blg.j_key.sources]):
-                tbl_contents = (
-                    f"| {str(index + 1).zfill(2).ljust(len_c1)} | {str(f'[{key[blg.i_key.title]}]({key[blg.i_key.url]})').ljust(len_c2)} "
-                    f"| {str(key[blg.i_key.num_blocked]).ljust(len_c3)} | {str(key[blg.i_key.num_unblocked]).ljust(len_c4)} |\n"
-                )
+                tbl_contents = f"| {str(index + 1).zfill(2).ljust(len_c1)} | {str(f'[{key[blg.i_key.title]}]({key[blg.i_key.url]})').ljust(len_c2)} | {str(key[blg.i_key.num_blocked]).ljust(len_c3)} | {str(key[blg.i_key.num_unblocked]).ljust(len_c4)} |\n"
 
                 tbl.append(tbl_contents)
 
@@ -465,12 +473,17 @@ def gen_md_category(blg, stats):
             return content_section_two
 
         def section_three():
-            heading_h2 = "### Statistics"
+            heading_h2 = f"### Statistics for the {blg.list_title}"
             tbl = []
-            tbl_c1 = "Blocked domains"
-            len_c1 = len(":---")
-            tbl_c2 = "#"
-            len_c2 = len(":---")
+            tbl_c1 = "Domains"
+            tbl_c2 = "Blocked"
+
+            len_c1, len_c2 = (len(":---"), len(":---"))
+
+            if len_c1 < len(tbl_c1):
+                len_c1 = len(tbl_c1)
+            if len_c2 < len(tbl_c2):
+                len_c2 = len(tbl_c2)
 
             for key in stats:
                 if len(str({key})) > len_c1:
@@ -500,14 +513,14 @@ def gen_md_category(blg, stats):
     write_file(data_md(), file_md_category)
 
 
-def concat_md_category(blg, out_file):
+def concat_md_category(ins, out_file):
     """
     Concatenate all the category README.md files
 
     :param blg: the main class
     :param out_file: README.md file for ABL
     """
-    for file in glob.glob(f"{blg.lists}/*/*.md"):
+    for file in glob.glob(f"{ins.lists}/*/*.md"):
         with open(file, "r") as file_input, open(out_file, "a") as file_output:
             for line in file_input:
                 if re.match(r"^(#|##|###)\s", line):
@@ -515,7 +528,7 @@ def concat_md_category(blg, out_file):
                 file_output.write(line)
 
 
-def gen_md_blocklist(blg):
+def gen_md_blocklist(ins):
     """
     Generate README.md for ABL from category README.md files
 
@@ -526,12 +539,78 @@ def gen_md_blocklist(blg):
     if about:
         intro = about
     else:
-        intro = f"\n# {blg.header.title}\n"
+        intro = f"\n# {ins.ListHeader.title}\n"
+
+    def section_one():
+        categories = []
+        count = 1
+        cat_v = "categories"
+        for file in ins.list_sources:
+            blg = ins(file)
+            categories.append(blg.category)
+            count += 1
+        if count == 1:
+            count = "a"
+            cat_v = "category"
+        intro = (
+            f"This project generates lists for {count} {cat_v}: {categories}\n"
+            f"Lists are generated in two formats: domains, ABP block list\n"
+        )
+        return intro
+
+    def section_two():
+        tbl = []
+        tbl_c1 = "CATEGORY"
+        len_c1 = len("---")
+        tbl_c2 = "DESCRIPTION"
+        len_c2 = len("---")
+        tbl_c3 = "DOMAINS LIST"
+        len_c3 = len("---")
+        tbl_c4 = "ABP BLOCKLIST"
+        len_c4 = len("---")
+
+        for file in ins.list_sources:
+            blg = ins(file)
+            domains_link = (
+                f"[Link]({blg.header.repo}/raw/master/lists/{blg.category}/domains.txt)"
+            )
+            blocklist_link = f"[Link]({blg.header.repo}/raw/master/lists/{blg.category}/blocklist.txt)"
+
+            if len(str({blg.list_title})) > len_c1:
+                len_c1 = len(str({blg.list_title}))
+            if len(str(blg.data_json[blg.j_key.description])) > len_c2:
+                len_c2 = len(str(blg.data_json[blg.j_key.description]))
+            if len(str(domains_link)) > len_c3:
+                len_c3 = len(str(domains_link))
+            if len(str(blocklist_link)) > len_c4:
+                len_c4 = len(str(blocklist_link))
+
+        tbl_title = (
+            f"| {tbl_c1.center(len_c1)} | {tbl_c2.center(len_c2)} | {tbl_c3.center(len_c3)} | {tbl_c4.center(len_c4)} |\n"
+            f"| {'---'.center(len_c1, '-')} | {'---'.center(len_c2, '-')} | {'---'.center(len_c3, '-')} | {'---'.center(len_c4, '-')} |\n"
+        )
+        tbl.append(tbl_title)
+
+        for file in ins.list_sources:
+            blg = ins(file)
+            domains_link = (
+                f"[Link]({blg.header.repo}/raw/master/lists/{blg.category}/domains.txt)"
+            )
+            blocklist_link = f"[Link]({blg.header.repo}/raw/master/lists/{blg.category}/blocklist.txt)"
+            tbl_contents = f"| {blg.list_title.center(len_c1)} | {str(blg.data_json[blg.j_key.description]).center(len_c2)} | {str(domains_link.center(len_c3))} | {str(blocklist_link.center(len_c4))} |\n"
+            tbl.append(tbl_contents)
+
+        return tbl
 
     file_md_blocklist = Path.joinpath(BASE, "README.md")
-    with open(file_md_blocklist, "w") as file_output:
+
+    s_1 = section_one()
+    s_2 = section_two()
+    with open(file_md_blocklist, "w", encoding="utf-8") as file_output:
         file_output.write(intro)
-    concat_md_category(blg, file_md_blocklist)
+        file_output.writelines(s_1)
+        file_output.writelines(s_2)
+    concat_md_category(ins, file_md_blocklist)
 
 
 def gen_potential(blg, blocked, unblocked, num=10):
@@ -691,7 +770,7 @@ def finalise(blg, blocked, unblocked, stats):
     file_blocklist = gen_lists(blg, blocked)
     gen_checksum(file_blocklist)
     gen_md_category(blg, stats)
-    gen_md_blocklist(blg)
+
     gen_potential(blg, blocked, unblocked)
     write_version(blg)
 
@@ -819,7 +898,7 @@ def main():
             progress_bar.set_description(
                 desc=f"Removing redundant sub-domains: {blg.category}", refresh=True
             )
-            blocked, stats = remove_redundant(blocked, stats)
+            # blocked, stats = remove_redundant(blocked, stats)
             progress_bar.set_description(
                 desc=f"Finalising: {blg.category}", refresh=True
             )
@@ -830,6 +909,7 @@ def main():
             progress_bar.set_description(
                 desc=f" Generated: {category_done} lists", refresh=True
             )
+    gen_md_blocklist(ins)
 
 
 if __name__ == "__main__":
