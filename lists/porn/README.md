@@ -17,3 +17,4 @@ Blocks porn
 | :--------------------------------------- | :------ |
 | unprocessed                              | 35231   |
 | minus duplicates and false positives     | 19175   |
+| minus redundant sub-domains              | 17707   |

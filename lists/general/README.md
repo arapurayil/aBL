@@ -71,3 +71,4 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | :--------------------------------------- | :------- |
 | unprocessed                              | 438959   |
 | minus duplicates and false positives     | 267534   |
+| minus redundant sub-domains              | 111360   |
