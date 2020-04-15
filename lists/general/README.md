@@ -15,7 +15,7 @@ phishing, malware, cryptojacking and other such undesirables
 | 05   | [anudeepND whitelist](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt)              | 0       | 194   |
 | 06   | [CHEF-KOCH NSABlocklist](https://github.com/CHEF-KOCH/NSABlocklist/raw/master/HOSTS/HOSTS)                             | 8191    | 0     |
 | 07   | [EasyList](https://easylist.to/easylist/easylist.txt)                                                                  | 1862    | 2     |
-| 08   | [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)                                                            | 2711    | 0     |
+| 08   | [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)                                                            | 2712    | 0     |
 | 09   | [NextDNS cname-cloaking-blocklist (forked)](https://github.com/arapurayil/cname-cloaking-blocklist/raw/master/domains) | 18      | 0     |
 | 10   | [Personal Blocklist by WaLLy3K](https://v.firebog.net/hosts/static/w3kbl.txt)                                          | 739     | 0     |
 | 11   | [project-level blocklist](https://github.com/arapurayil/ABL-exp-/raw/master/sources/_block.txt)                        | 0       | 0     |
@@ -26,6 +26,6 @@ phishing, malware, cryptojacking and other such undesirables
 
 | Blocked domains                          | #        |
 | :--------------------------------------- | :------- |
-| unprocessed                              | 111676   |
-| minus duplicates and false positives     | 93816    |
-| minus redundant sub-domains              | 47691    |
+| unprocessed                              | 111677   |
+| minus duplicates and false positives     | 93817    |
+| minus redundant sub-domains              | 47692    |
