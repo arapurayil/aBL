@@ -1,11 +1,13 @@
 
 # Adur Block List (ABL)
-This project generates lists for 3 categories: ['porn', 'general']
-Lists are generated in two formats: domains, ABP block list
-|         CATEGORY         |                      DESCRIPTION                       |                                  DOMAINS LIST                                  |                                  ABP BLOCKLIST                                   |
+This project generates lists for two categories: `general, porn`
+
+Lists are generated in two formats: `domains, ABP block list`
+
+|        LISTS NAME        |                      DESCRIPTION                       |                                  DOMAINS LIST                                  |                                  ABP BLOCKLIST                                   |
 | ------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-|   Anti-Porn Addon List   |                      Blocks porn                       |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/domains.txt)   |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/blocklist.txt)   |
 |       General List       | Blocks ads, trackers, phishing, malware, cryptojacking | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/domains.txt) | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/blocklist.txt) |
+|   Anti-Porn Addon List   |                      Blocks porn                       |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/domains.txt)   |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/blocklist.txt)   |
 
 ## The General List
 
@@ -79,6 +81,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | :--------------------------------------- | :------- |
 | unprocessed                              | 438959   |
 | minus duplicates and false positives     | 267534   |
+| minus redundant sub-domains              | 111360   |
 
 ## The Anti-Porn Addon List
 
@@ -98,3 +101,4 @@ Blocks porn
 | :--------------------------------------- | :------ |
 | unprocessed                              | 35231   |
 | minus duplicates and false positives     | 19175   |
+| minus redundant sub-domains              | 17707   |
