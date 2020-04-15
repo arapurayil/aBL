@@ -6,11 +6,11 @@ name: Generate Lists
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 0 * * *'
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/gen_lists.yml'
+#       - '.github/workflows/gen_lists.yml'
 
 jobs:
   check_url:
