@@ -446,7 +446,7 @@
         {
             "title": "Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home",
             "description": "This is a blocklist to block smart-TVs sending metadata back home, sometimes with the added benefit of blocking interface ads for apps and movie services",
-            "url": "https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV-AGH.txt",
+            "url": "https://github.com/Perflyst/PiHoleBlocklist/raw/master/SmartTV-AGH.txt",
             "is_abp": true,
             "is_noblock": false,
             "last_modified": "W/\"b6df0fcceb53c9c9179424e4415caa49\"",
@@ -461,16 +461,6 @@
             "is_noblock": false,
             "last_modified": "Mon, 30 Mar 2020 08:30:46 GMT",
             "num_blocked": 739,
-            "num_unblocked": 0
-        },
-        {
-            "title": "Peter Lowe's Blocklist",
-            "description": "Blocklist for use with Adblock Plus",
-            "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
-            "is_abp": true,
-            "is_noblock": false,
-            "last_modified": "Wed, 15 Apr 2020 12:54:36 GMT",
-            "num_blocked": 3325,
             "num_unblocked": 0
         },
         {
