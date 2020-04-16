@@ -1,13 +1,13 @@
 
 # Adur Block List (ABL)
-This project generates lists for two categories: `general, porn`
+This project generates lists for two categories: `porn, general`
 
 Lists are generated in two formats: `domains, ABP block list`
 
 |        LISTS NAME        |                      DESCRIPTION                       |                                  DOMAINS LIST                                  |                                  ABP BLOCKLIST                                   |
 | ------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-|       General List       | Blocks ads, trackers, phishing, malware, cryptojacking | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/domains.txt) | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/blocklist.txt) |
 |   Anti-Porn Addon List   |                      Blocks porn                       |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/domains.txt)   |  [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/blocklist.txt)   |
+|       General List       | Blocks ads, trackers, phishing, malware, cryptojacking | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/domains.txt) | [Link](https://github.com/arapurayil/ABL/raw/master/lists/general/blocklist.txt) |
 
 ## The General List
 
@@ -25,7 +25,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 06   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                                             | 2984     | 29        |
 | 07   | [AdGuard Mobile Ads filter](https://filters.adtidy.org/extension/chromium/filters/11.txt)                                                      | 946      | 2         |
 | 08   | [AdGuard Tracking Protection filter](https://filters.adtidy.org/extension/chromium/filters/3.txt)                                              | 1655     | 9         |
-| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11831    | 0         |
+| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11833    | 0         |
 | 10   | [anudeepND blacklist](https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt)                                              | 38333    | 0         |
 | 11   | [anudeepND whitelist](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt)                                      | 0        | 194       |
 | 12   | [BarbBlock](https://ssl.bblck.me/blacklists/hosts-file.txt)                                                                                    | 550      | 0         |
@@ -79,9 +79,9 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 
 | Domains                                  | Blocked  |
 | :--------------------------------------- | :------- |
-| unprocessed                              | 438959   |
-| minus duplicates and false positives     | 267534   |
-| minus redundant sub-domains              | 111360   |
+| unprocessed                              | 438961   |
+| minus duplicates and false positives     | 267536   |
+| minus redundant sub-domains              | 111362   |
 
 ## The Anti-Porn Addon List
 
