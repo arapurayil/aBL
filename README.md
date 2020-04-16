@@ -25,7 +25,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 06   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                                             | 2984     | 29        |
 | 07   | [AdGuard Mobile Ads filter](https://filters.adtidy.org/extension/chromium/filters/11.txt)                                                      | 946      | 2         |
 | 08   | [AdGuard Tracking Protection filter](https://filters.adtidy.org/extension/chromium/filters/3.txt)                                              | 1655     | 9         |
-| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11833    | 0         |
+| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11837    | 0         |
 | 10   | [anudeepND blacklist](https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt)                                              | 38333    | 0         |
 | 11   | [anudeepND whitelist](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt)                                      | 0        | 194       |
 | 12   | [BarbBlock](https://ssl.bblck.me/blacklists/hosts-file.txt)                                                                                    | 550      | 0         |
@@ -40,7 +40,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 21   | [Disconnect Malvertising Filter List](https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt)                                    | 2735     | 0         |
 | 22   | [Disconnect Tracking Filter List](https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt)                                            | 34       | 0         |
 | 23   | [EasyList](https://easylist.to/easylist/easylist.txt)                                                                                          | 1863     | 2         |
-| 24   | [EasyList China](https://easylist-downloads.adblockplus.org/easylistchina.txt)                                                                 | 5028     | 12        |
+| 24   | [EasyList China](https://easylist-downloads.adblockplus.org/easylistchina.txt)                                                                 | 5029     | 12        |
 | 25   | [EasyList Czech and Slovak](https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt)                            | 18       | 0         |
 | 26   | [EasyList Dutch](https://easylist-downloads.adblockplus.org/easylistdutch.txt)                                                                 | 7        | 1         |
 | 27   | [EasyList Germany](https://easylist.to/easylistgermany/easylistgermany.txt)                                                                    | 63       | 1         |
@@ -61,27 +61,26 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 42   | [Liste FR](https://easylist-downloads.adblockplus.org/liste_fr.txt)                                                                            | 2802     | 0         |
 | 43   | [MVPS HOSTS](http://winhelp2002.mvps.org/hosts.txt)                                                                                            | 10025    | 0         |
 | 44   | [NextDNS cname-cloaking-blocklist (forked)](https://github.com/arapurayil/cname-cloaking-blocklist/raw/master/domains)                         | 18       | 0         |
-| 45   | [Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home](https://github.com/Perflyst/PiHoleBlocklist/blob/master/SmartTV-AGH.txt) | 0        | 0         |
+| 45   | [Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home](https://github.com/Perflyst/PiHoleBlocklist/raw/master/SmartTV-AGH.txt)  | 156      | 5         |
 | 46   | [Personal Blocklist by WaLLy3K](https://v.firebog.net/hosts/static/w3kbl.txt)                                                                  | 739      | 0         |
 | 47   | [Peter Lowe's Blocklist](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)                  | 3325     | 0         |
-| 48   | [Peter Lowe's Blocklist](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)                  | 3325     | 0         |
-| 49   | [RU AdList](https://easylist-downloads.adblockplus.org/advblock.txt)                                                                           | 2272     | 2         |
-| 50   | [Shalla's Blacklists (adv)](https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/domains)                                            | 9927     | 0         |
-| 51   | [Shalla's Blacklists (spyware)](https://raw.githubusercontent.com/cbuijs/shallalist/master/spyware/domains)                                    | 19592    | 0         |
-| 52   | [Shalla's Blacklists (tracker)](https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/domains)                                    | 1242     | 0         |
-| 53   | [StevenBlack hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)                                                          | 54240    | 0         |
-| 54   | [UncheckyAds](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)                                                | 10       | 0         |
-| 55   | [WindowsSpyBlocker (Spy)](https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt)                             | 365      | 0         |
-| 56   | [yHosts](https://raw.githubusercontent.com/vokins/yhosts/master/yhosts.txt)                                                                    | 1664     | 0         |
-| 57   | [YousList](https://raw.githubusercontent.com/yous/YousList/master/hosts.txt)                                                                   | 662      | 0         |
+| 48   | [RU AdList](https://easylist-downloads.adblockplus.org/advblock.txt)                                                                           | 2272     | 2         |
+| 49   | [Shalla's Blacklists (adv)](https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/domains)                                            | 9927     | 0         |
+| 50   | [Shalla's Blacklists (spyware)](https://raw.githubusercontent.com/cbuijs/shallalist/master/spyware/domains)                                    | 19592    | 0         |
+| 51   | [Shalla's Blacklists (tracker)](https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/domains)                                    | 1242     | 0         |
+| 52   | [StevenBlack hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)                                                          | 54240    | 0         |
+| 53   | [UncheckyAds](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)                                                | 10       | 0         |
+| 54   | [WindowsSpyBlocker (Spy)](https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt)                             | 365      | 0         |
+| 55   | [yHosts](https://raw.githubusercontent.com/vokins/yhosts/master/yhosts.txt)                                                                    | 1664     | 0         |
+| 56   | [YousList](https://raw.githubusercontent.com/yous/YousList/master/hosts.txt)                                                                   | 662      | 0         |
 
 #### Statistics for the General List
 
 | Domains                                  | Blocked  |
 | :--------------------------------------- | :------- |
-| unprocessed                              | 438961   |
-| minus duplicates and false positives     | 267536   |
-| minus redundant sub-domains              | 111362   |
+| unprocessed                              | 435797   |
+| minus duplicates and false positives     | 267654   |
+| minus redundant sub-domains              | 111457   |
 
 ## The Anti-Porn Addon List
 

@@ -1,8 +1,8 @@
 # Title: Adur Block List (ABL) - General List
 # Author: Zachariah Arapurayil
 # Description: Blocks ads, trackers, phishing, malware, cryptojacking
-# Version: 1.0416.0009
-# Last modified: 16 Apr 2020 01:07:46 IST
+# Version: 1.0416.0634
+# Last modified: 16 Apr 2020 07:17:23 IST
 # Expires: 4 hours (update frequency)
 #
 # Repository: https://github.com/arapurayil/ABL
@@ -3586,6 +3586,7 @@ CMS-258328131.us-east-1.elb.amazonaws.com
 COMpolice.com
 COMpolice.net
 CYPpolice.com
+Coordinator-Production-28516768.us-east-1.elb.amazonaws.com
 DNS1.P04.NSONE.NET
 DNS1.P09.NSONE.NET
 DNS2.P01.NSONE.NET
@@ -3955,6 +3956,7 @@ a1.mzstatic.com
 a1.q6u.com
 a1.qqjay.com
 a1.qqtn.com
+a1.resources.foxtel.com.au
 a1.shusanqi.com
 a1.storegames.xyz
 a1.sumiaowang.com
@@ -4480,6 +4482,7 @@ absurdity.flarelight.com
 absurdprofits.com
 absurdwater.com
 abtasty.com
+abtauthprd.samsungcloudsolution.com
 abteaser.com
 abtest.cap-nb.com
 abtest.goforandroid.com
@@ -4747,6 +4750,7 @@ acquisition-1.americanexpress.com
 acquisition-tracker.wix.com
 acquisition.gov
 acquisizionevideo.com
+acr0.samsungcloudsolution.com
 acrabakasaka.com
 acrh.be
 acridtwist.com
@@ -5582,6 +5586,7 @@ ad.netgoo.com
 ad.netmedia.hu
 ad.netowl.jp
 ad.netsecurity.ne.jp
+ad.nettvservices.com
 ad.network60.com
 ad.newmail.ru
 ad.newsnow.net
@@ -5691,7 +5696,6 @@ ad.sa9.woowy.com
 ad.sab.woowy.com
 ad.sacitaslan.com
 ad.sales.olympics.nl
-ad.samsungadhub.com
 ad.sbb.bg
 ad.sbnation.com
 ad.scanmedios.com
@@ -6320,6 +6324,8 @@ ad84.hpg.ig.com.br
 ad85.hpg.ig.com.br
 ad86.com
 ad86.hpg.ig.com.br
+ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
+ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
 ad87.hpg.ig.com.br
 ad88.hpg.ig.com.br
 ad8888.top
@@ -13772,6 +13778,7 @@ aia.wosign.com
 aiadvi.com
 aibangzs.com
 aibcqjlvxxd.com
+aic-ngfts.lge.com
 aichaima.top
 aickeeho.com
 aicleaner.shouji.360.cn
@@ -14977,6 +14984,7 @@ amatrixe.free.fr
 amatueranal.com
 amatvideo.free.fr
 amaumomt.com
+amauthprd.samsungcloudsolution.com
 amauzaqp.com
 amavirgin.pro
 amazaon.com
@@ -15037,6 +15045,7 @@ amazon.gr.com
 amazon.oret.jp
 amazon.wii-info.fr
 amazon4sex.com
+amazonadsi-a.akamaihd.net
 amazonco.uk
 amazones-tools.com
 amazoo.longseller.org
@@ -16657,9 +16666,12 @@ api-east.touchcommerce.com
 api-es.doglobal.net
 api-gateway.us-west-2.elasticbeanstalk.com
 api-gdpr.voodoo-tech.io
+api-gps-em.hismarttv.com
+api-hub.samsungyosemite.com
 api-iam.intercom.io
 api-img.billiger.de
 api-keks.com
+api-launcher-em.hismarttv.com
 api-lax1.touchcommerce.com
 api-lb.vungle.akadns.net
 api-log-analytics.cloud.toast.com
@@ -16670,6 +16682,7 @@ api-luckycoinsdk.doglobal.net
 api-lytics.macpaw.com
 api-master.netsparkmobile.com
 api-me.la.welt.de
+api-mf1.meta.ndmdhs.com
 api-ntv-elb-1185445618.us-east-1.elb.amazonaws.com
 api-ono.web.analytics.yahoo.com
 api-owr-bootstrap.metaps.net
@@ -16683,10 +16696,12 @@ api-stg.aps.ads.yahoo.com
 api-telemetry.servers.getgo.com
 api-tracelog.nexstreaming.com
 api-tv-canary.wg.spotify.com
+api-tv.spotify.com
 api-us1.lift.acquia.com
 api-v4.trbo.com
 api-vip.immomo.com
 api-webrp-analytics.cloud.toast.com
+api.*.hismarttv.com
 api.1mobile.com
 api.247-inc.net
 api.2kgames.com
@@ -16823,6 +16838,7 @@ api.deep-ad.com.edgekey.net
 api.deep.bi
 api.destinationrewards.com
 api.device.xiaomi.net
+api.distribution.hulu.com
 api.drift.com
 api.driftt.com
 api.eazymount.com
@@ -16928,6 +16944,7 @@ api.mutinyhq.io
 api.nas.nct.vn
 api.newad.ifeng.com
 api.newsfeed.intl.miui.com
+api.nfl.com
 api.nicoad.nicovideo.jp
 api.ning.com
 api.nobeta.com.br
@@ -17574,7 +17591,6 @@ aptrk8.com
 aptrk9.com
 aptuk-online.org
 apture.com
-apu.samsungelectronics.com
 apu04c0.audientia.net
 apu0555.audientia.net
 apu0600.audientia.net
@@ -19008,6 +19024,8 @@ autelekom.pl
 auth-dns.asm.bellsouth.net
 auth-dns.mia.bellsouth.net
 auth-dns.msy.bellsouth.net
+auth-em.hismarttv.com
+auth-launcher-em.hismarttv.com
 auth-live.services.otg.scee.com
 auth-ns1.edu.ie
 auth-ns2.edu.ie
@@ -19261,6 +19279,7 @@ avpayments.com
 avpgdzdesjnt.com
 avpkav.com
 avppet.com
+avpro.global.yamaha.com
 avprotectionstat.com
 avptczdpdh.bid
 avrakougioumtzi.gr
@@ -19531,6 +19550,7 @@ az361816.vo.msecnd.net
 az412617.vo.msecnd.net
 az413505.vo.msecnd.net
 az416426.vo.msecnd.net
+az43064.vo.msecnd.net
 az511.gov
 az512334.vo.msecnd.net
 az529.gov
@@ -19853,6 +19873,7 @@ b0.video-ak.cdn.spotify.com
 b0.yahoo.co.jp
 b00gle.com
 b017925d1ff7bba3c109.date
+b02.black.ndmdhs.com
 b02byun5xc3s.com
 b0e8.com
 b0g-r.tlnk.io
@@ -21460,6 +21481,7 @@ bd1.365qilu.com
 bd1.99danji.com
 bd1.dopa.com
 bd1.jinbaozy.com
+bd1.ningboseo0574.com
 bd1.qcjslm.com
 bd1.sosg.net
 bd1.szhk.com
@@ -21510,6 +21532,7 @@ bdcode.2345.com
 bdcode.35d1.com
 bdcode.qinglm.com
 bdcode.youke.com
+bdcore-apr-lb.bda.ndmdhs.com
 bdcpro*.techweb.com.cn
 bddaxoaaco.bid
 bddfeltry.bid
@@ -24018,7 +24041,6 @@ bpprksdgogtw.com
 bppzqphtd.com
 bprnphojtfl.bid
 bpsxhmtotf.com
-bpu.samsungelectronics.com
 bpudfbrc.com
 bqbagfhhbhyzq.bid
 bqbkoyasur.com
@@ -24139,6 +24161,7 @@ bravenetmedia.com
 bravenetmedianetwork.com
 braverymob.fusetracking.com
 bravesentry.com
+bravia.dl.playstation.net
 bravo.israelinfo.ru
 bravo.israelweather.co.il
 bravospots.com
@@ -25740,6 +25763,7 @@ call-att.com
 call-computer-support.com
 call-girls.com
 call-phone.com
+call.me.sel.sony.com
 call2pay.com
 call4bill.com
 callawaypos.com
@@ -26862,6 +26886,7 @@ cdn.riceateastcach.us
 cdn.roiq-vice.ranker.com
 cdn.sailfish.media
 cdn.sailthru.com
+cdn.samsungcloudsolution.net
 cdn.scrollads.co.kr
 cdn.sdkconfig.site
 cdn.secomapp.com
@@ -27006,6 +27031,7 @@ cdnport.ru
 cdnpps.us
 cdnprism.pandora.tv
 cdnproviders.net
+cdns-content.dzcdn.net
 cdns.mydirtyhobby.com
 cdns.sdkconfig.site
 cdnsoar.com
@@ -27323,6 +27349,7 @@ ceroamenazas.com
 ceromobi.club
 cerquasas.it
 cert-services.com
+cert-test.sandbox.google.com
 cert.bandicam.com
 cert.br
 cert2-ubiservices.data.ubi.com
@@ -30318,6 +30345,7 @@ config.samqaicongen.com
 config.sdk.scopely.io
 config.sdk.wiman.io
 config.shazamid.com
+configprd.samsungcloudsolution.net
 configuration.ttpsdk.info
 confirm-referer.glrsales.com
 confirmed-profits.com
@@ -31336,7 +31364,6 @@ cptycdzksyvn.com
 cpu-admin.baidu.com
 cpu.baidu.com
 cpu.firingsquad.com
-cpu.samsungelectronics.com
 cpull.360.cn
 cpv.ad.naver.com
 cpv.popxml.com
@@ -32668,6 +32695,7 @@ d16fk4ms6rqz1v.cloudfront.net
 d16s8pqtk4uodx.cloudfront.net
 d16xpr36wrmcmk.cloudfront.net
 d1739833.u81.igempresas.ig.com.br
+d179kwmlpc4o47.cloudfront.net
 d17ialcoirdn28.cloudfront.net
 d17m68fovwmgxj.cloudfront.net
 d17rlarvg2khuc.cloudfront.net
@@ -32741,6 +32769,7 @@ d1izbwxtc3f9ue.cloudfront.net
 d1jikhx1ssl81z.cloudfront.net
 d1jnvfp2m6fzvq.cloudfront.net
 d1jq9nooxeft24.cloudfront.net
+d1jwpcr0q4pcq0.cloudfront.net
 d1k0glcmk0b5rb.cloudfront.net
 d1k29rhvz38kg5.cloudfront.net
 d1k3dpebxhgqjc.cloudfront.net
@@ -32776,6 +32805,7 @@ d1nx2jii03b4ju.cloudfront.net
 d1o3ws1znr0uv8.cloudfront.net
 d1oaxhr280l1ho.cloudfront.net
 d1ovo20x1yw5yz.cloudfront.net
+d1oxlq5h9kq8q5.cloudfront.net
 d1p7elpjrt6qav.cloudfront.net
 d1pdpbxj733bb1.cloudfront.net
 d1piupybsgr6dr.cloudfront.net
@@ -33021,6 +33051,7 @@ d2taktuuo4oqx.cloudfront.net
 d2tcg4i9q4js4a.cloudfront.net
 d2tgfbvjf3q6hn.cloudfront.net
 d2tkdzior84vck.cloudfront.net
+d2tnx644ijgq6i.cloudfront.net
 d2tycn7nnoiglw.cloudfront.net
 d2ue9k1rhsumed.cloudfront.net
 d2uepos3ef6db0.cloudfront.net
@@ -33113,6 +33144,7 @@ d36wtdrdo22bqa.cloudfront.net
 d379964aymex2x.cloudfront.net
 d37f9khcllt32v.cloudfront.net
 d37gvrvc0wt4s1.cloudfront.net
+d37ju0xanoz6gh.cloudfront.net
 d37s9vd5t6mov7.cloudfront.net
 d38dub.ru
 d38hmgjgf0kofx.cloudfront.net
@@ -33211,6 +33243,7 @@ d3m0n.biz
 d3m79ugzs2d8im.cloudfront.net
 d3mcf0n3hvvfk4.cloudfront.net
 d3mgo879eugsjh.cloudfront.net
+d3mjsomixevyw7.cloudfront.net
 d3mskfhorhi2fb.cloudfront.net
 d3n6i6eorggdxk.cloudfront.net
 d3ncat0syb6rim.cloudfront.net
@@ -33779,6 +33812,7 @@ data0.bell.ca
 dataactive.world
 dataapi.ktplay.com
 dataasmierci.blogspot.com
+database01p.anixe.net
 databaseporno.com
 databases-eu.net
 databerries.com
@@ -34724,6 +34758,7 @@ deus-est-machina.pl
 deuscleaneronline.com
 deutchbank.net
 deuterium.geo-idm.fr
+dev-multiscreen.samsung.com
 dev-myonedsl.pantheonsite.io
 dev-onemedia.com
 dev-ubiservices.data.ubi.com
@@ -34765,6 +34800,7 @@ developunit.info
 devergo.com
 devhub.pl
 device-fingerprintdb-v1.s3.amazonaws.com
+device-messaging-na.amazon.com
 device-metrics-*.amazon.com
 device-metrics-us-2.amazon.com
 device-metrics-us.amazon.com
@@ -34773,6 +34809,7 @@ deviceatlas.com
 deviceatlasdc.appspot.com
 deviceidshare.twitch.tv
 deviceinfo.capitalone.com
+devicemessaging.us-east-1.amazon.com
 devices.carnivalmobile.com
 deviceslogger.netsparkmobile.com
 devilclicks.com
@@ -37099,7 +37136,6 @@ dpsqqaaqbc.com
 dpstack.com
 dptr.areyouahuman.com
 dptr.distiltag.com
-dpu.samsungelectronics.com
 dpupr.lomboktengahkab.go.id
 dpwmloknxtuw.com
 dpwrhdzeqw.com
@@ -38109,6 +38145,7 @@ e16646.g.akamaiedge.net
 e1r.net
 e2.extreme-dm.com.prx.proxywebsite.co.uk
 e2.molbuk.ua
+e2.resources.foxtel.com.au
 e2.spoutable.com
 e2.video-ak.cdn.spotify.com
 e2143.a.akamaiedge.net
@@ -39594,6 +39631,7 @@ emvm-gh1-uea09.nsa.gov
 emxbuugvudofbc.bid
 emxdgt.com
 emxdigital.com
+emxdnfvdnwzx.com
 emxfructugey.com
 emxwkunx.bid
 emxyuehfnlssg.com
@@ -43280,6 +43318,7 @@ fklgjslkj.com
 fkloazpi.com
 fkogs.com
 fkooaee.angelcities.com
+fkp.samsungcloudsolution.*
 fkpbbmgqa.bid
 fkphqtgqrfixl.com
 fkqafflyjz.com
@@ -43392,6 +43431,7 @@ flicksplus.com
 flightschoolcandidates.gov
 flighttocapetown.com
 flimsycircle.com
+flingo.tv
 flingstone.com
 flipgive.trackinglibrary.prodperfect.com
 flipkart-gst-big-sale.in
@@ -43514,6 +43554,7 @@ flr.cbox.ws
 flra.gov
 flrcm.gov
 flrqdjglshsbi.com
+fls-*.amazon.com
 fls-eu.amazon.de
 fls-fe.amazon-adsystems.com
 fls-na.amazon.com
@@ -43979,6 +44020,7 @@ foxpush.com
 foxrpas.com
 foxs.indowebster.com
 foxseek.com
+foxtel-prod-events.digitalsmiths.net
 foxwoods.ru
 foxxweb.com
 foxypp.com
@@ -45190,6 +45232,7 @@ fviwwkvvxs.com
 fvkdatbzswo.bid
 fvozquqvnuv.bid
 fvpluqipfjcsf.com
+fvptlxwm.com
 fvrbloxygbrv.com
 fvrvxmksxhut.com
 fvsdvxjpxi.com
@@ -45597,6 +45640,7 @@ game-tester.ru
 game.fc2.com
 game.idoing3d.com
 game.immomo.com
+game.internetat.tv
 game.pps.tv
 game.residentevil.net
 game.weibo.cn
@@ -47073,6 +47117,7 @@ glbgkmvl.com
 glbsuoebquueky.com
 glcgytymbp.bid
 glcpzwihisagw.bid
+gld.samsungosp.com
 gleam.io
 gleamingtrade.com
 glean.pop6.com
@@ -49437,7 +49482,13 @@ hbaog.com
 hbb.afl.rakuten.co.jp
 hbb.concentra.be
 hbbgrhzqezz.com
+hbbtv-1.eurosport.com
+hbbtv-extern-fe01.sim-technik.de
+hbbtv-track.redbutton.de
+hbbtv.*.de
 hbbtv.mediaset.net
+hbbtv01p.anixe.net
+hbbtvapp.sonnenklar.tv
 hbbww.com
 hbbxkbjhiiue.bid
 hbchwmrqb.bid
@@ -52279,6 +52330,7 @@ ibrainer.net
 ibroadband.com
 ibs-clearing.ch
 ibs.indiatimes.com
+ibs.lgappstv.com
 ibsram.org
 ibsys.com
 ibtfbbtjktu.com
@@ -52337,6 +52389,7 @@ ichgcp.com
 ichhar.sante-dz.com
 ichi-ni-san.net
 ichnaea-web.netflix.com
+ichnaea.netflix.com
 ici-sexe.tk
 icipourtoi.com
 icityfind.com
@@ -58551,7 +58604,6 @@ kpsdnlprwclz.com
 kpshx.douguo.com
 kpsn.com
 kpstaticbj.wx.ckjr001.com
-kpu.samsungelectronics.com
 kpucctqryjdvx.bid
 kpwhkeehpsp.bid
 kpwjczeaajnhsc.com
@@ -59771,6 +59823,7 @@ leforma.com
 lefos.net
 leftnetarenning.pro
 legacyart.com
+legacyportal.nettvservices.com
 legal-rewardpath.com
 legal.secure-softwaremanager.com
 legalizacja.5v.pl
@@ -60052,6 +60105,7 @@ lgsvywogylblv.com
 lgtbcaqkjo.bid
 lgtiaqukf.com
 lgtnwgfqkyyf.com
+lgtvsdp.com
 lguir.com
 lguqeppylijw.com
 lgwdtfmd.com
@@ -61049,6 +61103,7 @@ localytics.com
 locandito.com
 locatebest.com
 locates.com
+location-api.hdhomerun.com
 location.appcloudbox.net
 location.bloomberg.com
 location.kredivo.com
@@ -61168,6 +61223,7 @@ log.idg.no
 log.idnes.cz
 log.infonet.vn
 log.interest.mix.sina.com.cn
+log.internetat.tv
 log.invodo.com
 log.isnssdk.com
 log.itworld.com
@@ -63279,6 +63335,7 @@ manage.com
 manage.wdfans.cn
 manage001.adtech.fr
 managebrand.agency
+managed.xmpp.foxtel.com.au
 managedcollapsed.in
 managedns404.com
 manageengine.com
@@ -63631,6 +63688,7 @@ marysvillewa.gov
 maryville-tn.gov
 marzectoyoty.pl
 mas-e.cds1.yospace.com
+mas-ext.amazon.com
 mas-log.paas.paytm.com
 mas-sdk.amazon.com
 mas.nth.ch
@@ -67401,6 +67459,7 @@ msedge.net
 msegeqxwopq.com
 msetup.pro
 msftconnecttest.com
+msg-em.hismarttv.com
 msg-media.valueclick.akadns.net
 msg.71.am
 msg.cocamobile.com
@@ -67423,6 +67482,7 @@ msgstore2.pldtprv.net
 msgtag.com
 msgv6.qy.net
 msgwxozk.com
+msh.amazon.co.uk
 msha.gov
 mshelp247.weebly.com
 mshelpdesk.net
@@ -67676,6 +67736,7 @@ multipops.com
 multipuppy.com
 multipussy.com
 multiquicks.net
+multiscreen.samsung.com
 multitops.com
 mulvaneruston.com
 mum.neric.org
@@ -67746,6 +67807,7 @@ musicdetector.com
 musicdomainer.cn
 musicfeast.com
 musicfeet.com
+musicid.samsungcloudsolution.com
 musicistheweapon.pl
 musicmaargarit63.uk.to
 musicmagnet.com
@@ -68158,6 +68220,7 @@ myhawaii.gov
 myhdpwmjabpc.bid
 myhealthllc.co
 myhitbox.com
+myhomescreen.tv
 myhood.cl
 myhousetechnews.com
 myiee.com
@@ -68923,6 +68986,7 @@ nbasicalbuffere.info
 nbbqgaeqnxun.com
 nbbuty.pl
 nbbvpxfxnamb.com
+nbc-jite.nbcuni.com
 nbc.gov
 nbca.gov
 nbclkgok.bid
@@ -69467,6 +69531,7 @@ nettordinateur.com
 nettoyeurdeserreures.com
 nettoyeurdevirus.com
 nettsl.com
+nettv.corio.com
 netvenda.com
 netvertising.be
 netwayz.com.sg
@@ -70798,10 +70863,13 @@ notice-phone.club
 notice-phone.site
 notice.iqiyi.com
 notice.kakaku.com
+notice.samsungcloudsolution.com
 notice.uchome.manyou.com
 notice1-09.com
 notice1-11.com
 notice1-12.com
+noticecdn.samsungcloudsolution.com
+noticefile.samsungcloudsolution.com
 noticemob.com
 noticias.life
 noticiasftpsrv.com
@@ -70997,6 +71065,7 @@ nrc.gov
 nrcrbfqa.com
 nrd.gov
 nrdaixdlt.com
+nrdp.nccp.netflix.com
 nrectoqhwdhi.com
 nrel.gov
 nrelhub.gov
@@ -71790,6 +71859,7 @@ ns10.nba-hq.com
 ns106.ehostpros.com
 ns11.bsnl.in
 ns11.imsbiz.com
+ns11.whois.co.kr
 ns12.bsnl.in
 ns12.imsbiz.com
 ns12.xunta.es
@@ -73550,6 +73620,8 @@ oei1.gq
 oeidusggzj.com
 oem-software-shop.com
 oemji.com
+oempprd.samsungcloudsolution.com
+oempprd.samsungcloudsolution.net
 oemtop.com
 oende.cn
 oeocriaq.cn
@@ -74723,6 +74795,7 @@ openads.zeads.com
 openadsnetwork.com
 openamp-error-reporting.appspot.com
 openapi.cymera.com
+openapi.samsung.com
 opencache.com
 opencandy.com
 opencdb84507.com
@@ -75335,6 +75408,7 @@ otkpegjvpyi.com
 otlanalytics.cloudapp.net
 otletdivak.hu
 otmyoesv.com
+otn.samsungcloudcdn.com
 otnolatrnup.com
 otobajka.com.pl
 otodomweryfikacja.com
@@ -75737,6 +75811,7 @@ p-bxm.com
 p-cg61-beaconserver.movetv.com
 p-defr00.kxcdn.com
 p-frpa00.kxcdn.com
+p-hbbtv.superrtl.de
 p-img.blog-koukoku.com
 p-jp-cci-dps.cinarra.com
 p-jp-elb-inmobi.cinarra.com
@@ -76462,6 +76537,7 @@ paveblue.com
 paveralleycoun.info
 pavfhwwddf.com
 pavlovaks.info
+pavv.co.kr
 pawel-sikora.pl
 pawelkuniec.pl
 paweltyniec.pl
@@ -77708,6 +77784,7 @@ piozhntfxag.com
 pipaw.com
 pipdown.cn
 pipe-collect.ebu.io
+pipeaota.com
 pipecgopa.cn
 pipedream.wistia.com
 pipeline-edge-prod-25-561439127.us-west-2.elb.amazonaws.com
@@ -79539,6 +79616,7 @@ premium-offers.space
 premium-pc-scan.com
 premium-reward-club.com
 premium-search.net
+premium-videos.telly.com
 premium.2ch.net
 premium.ascensionweb.com
 premium.aws.wix.com
@@ -80490,6 +80568,7 @@ protrainings.leadpages.co
 proudclick.com
 proudflex.org
 prouve.com
+prov.samsungcloudsolution.com
 provaless.com
 provalist.info
 provanto.pl
@@ -83377,6 +83456,9 @@ redbanktn.gov
 redbay-al.gov
 redbear.pl
 redbubble.com
+redbutton-adproxy-lb-prod.redbutton.de
+redbutton-lb-prod.redbutton.de
+redbutton.sim-technik.de
 redclick.ru
 redcliff-nsn.gov
 redcoats2005.com
@@ -85594,6 +85676,7 @@ rwtbgaguhmfj.com
 rwtvvdspsbll.com
 rwugdvqdpxfz.com
 rwugglxboxgw.com
+rwww.samsungotn.net
 rwxivmfldvo.com
 rwxzeoqfj.com
 rwyprejibmvcfh.com
@@ -86294,8 +86377,11 @@ samsclub33.pochta.ru
 samspot.softairmania.it
 samsung.yaload.ru
 samsungacr.com
+samsungadhub.com
 samsungads.com
 samsungclubshop.com
+samsungelectronics.com
+samsungqbe.com
 samsungrm.net
 samsungtvads.com
 samtrack1.com
@@ -86417,6 +86503,7 @@ sarnisas.info
 sarwa.trackinglibrary.prodperfect.com
 sarydrinkletr.site
 sas.decisionnews.com
+sas.samsungcloudsolution.com
 sascdn.com
 sascentral.com
 sascloud.adsales.snidigital.com
@@ -86704,6 +86791,7 @@ sc91537202us1.cobrowse.oraclecloud.com
 sc91967456us1.cobrowse.oraclecloud.com
 sc96957344us1.cobrowse.oraclecloud.com
 sc99400822llms1.cobrowse.oraclecloud.com
+sca.samsung.com
 scadnet.com
 scag.gov
 scahqyriepu.com
@@ -90395,7 +90483,6 @@ smartsecsuper.com
 smartseek.biz
 smartsend.agency
 smartsex.org
-smartshare.lgtvsdp.com
 smartsheet.com
 smartshopper.com
 smartshoppernetworks.com
@@ -91111,6 +91198,7 @@ sonumal.com
 sonvietmy.com.vn
 sony.tcliveus.com
 sony1234.100megsfree5.com
+sonybivstatic-a.akamaihd.net
 soo.sg
 soodatmish.com
 soofeest.net
@@ -92273,11 +92361,13 @@ sslplatnosc.online
 sslstatic.wix.com
 ssltracking.esearchvision.com
 sslv3.at
+ssm1.internet.sony.tv
 ssman.pl
 ssmklfrn.bid
 ssmuse1314.cn
 ssmyceoxbjqdp.com
 sso.canada.com
+sso.internetat.tv
 ssobmhpxnjjp.bid
 ssolsoftware.com
 ssorsophicla.info
@@ -92520,6 +92610,7 @@ start-dating.net
 start-page.net
 start-page.org
 start-search.com
+start.digitaltext.rtl.de
 start.drift.com
 start.driftt.com
 start.favbook.net
@@ -94732,6 +94823,7 @@ syncaccess.net
 synccompletelyquickproduct.icu
 syncgreatlyquicksystem.icu
 synchrophasotron.com
+syncplusconfig.s3.amazonaws.com
 syncroads.net
 syncsongwriter.leadpages.co
 syncyourclock.com
@@ -100594,6 +100686,7 @@ tunders.com
 tune.com
 tunedads.com
 tunele-rozsaczajace.pl
+tuner-api.hdhomerun.com
 tunga.homedns.org
 tungurahua.andinanet.net
 tuniaf.com
@@ -100678,6 +100771,7 @@ tuzyaezlaoju.bid
 tv-codec.com
 tv-internetowa.pl
 tv-maniak.pl
+tv-static.scdn.co
 tv-world-online.net
 tv.sohu.com
 tv.wps.cn
@@ -101773,6 +101867,7 @@ unicume.com
 unidadessanas.com
 unident-union.pl
 unidesk.alicdn.com
+unified-ter-na.hismarttv.com
 unifiedwrapper.com
 uniflorpolska.pl
 unifomushop.com
@@ -102186,7 +102281,6 @@ uptodateprotection.net
 uptodatesecurity.com
 uptonma.gov
 uptpro.homestead.com
-upu.samsungelectronics.com
 upush.co
 upvid.eu
 upvtnuffy.com
@@ -102301,6 +102395,7 @@ urzadzeniawgastro.com.pl
 us-1.gladly.com
 us-acoongroup.net
 us-analytics-api.gree-apps.net
+us-api.samsungyosemite.com
 us-central1-eyewind-ads.cloudfunctions.net
 us-central1-feisty-gasket-100715.cloudfunctions.net
 us-central1-firebase-wixapp.cloudfunctions.net
@@ -103244,6 +103339,7 @@ vdopia.com
 vdr.sterlingdatarooms.com
 vdrmwfdtn.com
 vdrpwkycbla.com
+vdterms.samsungcloudsolution.com
 vdtrack.com
 vdula.czystykod.pl
 vdvaazkk.com
@@ -104285,6 +104381,7 @@ vppst.iltrovatore.it
 vptgnqpknpdyq.com
 vptkyunlzfy.com
 vpwdweham.com
+vpwlynobnnqg.com
 vpyrfomwel.com
 vq1qi.pw
 vq91811.com
@@ -106546,6 +106643,7 @@ wlkpa.cn
 wllvvkjknh.cn
 wlm.at
 wlmarketing.com
+wlnxskclqr.com
 wlongchina.com
 wlos.net
 wlrzptntiqez.com
@@ -108563,7 +108661,6 @@ xpscanantivirys.com
 xpscanantivirysonline.com
 xpsn.com
 xptslcoedn.com
-xpu.samsungelectronics.com
 xpwppacpda.com
 xpwwqbkezdr.com
 xpywzbxjwbxafv.com
@@ -109814,7 +109911,6 @@ yprnopqzs.com
 ypt-nsn.gov
 yptwqjdgikmcqc.com
 ypu.edu.tw
-ypu.samsungelectronics.com
 ypummbggdjex.com
 ypzhrmspnfmy.com
 ypzhwf.cn
@@ -111076,7 +111172,6 @@ zppkpktskuf.com
 zpppstop.ru
 zpqejgbya.com
 zptncsir.com
-zpu.samsungelectronics.com
 zpwansf.cn
 zpwqnicvzi.com
 zpwtylxpfeje.com
