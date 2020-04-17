@@ -2,7 +2,11 @@ import json
 from pathlib import Path
 from progiter import ProgIter
 
-from generator.generator_functions import process_sources, remove_duplicates_false, remove_redundant
+from generator.generator_functions import (
+    process_sources,
+    remove_duplicates_false,
+    remove_redundant,
+)
 from generator.generator_helper_functions import read_file, write_file
 
 BASE = Path(__file__).parents[1]
@@ -39,7 +43,7 @@ class ITEMKey(object):
 
 
 class Generator(object):
-    list_sources = list(Path.glob(INPUT_DIR, '*.json'))
+    list_sources = list(Path.glob(INPUT_DIR, "*.json"))
 
     def __init__(self, file_json):
         """
@@ -74,14 +78,15 @@ def main():
             )
             blocked, stats = remove_duplicates_false(blocked, unblocked)
             progress_bar.set_description(
-                desc=f"Removing redundant sub-domains for category: {blg.category}", refresh=True
+                desc=f"Removing redundant sub-domains for category: {blg.category}",
+                refresh=True,
             )
             blocked, stats = remove_redundant(blocked, stats)
 
-        blocked = [x + '\n' for x in blocked]
-        unblocked = [x + '\n' for x in unblocked]
-        write_file(blocked, 'blocked.txt')
-        write_file(unblocked, 'unblocked.txt')
+        blocked = [x + "\n" for x in blocked]
+        unblocked = [x + "\n" for x in unblocked]
+        write_file(blocked, "blocked.txt")
+        write_file(unblocked, "unblocked.txt")
 
 
 if __name__ == "__main__":

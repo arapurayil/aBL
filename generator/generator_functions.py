@@ -3,8 +3,16 @@ from itertools import chain
 import regex as re
 from progiter import ProgIter
 
-from generator.generator_helper_functions import get_content, extract_abp, extract_hosts, write_file, get_last_modified, \
-    get_cname, extract_tld, match_pattern
+from generator.generator_helper_functions import (
+    get_content,
+    extract_abp,
+    extract_hosts,
+    write_file,
+    get_last_modified,
+    get_cname,
+    extract_tld,
+    match_pattern,
+)
 
 
 def process_sources(blg):
@@ -78,8 +86,11 @@ def remove_redundant(blocked, stats):
     :return: blocked domains without redundant subdomains, updated statistics
     """
 
-    main_domains = [item for item in ProgIter(blocked, desc='Identifying main-domains') if
-                    not extract_tld(item).subdomain]
+    main_domains = [
+        item
+        for item in ProgIter(blocked, desc="Identifying main-domains")
+        if not extract_tld(item).subdomain
+    ]
 
     pattern_if_sub = re.compile("|".join(f"(?:.*({p})$)" for p in main_domains))
 
