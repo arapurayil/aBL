@@ -141,17 +141,24 @@ def extract_abp(content):
     pattern_blocked = re.compile("|".join(f"(?:{p})" for p in pattern_blocked_list))
 
     pattern_unblocked_list = [r"^(@@\|\|)", r"\^$"]
-    pattern_unblocked = re.compile(
-        "|".join(f"(?:{p})" for p in pattern_unblocked_list)
-    )
+    pattern_unblocked = re.compile("|".join(f"(?:{p})" for p in pattern_unblocked_list))
 
-    content = [re.sub(pattern, '', item) for item in content]
+    content = [re.sub(pattern, "", item) for item in content]
 
-    content_blocked = [item for item in content if re.match(r"^(\|\|).*\^", item, concurrent=True)]
-    content_blocked = [re.sub(pattern_blocked, '', item, concurrent=True) for item in content_blocked]
+    content_blocked = [
+        item for item in content if re.match(r"^(\|\|).*\^", item, concurrent=True)
+    ]
+    content_blocked = [
+        re.sub(pattern_blocked, "", item, concurrent=True) for item in content_blocked
+    ]
 
-    content_unblocked = [item for item in content if re.match(r"^(@@\|\|).*\^$", item, concurrent=True)]
-    content_unblocked = [re.sub(pattern_unblocked, '', item, concurrent=True) for item in content_unblocked]
+    content_unblocked = [
+        item for item in content if re.match(r"^(@@\|\|).*\^$", item, concurrent=True)
+    ]
+    content_unblocked = [
+        re.sub(pattern_unblocked, "", item, concurrent=True)
+        for item in content_unblocked
+    ]
 
     blocked = [item for item in content_blocked if domain(item)]
     unblocked = [item for item in content_unblocked if domain(item)]
@@ -176,7 +183,7 @@ def extract_hosts(content, is_not):
     ]
     pattern = re.compile("|".join(f"(?:{p})" for p in pattern_list))
 
-    content = [re.sub(pattern, '', item, concurrent=True) for item in content]
+    content = [re.sub(pattern, "", item, concurrent=True) for item in content]
 
     domains = [item for item in content if domain(item)]
 
@@ -240,7 +247,11 @@ def match_pattern(content, pattern, desc):
     :param desc: the description in the progress bar
     :return: matched and unmatched contents
     """
-    matched = [item for item in ProgIter(content, desc=f'{desc}') if re.match(pattern,item, concurrent=True)]
+    matched = [
+        item
+        for item in ProgIter(content, desc=f"{desc}")
+        if re.match(pattern, item, concurrent=True)
+    ]
     unmatched = list(set(content) - set(matched))
 
     return matched, unmatched
