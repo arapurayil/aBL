@@ -357,12 +357,6 @@ def remove_redundant(blocked, stats):
     return blocked, stats
 
 
-from generator.generator_functions import (
-    process_sources,
-    remove_duplicates_false,
-    remove_redundant,
-)
-from generator.generator_helper_functions import read_file, write_file
 
 BASE = Path(__file__).parents[1]
 
