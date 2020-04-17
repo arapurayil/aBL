@@ -357,7 +357,6 @@ def remove_redundant(blocked, stats):
     return blocked, stats
 
 
-
 BASE = Path(__file__).parents[1]
 
 INPUT_DIR = Path.joinpath(BASE, "sources")
