@@ -1,9 +1,9 @@
 
-# The Anti-Porn Addon List
+# The Anti-Porn Add-on List
 
 Blocks porn
 
-## Sources for the Anti-Porn Addon List
+## Sources for the Anti-Porn Add-on List
 
 | #    | Title                                                                                                                                            | Blocked | Unblocked |
 | :--- | :----------------------------------------------------------------------------------------------------------------------------------------------- | :------ | :-------- |
@@ -11,10 +11,10 @@ Blocks porn
 | 02   | [Clefspeare13's pornhosts](https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts)                                        | 8930    | 0         |
 | 03   | [Sinfonietta's Pornography Hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                              | 14433   | 0         |
 
-### Statistics for the Anti-Porn Addon List
+### Statistics for the Anti-Porn Add-on List
 
 | Domains                                  | Blocked |
 | :--------------------------------------- | :------ |
 | unprocessed                              | 35231   |
 | minus duplicates and false positives     | 19175   |
-| minus redundant sub-domains              | 17707   |
+| minus redundant sub-domains              | 17744   |
