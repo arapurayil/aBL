@@ -4,9 +4,12 @@ import hashlib
 import json
 import textwrap
 from collections import Counter
+from concurrent.futures.process import ProcessPoolExecutor
 from concurrent.futures.thread import ThreadPoolExecutor
 from datetime import datetime
-from itertools import chain
+from functools import partial
+from itertools import chain, repeat
+from multiprocessing import cpu_count
 from pathlib import Path
 import inflect
 import dns.resolver
@@ -634,6 +637,15 @@ def remove_duplicates_false(blocked, unblocked):
     return blocked, stats
 
 
+def tld_extract_worker(domain):
+    if not extract_tld(domain).subdomain:
+        return domain
+
+
+def match_worker(pattern, item):
+    return re.findall(pattern, item, concurrent=True)
+
+
 def remove_redundant(blocked, stats):
     """
     Removes sub-domains if main-domain is already in the list
@@ -642,27 +654,39 @@ def remove_redundant(blocked, stats):
     :return: blocked domains without redundant subdomains, updated statistics
     """
 
-    main_domains = [
-        domain
-        for domain in ProgIter(blocked, desc="Main domains")
-        if not extract_tld(domain).subdomain
-    ]
+    pool = ProcessPoolExecutor()
+    with pool:
+        main_domains = list(
+            ProgIter(
+                pool.map(tld_extract_worker, blocked, chunksize=100),
+                desc="Main",
+                total=len(blocked),
+                chunksize=100,
+            )
+        )
 
     sub_domains = list(set(blocked) - set(main_domains))
     main_domains = list(set(main_domains))
 
     pattern_if_sub = re.compile(
-        r"(?:.*("
-        + "|".join(r"\b" + f"{re.escape(p)}" + r"\b" for p in main_domains)
-        + r")$)"
+        "|".join(f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains),
+        re.M | re.I | re.V1,
     )
 
-    unmatched_subdomains = [
-        item
-        for item in ProgIter(sub_domains, desc="Scanning for redundant sub-domains")
-        if not re.match(pattern_if_sub, item, concurrent=True)
-    ]
+    string_sub_domains = "\n".join(sub_domains)
+    function_match = partial(match_worker, pattern_if_sub)
+    pool = ProcessPoolExecutor()
+    with pool:
+        matched_subdomains = list(
+            ProgIter(
+                pool.map(function_match, string_sub_domains, chunksize=100),
+                desc="Sub",
+                total=len(string_sub_domains),
+                chunksize=100,
+            )
+        )
 
+    unmatched_subdomains = list(set(sub_domains) - set(matched_subdomains))
     blocked = list(chain(unmatched_subdomains, main_domains))
 
     num_blocked_domains = {"minus redundant sub-domains": len(blocked)}
