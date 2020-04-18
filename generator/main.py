@@ -643,7 +643,8 @@ def tld_extract_worker(domain):
 
 
 def match_worker(pattern, item):
-    return re.findall(pattern, item, concurrent=True)
+    if not re.match(pattern, item, concurrent=True):
+        return item
 
 
 def remove_redundant(blocked, stats):
@@ -670,23 +671,20 @@ def remove_redundant(blocked, stats):
 
     pattern_if_sub = re.compile(
         "|".join(f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains),
-        re.M | re.I | re.V1,
+        re.I | re.M | re.V1,
     )
 
-    string_sub_domains = "\n".join(sub_domains)
     function_match = partial(match_worker, pattern_if_sub)
     pool = ProcessPoolExecutor()
     with pool:
-        matched_subdomains = list(
+        unmatched_subdomains = list(
             ProgIter(
-                pool.map(function_match, string_sub_domains, chunksize=100),
+                pool.map(function_match, sub_domains, chunksize=1000),
                 desc="Sub",
-                total=len(string_sub_domains),
-                chunksize=100,
+                total=len(sub_domains),
             )
         )
 
-    unmatched_subdomains = list(set(sub_domains) - set(matched_subdomains))
     blocked = list(chain(unmatched_subdomains, main_domains))
 
     num_blocked_domains = {"minus redundant sub-domains": len(blocked)}
