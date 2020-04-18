@@ -22,10 +22,10 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 03   | [ABPVN List](https://abpvn.com/android/abpvn.txt)                                                                                              | 20783    | 0         |
 | 04   | [ad-wars](https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)                                                                     | 1652     | 0         |
 | 05   | [AdAway Blocking Hosts File for Japan](https://raw.githubusercontent.com/logroid/adaway-hosts/master/hosts_no_white.txt)                       | 31845    | 0         |
-| 06   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                                             | 22203    | 27        |
+| 06   | [AdGuard Base filter](https://filters.adtidy.org/extension/chromium/filters/2.txt)                                                             | 22205    | 27        |
 | 07   | [AdGuard Mobile Ads filter](https://filters.adtidy.org/extension/chromium/filters/11.txt)                                                      | 1000     | 2         |
 | 08   | [AdGuard Tracking Protection filter](https://filters.adtidy.org/extension/chromium/filters/3.txt)                                              | 5076     | 9         |
-| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11851    | 0         |
+| 09   | [Anti popads.net](https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt)                                                       | 11852    | 0         |
 | 10   | [anudeepND blacklist](https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt)                                              | 38333    | 0         |
 | 11   | [anudeepND whitelist](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt)                                      | 0        | 194       |
 | 12   | [BarbBlock](https://ssl.bblck.me/blacklists/hosts-file.txt)                                                                                    | 550      | 0         |
@@ -39,7 +39,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 20   | [Disconnect Advertising Filter List](https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt)                                               | 2701     | 0         |
 | 21   | [Disconnect Malvertising Filter List](https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt)                                    | 2735     | 0         |
 | 22   | [Disconnect Tracking Filter List](https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt)                                            | 34       | 0         |
-| 23   | [EasyList](https://easylist.to/easylist/easylist.txt)                                                                                          | 19063    | 2         |
+| 23   | [EasyList](https://easylist.to/easylist/easylist.txt)                                                                                          | 19065    | 2         |
 | 24   | [EasyList China](https://easylist-downloads.adblockplus.org/easylistchina.txt)                                                                 | 5751     | 12        |
 | 25   | [EasyList Czech and Slovak](https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt)                            | 81       | 0         |
 | 26   | [EasyList Dutch](https://easylist-downloads.adblockplus.org/easylistdutch.txt)                                                                 | 91       | 1         |
@@ -47,7 +47,7 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 | 28   | [EasyList Hebrew](https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt)                                         | 322      | 0         |
 | 29   | [EasyList Italy](https://easylist-downloads.adblockplus.org/easylistitaly.txt)                                                                 | 227      | 0         |
 | 30   | [EasyList Lithuania](https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/easylistlithuania.txt)                     | 15       | 0         |
-| 31   | [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)                                                                                    | 6854     | 0         |
+| 31   | [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)                                                                                    | 6855     | 0         |
 | 32   | [Fanboy's Enhanced Tracking List](https://fanboy.co.nz/enhancedstats.txt)                                                                      | 122      | 0         |
 | 33   | [Finnish Easylist Addition](https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt)      | 65       | 1         |
 | 34   | [Frellwit's Swedish Hosts File](https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt) | 670      | 0         |
@@ -78,9 +78,9 @@ Blocks ads, trackers, phishing, malware, cryptojacking
 
 | Domains                                  | Blocked  |
 | :--------------------------------------- | :------- |
-| unprocessed                              | 495156   |
-| minus duplicates and false positives     | 288240   |
-| minus redundant sub-domains              | 129958   |
+| unprocessed                              | 495162   |
+| minus duplicates and false positives     | 288243   |
+| minus redundant sub-domains              | 129961   |
 
 ## The Anti-Porn Add-on List
 
