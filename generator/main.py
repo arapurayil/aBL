@@ -58,11 +58,11 @@ class ListInfo:
     title = "Adur Block List (ABL)"
     author = "Zachariah Arapurayil"
     version = (
-        str(int(datetime.now().strftime("%y")) - 19)
-        + "."
-        + datetime.now().strftime("%m%d")
-        + "."
-        + datetime.now().strftime("%H%M")
+            str(int(datetime.now().strftime("%y")) - 19)
+            + "."
+            + datetime.now().strftime("%m%d")
+            + "."
+            + datetime.now().strftime("%H%M")
     )
     last_modified = datetime.now().strftime("%d %b %Y %H:%M:%S IST")
     expires = "1 day"
@@ -367,8 +367,8 @@ def gen_lists(blg, blocked):
 
     header = (
         str(blg.info.header)
-        .replace("repl_title_cat", list_title)
-        .replace("repl_desc_cat", blg.data_json[blg.j_key.description])
+            .replace("repl_title_cat", list_title)
+            .replace("repl_desc_cat", blg.data_json[blg.j_key.description])
     )
 
     file_domains = is_path(Path.joinpath(blg.dir_out, blg.f_out.domains))
@@ -573,7 +573,7 @@ def concat_md_category(out_file):
     """
     for file in glob.glob(f"{OUTPUT_DIR}/*/*.md"):
         with open(file, encoding="utf-8") as file_input, open(
-            out_file, "a", encoding="utf-8"
+                out_file, "a", encoding="utf-8"
         ) as file_output:
             for line in file_input:
                 if re.match(r"^(#|##|###)\s", line):
@@ -657,11 +657,13 @@ def remove_redundant(blg, blocked, stats):
     :return: blocked domains without redundant subdomains, updated statistics
     """
     file_removed = is_path(Path.joinpath(TEMP_DIR, f"removed_{blg.category}.txt"))
-    removed_subdomains = [x.strip() for x in read_file(file_removed)]
-    blocked_remaining = list(set(blocked) - set(removed_subdomains))
-    actually_removed = list(set(blocked) - set(blocked_remaining))
-    main_domains_actually_removed = get_main_domain(actually_removed)
-    blocked = list(set(blocked_remaining) | set(main_domains_actually_removed))
+    removed_subdomains = read_file(file_removed)
+    if removed_subdomains:
+        removed_subdomains = [x.strip() for x in read_file(file_removed)]
+        blocked_remaining = list(set(blocked) - set(removed_subdomains))
+        actually_removed = list(set(blocked) - set(blocked_remaining))
+        main_domains_actually_removed = get_main_domain(actually_removed)
+        blocked = list(set(blocked_remaining) | set(main_domains_actually_removed))
 
     pool = ProcessPoolExecutor()
     with pool:
@@ -678,7 +680,9 @@ def remove_redundant(blg, blocked, stats):
     main_domains = list(set(main_domains))
 
     pattern_if_sub = re.compile(
-        "|".join(f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains),
+        "|".join(
+            f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains
+        ),
         re.I | re.V1,
     )
 
@@ -689,7 +693,7 @@ def remove_redundant(blg, blocked, stats):
     ]
 
     matched_subdomains = list(set(sub_domains) - set(unmatched_subdomains))
-    matched_subdomains = [x + "\n" for x in sorted(matched_subdomains)]
+    matched_subdomains = [x+'\n' for x in sorted(matched_subdomains)]
     write_file(matched_subdomains, file_removed)
 
     blocked = list(chain(unmatched_subdomains, main_domains))
