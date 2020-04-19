@@ -139,7 +139,7 @@ def is_path(path):
             Path(path).open("x", encoding="utf-8").close()
         return Path(path)
     if not Path(path).exists():
-        Path(path).mkdir()
+        Path(path).mkdir(parents=True, exist_ok=True)
 
     return Path(path)
 
@@ -553,7 +553,7 @@ def gen_potential(blg, blocked, unblocked, num=10):
     potential = [k for k, v in potential if v > num]
 
     potential = [x + "\n" for x in potential]
-    file_potential = Path.joinpath(TEMP_DIR, f"{blg.category}.txt")
+    file_potential = is_path(Path.joinpath(TEMP_DIR, f"{blg.category}.txt"))
     write_file(potential, file_potential)
 
 
