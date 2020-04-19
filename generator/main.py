@@ -7,9 +7,7 @@ from collections import Counter
 from concurrent.futures.process import ProcessPoolExecutor
 from concurrent.futures.thread import ThreadPoolExecutor
 from datetime import datetime
-from functools import partial
-from itertools import chain, repeat
-from multiprocessing import cpu_count
+from itertools import chain
 from pathlib import Path
 import inflect
 import dns.resolver
@@ -24,6 +22,8 @@ BASE = Path(__file__).parents[1]
 INPUT_DIR = Path.joinpath(BASE, "sources")
 
 OUTPUT_DIR = Path.joinpath(BASE, "lists")
+
+TEMP_DIR = Path.joinpath(BASE, ".temp")
 
 
 class JSONKey(object):
@@ -58,11 +58,11 @@ class ListInfo:
     title = "Adur Block List (ABL)"
     author = "Zachariah Arapurayil"
     version = (
-        str(int(datetime.now().strftime("%y")) - 19)
-        + "."
-        + datetime.now().strftime("%m%d")
-        + "."
-        + datetime.now().strftime("%H%M")
+            str(int(datetime.now().strftime("%y")) - 19)
+            + "."
+            + datetime.now().strftime("%m%d")
+            + "."
+            + datetime.now().strftime("%H%M")
     )
     last_modified = datetime.now().strftime("%d %b %Y %H:%M:%S IST")
     expires = "1 day"
@@ -322,6 +322,10 @@ def get_cname(domains):
     dns_resolver.lifetime = dns_resolver.timeout = 5
 
     def worker(item):
+        """
+
+        :param item:
+        """
         try:
             answer = dns_resolver.query(item, "CNAME")
             for cname_val in answer:
@@ -363,8 +367,8 @@ def gen_lists(blg, blocked):
 
     header = (
         str(blg.info.header)
-        .replace("repl_title_cat", list_title)
-        .replace("repl_desc_cat", blg.data_json[blg.j_key.description])
+            .replace("repl_title_cat", list_title)
+            .replace("repl_desc_cat", blg.data_json[blg.j_key.description])
     )
 
     file_domains = is_path(Path.joinpath(blg.dir_out, blg.f_out.domains))
@@ -549,8 +553,7 @@ def gen_potential(blg, blocked, unblocked, num=10):
     potential = [k for k, v in potential if v > num]
 
     potential = [x + "\n" for x in potential]
-    dir_potential = is_path(Path.joinpath(BASE, ".temp"))
-    file_potential = Path.joinpath(dir_potential, f"{blg.category}.txt")
+    file_potential = Path.joinpath(TEMP_DIR, f"{blg.category}.txt")
     write_file(potential, file_potential)
 
 
@@ -570,7 +573,7 @@ def concat_md_category(out_file):
     """
     for file in glob.glob(f"{OUTPUT_DIR}/*/*.md"):
         with open(file, encoding="utf-8") as file_input, open(
-            out_file, "a", encoding="utf-8"
+                out_file, "a", encoding="utf-8"
         ) as file_output:
             for line in file_input:
                 if re.match(r"^(#|##|###)\s", line):
@@ -642,13 +645,23 @@ def tld_extract_worker(domain):
         return domain
 
 
-def remove_redundant(blocked, stats):
+def get_main_domain(domains):
+    return [extract_tld(domain).registered_domain for domain in domains]
+
+
+def remove_redundant(blg, blocked, stats):
     """
     Removes sub-domains if main-domain is already in the list
     :param blocked: the input list of blocked domains
     :param stats: statistics
     :return: blocked domains without redundant subdomains, updated statistics
     """
+    file_removed = is_path(Path.joinpath(TEMP_DIR, f"removed_{blg.category}.txt"))
+    removed_subdomains = [x.strip() for x in read_file(file_removed)]
+    blocked_remaining = list(set(blocked) - set(removed_subdomains))
+    actually_removed = list(set(blocked) - set(blocked_remaining))
+    main_domains_actually_removed = get_main_domain(actually_removed)
+    blocked = list(set(blocked_remaining) | set(main_domains_actually_removed))
 
     pool = ProcessPoolExecutor()
     with pool:
@@ -665,20 +678,22 @@ def remove_redundant(blocked, stats):
     main_domains = list(set(main_domains))
 
     pattern_if_sub = re.compile(
-        "|".join(f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains),
-        re.I | re.M | re.V1,
+        "|".join(
+            f"(?:.*" + r"\b" + f"{p}" + r"\b" + f"$)" for p in main_domains
+        ),
+        re.I | re.V1,
     )
 
-    string_subdomains = "\n".join(sub_domains)
-    matched_subdomains = list(
-        ProgIter(
-            re.findall(pattern_if_sub, string_subdomains, concurrent=True),
-            desc="Sub",
-            total=len(string_subdomains),
-        )
-    )
+    unmatched_subdomains = [
+        item
+        for item in ProgIter(sub_domains, desc="Scanning for redundant sub-domains")
+        if not re.match(pattern_if_sub, item, concurrent=True)
+    ]
 
-    unmatched_subdomains = list(set(sub_domains) - set(matched_subdomains))
+    matched_subdomains = list(set(sub_domains) - set(unmatched_subdomains))
+    matched_subdomains = [x+'\n' for x in sorted(matched_subdomains)]
+    write_file(matched_subdomains, file_removed)
+
     blocked = list(chain(unmatched_subdomains, main_domains))
 
     num_blocked_domains = {"minus redundant sub-domains": len(blocked)}
@@ -820,7 +835,7 @@ def main():
             progress_bar.set_description(
                 desc=f"Removing redundant sub-domains for category: {blg.category}"
             )
-            blocked, stats = remove_redundant(blocked, stats)
+            blocked, stats = remove_redundant(blg, blocked, stats)
             progress_bar.set_description(desc=f"Finalising: {blg.category}")
             finalise(blg, blocked, unblocked, stats)
             category_done.append(blg.category)
