@@ -40,7 +40,7 @@ jobs:
       - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python generator/main.py
+          python generator.py
           version=$(<version.txt)
           if ! git diff --no-ext-diff --quiet --exit-code; then
             echo "${{ secrets.bot_gpg_pvt }}" > private.key
