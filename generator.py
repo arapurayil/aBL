@@ -27,6 +27,7 @@ from dns import resolver, exception as dns_exception
 from progiter import ProgIter
 from regex import regex as re
 from requests import Session
+from requests.adapters import HTTPAdapter, Retry
 from tldextract import tldextract
 from validators import domain as valid_domain
 
@@ -171,8 +172,19 @@ def write_file(data, path):
 
 def get_response(url):
     """Fetches response headers for the URL."""
-    header = {"User-Agent": "Arapurayil"}
-    return Session().get(url, allow_redirects=True, timeout=30, headers=header)
+    retries = Retry(
+        total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504]
+    )
+    http = Session()
+    http.mount("https://", HTTPAdapter(max_retries=retries))
+    http.headers.update(
+        {
+            "Connection": "keep-alive",
+            "User-Agent": "Mozilla/5.0 (Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0",
+        }
+    )
+
+    return http.get(url, allow_redirects=True, timeout=30)
 
 
 def get_content(url):
@@ -520,8 +532,10 @@ def md_category_section_main(blg, stats):
     string_bold = (
         f"ABL - {blg.data_json[blg.j_key.title]} is {value_percentage:.2f}% lighter"
     )
-    sub_desc = f"\nBy removing duplicates, false-positives and redundant sub-domains " \
-               f"the {markdown_strings.bold(string_bold)} than its combined sources"
+    sub_desc = (
+        f"\nBy removing duplicates, false-positives and redundant sub-domains "
+        f"the {markdown_strings.bold(string_bold)} than its combined sources"
+    )
     return [main_title, main_desc, info_add, sub_desc]
 
 
@@ -737,7 +751,7 @@ def gen_md_blocklist(list_source, list_title):
         "\n".join(md_blocklist_section_table(list_source)),
         notes if notes else None,
     ]
-    data_md = "\n".join(filter(None, section)) + '\n\n'
+    data_md = "\n".join(filter(None, section)) + "\n\n"
     file_md_blocklist = is_path(Path.joinpath(DirPath.base, "README.md"))
     with open(file_md_blocklist, "w", encoding="utf-8") as file_output:
         file_output.writelines(data_md)
