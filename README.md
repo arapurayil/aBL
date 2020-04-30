@@ -1,9 +1,10 @@
 # Adur Block List (ABL)
+
 > Generated Lists: The Anti-Porn List, The Anti-Social List, Regional List - Germanic, Regional List - Romance, Regional List - Slavic
-> 
+>
 > Formats: Domains, ABP Filter
-> 
-> 
+>
+>
 | #   | TITLE                      | DESCRIPTION                                                       | DOMAINS LIST                                                                                       | ABP FILTER LIST                                                                                |
 | --- | -------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | 01  | The Anti-Porn List         | Blocks pornography                                                | [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/blocked\_domains.txt)               | [Link](https://github.com/arapurayil/ABL/raw/master/lists/porn/filter\_list.txt)               |
@@ -12,9 +13,10 @@
 | 04  | Regional List - Romance    |                                                                   | [Link](https://github.com/arapurayil/ABL/raw/master/lists/regional\_romance/blocked\_domains.txt)  | [Link](https://github.com/arapurayil/ABL/raw/master/lists/regional\_romance/filter\_list.txt)  |
 | 05  | Regional List - Slavic     | For Dutch, German, Icelandic, Swedish                             | [Link](https://github.com/arapurayil/ABL/raw/master/lists/regional\_slavic/blocked\_domains.txt)   | [Link](https://github.com/arapurayil/ABL/raw/master/lists/regional\_slavic/filter\_list.txt)   |## The Anti-Porn List
 **Blocks pornography**
--   Sources: 3
--   Unprocessed domains: 35228
--   Blocked domains: 17748
+
+- Sources: 3
+- Unprocessed domains: 35228
+- Blocked domains: 17748
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - The Anti-Porn List is 49.62% lighter** than its combined sources
 
@@ -23,11 +25,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Th
 | 01  | [Chadmayfield light list](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi\_blocklist\_porn\_top1m.list) | This list is a correlated list to only block porn sites that appear on Alex'a top 1m site list           | 11868           | 0                 |
 | 02  | [Clefspeare13 pornhosts](https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts)                                    | An anti porn hosts file                                                                                  | 8927            | 0                 |
 | 03  | [Sinfonietta pornography-hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                          | A occasionally updated collection of porn, gambling, and social media domains in hosts file format       | 14433           | 0                 |
+
 ## The Anti-Social List
+
 **Blocks social media resources like icons, scripts, widgets, etc**
--   Sources: 4
--   Unprocessed domains: 3572
--   Blocked domains: 1235
+
+- Sources: 4
+- Unprocessed domains: 3572
+- Blocked domains: 1235
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - The Anti-Social List is 65.43% lighter** than its combined sources
 
@@ -37,11 +42,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Th
 | 02  | [Fanboy Annoyances List](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt)                 | In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes Fanboy-Social List.)                               | 737             | 2                 |
 | 03  | [Fanboy Anti-Facebook Filters](https://fanboy.co.nz/fanboy-antifacebook.txt)                              | Warning, will break on facebook comment on some sites and may also break on some facebook apps or games, Use with Social, Annoyance or Ultimate subscriptions is desirable       | 3               | 0                 |
 | 04  | [Sinfonietta social-hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)   | A occasionally updated collection of social media domains in hosts file format.                                                                                                  | 2780            | 0                 |
+
 ## Regional - Germanic Add-on List
+
 **For Dutch, German, Icelandic, Swedish**
--   Sources: 6
--   Unprocessed domains: 1045
--   Blocked domains: 1031
+
+- Sources: 6
+- Unprocessed domains: 1045
+- Blocked domains: 1031
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - Regional - Germanic Add-on List is 1.34% lighter** than its combined sources
 
@@ -53,11 +61,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Re
 | 04  | [Fanboy's Swedish](https://www.fanboy.co.nz/fanboy-swedish.txt)                                                                                                                                          | Sweden Adblock List                                                                                                                                                                     | 32              | 0                 |
 | 05  | [Frellwit's Swedish Filter](https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/Frellwits-Swedish-Filter.txt)                                                                             | A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat                                                       | 0               | 0                 |
 | 06  | [Icelandic ABP List](http://adblock.gardar.net/is.abp.txt)                                                                                                                                               | Adblock list for icelandic websites                                                                                                                                                     | 0               | 0                 |
+
 ## Regional - Slavic Add-on List
+
 **For Dutch, German, Icelandic, Swedish**
--   Sources: 8
--   Unprocessed domains: 13047
--   Blocked domains: 10149
+
+- Sources: 8
+- Unprocessed domains: 13047
+- Blocked domains: 10149
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - Regional - Slavic Add-on List is 22.21% lighter** than its combined sources
 
@@ -71,11 +82,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Re
 | 06  | [Fanboy Poland Adblock List](https://www.fanboy.co.nz/fanboy-polish.txt)                                              |                                                                                                                                                                                                                                                                                                                                                                        | 80              | 0                 |
 | 07  | [Latvian List](https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt)                    | Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites                                                                                                                                                                                                                                     | 57              | 0                 |
 | 08  | [RU AdList](https://easylist-downloads.adblockplus.org/advblock.txt)                                                  |                                                                                                                                                                                                                                                                                                                                                                        | 8762            | 2                 |
+
 ## Regional List - Germanic
+
 **For Dutch, German, Icelandic, Swedish**
--   Sources: 6
--   Unprocessed domains: 1045
--   Blocked domains: 1031
+
+- Sources: 6
+- Unprocessed domains: 1045
+- Blocked domains: 1031
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - Regional List - Germanic is 1.34% lighter** than its combined sources
 
@@ -87,11 +101,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Re
 | 04  | [Fanboy's Swedish](https://www.fanboy.co.nz/fanboy-swedish.txt)                                                                                                                                          | Sweden Adblock List                                                                                                                                                                     | 32              | 0                 |
 | 05  | [Frellwit's Swedish Filter](https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/Frellwits-Swedish-Filter.txt)                                                                             | A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat                                                       | 0               | 0                 |
 | 06  | [Icelandic ABP List](http://adblock.gardar.net/is.abp.txt)                                                                                                                                               | Adblock list for icelandic websites                                                                                                                                                     | 0               | 0                 |
+
 ## Regional List - Romance
+
 ****
--   Sources: 8
--   Unprocessed domains: 7047
--   Blocked domains: 6621
+
+- Sources: 8
+- Unprocessed domains: 7047
+- Blocked domains: 6621
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - Regional List - Romance is 6.05% lighter** than its combined sources
 
@@ -105,11 +122,14 @@ By removing duplicates, false-positives and redundant sub-domains the **ABL - Re
 | 06  | [EasyList Spanish](https://easylist-downloads.adblockplus.org/easylistspanish.txt)                                       |                                                                                                                                                                                                                                                                                 | 69              | 0                 |
 | 07  | [ROList](https://zoso.ro/pages/rolist.txt)                                                                               |                                                                                                                                                                                                                                                                                 | 115             | 0                 |
 | 08  | [Xfiles](https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt)                                               |                                                                                                                                                                                                                                                                                 | 162             | 0                 |
+
 ## Regional List - Slavic
+
 **For Dutch, German, Icelandic, Swedish**
--   Sources: 8
--   Unprocessed domains: 13047
--   Blocked domains: 10149
+
+- Sources: 8
+- Unprocessed domains: 13047
+- Blocked domains: 10149
 
 By removing duplicates, false-positives and redundant sub-domains the **ABL - Regional List - Slavic is 22.21% lighter** than its combined sources
 
