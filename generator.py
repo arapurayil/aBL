@@ -1,13 +1,13 @@
 """
 ABL Generator
 
-Creates compiled blocklists in Domains and ABP Filter List format
-Uses json files in a specific format containing list of well-known blocklists
-The source lists should be in Domains/Hosts ot ABP Filter List format
-This script only supports ABP filters that are compatible with AdGuard Home
-Duplicates and subdomains, if its registered domain is already blocked, are removed
-The generated lists are best used with AdGuard Home orDNSCrypt 2
-or any other DNS level blocking solution
+Creates compiled blocklists in Domains and ABP Filter List format.
+Uses json files in a specific format containing list of well-known blocklists.
+The source lists should be in Domains/Hosts ot ABP Filter List format.
+This script only supports ABP filters that are compatible with AdGuard Home.
+Duplicates and redundant subdomains are removed.
+The generated lists are best used with AdGuard Home or DNSCrypt 2
+or any other DNS level blocking solution.
 """
 from base64 import b64encode
 from collections import namedtuple, Counter
@@ -83,6 +83,7 @@ class ListInfo:
 class OutputFile:
     """Output file names."""
 
+    false_positives = "false_positives.txt"
     domains = "blocked_domains.txt"
     abp_filter = "filter_list.txt"
 
@@ -341,9 +342,12 @@ def process_sources(blg):
     return blocked, unblocked, false_positives
 
 
-def remove_duplicates_false(blocked, false_positive):
+def remove_duplicates_false(blg, blocked, false_positive):
     """Removes duplicates and false positives from blocked domains."""
     stats = {}
+    file_false_positives = is_path(
+        Path.joinpath(blg.dir_cat, OutputFile.false_positives)
+    )
     false_positive = set(false_positive)
     false_positive_cname = get_cname(false_positive)
     false_positive.update(false_positive_cname)
@@ -351,8 +355,27 @@ def remove_duplicates_false(blocked, false_positive):
     num_raw_blocked_domains = {"unprocessed": len(blocked)}
     stats.update(num_raw_blocked_domains)
     blocked = set(blocked) - set(false_positive)
+    if blg.category != "general":
+        dir_general = Path.joinpath(DirPath.output, "general")
+        file_general_false_positives = Path.joinpath(
+            dir_general, OutputFile.false_positives
+        )
+        file_general_domains = Path.joinpath(dir_general, OutputFile.domains)
+        if file_general_false_positives and file_general_domains:
+            general_false_positives = {
+                x.strip() for x in read_file(file_general_false_positives)
+            }
+            general_blocked_domains = {
+                x.strip()
+                for x in read_file(file_general_domains)
+                if not str(x).startswith("#")
+            }
+            add_domains_to_remove = general_false_positives | general_blocked_domains
+            blocked -= add_domains_to_remove
     num_blocked_domains = {"minus duplicates and false positives": len(blocked)}
     stats.update(num_blocked_domains)
+
+    write_file(false_positive, file_false_positives)
     return blocked, stats
 
 
@@ -387,7 +410,7 @@ def worker_unmatched_item(item, pattern):
     return None
 
 
-def remove_redundant(blocked, stats, blg):
+def remove_redundant(blg, blocked, stats):
     """Removes sub-domains if main-domain is already in the list."""
     file_main_domains = is_path(
         Path.joinpath(DirPath.temp, f"main_domains_{blg.category}.txt")
@@ -533,7 +556,7 @@ def md_category_section_main(blg, stats):
         f"ABL - {blg.data_json[blg.j_key.title]} is {value_percentage:.2f}% lighter"
     )
     sub_desc = (
-        f"\nBy removing duplicates, false-positives and redundant sub-domains "
+        f"By removing duplicates, false-positives and redundant sub-domains "
         f"the {markdown_strings.bold(string_bold)} than its combined sources"
     )
     return [main_title, main_desc, info_add, sub_desc]
@@ -599,10 +622,10 @@ def md_category_section_table(blg):
 def gen_md_category(blg, stats):
     """Generates README.md for the blocklist category."""
     section = [
-        "\n".join(md_category_section_main(blg, stats)),
+        "\n\n".join(md_category_section_main(blg, stats)),
         "\n".join(md_category_section_table(blg)),
     ]
-    data_md = "\n\n".join(section)
+    data_md = "\n\n".join(section) + "\n\n"
 
     file_md_category = is_path(Path.joinpath(blg.dir_cat, "README.md"))
     write_file(data_md, file_md_category)
@@ -715,7 +738,10 @@ def md_blocklist_section_table(list_sources):
 
 def concat_md_category(out_file):
     """Concatenate category README.md files"""
-    for file in glob(f"{DirPath.output}/*/*.md"):
+    md_files = glob(f"{DirPath.output}/*/*.md")
+    md_files = sorted(md_files, key=lambda x: x)
+    md_files = sorted(md_files, key=lambda x: x.__contains__("regional"))
+    for file in md_files:
         with open(file, encoding="utf-8") as file_input:
             with open(out_file, "a", encoding="utf-8") as file_output:
                 lines = (
@@ -741,7 +767,6 @@ def gen_md_blocklist(list_source, list_title):
         + "\n\n"
         + "Formats: "
         + ", ".join(list_format)
-        + "\n\n"
     )
     section = [
         main_title,
@@ -751,7 +776,7 @@ def gen_md_blocklist(list_source, list_title):
         "\n".join(md_blocklist_section_table(list_source)),
         notes if notes else None,
     ]
-    data_md = "\n".join(filter(None, section)) + "\n\n"
+    data_md = "\n\n".join(filter(None, section)) + "\n\n"
     file_md_blocklist = is_path(Path.joinpath(DirPath.base, "README.md"))
     with open(file_md_blocklist, "w", encoding="utf-8") as file_output:
         file_output.writelines(data_md)
@@ -763,6 +788,8 @@ def main():
     Main.
     """
     list_source = list(glob(f"{DirPath.input}/*.json"))
+    list_source = sorted(list_source, key=lambda x: x)
+    list_source = sorted(list_source, key=lambda x: x.__contains__("regional"))
     list_title = []
     p_bar = ProgIter(list_source, desc=f"Generating lists")
     for i, file in enumerate(p_bar):
@@ -774,11 +801,11 @@ def main():
             p_bar.set_description(
                 desc=f"Removing duplicates & false positives — {blg.category}"
             )
-            blocked, stats = remove_duplicates_false(blocked, false_positives)
+            blocked, stats = remove_duplicates_false(blg, blocked, false_positives)
             p_bar.set_description(
                 desc=f"Removing redundant subdomains — {blg.category}"
             )
-            blocked, main_domains, stats = remove_redundant(blocked, stats, blg)
+            blocked, main_domains, stats = remove_redundant(blg, blocked, stats)
             p_bar.set_description(desc=f"Finalising — {blg.category}")
             finalise(blg, blocked, unblocked, main_domains, stats)
         if i == len(list_source) - 1:
