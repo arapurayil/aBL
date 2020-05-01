@@ -24,7 +24,7 @@ jobs:
           file_types: .json
           retry_count: 3
   do_python:
-    name: Initiate Python Script
+    name: Generate lists and push
     needs: [check_url]
     runs-on: [ubuntu-latest]
     steps:
