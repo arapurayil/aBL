@@ -11,6 +11,7 @@ on:
       - '.github/workflows/black.yml'
 jobs:
   format:
+    name: Format with Black
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
