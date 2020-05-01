@@ -1,0 +1,36 @@
+{
+    "title": "The Anti-Porn Add-on List",
+    "description": "Blocks pornography",
+    "sources": [
+        {
+            "title": "Chadmayfield light list",
+            "description": "This list is a correlated list to only block porn sites that appear on Alex'a top 1m site list",
+            "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+            "abp_format": false,
+            "false_positive": false,
+            "last_modified": "W/\"16fe5913fdca65989d3157d57204442150ff7ddec6aef30fd2889cf9faa5ed01\"",
+            "num_blocked": 11868,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Clefspeare13 pornhosts",
+            "description": "An anti porn hosts file",
+            "url": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts",
+            "abp_format": false,
+            "false_positive": false,
+            "last_modified": "W/\"803e9e3c49325720dbce610f3221554d4ae23ee7dfa520598cb05b18e0c6b688\"",
+            "num_blocked": 8927,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta pornography-hosts",
+            "description": "A occasionally updated collection of porn, gambling, and social media domains in hosts file format",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
+            "abp_format": false,
+            "false_positive": false,
+            "last_modified": "W/\"350f92d9429607b614f9c28299790290af78037eb7e2c10df309cf80c6f168ce\"",
+            "num_blocked": 14433,
+            "num_unblocked": 0
+        }
+    ]
+}
