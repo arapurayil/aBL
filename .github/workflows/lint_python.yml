@@ -28,6 +28,6 @@ jobs:
           git config --global user.signingkey ${{ secrets.bot_gpg_id }}
           git config --global push.followTags true
           git add '*.py'
-          git commit -S -a -m "Blackened code"
+          git commit -S -a -m "style: Black"
           git push
         fi
