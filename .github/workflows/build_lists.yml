@@ -9,7 +9,7 @@ on:
   push:
     branches: [ master ]
     paths:
-       - '.github/workflows/gen_lists.yml'
+       - '.github/workflows/build_lists.yml'
 
 jobs:
   check_url:
