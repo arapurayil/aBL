@@ -13,6 +13,7 @@ on:
 
 jobs:
   check_url:
+    name: Check URLs
     runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2.1.0
@@ -22,7 +23,8 @@ jobs:
           subfolder: sources
           file_types: .json
           retry_count: 3
-  gen_lists:
+  do_python:
+    name: Initiate Python Script
     needs: [check_url]
     runs-on: [ubuntu-latest]
     steps:
@@ -37,7 +39,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
-      - run: |
+      - name: Generate lists
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           python generator.py
@@ -51,7 +54,7 @@ jobs:
             git config --global user.signingkey ${{ secrets.bot_gpg_id }}
             git config --global push.followTags true
             git add --all
-            git commit -S -m "Bumped version to v$version"
+            git commit -S -m "Generator: bumped version to v$version"
             git tag -a v$version -m "Scheduled update"
             git push
           fi
