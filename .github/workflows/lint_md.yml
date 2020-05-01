@@ -12,6 +12,7 @@ on:
 
 jobs:
   lint:
+    name: Lint markdown
     runs-on: ubuntu-latest
 
     steps:
