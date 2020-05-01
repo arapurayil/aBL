@@ -1,0 +1,46 @@
+{
+    "title": "The Anti-Social Add-on List",
+    "description": "Blocks social-media resources",
+    "sources": [
+        {
+            "title": "AdGuard Social media filter",
+            "description": "If you do not like numerous \u00abLike\u00bb and \u00abTweet\u00bb buttons on all the popular websites on the Internet, subscribe to this filter, and you will not see them anymore",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/4.txt",
+            "abp_format": true,
+            "false_positive": false,
+            "last_modified": "Thu, 30 Apr 2020 20:32:52 GMT",
+            "num_blocked": 52,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Fanboy Annoyances List",
+            "description": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes Fanboy-Social List.)",
+            "url": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
+            "abp_format": true,
+            "false_positive": false,
+            "last_modified": "Thu, 30 Apr 2020 20:41:54 GMT",
+            "num_blocked": 737,
+            "num_unblocked": 2
+        },
+        {
+            "title": "Fanboy Anti-Facebook Filters",
+            "description": "Warning, will break on facebook comment on some sites and may also break on some facebook apps or games, Use with Social, Annoyance or Ultimate subscriptions is desirable",
+            "url": "https://fanboy.co.nz/fanboy-antifacebook.txt",
+            "abp_format": true,
+            "false_positive": false,
+            "last_modified": "Thu, 30 Jan 2020 11:24:01 GMT",
+            "num_blocked": 3,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta social-hosts",
+            "description": "A occasionally updated collection of social media domains in hosts file format.",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
+            "abp_format": false,
+            "false_positive": false,
+            "last_modified": "W/\"2a4181b59c39f0e448a638103a5c29913a6cf9f1c0d0c42c233472a5599421a5\"",
+            "num_blocked": 2780,
+            "num_unblocked": 0
+        }
+    ]
+}
