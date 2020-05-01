@@ -23,6 +23,7 @@ jobs:
           file_types: .json
           retry_count: 3
   gen_lists:
+    needs: [check_url]
     runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2.1.0
