@@ -481,6 +481,27 @@
             "last_modified": "W/\"6b56601f5774a700f365fc5264c66b8e\"",
             "num_blocked": 790,
             "num_unblocked": 0
-        }
+        },
+        {
+            "title": "_false_positives",
+            "description": "internal list",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
+            "abp_format": false,
+            "false_positive": true,
+            "last_modified": "W/\"6b56601f5774a700f365fc5264c66b8e\"",
+            "num_blocked": 790,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_unblocked",
+            "description": "internal list",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
+            "abp_format": false,
+            "false_positive": true,
+            "last_modified": "W/\"6b56601f5774a700f365fc5264c66b8e\"",
+            "num_blocked": 790,
+            "num_unblocked": 0
+        }        
+        
     ]
 }
