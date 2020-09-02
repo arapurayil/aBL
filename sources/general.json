@@ -123,16 +123,6 @@
             "num_unblocked": 143
         },
         {
-            "title": "BarbBlock",
-            "description": "Block sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance",
-            "url": "https://ssl.bblck.me/blacklists/hosts-file.txt",
-            "abp_format": false,
-            "false_positive": false,
-            "last_modified": "\"b9bbee7a97635ef9060e84e7136ee172-ssl-df\"",
-            "num_blocked": 550,
-            "num_unblocked": 0
-        },
-        {
             "title": "Bjornstar Hosts",
             "description": "My hosts file, filled with advertisers and other purveyors of worthless content.",
             "url": "https://raw.githubusercontent.com/bjornstar/hosts/master/hosts",
