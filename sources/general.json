@@ -8,7 +8,7 @@
             "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:30:38 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:30:40 GMT",
             "num_blocked": 2,
             "num_unblocked": 0
         },
@@ -18,7 +18,7 @@
             "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:30:25 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:30:26 GMT",
             "num_blocked": 22,
             "num_unblocked": 0
         },
@@ -38,7 +38,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:32:02 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:32:08 GMT",
             "num_blocked": 590,
             "num_unblocked": 3
         },
@@ -48,8 +48,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:32:42 GMT",
-            "num_blocked": 22858,
+            "last_modified": "Wed, 16 Dec 2020 00:32:47 GMT",
+            "num_blocked": 22978,
             "num_unblocked": 31
         },
         {
@@ -58,7 +58,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:31:51 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:31:57 GMT",
             "num_blocked": 1058,
             "num_unblocked": 2
         },
@@ -68,7 +68,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/12.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:31:52 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:31:58 GMT",
             "num_blocked": 15,
             "num_unblocked": 4
         },
@@ -78,8 +78,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:32:54 GMT",
-            "num_blocked": 6281,
+            "last_modified": "Wed, 16 Dec 2020 00:33:00 GMT",
+            "num_blocked": 6284,
             "num_unblocked": 9
         },
         {
@@ -138,8 +138,8 @@
             "url": "http://sysctl.org/cameleon/hosts",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Sun, 18 Mar 2018 09:51:53 GMT",
-            "num_blocked": 20567,
+            "last_modified": "Tue, 15 Dec 2020 07:25:54 GMT",
+            "num_blocked": 20566,
             "num_unblocked": 0
         },
         {
@@ -228,7 +228,7 @@
             "url": "https://easylist-downloads.adblockplus.org/easylist-cookie.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:30:59 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:31:00 GMT",
             "num_blocked": 111,
             "num_unblocked": 0
         },
@@ -238,8 +238,8 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:21:17 GMT",
-            "num_blocked": 7381,
+            "last_modified": "Tue, 15 Dec 2020 23:29:50 GMT",
+            "num_blocked": 7382,
             "num_unblocked": 0
         },
         {
@@ -248,7 +248,7 @@
             "url": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
             "abp_format": false,
             "false_positive": true,
-            "last_modified": "W/\"aba842b7b245042f62c3fe3dd895844f8e0b219209282ddd163d61c9084e5d05\"",
+            "last_modified": "W/\"0f2470f6a3a3b21aba5d08f908e9cf477b1244ee581b7e7cde2bf2ab97230da0\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -308,7 +308,7 @@
             "url": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 23:00:09 GMT",
+            "last_modified": "Tue, 15 Dec 2020 23:00:09 GMT",
             "num_blocked": 111,
             "num_unblocked": 0
         },
@@ -318,8 +318,8 @@
             "url": "https://www.fanboy.co.nz/enhancedstats.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Fri, 11 Dec 2020 01:00:08 GMT",
-            "num_blocked": 122,
+            "last_modified": "Tue, 15 Dec 2020 03:45:07 GMT",
+            "num_blocked": 123,
             "num_unblocked": 0
         },
         {
@@ -328,7 +328,7 @@
             "url": "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:31:40 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:31:41 GMT",
             "num_blocked": 158,
             "num_unblocked": 0
         },
@@ -358,8 +358,8 @@
             "url": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 13:05:24 GMT",
-            "num_blocked": 243043,
+            "last_modified": "Tue, 15 Dec 2020 13:05:25 GMT",
+            "num_blocked": 243706,
             "num_unblocked": 0
         },
         {
@@ -368,8 +368,8 @@
             "url": "http://phishing.mailscanner.info/phishing.bad.sites.conf",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 21:15:14 GMT",
-            "num_blocked": 8758,
+            "last_modified": "Tue, 15 Dec 2020 21:15:15 GMT",
+            "num_blocked": 8740,
             "num_unblocked": 0
         },
         {
@@ -378,7 +378,7 @@
             "url": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:22:54 GMT",
+            "last_modified": "Wed, 16 Dec 2020 00:22:57 GMT",
             "num_blocked": 26854,
             "num_unblocked": 0
         },
@@ -398,9 +398,9 @@
             "url": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt",
             "abp_format": false,
             "false_positive": true,
-            "last_modified": "W/\"cdcbd0e4dad601ce68ee49bf62999a0881df74cf2f3f8350fa72fc2e5de464ec\"",
+            "last_modified": "W/\"91228582599b070bd56b46245463c7277be526427d15d4fbe5d0845c2778fa5a\"",
             "num_blocked": 0,
-            "num_unblocked": 766
+            "num_unblocked": 768
         },
         {
             "title": "Peter Lowe's Blocklist",
@@ -408,8 +408,8 @@
             "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 14 Dec 2020 09:58:37 GMT",
-            "num_blocked": 3561,
+            "last_modified": "Tue, 15 Dec 2020 13:50:00 GMT",
+            "num_blocked": 3562,
             "num_unblocked": 0
         },
         {
@@ -448,8 +448,8 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Tue, 15 Dec 2020 00:00:04 GMT",
-            "num_blocked": 20476,
+            "last_modified": "Wed, 16 Dec 2020 00:00:05 GMT",
+            "num_blocked": 20532,
             "num_unblocked": 0
         },
         {
