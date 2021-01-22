@@ -8,7 +8,7 @@
             "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:00:36 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:00:37 GMT",
             "num_blocked": 2,
             "num_unblocked": 0
         },
@@ -18,7 +18,7 @@
             "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:00:23 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:00:24 GMT",
             "num_blocked": 22,
             "num_unblocked": 0
         },
@@ -38,7 +38,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:05:55 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:05:58 GMT",
             "num_blocked": 604,
             "num_unblocked": 3
         },
@@ -48,8 +48,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:06:28 GMT",
-            "num_blocked": 23055,
+            "last_modified": "Fri, 22 Jan 2021 01:06:29 GMT",
+            "num_blocked": 23060,
             "num_unblocked": 31
         },
         {
@@ -58,7 +58,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:05:49 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:05:53 GMT",
             "num_blocked": 1058,
             "num_unblocked": 2
         },
@@ -68,7 +68,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/12.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:05:50 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:05:54 GMT",
             "num_blocked": 15,
             "num_unblocked": 4
         },
@@ -78,8 +78,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:06:42 GMT",
-            "num_blocked": 6345,
+            "last_modified": "Fri, 22 Jan 2021 01:06:43 GMT",
+            "num_blocked": 6347,
             "num_unblocked": 9
         },
         {
@@ -158,8 +158,8 @@
             "url": "https://someonewhocares.org/hosts/hosts",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Fri, 15 Jan 2021 21:29:57 GMT",
-            "num_blocked": 14632,
+            "last_modified": "Thu, 21 Jan 2021 09:51:06 GMT",
+            "num_blocked": 14644,
             "num_unblocked": 0
         },
         {
@@ -228,7 +228,7 @@
             "url": "https://easylist-downloads.adblockplus.org/easylist-cookie.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:00:56 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:00:57 GMT",
             "num_blocked": 114,
             "num_unblocked": 0
         },
@@ -238,8 +238,8 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Wed, 20 Jan 2021 18:31:14 GMT",
-            "num_blocked": 7503,
+            "last_modified": "Thu, 21 Jan 2021 06:19:49 GMT",
+            "num_blocked": 7504,
             "num_unblocked": 0
         },
         {
@@ -248,7 +248,7 @@
             "url": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
             "abp_format": false,
             "false_positive": true,
-            "last_modified": "W/\"579cf2b59cbf64a84e8dc4251f698debcf4579ef769923e0f696a766b2ca2daf\"",
+            "last_modified": "W/\"080be15c2829ccd2b99898f3be7bb391b2d3aa50612a55effbea6d2e89cfafef\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -308,7 +308,7 @@
             "url": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Wed, 20 Jan 2021 23:00:10 GMT",
+            "last_modified": "Thu, 21 Jan 2021 23:00:10 GMT",
             "num_blocked": 114,
             "num_unblocked": 0
         },
@@ -328,7 +328,7 @@
             "url": "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:01:36 GMT",
+            "last_modified": "Fri, 22 Jan 2021 01:01:37 GMT",
             "num_blocked": 158,
             "num_unblocked": 0
         },
@@ -358,8 +358,8 @@
             "url": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 01:05:27 GMT",
-            "num_blocked": 274657,
+            "last_modified": "Fri, 22 Jan 2021 01:05:28 GMT",
+            "num_blocked": 263440,
             "num_unblocked": 0
         },
         {
@@ -368,8 +368,8 @@
             "url": "http://phishing.mailscanner.info/phishing.bad.sites.conf",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Wed, 20 Jan 2021 21:15:11 GMT",
-            "num_blocked": 5463,
+            "last_modified": "Thu, 21 Jan 2021 21:15:12 GMT",
+            "num_blocked": 5427,
             "num_unblocked": 0
         },
         {
@@ -378,7 +378,7 @@
             "url": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 00:52:43 GMT",
+            "last_modified": "Fri, 22 Jan 2021 00:52:48 GMT",
             "num_blocked": 26854,
             "num_unblocked": 0
         },
@@ -408,8 +408,8 @@
             "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
             "abp_format": true,
             "false_positive": false,
-            "last_modified": "Mon, 18 Jan 2021 15:38:29 GMT",
-            "num_blocked": 3569,
+            "last_modified": "Thu, 21 Jan 2021 13:53:20 GMT",
+            "num_blocked": 3571,
             "num_unblocked": 0
         },
         {
@@ -448,8 +448,8 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "abp_format": false,
             "false_positive": false,
-            "last_modified": "Thu, 21 Jan 2021 00:00:05 GMT",
-            "num_blocked": 26140,
+            "last_modified": "Fri, 22 Jan 2021 01:00:03 GMT",
+            "num_blocked": 26234,
             "num_unblocked": 0
         },
         {
