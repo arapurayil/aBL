@@ -1,7 +1,7 @@
 ---
 name: Block
 about: Propose a domain to include in aBL
-title: "[BLOCK}"
+title: "[BLOCK]"
 labels: block
 assignees: arapurayil
 
