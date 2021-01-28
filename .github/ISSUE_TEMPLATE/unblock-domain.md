@@ -1,14 +1,17 @@
 ---
 name: Unblock Domain
-about: Propose domains to exclude from aBL
+about: Propose a domain to exclude from aBL
 title: "[UNBLOCK]"
 labels: unblock
 assignees: arapurayil
 
 ---
 
-## Domain Name:
+## Domain Name: <enter the domain name here>
+_propose only one domain at a time_
 
-## List Category:
+## List Name: <enter the list name here>
+_ex: General, Regional, Porn, etc_
 
-## Reason:
+## Reason: <enter the reason here>
+_explain in detail why you want this domain to be unblocked_
