@@ -1,12 +1,14 @@
 ---
 name: Unblock Domain
-about: Describe this issue template's purpose here.
+about: Propose domains to exclude from aBL
 title: "[UNBLOCK]"
-labels: ''
-assignees: ''
+labels: unblock
+assignees: arapurayil
 
 ---
 
-# Domain to unblock
+## Domain Name:
 
-# Why do you think this domain should be unblocked?
+## List Category:
+
+## Reason:
