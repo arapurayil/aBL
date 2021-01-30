@@ -19,6 +19,7 @@ jobs:
       with:
         args: .
     - run: |
+        git pull --rebase origin master
         if ! git diff --no-ext-diff --quiet --exit-code; then
           echo "${{ secrets.bot_gpg_pvt }}" > private.key
           gpg --import private.key
@@ -29,6 +30,5 @@ jobs:
           git config --global push.followTags true
           git add '*.py'
           git commit -S -a -m "Style: Black"
-          git pull --rebase origin master
           git push -f origin master
         fi
