@@ -1,13 +1,11 @@
 """
-ABL Generator
+aBL Generator
 
-Creates compiled blocklists in Domains and ABP Filter List format.
+Creates compiled blocklists in ABP Filter List format.
 Uses json files in a specific format containing list of well-known blocklists.
-The source lists should be in Domains/Hosts ot ABP Filter List format.
-This script only supports ABP filters that are compatible with AdGuard Home.
+The source lists should be in Domains/Hosts or ABP Filter List format.
 Duplicates and redundant subdomains are removed.
-The generated lists are best used with AdGuard Home or DNSCrypt 2
-or any other DNS level blocking solution.
+The generated lists are best used with DNS filtering tools which supports ABP style lists.
 """
 from base64 import b64encode
 from collections import namedtuple, Counter
@@ -117,10 +115,15 @@ def dns_resolver():
 def worker_get_cname(item):
     """Worker for get_cname via ThreadPoolExecutor."""
     try:
-        answer = dns_resolver().query(item, "CNAME")
+        answer = dns_resolver().resolve(item, "CNAME")
         for cname_val in answer:
             return str(cname_val.target).rstrip(".")
-    except (resolver.NoAnswer, resolver.NXDOMAIN, dns_exception.Timeout):
+    except (
+        resolver.NoAnswer,
+        resolver.NXDOMAIN,
+        dns_exception.Timeout,
+        resolver.NoNameservers,
+    ):
         pass
 
 
@@ -184,8 +187,15 @@ def extract_abp(content):
         if re.match(pattern_if_unblocked, x, concurrent=True)
         and not re.match(pattern_unsupported, x, concurrent=True)
     ]
-    false_positives = [x.replace("@@||", "").replace("^", "") for x in unblocked]
-    return blocked, unblocked, false_positives
+    unblocked_domains = [x.replace("@@||", "").replace("^", "") for x in unblocked]
+    pattern_if_regexp = re.compile(r"^\/.*\/$", re.V1)
+    regexp = [
+        x
+        for x in content
+        if re.match(pattern_if_regexp, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
+    ]
+    return blocked, unblocked, unblocked_domains, regexp
 
 
 def extract_hosts(content, is_false):
@@ -199,28 +209,29 @@ def extract_hosts(content, is_false):
     pattern = re.compile("|".join(f"(?:{p})" for p in pattern_list), re.V1)
     domains = [re.sub(pattern, "", x, concurrent=True) for x in content]
     domains = [x for x in domains if valid_domain(x)]
-    blocked, unblocked, false_positives = [], [], []
+    blocked, unblocked, unblocked_domains, regexp = [], [], [], []
     if is_false:
-        false_positives = domains
+        unblocked_domains = domains
     else:
         blocked = domains
-    return blocked, unblocked, false_positives
+    return blocked, unblocked, unblocked_domains, regexp
 
 
 def worker_process_sources(item, blg):
     """Worker for process_sources via ThreadPoolExecutor."""
     unprocessed = get_content(item[blg.i_key.url]).splitlines()
     if item[blg.i_key.abp_format]:
-        blocked, unblocked, false_positives = extract_abp(unprocessed)
+        blocked, unblocked, unblocked_domains, regexp = extract_abp(unprocessed)
     else:
-        blocked, unblocked, false_positives = extract_hosts(
-            unprocessed, item[blg.i_key.false_positive]
+        blocked, unblocked, unblocked_domains, regexp = extract_hosts(
+            unprocessed, item[blg.i_key.unblock_list]
         )
     item[blg.i_key.last_modified] = get_last_modified(item[blg.i_key.url])
-    item[blg.i_key.num_blocked] = len(blocked)
-    item[blg.i_key.num_unblocked] = len(false_positives)
+    item[blg.i_key.num_blocked] = len(blocked) + len(regexp)
+    item[blg.i_key.num_unblocked] = len(unblocked_domains)
+    # item[blg.i_key.num_regexp] = len(regexp)
     write_file(blg.data_json, blg.file_json)
-    return blocked, unblocked, false_positives
+    return blocked, unblocked, unblocked_domains, regexp
 
 
 def process_sources(blg):
@@ -233,37 +244,50 @@ def process_sources(blg):
         blg.data_json[blg.j_key.sources], key=lambda x: x[blg.i_key.title].upper()
     )
     with ThreadPoolExecutor() as pool:
-        blocked, unblocked, false_positives = zip(
+        blocked, unblocked, unblocked_domains, regexp = zip(
             *pool.map(
-                worker_process_sources, blg.data_json[blg.j_key.sources], repeat(blg),
+                worker_process_sources,
+                blg.data_json[blg.j_key.sources],
+                repeat(blg),
             )
         )
 
     blocked = chain.from_iterable(blocked)
     unblocked = chain.from_iterable(unblocked)
-    false_positives = chain.from_iterable(false_positives)
-    return blocked, unblocked, false_positives
+    unblocked_domains = chain.from_iterable(unblocked_domains)
+    regexp = chain.from_iterable(regexp)
+    return blocked, unblocked, unblocked_domains, regexp
 
 
-def remove_duplicates_false(blg, blocked, false_positives):
+def match_regex(domains, regex_list):
+    """Match regex with domains."""
+    regex_list = [x[1:-1] for x in regex_list]
+    pattern = re.compile("|".join(regex_list))
+    matches = [x for x in domains if re.match(pattern, x, concurrent=True)]
+    return matches
+
+
+def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
     """Removes duplicates and false positives from blocked domains."""
     stats = {}
-    file_false_positives = is_path(
-        Path.joinpath(blg.dir_cat, OutputFile.false_positives)
-    )
-    false_positives = set(false_positives)
-    false_positives_cname = get_cname(false_positives)
-    false_positives.update(false_positives_cname)
+    matched = match_regex(blocked, regexp)
     blocked = list(blocked)
+    blocked = set(blocked) - set(matched)
+
+    file_false_positives = is_path(
+        Path.joinpath(DirPath.temp, f"false_positives_{blg.category}.txt")
+    )
+    unblocked_domains = set(unblocked_domains)
+    unblocked_domains_cname = get_cname(unblocked_domains)
+    unblocked_domains.update(unblocked_domains_cname)
+
     num_raw_blocked_domains = {"unprocessed": len(blocked)}
     stats.update(num_raw_blocked_domains)
-    blocked = set(blocked) - set(false_positives)
+    blocked = set(blocked) - set(unblocked_domains)
     if blg.category != "general":
         dir_general = Path.joinpath(DirPath.output, "general")
-        file_general_false_positives = Path.joinpath(
-            dir_general, OutputFile.false_positives
-        )
-        file_general_domains = Path.joinpath(dir_general, OutputFile.domains)
+        file_general_false_positives = Path.joinpath(DirPath.temp, f"false_positives_general.txt")
+        file_general_domains = Path.joinpath(dir_general, OutputFile.abp_filter)
         if file_general_false_positives and file_general_domains:
             general_false_positives = {
                 x.strip() for x in read_file(file_general_false_positives)
@@ -271,14 +295,17 @@ def remove_duplicates_false(blg, blocked, false_positives):
             general_blocked_domains = {
                 x.strip()
                 for x in read_file(file_general_domains)
-                if not str(x).startswith("#")
+                if not str(x).startswith("!")
             }
+            general_blocked_domains = {x.replace("||", "").replace("^", "") for x in general_blocked_domains}
             add_domains_to_remove = general_false_positives | general_blocked_domains
             blocked -= add_domains_to_remove
-    num_blocked_domains = {"minus duplicates and false positives": len(blocked)}
+    num_blocked_domains = {
+        "minus regex matches, duplicates, and false positives": len(blocked)
+    }
     stats.update(num_blocked_domains)
-    false_positives = "\n".join(false_positives)
-    write_file(false_positives, file_false_positives)
+    unblocked_domains = "\n".join(unblocked_domains)
+    write_file(unblocked_domains, file_false_positives)
     return blocked, stats
 
 
@@ -290,8 +317,8 @@ def extract_tld(domain):
 
 def worker_return_main_domain(domain):
     """Worker for remove_redundant via ProcessPoolExecutor
-     to get main domains.
-     """
+    to get main domains.
+    """
     if not extract_tld(domain).subdomain:
         return domain
     return None
@@ -299,26 +326,27 @@ def worker_return_main_domain(domain):
 
 def worker_extract_registered_domain(domain):
     """Worker for remove_redundant via ProcessPoolExecutor
-     to get redudant subdomains from main domains.
-     """
+    to get redudant subdomains from main domains.
+    """
     return extract_tld(domain).registered_domain
 
 
 def worker_unmatched_item(item, pattern):
     """Worker for remove_redundant via ThreadPoolExecutor
-     to get unmatched subdomains from subdomains.
-     """
+    to get unmatched subdomains from subdomains.
+    """
     if not re.match(pattern, item, concurrent=True):
         return item
     return None
 
 
-def remove_redundant(blg, blocked, stats):
+def remove_redundant(blg, blocked, unblocked, unblocked_domains, regexp, stats):
     """Removes sub-domains if main-domain is already in the list."""
     file_main_domains = is_path(
         Path.joinpath(DirPath.temp, f"main_domains_{blg.category}.txt")
     )
     cached_main_domains = {x.strip() for x in read_file(file_main_domains)}
+    blocked = set(blocked)
     if cached_main_domains:
         identified_main_domains = blocked & cached_main_domains
         domains_to_check = blocked - identified_main_domains
@@ -328,10 +356,10 @@ def remove_redundant(blg, blocked, stats):
     with ProcessPoolExecutor() as pool:
         main_domains = set(
             ProgIter(
-                pool.map(worker_return_main_domain, domains_to_check, chunksize=100),
+                pool.map(worker_return_main_domain, domains_to_check, chunksize=50),
                 desc=f"Fetching main-domains — {blg.data_json[blg.j_key.title]}",
                 total=len(domains_to_check),
-                chunksize=100,
+                chunksize=50,
                 verbose=1,
                 show_times=False,
             )
@@ -380,7 +408,11 @@ def remove_redundant(blg, blocked, stats):
         num_blocked_domains = {"minus redundant sub-domains": len(blocked)}
         stats.update(num_blocked_domains)
         write_file("\n".join(main_domains), file_main_domains)
-    return blocked, main_domains, stats
+
+    matched = match_regex(unblocked_domains, regexp)
+    matched = [x.replace(x, f"@@||{x}^") for x in matched]
+    unblocked = unblocked + matched
+    return blocked, unblocked, main_domains, stats
 
 
 def gen_checksum(file_blocklist):
@@ -414,25 +446,27 @@ def gen_checksum(file_blocklist):
     write_file(data, file_blocklist)
 
 
-def gen_lists(blg, blocked, unblocked):
-    """Generates blocklist files in ABP format and domains format."""
+def gen_lists(blg, blocked, unblocked, regexp):
+    """Generates blocklist files in ABP format."""
     blocked = sorted(blocked)
     unblocked = sorted(unblocked)
+    regexp = sorted(regexp)
     list_title = f"{blg.info.title} - {blg.data_json[blg.j_key.title]}"
     header = (
         str(blg.info.header)
         .replace("repl_cat_title", list_title)
         .replace("repl_cat_desc", blg.data_json[blg.j_key.desc])
     )
-    file_domains = is_path(Path.joinpath(blg.dir_cat, OutputFile.domains))
+    # file_domains = is_path(Path.joinpath(blg.dir_cat, OutputFile.domains))
     file_filter = is_path(Path.joinpath(blg.dir_cat, OutputFile.abp_filter))
-    blocked_domains = "\n".join(blocked)
-    with open(file_domains, "w", encoding="utf-8") as file:
-        file.write(header.replace("repl_cmt", "#").replace("repl_alt_list", "ABP"))
-        for line in blocked_domains:
-            file.write(line)
+    # blocked_domains = "\n".join(blocked)
+    # with open(file_domains, "w", encoding="utf-8") as file:
+    #     file.write(header.replace("repl_cmt", "#").replace("repl_alt_list", "ABP"))
+    #     for line in blocked_domains:
+    #         file.write(line)
     blocked = [x.replace(x, f"||{x}^\n") for x in blocked]
-    unblocked = "\n".join(unblocked)
+    unblocked = "\n".join(unblocked)+"\n"
+    regexp = "\n".join(regexp)
     with open(file_filter, "w", encoding="utf-8") as file:
         abp_pre_header = "[Adblock Plus 2.0]\n"
         file.write(abp_pre_header)
@@ -440,6 +474,8 @@ def gen_lists(blg, blocked, unblocked):
         for line in blocked:
             file.write(line)
         for line in unblocked:
+            file.write(line)
+        for line in regexp:
             file.write(line)
     gen_checksum(file_filter)
 
@@ -462,7 +498,7 @@ def category_section_main(blg, stats):
     ]
     info_add = markdown_strings.unordered_list(info_list)
     string_bold = (
-        f"ABL - {blg.data_json[blg.j_key.title]} is {value_percentage:.2f}% lighter"
+        f"aBL - {blg.data_json[blg.j_key.title]} is {value_percentage:.2f}% lighter"
     )
     sub_desc = (
         f"By removing duplicates, false-positives and redundant sub-domains "
@@ -478,8 +514,8 @@ def category_section_table(blg):
         "#",
         "Title",
         "Description",
-        "Blocked domains",
-        "Unblocked domains",
+        "Blocking rules",
+        "Unblocking rules",
     ]
     tbl_col = tbl_col_tup(*tbl_col_arr)
     tbl_pad_arr = [
@@ -509,7 +545,8 @@ def category_section_table(blg):
         [tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5],
     )
     table_delimiter = markdown_strings.table_delimiter_row(
-        5, column_lengths=[tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5],
+        5,
+        column_lengths=[tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5],
     )
     table_contents = []
     for index, key in enumerate(blg.data_json[blg.j_key.sources]):
@@ -575,14 +612,14 @@ def write_version(blg):
     write_file(blg.info.version, file_version)
 
 
-def finalise(blg, blocked, unblocked, false_positives, stats):
+def finalise(blg, blocked, unblocked, regexp, false_positives, stats):
     """Finalises the lists by,
-        generating blocklists,
-        generating README.md for the blocklist category,
-        generating a list of potential domains to be blocked and,
-        generating a file with version info.
+    generating blocklists,
+    generating README.md for the blocklist category,
+    generating a list of potential domains to be blocked and,
+    generating a file with version info.
     """
-    gen_lists(blg, blocked, unblocked)
+    gen_lists(blg, blocked, unblocked, regexp)
     gen_category(blg, stats)
     if datetime.now().strftime("%A") == "Saturday":
         gen_potential(blg, blocked, false_positives)
@@ -591,23 +628,20 @@ def finalise(blg, blocked, unblocked, false_positives, stats):
 
 def blocklist_section_table(list_sources):
     """The table for the blocklist README.md file."""
-    tbl_col_tup = namedtuple("tbl_col_tup", "c1, c2, c3, c4, c5")
-    tbl_col_arr = ["#", "TITLE", "DESCRIPTION", "DOMAINS LIST", "ABP FILTER LIST"]
+    tbl_col_tup = namedtuple("tbl_col_tup", "c1, c2, c3, c4")
+    tbl_col_arr = ["#", "TITLE", "DESCRIPTION", "ABP FILTER LIST"]
     tbl_col = tbl_col_tup(*tbl_col_arr)
     tbl_pad_arr = [
         len("---"),
         len(tbl_col.c2),
         len(tbl_col.c3),
         len(tbl_col.c4),
-        len(tbl_col.c5),
     ]
     table_contents = []
     tbl_pad = tbl_col_tup(*tbl_pad_arr)
     for index, file in enumerate(list_sources):
-        blg = ListGenerator(file_json=file,)
-        domain_list_link = markdown_strings.link(
-            "Link",
-            f"{blg.info.repo}/raw/master/lists/{blg.category}/{OutputFile.domains}",
+        blg = ListGenerator(
+            file_json=file,
         )
         filter_list_link = markdown_strings.link(
             "Link",
@@ -619,16 +653,12 @@ def blocklist_section_table(list_sources):
             tbl_pad_arr[1] = len(str(blg.data_json[blg.j_key.title])) + 2
         if len(str(blg.data_json[blg.j_key.desc])) > tbl_pad.c3:
             tbl_pad_arr[2] = len(str(blg.data_json[blg.j_key.desc])) + 2
-        if len(str(domain_list_link)) > tbl_pad.c4:
-            tbl_pad_arr[3] = len(str(domain_list_link)) + 2
-        if len(str(filter_list_link)) > tbl_pad.c5:
-            tbl_pad_arr[4] = len(str(filter_list_link)) + 2
+        if len(str(filter_list_link)) > tbl_pad.c4:
+            tbl_pad_arr[3] = len(str(filter_list_link)) + 2
         tbl_pad = tbl_col_tup(*tbl_pad_arr)
     for index, file in enumerate(list_sources):
-        blg = ListGenerator(file_json=file,)
-        domain_list_link = markdown_strings.link(
-            "Link",
-            f"{blg.info.repo}/raw/master/lists/{blg.category}/{OutputFile.domains}",
+        blg = ListGenerator(
+            file_json=file,
         )
         filter_list_link = markdown_strings.link(
             "Link",
@@ -639,18 +669,17 @@ def blocklist_section_table(list_sources):
                 str(index + 1).zfill(2),
                 str(blg.data_json[blg.j_key.title]),
                 str(blg.data_json[blg.j_key.desc]),
-                str(domain_list_link),
                 str(filter_list_link),
             ],
-            [tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5],
+            [tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4],
         )
         table_contents.append(row)
     table_delimiter = markdown_strings.table_delimiter_row(
-        5, column_lengths=[tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5]
+        4, column_lengths=[tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4]
     )
     table_title_row = markdown_strings.table_row(
-        [tbl_col.c1, tbl_col.c2, tbl_col.c3, tbl_col.c4, tbl_col.c5],
-        [tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4, tbl_pad.c5],
+        [tbl_col.c1, tbl_col.c2, tbl_col.c3, tbl_col.c4],
+        [tbl_pad.c1, tbl_pad.c2, tbl_pad.c3, tbl_pad.c4],
     )
     return [table_title_row, table_delimiter, "\n".join(table_contents)]
 
@@ -671,7 +700,7 @@ def concat_category(out_file):
 
 
 def gen_blocklist(list_source, list_title):
-    """Generate README.md for ABL from category README.md files."""
+    """Generate README.md for aBL from category README.md files."""
     file_badges = is_path(Path.joinpath(DirPath.base, "BADGES.md"))
     file_about = is_path(Path.joinpath(DirPath.base, "ABOUT.md"))
     file_notes = is_path(Path.joinpath(DirPath.base, "NOTE.md"))
@@ -679,13 +708,13 @@ def gen_blocklist(list_source, list_title):
     badges = read_file(file_badges, data_type="str")
     about = read_file(file_about, data_type="str")
     notes = read_file(file_notes, data_type="str")
-    list_format = ["Domains", "ABP Filter"]
+    # list_format = ["Domains", "ABP Filter"]
     info_add = markdown_strings.blockquote(
         "Generated Lists: "
         + ", ".join(list_title)
-        + "\n\n"
-        + "Formats: "
-        + ", ".join(list_format)
+        # + "\n\n"
+        # + "Formats: "
+        # + ", ".join(list_format)
     )
     section = [
         main_title,
@@ -732,8 +761,8 @@ class ItemKey:
 class ListInfo:
     """Values for the list header."""
 
-    title = "Adur Block List (ABL)"
-    author = "Zachariah Arapurayil"
+    title = "arapurayil's Block List (aBL)"
+    author = "arapurayil"
     version = (
         str(int(datetime.now().strftime("%Y")) - 2019)
         + "."
@@ -743,7 +772,7 @@ class ListInfo:
     )
     last_modified = datetime.now().strftime("%d %b %Y %H:%M:%S IST")
     expires = "1 day"
-    repo = "https://github.com/arapurayil/ABL"
+    repo = "https://github.com/arapurayil/aBL"
 
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
@@ -753,8 +782,8 @@ class ListInfo:
 class OutputFile:
     """Output file names."""
 
-    false_positives = "false_positives.txt"
-    domains = "blocked_domains.txt"
+    # unblocked_domains = "internal_use_only.txt"
+    # domains = "blocked_domains.txt"
     abp_filter = "filter_list.txt"
 
 
@@ -762,15 +791,20 @@ class OutputFile:
 class ListGenerator:
     """The main class."""
 
-    j_key = JsonKey(title="title", desc="description", sources="sources",)
+    j_key = JsonKey(
+        title="title",
+        desc="description",
+        sources="sources",
+    )
     i_key = ItemKey(
         title="title",
         url="url",
         desc="description",
         abp_format="abp_format",
-        false_positive="false_positive",
+        unblock_list="unblock_list",
         num_blocked="num_blocked",
         num_unblocked="num_unblocked",
+        num_regexp="num_regexp",
         last_modified="last_modified",
     )
     info = ListInfo(
@@ -783,11 +817,11 @@ class ListGenerator:
             f"repl_cmt Expires: {ListInfo.expires} (update frequency)\n"
             f"repl_cmt\n"
             f"repl_cmt Repository: {ListInfo.repo}\n"
-            f"repl_cmt You can find lists for other categories in the repo\n"
-            f"repl_cmt This list is also available in repl_alt_list format\n"
+            # f"repl_cmt You can find lists for other categories in the repo\n"
+            # f"repl_cmt This list is also available in repl_alt_list format\n"
             f"repl_cmt\n"
             f"repl_cmt Issues: {ListInfo.repo}/issues\n"
-            f"repl_cmt Please report false positives or unblocked domains through Issues\n"
+            f"repl_cmt Please report the domains you wish to block/unblock via 'Issues'\n"
             f"repl_cmt\n"
             f"repl_cmt Licence: {ListInfo.repo}/license\n"
             f"repl_cmt-----------------------------------------"
@@ -808,31 +842,45 @@ def main():
     Main.
     """
     list_source = list(glob(f"{DirPath.input}/*.json"))
-    list_source = sorted(list_source, key=lambda x: x)
+    # list_source = sorted(list_source, key=lambda x: x)
     list_source = sorted(list_source, key=lambda x: x.__contains__("regional"))
+    list_source = sorted(
+        list_source, key=lambda x: x.__contains__("general"), reverse=True
+    )
     p_bar = ProgIter(list_source, desc=f"Generating lists", verbose=1, show_times=False)
     if list_source:
         list_title = []
         for i, file in enumerate(p_bar):
-            blg = ListGenerator(file_json=file,)
+            blg = ListGenerator(
+                file_json=file,
+            )
             list_title.append(blg.data_json[blg.j_key.title])
             p_bar.set_description(
                 desc=f"Processing sources — {blg.data_json[blg.j_key.title]}"
             )
-            blocked, unblocked, false_positives = process_sources(blg)
+            blocked, unblocked, unblocked_domains, regexp = process_sources(blg)
+            blocked = list(blocked)
+            unblocked = list(unblocked)
+            unblocked_domains = list(unblocked_domains)
+            regexp = list(regexp)
             if blocked:
                 p_bar.set_description(
-                    desc=f"Removing duplicates & false positives — {blg.data_json[blg.j_key.title]}"
+                    desc=f"Removing regex matches, duplicates & false positives — {blg.data_json[blg.j_key.title]}"
                 )
-                blocked, stats = remove_duplicates_false(blg, blocked, false_positives)
+
+                blocked, stats = remove_duplicates_false(
+                    blg, blocked, unblocked_domains, regexp
+                )
                 p_bar.set_description(
                     desc=f"Removing redundant subdomains — {blg.data_json[blg.j_key.title]}"
                 )
-                blocked, main_domains, stats = remove_redundant(blg, blocked, stats)
+                blocked, unblocked, main_domains, stats = remove_redundant(
+                    blg, blocked, unblocked, unblocked_domains, regexp, stats
+                )
                 p_bar.set_description(
                     desc=f"Finalising — {blg.data_json[blg.j_key.title]}"
                 )
-                finalise(blg, blocked, unblocked, main_domains, stats)
+                finalise(blg, blocked, unblocked, regexp, main_domains, stats)
             if i == len(list_source) - 1:
                 p_bar.set_description(
                     desc=f"Generating README.md for the {blg.info.title}"
