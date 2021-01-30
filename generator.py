@@ -286,7 +286,9 @@ def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
     blocked = set(blocked) - set(unblocked_domains)
     if blg.category != "general":
         dir_general = Path.joinpath(DirPath.output, "general")
-        file_general_false_positives = Path.joinpath(DirPath.temp, f"false_positives_general.txt")
+        file_general_false_positives = Path.joinpath(
+            DirPath.temp, f"false_positives_general.txt"
+        )
         file_general_domains = Path.joinpath(dir_general, OutputFile.abp_filter)
         if file_general_false_positives and file_general_domains:
             general_false_positives = {
@@ -297,7 +299,9 @@ def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
                 for x in read_file(file_general_domains)
                 if not str(x).startswith("!")
             }
-            general_blocked_domains = {x.replace("||", "").replace("^", "") for x in general_blocked_domains}
+            general_blocked_domains = {
+                x.replace("||", "").replace("^", "") for x in general_blocked_domains
+            }
             add_domains_to_remove = general_false_positives | general_blocked_domains
             blocked -= add_domains_to_remove
     num_blocked_domains = {
@@ -465,7 +469,7 @@ def gen_lists(blg, blocked, unblocked, regexp):
     #     for line in blocked_domains:
     #         file.write(line)
     blocked = [x.replace(x, f"||{x}^\n") for x in blocked]
-    unblocked = "\n".join(unblocked)+"\n"
+    unblocked = "\n".join(unblocked) + "\n"
     regexp = "\n".join(regexp)
     with open(file_filter, "w", encoding="utf-8") as file:
         abp_pre_header = "[Adblock Plus 2.0]\n"
