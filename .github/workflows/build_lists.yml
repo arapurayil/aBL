@@ -56,5 +56,5 @@ jobs:
             git add --all
             git commit -S -m "Generator: bumped version to v$version"
             git tag -a v$version -m "Scheduled update"
-            git push
+            git push -f origin master
           fi
