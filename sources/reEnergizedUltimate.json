@@ -1,0 +1,61 @@
+{
+   "title":"re.Energized Ultimate",
+   "description":"Energized Ultimate slimmed down with regex expressions",
+   "sources":[
+      {
+         "title":"Energized Ultimate",
+         "description":"Energized Flagship Annoyances Protection",
+         "url":"https://block.energized.pro/ultimate/formats/filter",
+         "abp_format":true,
+         "unblock_list":false,
+         "num_regexp":0,
+         "last_modified":"Sat, 30 Jan 2021 06:30:34 GMT",
+         "num_blocked":2,
+         "num_unblocked":0
+      },
+      {
+         "title":"Energized Basic Protection - Whitelist",
+         "description":"Basic list of whitelisted domains",
+         "url":"https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
+         "abp_format":false,
+         "unblock_list":true,
+         "num_regexp":0,
+         "last_modified":"W/\"0cdacc4dd5ab6cf6dbe455e61bc13efe81bf67bd706508079bae5d1f7bb59605\"",
+         "num_blocked":0,
+         "num_unblocked":10690
+      },
+      {
+         "title":"MMotti AdguardHome - regex.txt",
+         "description":"Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
+         "url":"https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+         "abp_format":true,
+         "unblock_list":false,
+         "num_regexp":14,
+         "last_modified":"W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
+         "num_blocked":14,
+         "num_unblocked":0
+      },
+      {
+         "title":"_false_positives",
+         "description":"internal list",
+         "url":"https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
+         "abp_format":false,
+         "unblock_list":true,
+         "num_regexp":0,
+         "last_modified":"W/\"9412416eb95695f541339629860a2e423f2cf234016ad403dcc40e9564507d84\"",
+         "num_blocked":0,
+         "num_unblocked":2
+      },
+      {
+         "title":"_unblocked",
+         "description":"internal list",
+         "url":"https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
+         "abp_format":false,
+         "unblock_list":true,
+         "num_regexp":0,
+         "last_modified":"W/\"c7cc97b00ca594a05ccd15a074d0b13d38c2ba4b336044a87d0ea53b331fe24c\"",
+         "num_blocked":0,
+         "num_unblocked":0
+      }
+   ]
+}
