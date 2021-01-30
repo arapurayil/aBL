@@ -29,5 +29,6 @@ jobs:
           git config --global push.followTags true
           git add '*.py'
           git commit -S -a -m "Style: Black"
+          git pull origin master --allow-unrelated-histories
           git push -f origin master
         fi
