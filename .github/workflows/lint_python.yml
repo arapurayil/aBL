@@ -14,21 +14,7 @@ jobs:
     name: Format with Black
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
-    - uses: lgeiger/black-action@v1.0.1
+#     - uses: actions/checkout@master
+    - uses: lgeiger/black-action@master
       with:
-        args: .
-    - run: |
-        if ! git diff --no-ext-diff --quiet --exit-code; then
-          echo "${{ secrets.bot_gpg_pvt }}" > private.key
-          gpg --import private.key
-          rm private.key
-          git config --global user.name ${{ secrets.bot_name }}
-          git config --global user.email ${{ secrets.bot_email }}
-          git config --global user.signingkey ${{ secrets.bot_gpg_id }}
-          git config --global push.followTags true
-          git add '*.py'
-          git commit -S -a -m "Style: Black"
-          #git pull origin master --allow-unrelated-histories
-          #git push -f origin master
-        fi
+        args: . --check
