@@ -3,16 +3,36 @@
    "description":"Blocks ads & annoyances, analytics & trackers, crypto-jacking & resource abusers, malware, and phishing",
    "sources":[
       {
-         "title":"Energized Ultimate",
-         "description":"Energized Flagship Annoyances Protection",
-         "url":"https://block.energized.pro/ultimate/formats/filter",
-         "abp_format":true,
+         "title":"StevenBlack/hosts",
+         "description":"This hosts file is a merged collection of hosts from reputable sources, with a dash of crowd sourcing via GitHub",
+         "url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+         "abp_format":false,
          "unblock_list":false,
          "num_regexp":0,
          "last_modified":"Sat, 30 Jan 2021 06:30:34 GMT",
          "num_blocked":2,
          "num_unblocked":0
       },
+      {
+         "title": "Dan Pollock\u2019s hosts file",
+         "description": "Protects you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \\\"web bugs\\\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet",
+         "url": "https://someonewhocares.org/hosts/hosts",
+         "abp_format": false,
+         "unblock_list": false,"num_regex": 0,
+         "last_modified": "Thu, 21 Jan 2021 09:51:06 GMT",
+         "num_blocked": 14644,
+         "num_unblocked": 0
+        },
+        {
+         "title": "Peter Lowe's Blocklist",
+         "description": "Blocklist for use with Adblock Plus",
+         "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+         "abp_format": true,
+         "unblock_list": false,"num_regex": 0,
+         "last_modified": "Wed, 27 Jan 2021 12:39:59 GMT",
+         "num_blocked": 3570,
+         "num_unblocked": 0
+        },
       {
          "title":"Energized Basic Protection - Whitelist",
          "description":"Basic list of whitelisted domains",
