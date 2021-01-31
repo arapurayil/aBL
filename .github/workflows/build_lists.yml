@@ -16,8 +16,8 @@ jobs:
     name: Check URLs
     runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v2.1.0
-      - uses: urlstechie/urlchecker-action@0.1.9
+      - uses: actions/checkout@master
+      - uses: urlstechie/urlchecker-action@master
         continue-on-error: true
         with:
           subfolder: sources
@@ -28,11 +28,11 @@ jobs:
     needs: [check_url]
     runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v2.1.0
-      - uses: actions/setup-python@v1
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@vmaster
         with:
           python-version: '3.8'
-#       - uses: actions/cache@v1.1.2
+#       - uses: actions/cache@master
 #         with:
 #           path: ~/.cache/pip
 #           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
