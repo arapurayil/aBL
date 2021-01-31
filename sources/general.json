@@ -1,81 +1,83 @@
 {
-   "title":"The General List",
-   "description":"Blocks ads & annoyances, analytics & trackers, crypto-jacking & resource abusers, malware, and phishing",
-   "sources":[
-      {
-         "title":"StevenBlack/hosts",
-         "description":"This hosts file is a merged collection of hosts from reputable sources, with a dash of crowd sourcing via GitHub",
-         "url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-         "abp_format":false,
-         "unblock_list":false,
-         "num_regexp":0,
-         "last_modified":"Sat, 30 Jan 2021 06:30:34 GMT",
-         "num_blocked":2,
-         "num_unblocked":0
-      },
-      {
-         "title": "Dan Pollock\u2019s hosts file",
-         "description": "Protects you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \\\"web bugs\\\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet",
-         "url": "https://someonewhocares.org/hosts/hosts",
-         "abp_format": false,
-         "unblock_list": false,"num_regex": 0,
-         "last_modified": "Thu, 21 Jan 2021 09:51:06 GMT",
-         "num_blocked": 14644,
-         "num_unblocked": 0
+    "title": "The General List",
+    "description": "Blocks ads & annoyances, analytics & trackers, crypto-jacking & resource abusers, malware, and phishing",
+    "sources": [
+        {
+            "title": "Dan Pollock\u2019s hosts file",
+            "description": "Protects you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \\\"web bugs\\\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet",
+            "url": "https://someonewhocares.org/hosts/hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Thu, 21 Jan 2021 09:51:06 GMT",
+            "num_blocked": 14644,
+            "num_unblocked": 0
         },
         {
-         "title": "Peter Lowe's Blocklist",
-         "description": "Blocklist for use with Adblock Plus",
-         "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
-         "abp_format": true,
-         "unblock_list": false,"num_regex": 0,
-         "last_modified": "Wed, 27 Jan 2021 12:39:59 GMT",
-         "num_blocked": 3570,
-         "num_unblocked": 0
+            "title": "Energized Basic Protection - Whitelist",
+            "description": "Basic list of whitelisted domains",
+            "url": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": "W/\"71e931f723844cd5d5b84f35658fe20c08c5fc1e0eb53a369c0d71ab9b52ec04\"",
+            "num_blocked": 0,
+            "num_unblocked": 10690
         },
-      {
-         "title":"Energized Basic Protection - Whitelist",
-         "description":"Basic list of whitelisted domains",
-         "url":"https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
-         "abp_format":false,
-         "unblock_list":true,
-         "num_regexp":0,
-         "last_modified":"W/\"0cdacc4dd5ab6cf6dbe455e61bc13efe81bf67bd706508079bae5d1f7bb59605\"",
-         "num_blocked":0,
-         "num_unblocked":10690
-      },
-      {
-         "title":"MMotti AdguardHome - regex.txt",
-         "description":"Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
-         "url":"https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
-         "abp_format":true,
-         "unblock_list":false,
-         "num_regexp":14,
-         "last_modified":"W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
-         "num_blocked":14,
-         "num_unblocked":0
-      },
-      {
-         "title":"_false_positives",
-         "description":"internal list",
-         "url":"https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
-         "abp_format":false,
-         "unblock_list":true,
-         "num_regexp":0,
-         "last_modified":"W/\"9412416eb95695f541339629860a2e423f2cf234016ad403dcc40e9564507d84\"",
-         "num_blocked":0,
-         "num_unblocked":2
-      },
-      {
-         "title":"_unblocked",
-         "description":"internal list",
-         "url":"https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
-         "abp_format":false,
-         "unblock_list":true,
-         "num_regexp":0,
-         "last_modified":"W/\"c7cc97b00ca594a05ccd15a074d0b13d38c2ba4b336044a87d0ea53b331fe24c\"",
-         "num_blocked":0,
-         "num_unblocked":0
-      }
-   ]
+        {
+            "title": "MMotti AdguardHome - regex.txt",
+            "description": "Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
+            "url": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 14,
+            "last_modified": "W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
+            "num_blocked": 14,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Peter Lowe's Blocklist",
+            "description": "Blocklist for use with Adblock Plus",
+            "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Wed, 27 Jan 2021 12:39:59 GMT",
+            "num_blocked": 3571,
+            "num_unblocked": 0
+        },
+        {
+            "title": "StevenBlack/hosts",
+            "description": "This hosts file is a merged collection of hosts from reputable sources, with a dash of crowd sourcing via GitHub",
+            "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regexp": 0,
+            "last_modified": "W/\"f2133b8a334bb6ca66bf583454581c15ff52ea1ebe31e2d875500e4edb7b7f45\"",
+            "num_blocked": 59894,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_false_positives",
+            "description": "internal list",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_unblocked",
+            "description": "internal list",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        }
+    ]
 }
