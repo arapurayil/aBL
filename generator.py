@@ -155,7 +155,7 @@ def extract_abp(content):
         r"\b3p\b|"
         r"\bdocument\b|"
         r"\ball\b|"
-        r"\bpopup\b"
+#         r"\bpopup\b"
         r"))",
         re.V1,
     )
@@ -167,7 +167,7 @@ def extract_abp(content):
         r"\bthird-party\b|"
         r"\b3p\b|\bdocument\b|"
         r"\ball\b|"
-        r"\bpopup\b|"
+#         r"\bpopup\b|"
         r"\S+))",
     ]
     pattern_clean_blocked = re.compile(
