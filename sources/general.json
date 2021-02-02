@@ -9,7 +9,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:30:39 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:40:37 GMT",
             "num_blocked": 2,
             "num_unblocked": 0
         },
@@ -20,7 +20,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:30:26 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:40:25 GMT",
             "num_blocked": 65,
             "num_unblocked": 0
         },
@@ -31,8 +31,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:35:04 GMT",
-            "num_blocked": 1129,
+            "last_modified": "Tue, 02 Feb 2021 02:40:04 GMT",
+            "num_blocked": 1122,
             "num_unblocked": 0
         },
         {
@@ -53,9 +53,9 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:32:02 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:32:06 GMT",
             "num_blocked": 607,
-            "num_unblocked": 0
+            "num_unblocked": 3
         },
         {
             "title": "AdGuard Base filter",
@@ -64,9 +64,9 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:32:44 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:32:37 GMT",
             "num_blocked": 23142,
-            "num_unblocked": 31
+            "num_unblocked": 32
         },
         {
             "title": "AdGuard Mobile ads filter",
@@ -75,7 +75,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:31:51 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:32:00 GMT",
             "num_blocked": 1061,
             "num_unblocked": 2
         },
@@ -86,7 +86,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:31:52 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:32:01 GMT",
             "num_blocked": 15,
             "num_unblocked": 4
         },
@@ -97,7 +97,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:32:57 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:32:51 GMT",
             "num_blocked": 6207,
             "num_unblocked": 9
         },
@@ -152,7 +152,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:30:59 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:40:57 GMT",
             "num_blocked": 120,
             "num_unblocked": 0
         },
@@ -262,7 +262,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:31:39 GMT",
+            "last_modified": "Tue, 02 Feb 2021 02:41:38 GMT",
             "num_blocked": 159,
             "num_unblocked": 0
         },
@@ -416,8 +416,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 02 Feb 2021 00:00:05 GMT",
-            "num_blocked": 27341,
+            "last_modified": "Tue, 02 Feb 2021 02:00:03 GMT",
+            "num_blocked": 27350,
             "num_unblocked": 0
         },
         {
