@@ -155,7 +155,6 @@ def extract_abp(content):
         r"\b3p\b|"
         r"\bdocument\b|"
         r"\ball\b|"
-        #         r"\bpopup\b"
         r"))",
         re.V1,
     )
@@ -167,7 +166,6 @@ def extract_abp(content):
         r"\bthird-party\b|"
         r"\b3p\b|\bdocument\b|"
         r"\ball\b|"
-        #         r"\bpopup\b|"
         r"\S+))",
     ]
     pattern_clean_blocked = re.compile(
@@ -180,14 +178,14 @@ def extract_abp(content):
         and not re.match(pattern_unsupported, x, concurrent=True)
     ]
     blocked = [re.sub(pattern_clean_blocked, "", x, concurrent=True) for x in blocked]
-    pattern_if_unblocked = re.compile(r"@@\|\|.+\^$")
+    pattern_if_unblocked = re.compile(r"@@\|\|.+\^$|@@\|\|.+\^\$important$")
     unblocked = [
         x
         for x in content
         if re.match(pattern_if_unblocked, x, concurrent=True)
         and not re.match(pattern_unsupported, x, concurrent=True)
     ]
-    unblocked_domains = [x.replace("@@||", "").replace("^", "") for x in unblocked]
+    unblocked_domains = [x.replace("@@||", "").replace("^", "").replace("$important", "") for x in unblocked]
     pattern_if_regexp = re.compile(r"^\/.*\/$", re.V1)
     regexp = [
         x
@@ -286,9 +284,7 @@ def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
     blocked = set(blocked) - set(unblocked_domains)
     if blg.category != "general":
         dir_general = Path.joinpath(DirPath.output, "general")
-        file_general_false_positives = Path.joinpath(
-            DirPath.temp, f"false_positives_general.txt"
-        )
+        file_general_false_positives = Path.joinpath(DirPath.temp, f"false_positives_general.txt")
         file_general_domains = Path.joinpath(dir_general, OutputFile.abp_filter)
         if file_general_false_positives and file_general_domains:
             general_false_positives = {
@@ -299,9 +295,7 @@ def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
                 for x in read_file(file_general_domains)
                 if not str(x).startswith("!")
             }
-            general_blocked_domains = {
-                x.replace("||", "").replace("^", "") for x in general_blocked_domains
-            }
+            general_blocked_domains = {x.replace("||", "").replace("^", "") for x in general_blocked_domains}
             add_domains_to_remove = general_false_positives | general_blocked_domains
             blocked -= add_domains_to_remove
     num_blocked_domains = {
@@ -469,7 +463,7 @@ def gen_lists(blg, blocked, unblocked, regexp):
     #     for line in blocked_domains:
     #         file.write(line)
     blocked = [x.replace(x, f"||{x}^\n") for x in blocked]
-    unblocked = "\n".join(unblocked) + "\n"
+    unblocked = "\n".join(unblocked)+"\n"
     regexp = "\n".join(regexp)
     with open(file_filter, "w", encoding="utf-8") as file:
         abp_pre_header = "[Adblock Plus 2.0]\n"
