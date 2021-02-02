@@ -443,7 +443,7 @@
             "num_unblocked": 0
         },
         {
-            "title": "_false_positives",
+            "title": "_unblocked_domains",
             "description": "internal list",
             "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
             "abp_format": false,
@@ -454,11 +454,11 @@
             "num_unblocked": 0
         },
         {
-            "title": "_unblocked",
+            "title": "_internal_filter",
             "description": "internal list",
             "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
-            "abp_format": false,
-            "unblock_list": true,
+            "abp_format": true,
+            "unblock_list": false,
             "num_regexp": 0,
             "last_modified": "W/\"c04362c5da454e6870b42161dba8a0d938fe5d81f8840be97d3e6e0ba8b64e27\"",
             "num_blocked": 0,
