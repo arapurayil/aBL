@@ -300,17 +300,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "Mailborder Phishing Bad Sites",
-            "description": "The phishing bad sites is updated using data from www.phishtank.com once per day. The domains included are known to be fraudulent and generally dangerous.",
-            "url": "http://phishing.mailscanner.info/phishing.bad.sites.conf",
-            "abp_format": false,
-            "unblock_list": false,
-            "num_regex": 0,
-            "last_modified": "Mon, 01 Feb 2021 21:15:11 GMT",
-            "num_blocked": 5168,
-            "num_unblocked": 0
-        },
-        {
             "title": "Matomo.org - referrer spammers",
             "description": "This is a community-contributed list of referrer spammers maintained by Matomo, the leading open source web analytics platform.",
             "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-list/master/spammers.txt",
