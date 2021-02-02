@@ -154,7 +154,7 @@ def extract_abp(content):
         r"\bthird-party\b|"
         r"\b3p\b|"
         r"\bdocument\b|"
-        r"\ball\b|"
+        r"\ball\b"
         r"))",
         re.V1,
     )
@@ -165,7 +165,7 @@ def extract_abp(content):
         r"\b1p\b|"
         r"\bthird-party\b|"
         r"\b3p\b|\bdocument\b|"
-        r"\ball\b|"
+        r"\ball\b"
         r"\S+))",
     ]
     pattern_clean_blocked = re.compile(
@@ -189,6 +189,7 @@ def extract_abp(content):
         x.replace("@@||", "").replace("^", "").replace("$important", "")
         for x in unblocked
     ]
+    unblocked = [x.replace("^", "^$important") for x in unblocked if x.endswith("^")]
     pattern_if_regexp = re.compile(r"^\/.*\/$", re.V1)
     regexp = [
         x
@@ -415,7 +416,7 @@ def remove_redundant(blg, blocked, unblocked, unblocked_domains, regexp, stats):
         write_file("\n".join(main_domains), file_main_domains)
 
     matched = match_regex(unblocked_domains, regexp)
-    matched = [x.replace(x, f"@@||{x}^") for x in matched]
+    matched = [x.replace(x, f"@@||{x}^$important") for x in matched]
     unblocked = unblocked + matched
     return blocked, unblocked, main_domains, stats
 
