@@ -445,7 +445,7 @@
         {
             "title": "_unblocked_domains",
             "description": "internal list",
-            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_false_positives.txt",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt",
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
@@ -454,9 +454,9 @@
             "num_unblocked": 0
         },
         {
-            "title": "_internal_filter",
+            "title": "_internal_filters",
             "description": "internal list",
-            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked.txt",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_internal_filters.txt",
             "abp_format": true,
             "unblock_list": false,
             "num_regexp": 0,
