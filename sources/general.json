@@ -58,9 +58,9 @@
             "num_unblocked": 3
         },
         {
-            "title": "AdGuard Base filter",
-            "description": "Filter that enables removing of the ads from websites with English content. Originally based on the EasyList filter. Modified by us according to the complaints from users. This filter is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported license.",
-            "url": "https://filters.adtidy.org/extension/chromium/filters/2.txt",
+            "title": "AdGuard DNS filter",
+            "description": "Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
