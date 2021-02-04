@@ -421,9 +421,9 @@
             "num_unblocked": 0
         },
         {
-            "title": "ZeroDot1's CoinBlocker Domains List",
-            "description": "A list for administrators to prevent mining in networks",
-            "url": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt",
+            "title": "ZeroDot1's CoinBlocker List",
+            "description": "A list for administrators to prevent mining in browsers",
+            "url": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txtt",
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
