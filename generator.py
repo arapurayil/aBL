@@ -119,10 +119,10 @@ def worker_get_cname(item):
         for cname_val in answer:
             return str(cname_val.target).rstrip(".")
     except (
-            resolver.NoAnswer,
-            resolver.NXDOMAIN,
-            dns_exception.Timeout,
-            resolver.NoNameservers,
+        resolver.NoAnswer,
+        resolver.NXDOMAIN,
+        dns_exception.Timeout,
+        resolver.NoNameservers,
     ):
         pass
 
@@ -175,7 +175,7 @@ def extract_abp(content):
         x
         for x in content
         if re.match(pattern_if_blocked, x, concurrent=True)
-           and not re.match(pattern_unsupported, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
     ]
     blocked = [re.sub(pattern_clean_blocked, "", x, concurrent=True) for x in blocked]
     pattern_if_unblocked = re.compile(r"@@\|\|.+\^$|@@\|\|.+\^\$important$")
@@ -183,7 +183,7 @@ def extract_abp(content):
         x
         for x in content
         if re.match(pattern_if_unblocked, x, concurrent=True)
-           and not re.match(pattern_unsupported, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
     ]
     unblocked_domains = [
         x.replace("@@||", "").replace("^", "").replace("$important", "")
@@ -195,7 +195,7 @@ def extract_abp(content):
         x
         for x in content
         if re.match(pattern_if_regexp, x, concurrent=True)
-           and not re.match(pattern_unsupported, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
     ]
     return blocked, unblocked, unblocked_domains, regexp
 
@@ -462,8 +462,8 @@ def gen_lists(blg, blocked, unblocked, regexp):
     list_title = f"{blg.info.title} - {blg.data_json[blg.j_key.title]}"
     header = (
         str(blg.info.header)
-            .replace("repl_cat_title", list_title)
-            .replace("repl_cat_desc", blg.data_json[blg.j_key.desc])
+        .replace("repl_cat_title", list_title)
+        .replace("repl_cat_desc", blg.data_json[blg.j_key.desc])
     )
     # file_domains = is_path(Path.joinpath(blg.dir_cat, OutputFile.domains))
     file_filter = is_path(Path.joinpath(blg.dir_cat, OutputFile.abp_filter))
@@ -474,15 +474,11 @@ def gen_lists(blg, blocked, unblocked, regexp):
     #         file.write(line)
     if blg.category != "general":
         print(regexp)
-        file_general_list = Path.joinpath(
-            DirPath.output, f"general/filter_list.txt"
-        )
-        general_list = [
-            x.strip() for x in read_file(file_general_list)
-        ]
-        blocked_general = [x for x in general_list if x.startswith('||')]
-        unblocked_general = [x for x in general_list if x.startswith('@@')]
-        regexp_general = [x for x in general_list if x.startswith('/')]
+        file_general_list = Path.joinpath(DirPath.output, f"general/filter_list.txt")
+        general_list = [x.strip() for x in read_file(file_general_list)]
+        blocked_general = [x for x in general_list if x.startswith("||")]
+        unblocked_general = [x for x in general_list if x.startswith("@@")]
+        regexp_general = [x for x in general_list if x.startswith("/")]
         blocked = [x for x in blocked if x not in blocked_general]
         unblocked = [x for x in unblocked if x not in unblocked_general]
         regexp = [x for x in regexp if x not in regexp_general]
@@ -510,8 +506,8 @@ def category_section_main(blg, stats):
     """Generates the main section of the category README.md file."""
     value_percentage = float(
         (
-                (int(stats["unprocessed"]) - int(stats["minus redundant sub-domains"]))
-                / int(stats["unprocessed"])
+            (int(stats["unprocessed"]) - int(stats["minus redundant sub-domains"]))
+            / int(stats["unprocessed"])
         )
         * 100
     )
@@ -557,7 +553,7 @@ def category_section_table(blg):
             tbl_pad_arr[0] = len(str({index + 1}).zfill(2)) + 2
         if len(str(f"[{key[blg.i_key.title]}]({key[blg.i_key.url]})")) > tbl_pad.c2:
             tbl_pad_arr[1] = (
-                    len(str(f"[{key[blg.i_key.title]}]({key[blg.i_key.url]})")) + 2
+                len(str(f"[{key[blg.i_key.title]}]({key[blg.i_key.url]})")) + 2
             )
         if len(str({key[blg.i_key.desc]})) > tbl_pad.c3:
             tbl_pad_arr[2] = len(str({key[blg.i_key.desc]})) + 2
@@ -790,11 +786,11 @@ class ListInfo:
     title = "arapurayil's Block List (aBL)"
     author = "arapurayil"
     version = (
-            str(int(datetime.now().strftime("%Y")) - 2019)
-            + "."
-            + datetime.now().strftime("%m")
-            + "."
-            + datetime.now().strftime("%d")
+        str(int(datetime.now().strftime("%Y")) - 2019)
+        + "."
+        + datetime.now().strftime("%m")
+        + "."
+        + datetime.now().strftime("%d")
     )
     last_modified = datetime.now().strftime("%d %b %Y %H:%M:%S IST")
     expires = "1 day"
