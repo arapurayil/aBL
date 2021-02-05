@@ -434,7 +434,7 @@
       {
          "title":"ZeroDot1's CoinBlocker List",
          "description":"A list for administrators to prevent mining in browsers",
-         "url":"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txtt",
+         "url":"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt",
          "abp_format":false,
          "unblock_list":false,
          "num_regex":0,
