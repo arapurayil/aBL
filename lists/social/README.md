@@ -4,9 +4,9 @@
 
 -   Sources: 8
 -   Rules before processing: 10588
--   Rules after processing: 4913
+-   Rules after processing: 4917
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.60% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.56% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
