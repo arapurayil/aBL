@@ -20,8 +20,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:32:29 GMT",
-            "num_blocked": 6300,
+            "last_modified": "Sat, 06 Feb 2021 13:32:17 GMT",
+            "num_blocked": 6305,
             "num_unblocked": 12
         },
         {
@@ -31,7 +31,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:33:03 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:32:49 GMT",
             "num_blocked": 89,
             "num_unblocked": 1
         },
@@ -42,8 +42,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:32:18 GMT",
-            "num_blocked": 5627,
+            "last_modified": "Sat, 06 Feb 2021 13:32:09 GMT",
+            "num_blocked": 5542,
             "num_unblocked": 4
         },
         {
@@ -53,7 +53,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:33:01 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:32:48 GMT",
             "num_blocked": 491,
             "num_unblocked": 5
         },
@@ -64,7 +64,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:33:02 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:32:49 GMT",
             "num_blocked": 290,
             "num_unblocked": 0
         },
@@ -75,7 +75,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:32:26 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:32:14 GMT",
             "num_blocked": 4391,
             "num_unblocked": 9
         },
@@ -86,7 +86,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:33:03 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:32:50 GMT",
             "num_blocked": 208,
             "num_unblocked": 0
         },
@@ -97,7 +97,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:31:55 GMT",
+            "last_modified": "Sat, 06 Feb 2021 13:31:56 GMT",
             "num_blocked": 314,
             "num_unblocked": 1
         },
@@ -141,7 +141,7 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"c3ac8900bfffff5757773dc1fc41b0a0bdadca738fc501f447b75612ec71245b\"",
+            "last_modified": "W/\"a835f7250086a8415a55129a2c3f992fdac778bc14a30d48c16a7a780c4c1c08\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -163,7 +163,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 20:50:15 GMT",
+            "last_modified": "Sat, 06 Feb 2021 14:10:14 GMT",
             "num_blocked": 120,
             "num_unblocked": 0
         },
@@ -185,9 +185,9 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"4915a33ea6a7d6fd0c38354afa622d8fc4de47af7c2cfdc471dadbc06244567b\"",
+            "last_modified": "W/\"be877d7343abfbcc4ffb18875561162a927dc84abd533498a5335dfc757b597a\"",
             "num_blocked": 0,
-            "num_unblocked": 1546
+            "num_unblocked": 1547
         },
         {
             "title": "Tiuxo's hosts - ads",
@@ -229,9 +229,9 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"c9169fde341a45573bf3767feddbf74a149c5182c604b526249c850d631609ef\"",
+            "last_modified": "W/\"158e8346a6da86c757b63f49c4f4aa9b771daa2c05f50a48a5b37a15a1b1b934\"",
             "num_blocked": 0,
-            "num_unblocked": 150
+            "num_unblocked": 4385
         },
         {
             "title": "_unblocked_domains",
