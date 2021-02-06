@@ -473,7 +473,6 @@ def gen_lists(blg, blocked, unblocked, regexp):
     #     for line in blocked_domains:
     #         file.write(line)
     if blg.category != "general":
-        print(regexp)
         file_general_list = Path.joinpath(DirPath.output, f"general/filter_list.txt")
         general_list = [x.strip() for x in read_file(file_general_list)]
         blocked_general = [x for x in general_list if x.startswith("||")]
@@ -731,19 +730,23 @@ def gen_blocklist(list_source, list_title):
     about = read_file(file_about, data_type="str")
     notes = read_file(file_notes, data_type="str")
     # list_format = ["Domains", "ABP Filter"]
+    # info_add = markdown_strings.blockquote(
+    #     "Generated Lists: "
+    #     + ", ".join(list_title)
+    #     # + "\n\n"
+    #     # + "Formats: "
+    #     # + ", ".join(list_format)
+    # )
     info_add = markdown_strings.blockquote(
-        "Generated Lists: "
-        + ", ".join(list_title)
-        # + "\n\n"
-        # + "Formats: "
-        # + ", ".join(list_format)
+        "a filter list optimized for DNS level blocking of ads, "
+        "analytics, crypto-jacking and other such threats/nuisances."
     )
     section = [
         main_title,
-        info_add,
         badges if badges else None,
-        about if about else None,
+        info_add,
         "\n".join(blocklist_section_table(list_source)),
+        about if about else None,
         notes if notes else None,
     ]
     data_md = "\n\n".join(filter(None, section)) + "\n\n"
