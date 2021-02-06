@@ -1,0 +1,94 @@
+{
+    "title": "Addon - Social Media",
+    "description": "Blocks social media. Should only be used with the 'General' List",
+    "sources": [
+        {
+            "title": "AdGuard Social media filter",
+            "description": "Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:32:26 GMT",
+            "num_blocked": 4391,
+            "num_unblocked": 9
+        },
+        {
+            "title": "Energized Core Social Blacklist",
+            "description": "Core Energized Blacklist.",
+            "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"bfd9b496c91000212e69ab1063951352bf4ac533eba57b48c6b0a6e1681bc0f3\"",
+            "num_blocked": 3897,
+            "num_unblocked": 0
+        },
+        {
+            "title": "MMotti AdguardHome - regex.txt",
+            "description": "Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
+            "url": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 14,
+            "last_modified": "W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
+            "num_blocked": 14,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta's Social media hosts",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"69138ed4803a3697a246b628dfb8674201560eee680583a461af1a44eb8d9a9b\"",
+            "num_blocked": 2825,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Tiuxo's hosts - social",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/social",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"4856ab3f9625e0324d6f4d63fa334f91b5debc321cb52cfe660fb7a411e97127\"",
+            "num_blocked": 4,
+            "num_unblocked": 0
+        },
+        {
+            "title": "UT1 Blacklists - social",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"c2937544f012cb3968bd5b335c7a342358deb7c2eb80fd68dfb12fa7965edb5e\"",
+            "num_blocked": 655,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_internal_filters",
+            "description": "internal list - social",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_unblocked_domains",
+            "description": "internal list - social",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_unblocked_domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        }
+    ]
+}

@@ -551,6 +551,17 @@
             "last_modified": "W/\"c9169fde341a45573bf3767feddbf74a149c5182c604b526249c850d631609ef\"",
             "num_blocked": 0,
             "num_unblocked": 150
-        }
+        },
+	{
+         "title":"Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home",
+         "description":"This is a blocklist to block smart-TVs sending metadata back home, sometimes with the added benefit of blocking interface ads for apps and movie services.",
+         "url":"https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
+         "abp_format":true,
+         "unblock_list":false,
+         "num_regex":0,
+         "last_modified":"Thu, 04 Feb 2021 15:10:38 GMT",
+         "num_blocked":2,
+         "num_unblocked":0
+      }
     ]
 }
