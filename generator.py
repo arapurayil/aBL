@@ -455,10 +455,10 @@ def gen_checksum(file_blocklist):
 
 def gen_lists(blg, blocked, unblocked, regexp):
     """Generates blocklist files in ABP format."""
-    blocked = sorted(blocked)
+    blocked = sorted(set(blocked))
     blocked = [x.replace(x, f"||{x}^") for x in blocked]
-    unblocked = sorted(unblocked)
-    regexp = sorted(regexp)
+    unblocked = sorted(set(unblocked))
+    regexp = sorted(set(regexp))
     list_title = f"{blg.info.title} - {blg.data_json[blg.j_key.title]}"
     header = (
         str(blg.info.header)
