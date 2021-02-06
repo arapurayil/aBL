@@ -5,9 +5,9 @@ List**
 
 -   Sources: 22
 -   Rules before processing: 19577
--   Rules after processing: 6913
+-   Rules after processing: 6847
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 64.69% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 65.03% lighter** than its combined sources
 
 | #      | Title                                                                                                                                           | Description                                                                                                                                                                                              | Blocking rules | Unblocking rules |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -31,6 +31,6 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 18     | [Tiuxo's hosts - ads](https://raw.githubusercontent.com/tiuxo/hosts/master/ads)                                                                 | -                                                                                                                                                                                                        | 2211           | 0                |
 | 19     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_internal_filters.txt)                              | internal list - general                                                                                                                                                                                  | 0              | 1                |
 | 20     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_internal_filters.txt)                             | internal list - regional                                                                                                                                                                                 | 0              | 0                |
-| 21     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt)                            | internal list - general                                                                                                                                                                                  | 0              | 150              |
+| 21     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt)                            | internal list - general                                                                                                                                                                                  | 0              | 4418             |
 | 22     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_unblocked_domains.txt)                           | internal list - regional                                                                                                                                                                                 | 0              | 0                |
 

@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
 ! Version: 2.02.06
-! Last modified: 06 Feb 2021 15:21:51 IST
+! Last modified: 06 Feb 2021 17:39:56 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -133,7 +133,6 @@
 ||3320150001.qzone.qq.com^
 ||35-trouter-neu-a.drip.trouter.skype.com^
 ||36.media.tumblr.com^
-||360.yahoo.com^
 ||360276431.qzone.qq.com^
 ||37-trouter-weu-a.drip.trouter.skype.com^
 ||37.220.26.135^
@@ -209,6 +208,7 @@
 ||about.101437219494613101176.plus.google.com^
 ||about.facebook.com^
 ||about.reddit.com^
+||about.tagged.com^
 ||about.twitter.com^
 ||abrahamhicks.meetup.com^
 ||access.twitter.com^
@@ -578,10 +578,8 @@
 ||api.rnet.plus^
 ||api.slack.com^
 ||api.smartadv.ru^
-||api.telegram.org^
 ||api.tumblr.com^
 ||api.weheartit.com^
-||api.weibo.com^
 ||api2.twitter.com^
 ||api4.twitter.com^
 ||apl.vk.com^
@@ -653,6 +651,7 @@
 ||aura-11-01-snc7.facebook.com^
 ||aurora-1.web.telegram.org^
 ||aurora.web.telegram.org^
+||auth.gateway.tagged.com^
 ||auto-up.flickr.com^
 ||autodiscover.instagram.com^
 ||autodiscover.linkedin.com^
@@ -772,6 +771,7 @@
 ||blog.flickr.com^
 ||blog.instagram.com^
 ||blog.myspace.com^
+||blog.tagged.com^
 ||blog.telegram.org^
 ||blog.twitter.com^
 ||blog.weheartit.com^
@@ -874,12 +874,13 @@
 ||cardomain.com^
 ||cards-dev.twitter.com^
 ||cards.twitter.com^
-||care2.com^
 ||careers.pinterest.com^
 ||careers.twitter.com^
 ||carmun.com^
 ||carnivalofpolitics.com^
 ||catster.com^
+||cb.tagged.com^
+||cb2.tagged.com^
 ||ccamatil.m.facebook.com^
 ||ccardseu1.badoo.com^
 ||ccardsus1.badoo.com^
@@ -890,7 +891,6 @@
 ||cdn-videos-1.medium.com^
 ||cdn.actiflex.org^
 ||cdn.debitcrebit669.com^
-||cdn.syndication.twitter.com^
 ||cellufun.com^
 ||ceroc.meetup.com^
 ||certification.linkedin.com^
@@ -912,8 +912,13 @@
 ||channels.periscope.tv^
 ||chart.weibo.com^
 ||chat.myspace.com^
+||chat.tagged.com^
 ||chatman-replay-us-east-1.periscope.tv^
 ||chatman-replay-us-west-2.periscope.tv^
+||chattack-01.tagged.com^
+||chattack-02.tagged.com^
+||chattack-03.tagged.com^
+||chattack-04.tagged.com^
 ||chesterdu78.skyrock.com^
 ||chicago-stepping.meetup.com^
 ||chickadvisor.com^
@@ -928,13 +933,11 @@
 ||cl.linkedin.com^
 ||cl.pinterest.com^
 ||classifieds.myspace.com^
-||classmates.com^
 ||click.e.twitter.com^
 ||click.zmctrack.net,popup^
 ||clipclip.org^
 ||clipmarks.com^
 ||clipstar.com^
-||cloob.com^
 ||closeio.slack.com^
 ||cloudfoundry.slack.com^
 ||clouthub.com^
@@ -967,7 +970,6 @@
 ||conectadosbancogalicia.m.facebook.com^
 ||conf.skype.com^
 ||connect.facebook.net.edgekey.net^
-||connect.qq.com^
 ||connectu.com^
 ||connectviabooks.com^
 ||conscious.linkedin.com^
@@ -977,7 +979,6 @@
 ||consumer.entitlement.skype.com^
 ||contacts.skype.com^
 ||content.linkedin.com^
-||content.mql5.com^
 ||content.twitter.com^
 ||contentpop.com^
 ||contentrecommend-out.uve.weibo.com^
@@ -985,6 +986,7 @@
 ||core.telegram.org^
 ||corkd.com^
 ||corp.badoo.com^
+||corp.tagged.com^
 ||corp.vk.com^
 ||couchsurfing.com^
 ||couchsurfing.org^
@@ -1140,6 +1142,8 @@
 ||digitalfuelmarketing.slack.com^
 ||digstock.com^
 ||direct.onlinegazeta.info^
+||direct.static.tagged.com^
+||direct.www.tagged.com^
 ||directtogo.ru^
 ||disaboom.com^
 ||discord.com^
@@ -1149,7 +1153,6 @@
 ||dk.pinterest.com^
 ||dl_dir.qq.com^
 ||dlied5.qq.com^
-||dlied6.qq.com^
 ||dm-maliva16.byteoversea.com^
 ||dm.bytedance.com^
 ||dm.m.facebook.com^
@@ -1228,6 +1231,7 @@
 ||ec2-44-233-143-239.us-west-2.compute.amazonaws.com,popup^
 ||ecademy.com^
 ||economicgraph.linkedin.com^
+||economy.gateway.tagged.com^
 ||ecpod.com^
 ||ecrush.com^
 ||ed.facebook.com^
@@ -1964,7 +1968,6 @@
 ||gymmeet.com^
 ||h-ct-m-fbx.fbsbx.com.online-metrix.net^
 ||h5.qq.com^
-||h5.qzone.qq.com^
 ||h5s.qzone.qq.com^
 ||h5vv.video.qq.com^
 ||habbo.at^
@@ -2038,8 +2041,7 @@
 ||hk.weibo.com^
 ||hkextshort.weixin.qq.com^
 ||hkgtranscriptionteam.slack.com^
-||hklong.weixin.qq.com^
-||hkshort.weixin.qq.com^
+||hkminorshort.weixin.qq.com^
 ||hksiraix.vk.com^
 ||hn-button.herokuapp.com^
 ||home.myspace.com^
@@ -2048,7 +2050,6 @@
 ||honeyops.slack.com^
 ||hongbao.weibo.com^
 ||honktechnologies.slack.com^
-||hooks.slack.com^
 ||hootsuite.m.facebook.com^
 ||horizon.twitter.com^
 ||hospitalityclub.org^
@@ -2347,7 +2348,6 @@
 ||kyivstar.m.facebook.com^
 ||l-booucan.skyrock.com^
 ||l.instagram.com^
-||lads.myspace.com^
 ||lafango.com^
 ||lagbook.com^
 ||lan-o.line.me^
@@ -2398,6 +2398,7 @@
 ||lists.linkedin.com^
 ||lite.twitter.com^
 ||lithium.facebook.com^
+||lithium.tagged.com^
 ||live-upload.instagram.com^
 ||live.linkedin.com^
 ||live.twitter.com^
@@ -2417,6 +2418,7 @@
 ||logger.ivi.ru^
 ||login.facebook.com^
 ||login.myspace.com^
+||login.tagged.com^
 ||login.tracking101.com^
 ||loopt.com^
 ||loveandfriends.com^
@@ -2615,7 +2617,6 @@
 ||mms.whatsapp.net^
 ||mobile.itsmy.com^
 ||mobile.linkedin.com^
-||mobile.qzone.qq.com^
 ||mobile.telegram.org^
 ||mobilicio.us^
 ||mobioinc.slack.com^
@@ -2642,7 +2643,6 @@
 ||movmnt.net^
 ||moxie-moms.com^
 ||mp.qzone.qq.com^
-||mp.weixin.qq.com^
 ||mphotoseu.badoo.com^
 ||mphotosus.badoo.com^
 ||mqa.badoo.com^
@@ -2799,11 +2799,13 @@
 ||ns1.meetup.com^
 ||ns1.myspace.com^
 ||ns1.pinterest.com^
+||ns1.tagged.com^
 ||ns2.facebook.com^
 ||ns2.linkedin.com^
 ||ns2.meetup.com^
 ||ns2.myspace.com^
 ||ns2.pinterest.com^
+||ns2.tagged.com^
 ||ns3.facebook.com^
 ||ns3.linkedin.com^
 ||ns3.pinterest.com^
@@ -2899,7 +2901,6 @@
 ||origincache-xx-shv-09-frc3.fbcdn.net^
 ||origincache-xx-shv-09-prn2.fbcdn.net^
 ||origincache-xx-shv-13-prn1.fbcdn.net^
-||orkut.com^
 ||orkut.li^
 ||osdimktg.skyrock.com^
 ||osoyou.com^
@@ -2940,7 +2941,6 @@
 ||parler.com^
 ||partner.badoo.com^
 ||partner.eu1.badoo.com^
-||partner.mediametrics.ru^
 ||partner.pladform.ru^
 ||partners-api.pinterest.com^
 ||partners.twitter.com^
@@ -2989,6 +2989,7 @@
 ||photos-g.ak.fbcdn.net^
 ||photos-h.ak.fbcdn.net^
 ||photos-snc1.fbcdn.net^
+||photos.tagged.com^
 ||photos1.flickr.com^
 ||photos10.flickr.com^
 ||photos11.flickr.com^
@@ -3046,7 +3047,6 @@
 ||plantchange.com^
 ||platform.cdninstagram.com^
 ||platform.foursquare.com^
-||platform.tumblr.com^
 ||plaxo.com^
 ||playahead.se^
 ||playfire.com^
@@ -3055,7 +3055,6 @@
 ||plime.com^
 ||plugim.com^
 ||plurk.com^
-||plusone.google.com^
 ||pluto-1.web.telegram.org^
 ||pluto.web.telegram.org^
 ||pmir-hk.3g.qq.com^
@@ -3190,6 +3189,7 @@
 ||pulse.twitter.com^
 ||purchasing.linkedin.com^
 ||purevolume.com^
+||push.tagged.com^
 ||puta-madre-6901.skyrock.com^
 ||puurple.com^
 ||pw.reddit.com^
@@ -3225,7 +3225,6 @@
 ||r4ogledutile.skyrock.com^
 ||radar.net^
 ||rainbowfamily.meetup.com^
-||raptr.com^
 ||rateitall.com^
 ||ravelry.com^
 ||rawsugar.com^
@@ -3794,6 +3793,7 @@
 ||secure-media-snc1.fbcdn.net^
 ||secure-media.fbcdn.net^
 ||secure-profile.facebook.com^
+||secure-static.tagged.com^
 ||secure.assets.tumblr.com^
 ||secure.del.icio.us^
 ||secure.facebook.com^
@@ -3804,6 +3804,7 @@
 ||secure.myspace.com^
 ||secure.ognyvo.ru,popup^
 ||secure.static.tumblr.com^
+||secure.tagged.com^
 ||security.linkedin.com^
 ||security.myspace.com^
 ||security.weibo.com^
@@ -3819,7 +3820,6 @@
 ||servez-vs-donc.skyrock.com^
 ||service.account.weibo.com^
 ||service.rorer.ru^
-||service.weibo.com^
 ||sex.badoo.com^
 ||sexy-singles.meetup.com^
 ||sg.linkedin.com^
@@ -3997,6 +3997,7 @@
 ||static.fsea1-1.fna.fbcdn.net^
 ||static.hootsuite.com^
 ||static.reddit.com^
+||static.tagged.com^
 ||static.thefacebook.com^
 ||static.tumblr.com^
 ||static.twitter.com^
@@ -4036,6 +4037,7 @@
 ||suleluka.skyrock.com^
 ||superjob.slack.com^
 ||support.discordapp.com^
+||support.tagged.com^
 ||support.twitter.com^
 ||sur-navigator.srv43.ru^
 ||sur.auto43.srv43.ru^
@@ -4060,7 +4062,6 @@
 ||t.proext.com^
 ||t.vk.com^
 ||ta.linkedin.com^
-||tagged.com^
 ||tagmee.com^
 ||tagtooga.com^
 ||tagza.com^
@@ -4086,7 +4087,6 @@
 ||teachstreet.com^
 ||team.vk.com^
 ||teaser.redpic.ru^
-||teasers.ucoz.ru^
 ||tech.gotinder.com^
 ||teem.m.facebook.com^
 ||teenwag.com^
@@ -4223,6 +4223,7 @@
 ||upload.instagram.com^
 ||upload.myspace.com^
 ||upload.slack.com^
+||upload.tagged.com^
 ||upload.tieba.baidu.com^
 ||upload.weheartit.com^
 ||uploader.flickr.com^
@@ -4278,8 +4279,10 @@
 ||viadeo.com^
 ||viber.com^
 ||viddler.com^
+||video-api.tagged.com^
 ||video-hkg3-1.xx.fbcdn.net^
 ||video-iad3-1.xx.fbcdn.net^
+||video-live.tagged.com^
 ||video-nrt1-1.cdninstagram.com^
 ||video-ort2-1.cdninstagram.com^
 ||video-ort2-2.cdninstagram.com^
@@ -4335,6 +4338,7 @@
 ||video.fssa10-1.fna.fbcdn.net^
 ||video.ftpa1-1.fna.fbcdn.net^
 ||video.fvit1-1.fna.fbcdn.net^
+||video.tagged.com^
 ||video.twitter.com^
 ||video.weibo.com^
 ||videobomb.com^
@@ -4468,7 +4472,6 @@
 ||widgets.flickr.com^
 ||widgets.getglue.com^
 ||widgets.klout.com^
-||widgets.pinterest.com^
 ||widgets.platform.twitter.com^
 ||widgetsplus.com^
 ||wiki.developer.myspace.com^
@@ -4830,6 +4833,7 @@
 ||z-p4-scontent-waw1-1.cdninstagram.com^
 ||z-p4-scontent.cdninstagram.com^
 ||z-p4-upload.facebook.com^
+||z-p4.facebook.com^
 ||z-p4.graph.instagram.com^
 ||z-p4.i.instagram.com^
 ||z-p4.upload.instagram.com^
