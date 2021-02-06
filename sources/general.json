@@ -223,17 +223,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "FadeMind's add.Dead",
-            "description": "Dead sites based on http://www.hostsfile.org/hosts.html content.",
-            "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
-            "abp_format": false,
-            "unblock_list": false,
-            "num_regex": 0,
-            "last_modified": "W/\"889a52c45d7926ac48c6700b7bd01a048f1b563321b1fb3200d664f53c670201\"",
-            "num_blocked": 2565,
-            "num_unblocked": 0
-        },
-        {
             "title": "FadeMind's add.Risk",
             "description": "Risk content sites based on http://www.hostsfile.org/hosts.html content.",
             "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
