@@ -1,0 +1,171 @@
+{
+    "title": "Addon - Porn, Gambling, Snuff",
+    "description": "Blocks porn, gambling, and snuff. Should only be used with the 'General' List",
+    "sources": [
+        {
+            "title": "chadmayfield's Porn Top 1m (Light List)",
+            "description": "Top 1 million",
+            "url": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"16fe5913fdca65989d3157d57204442150ff7ddec6aef30fd2889cf9faa5ed01\"",
+            "num_blocked": 11868,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Clefspeare13's pornhosts",
+            "description": "A consolidated anti porn hosts file.",
+            "url": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"0a337b0732e09cd18e893efeb0fa9b8b38e2ea46db2cb0ba5f292da120bda0dc\"",
+            "num_blocked": 11482,
+            "num_unblocked": 0
+        },
+        {
+            "title": "EasyList adult adservers",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"f3091235ba73631356b5f5e56277b2f00125e981537ca8aabe80b242c3cc9ac2\"",
+            "num_blocked": 862,
+            "num_unblocked": 0
+        },
+        {
+            "title": "EasyList adult specific",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"e6d0464d57db7ca33bb3f3bb4c5d7f1e7d7b90ef9359db80c1d9685b18c21a4d\"",
+            "num_blocked": 21,
+            "num_unblocked": 0
+        },
+        {
+            "title": "EasyList adult thirdparty",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"ffb9e990d77c7937f18c3eb94e40703b6721aca14763218a48f9ab2866200ea1\"",
+            "num_blocked": 102,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Energized Porn Core Hosts",
+            "description": "Core Energized Blacklist.",
+            "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"050df7bf70b53af5f2bd854a3f6114ebce406f1bcd0504008aa08b8fad143203\"",
+            "num_blocked": 15534,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Energized Porn Core Hosts",
+            "description": "Core Energized Blacklist.",
+            "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"050df7bf70b53af5f2bd854a3f6114ebce406f1bcd0504008aa08b8fad143203\"",
+            "num_blocked": 15534,
+            "num_unblocked": 0
+        },
+        {
+            "title": "MMotti AdguardHome - regex.txt",
+            "description": "Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
+            "url": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 14,
+            "last_modified": "W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
+            "num_blocked": 14,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta's Gambling hosts",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"bd94f0c98287116a88d0bb54127d9137f77092b2a2210f5d0f3c8e54e03e63fe\"",
+            "num_blocked": 2363,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta's Porn hosts",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"a5c3b0c7affdb3690464e39b05822f970a7132e1d31b55bd6bf461fae8f6f38e\"",
+            "num_blocked": 15077,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Sinfonietta's Snuff hosts",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"11cfd4a539ef5f2bf57f350316c6a5e6e9f556ad8e8e62c23362a38dab062bc2\"",
+            "num_blocked": 18,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Tiuxo's hosts - porn",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/porn",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"760af5e212b742d00eb8cb4dfed0d6d1d0b6658469fd171ef51fe4aeaff546d9\"",
+            "num_blocked": 369,
+            "num_unblocked": 0
+        },
+        {
+            "title": "UT1 Blacklists - gambling",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"b22ca0b71bf9853c98aa26579645355e8e9b359da5d64ca28217fbada5e1d959\"",
+            "num_blocked": 1200,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_internal_filters",
+            "description": "internal list - porn,gambling & snuff",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_internal_filters.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_unblocked_domains",
+            "description": "internal list - porn,gambling & snuff",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_unblocked_domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        }
+    ]
+}

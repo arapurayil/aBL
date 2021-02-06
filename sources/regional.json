@@ -1,0 +1,248 @@
+{
+    "title": "Addon - Regional",
+    "description": "Blocks region specific domains. Should only be used with the 'General' List",
+    "sources": [
+        {
+            "title": "ABPindo",
+            "description": "Additional filters for EasyList block Indonesian and Malaysian language ads. (translated)",
+            "url": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"d95fbbedfa234832df39fb2761b08cca624871968194aa7e778483f584af4c68\"",
+            "num_blocked": 597,
+            "num_unblocked": 0
+        },
+        {
+            "title": "AdGuard Chinese filter",
+            "description": "Removes ads from websites in Chinese. Originally based on the EasyList China filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:32:29 GMT",
+            "num_blocked": 6300,
+            "num_unblocked": 12
+        },
+        {
+            "title": "AdGuard Dutch filter",
+            "description": "Removes ads from websites in Dutch. Originally based on the EasyList Dutch filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/8.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:33:03 GMT",
+            "num_blocked": 89,
+            "num_unblocked": 1
+        },
+        {
+            "title": "AdGuard French filter",
+            "description": "Removes ads from websites in French. Originally based on the Liste FR filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/16.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:32:18 GMT",
+            "num_blocked": 5627,
+            "num_unblocked": 4
+        },
+        {
+            "title": "AdGuard German filter",
+            "description": "Removes ads from websites in German. Originally based on the EasyList Germany filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/6.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:33:01 GMT",
+            "num_blocked": 491,
+            "num_unblocked": 5
+        },
+        {
+            "title": "AdGuard Japanese filter",
+            "description": "Removes ads from websites in Japanese. Originally based on the Fanboy\u2019s Japanese filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/7.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:33:02 GMT",
+            "num_blocked": 290,
+            "num_unblocked": 0
+        },
+        {
+            "title": "AdGuard Russian filter",
+            "description": "Removes ads from websites in Russian. Initially based on RU AdList filter but subsequently developed completely independently. Currently, there are very little intersections with RU AdList left.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:32:26 GMT",
+            "num_blocked": 4391,
+            "num_unblocked": 9
+        },
+        {
+            "title": "AdGuard Spanish/Portuguese filter",
+            "description": "Removes ads from websites in Spanish and Portuguese. Originally based on the Fanboy\u2019s Spanish/Portuguese filter and subsequently modified by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/9.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:33:03 GMT",
+            "num_blocked": 208,
+            "num_unblocked": 0
+        },
+        {
+            "title": "AdGuard Turkish filter",
+            "description": "Removes ads from websites in Turkish. Created by us according to the complaints from users.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/13.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:31:55 GMT",
+            "num_blocked": 314,
+            "num_unblocked": 1
+        },
+        {
+            "title": "anudeepND's Commonly Whitelisted Domains",
+            "description": "Commonly whitelisted domains for Pi-Hole",
+            "url": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regex": 0,
+            "last_modified": "W/\"c470c1d3d7ee74dc1eb2a407da5300aebc903a864ac0938a64530a9551cc0916\"",
+            "num_blocked": 0,
+            "num_unblocked": 191
+        },
+        {
+            "title": "anudeepND's Commonly Whitelisted Domains (Optional)",
+            "description": "This file contain domains that are needed to be whitelisted depending on the service you use. (It may include analytics sites!)",
+            "url": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regex": 0,
+            "last_modified": "W/\"a0c6277d59faa90d71fc41ddca52a3379a8d2c816c2d275f2f926e6283fd606c\"",
+            "num_blocked": 0,
+            "num_unblocked": 142
+        },
+        {
+            "title": "EasyList Hebrew",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"c7bb1893ec8fc709badcb0aa75a6f2889abf9ee6ec565c4a616735b8e2a2f5ff\"",
+            "num_blocked": 302,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Energized Basic Protection - Whitelist",
+            "description": "Basic list of whitelisted domains",
+            "url": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": "W/\"c3ac8900bfffff5757773dc1fc41b0a0bdadca738fc501f447b75612ec71245b\"",
+            "num_blocked": 0,
+            "num_unblocked": 10690
+        },
+        {
+            "title": "Fanboy's Indian",
+            "description": "-",
+            "url": "https://www.fanboy.co.nz/fanboy-indian.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 29 Jan 2021 02:12:01 GMT",
+            "num_blocked": 44,
+            "num_unblocked": 0
+        },
+        {
+            "title": "Liste AR",
+            "description": "The Arabic list of adblock blockers, complementary to the French and English list. (translated)",
+            "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "Fri, 05 Feb 2021 20:50:15 GMT",
+            "num_blocked": 120,
+            "num_unblocked": 0
+        },
+        {
+            "title": "MMotti AdguardHome - regex.txt",
+            "description": "Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
+            "url": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 14,
+            "last_modified": "W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
+            "num_blocked": 14,
+            "num_unblocked": 0
+        },
+        {
+            "title": "notracking hosts-blocklists - whitelist",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.whitelist.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": "W/\"4915a33ea6a7d6fd0c38354afa622d8fc4de47af7c2cfdc471dadbc06244567b\"",
+            "num_blocked": 0,
+            "num_unblocked": 1546
+        },
+        {
+            "title": "Tiuxo's hosts - ads",
+            "description": "-",
+            "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
+            "abp_format": false,
+            "unblock_list": false,
+            "num_regex": 0,
+            "last_modified": "W/\"f6d5a8dbff397269c8cdf3c3e6916a070ef46d5b324885aa1a556349cdcd7bd1\"",
+            "num_blocked": 2211,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_internal_filters",
+            "description": "internal list - general",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_internal_filters.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 0,
+            "last_modified": "W/\"0ceb92b74ba632d7a867fb15f0acb392f022296a7943008d1cdee4c8cb3f5506\"",
+            "num_blocked": 0,
+            "num_unblocked": 1
+        },
+        {
+            "title": "_internal_filters",
+            "description": "internal list - regional",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_internal_filters.txt",
+            "abp_format": true,
+            "unblock_list": false,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        },
+        {
+            "title": "_unblocked_domains",
+            "description": "internal list - general",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": "W/\"c9169fde341a45573bf3767feddbf74a149c5182c604b526249c850d631609ef\"",
+            "num_blocked": 0,
+            "num_unblocked": 150
+        },
+        {
+            "title": "_unblocked_domains",
+            "description": "internal list - regional",
+            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_unblocked_domains.txt",
+            "abp_format": false,
+            "unblock_list": true,
+            "num_regexp": 0,
+            "last_modified": false,
+            "num_blocked": 0,
+            "num_unblocked": 0
+        }
+    ]
+}
