@@ -24,7 +24,7 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
 - Report false-positives or bad domains  
 - Improve generator script by making a PR
 - Support via
-  - [PayPal](http://paypal.me/arapurayil)  
+  <!-- - [PayPal](http://paypal.me/arapurayil) -->
   - [Ko-fi](https://ko-fi.com/arapurayil)  
   - [Liberapay](https://liberapay.com/arapurayil)  
-  - [Patreon](https://www.patreon.com/arapurayil)
+  <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
