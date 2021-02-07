@@ -3,9 +3,9 @@
 **Blocks region specific domains. Should only be used with the 'General'
 List**
 
--   Sources: 22
--   Rules before processing: 19577
--   Rules after processing: 6837
+- Sources: 22
+- Rules before processing: 19577
+- Rules after processing: 6837
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 65.08% lighter** than its combined sources
 
@@ -33,4 +33,3 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 20     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_internal_filters.txt)                             | internal list - regional                                                                                                                                                                                 | 0              | 0                |
 | 21     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt)                            | internal list - general                                                                                                                                                                                  | 0              | 4418             |
 | 22     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_unblocked_domains.txt)                           | internal list - regional                                                                                                                                                                                 | 0              | 0                |
-
