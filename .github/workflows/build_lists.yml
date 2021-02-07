@@ -4,7 +4,7 @@
 name: auto list update
 on:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '30 18 * * *'
   push:
     branches: [ master ]
     paths:
