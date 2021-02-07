@@ -2,11 +2,11 @@
 
 **Blocks social media. Should only be used with the 'General' List**
 
-- Sources: 8
-- Rules before processing: 10588
-- Rules after processing: 4907
+-   Sources: 8
+-   Rules before processing: 10588
+-   Rules after processing: 4911
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.66% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.62% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -18,3 +18,4 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 06  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
 | 07  | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt)            | internal list - social                                                                                     | 0              | 0                |
 | 08  | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_unblocked_domains.txt)          | internal list - social                                                                                     | 0              | 0                |
+
