@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
 ! Version: 2.02.07
-! Last modified: 07 Feb 2021 18:41:36 IST
+! Last modified: 07 Feb 2021 21:05:20 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -1961,7 +1961,6 @@
 ||gusto.com^
 ||gw.linkedin.com^
 ||gymmeet.com^
-||h-ct-m-fbx.fbsbx.com.online-metrix.net^
 ||h5.qq.com^
 ||h5.qzone.qq.com^
 ||h5s.qzone.qq.com^
@@ -2742,7 +2741,6 @@
 ||new.imified.com^
 ||new.myspace.com^
 ||new.reddit.com^
-||new.traffic.ru^
 ||new.vk.com^
 ||new1.monkeypxl.ru^
 ||newintown.meetup.com^
@@ -3101,7 +3099,6 @@
 ||printer.discordapp.com^
 ||prius.meetup.com^
 ||privacy.reddit.com^
-||probe.twitter.com^
 ||prod-assets.periscope.tv^
 ||prod-chatman-ancillary-ap-northeast-1.periscope.tv^
 ||prod-chatman-ancillary-eu-central-1.periscope.tv^
@@ -3127,7 +3124,6 @@
 ||prod-video-us-west-1.periscope.tv^
 ||prod-video-us-west-2.periscope.tv^
 ||prod.facebook.com^
-||prod.pinterest.global.map.fastly.net^
 ||prod.tpc.skype.com^
 ||productclash.com^
 ||professional-black-bisexual-women-of-chicago.meetup.com^
@@ -3293,7 +3289,6 @@
 ||ryze.com^
 ||s-external.ak.fbcdn.net^
 ||s-passets.pinimg.com^
-||s-pinimg-com.gslb.pinterest.com^
 ||s-static.ak.facebook.com.edgekey.net^
 ||s-static.ak.fbcdn.net^
 ||s-static.facebook.com^
@@ -4068,7 +4063,6 @@
 ||tb.mybb.ru^
 ||tc.fileplaneta.com^
 ||td.linkedin.com^
-||td.twitter.com^
 ||te.reddit.com^
 ||teachstreet.com^
 ||team.vk.com^
@@ -4485,6 +4479,7 @@
 ||woome.com^
 ||woophy.com^
 ||work-98949980.facebook.com^
+||wpa.qq.com^
 ||wpscoop.com^
 ||writeaprisoner.com^
 ||ws.linkedin.com^

@@ -3,11 +3,11 @@
 **Blocks porn, gambling, and snuff. Should only be used with the
 'General' List**
 
-- Sources: 15
-- Rules before processing: 30294
-- Rules after processing: 25689
+-   Sources: 15
+-   Rules before processing: 30294
+-   Rules after processing: 25701
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Porn, Gambling, Snuff is 15.20% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Porn, Gambling, Snuff is 15.16% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -26,3 +26,4 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 13     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                                                                                          | 1200           | 0                |
 | 14     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_internal_filters.txt)                             | internal list - porn,gambling & snuff                                                                      | 0              | 0                |
 | 15     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_unblocked_domains.txt)                           | internal list - porn,gambling & snuff                                                                      | 0              | 0                |
+
