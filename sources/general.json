@@ -234,17 +234,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "EU US most prevalent ads & trackers",
-            "description": "This blocklist is based on surveys of most used advertising and tracking technology (e.g. surveys of W3C, W3Tech and the on-line marketing community itself). These tech surveys are held once a year. ",
-            "url": "https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST",
-            "abp_format": false,
-            "unblock_list": false,
-            "num_regex": 0,
-            "last_modified": "W/\"a07f29d1152b75f34d529b7d6ca541231565f858e3fa610dd2bded6debfb7a48\"",
-            "num_blocked": 4181,
-            "num_unblocked": 0
-        },
-        {
             "title": "FadeMind's add.Risk",
             "description": "Risk content sites based on http://www.hostsfile.org/hosts.html content.",
             "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
