@@ -1,4 +1,3 @@
-![](https://img.shields.io/github/workflow/status/arapurayil/abl/Generate%20Lists?label=daily%20builds)
 ![](https://img.shields.io/codefactor/grade/github/arapurayil/abl)
 ![](https://img.shields.io/github/languages/top/arapurayil/abl)
 ![](https://img.shields.io/snyk/vulnerabilities/github/arapurayil/abl)
