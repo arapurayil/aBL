@@ -8,6 +8,7 @@
 ![](https://img.shields.io/github/v/tag/arapurayil/abl)
 ![](https://img.shields.io/github/last-commit/arapurayil/abl)
 
+
 > a filter list optimized for DNS level blocking of ads, analytics, crypto-jacking and other such threats/nuisances.
 
 | #   | TITLE                           | DESCRIPTION                                                                                                                                       | ABP FILTER LIST                                                                                  |
@@ -16,6 +17,7 @@
 | 02  | Addon - Social Media            | Blocks social media. Should only be used with the 'General' List                                                                                  | [Link](https://github.com/arapurayil/aBL/raw/master/lists/social/filter_list.txt)                |
 | 03  | Addon - Porn, Gambling, Snuff   | Blocks porn, gambling, and snuff. Should only be used with the 'General' List                                                                     | [Link](https://github.com/arapurayil/aBL/raw/master/lists/porn_gambling_snuff/filter_list.txt)   |
 | 04  | Addon - Regional                | Blocks region specific domains. Should only be used with the 'General' List                                                                       | [Link](https://github.com/arapurayil/aBL/raw/master/lists/regional/filter_list.txt)              |
+
 
 ### About
 
@@ -42,10 +44,11 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
 - Report false-positives or bad domains  
 - Improve generator script by making a PR
 - Support via
-  - [PayPal](http://paypal.me/arapurayil)  
+  <!-- - [PayPal](http://paypal.me/arapurayil) -->
   - [Ko-fi](https://ko-fi.com/arapurayil)  
   - [Liberapay](https://liberapay.com/arapurayil)  
-  - [Patreon](https://www.patreon.com/arapurayil)
+  <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
+
 
 ### Credits
 
@@ -53,15 +56,16 @@ Credits to the maintainers/creators of the source lists used in this project.
 
 Please notify me if I have violated a license condition.
 
+
 ## The General List
 
 **Blocks ads & annoyances, analytics & trackers, crypto-jacking &
 resource abusers, malware, and phishing. Addon lists are available in
 the repo.**
 
-- Sources: 50
-- Rules before processing: 173798
-- Rules after processing: 154243
+-   Sources: 50
+-   Rules before processing: 173785
+-   Rules after processing: 154233
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - The General List is 11.25% lighter** than its combined sources
 
@@ -69,10 +73,10 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
 | 01     | [ABP Adblock Warning Removal List](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt)                                                        | The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.                                                                                                                                                                                                             | 2              | 0                |
 | 02     | [ABP filters](https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt)                                                                            | Removes circumvention ads in Adblock Plus                                                                                                                                                                                                                                                                                                 | 19             | 0                |
-| 03     | [abuse.ch URLhaus Host file](https://urlhaus.abuse.ch/downloads/hostfile/)                                                                                   | URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours                                                                                                                               | 1006           | 0                |
+| 03     | [abuse.ch URLhaus Host file](https://urlhaus.abuse.ch/downloads/hostfile/)                                                                                   | URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours                                                                                                                               | 930            | 0                |
 | 04     | [AdAway](https://adaway.org/hosts.txt)                                                                                                                       | AdAway is an open source ad blocker for Android using the hosts file                                                                                                                                                                                                                                                                      | 9218           | 0                |
 | 05     | [AdGuard Annoyances filter](https://filters.adtidy.org/extension/chromium/filters/14.txt)                                                                    | Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together       | 610            | 3                |
-| 06     | [AdGuard DNS filter](https://filters.adtidy.org/extension/chromium/filters/15.txt)                                                                           | Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.                                                                                            | 39729          | 14               |
+| 06     | [AdGuard DNS filter](https://filters.adtidy.org/extension/chromium/filters/15.txt)                                                                           | Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.                                                                                            | 39778          | 14               |
 | 07     | [AdGuard Mobile ads filter](https://filters.adtidy.org/extension/chromium/filters/11.txt)                                                                    | Filter that blocks ads on mobile devices. Contains all known mobile ad networks.                                                                                                                                                                                                                                                          | 1054           | 2                |
 | 08     | [AdGuard Safari filter](https://filters.adtidy.org/extension/chromium/filters/12.txt)                                                                        | Special filter for Safari 9 and above on iOS and MacOS to use in combination with AdGuard (or other) filter lists. We need a seperate filter because Safari's Content Blocking API does not fully support AdGuard's advanced rules syntax.                                                                                                | 15             | 4                |
 | 09     | [AdGuard Tracking Protection filter](https://filters.adtidy.org/extension/chromium/filters/3.txt)                                                            | The most comprehensive list of various online counters and web analytics tools. If you do not want your actions on the Internet be tracked, use this filter.                                                                                                                                                                              | 6199           | 9                |
@@ -87,8 +91,8 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 18     | [Energized Basic Protection - Whitelist](https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt)                     | Basic list of whitelisted domains                                                                                                                                                                                                                                                                                                         | 0              | 10690            |
 | 19     | [Energized Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts)                                               | Core Energized Blacklist.                                                                                                                                                                                                                                                                                                                 | 21168          | 0                |
 | 20     | [EU US most prevalent ads & trackers](https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST)   | This blocklist is based on surveys of most used advertising and tracking technology (e.g. surveys of W3C, W3Tech and the on-line marketing community itself). These tech surveys are held once a year.                                                                                                                                    | 4181           | 0                |
-| 21     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                         | Risk content sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
-| 22     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                         | Spam sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                          | 73             | 0                |
+| 21     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                         | Risk content sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
+| 22     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                         | Spam sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                          | 73             | 0                |
 | 23     | [FadeMind's UncheckyAds](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)                                                   | Windows installers ads sources                                                                                                                                                                                                                                                                                                            | 10             | 0                |
 | 24     | [Fanboy's Anti-Cookie Filters](https://fanboy.co.nz/fanboy-cookiemonster.txt)                                                                                | This will remove cookie and privacy warnings (List already included in Annoyances List, don't add list if you're using the Annoyances List)                                                                                                                                                                                               | 115            | 0                |
 | 25     | [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/enhancedstats.txt)                                                                                | Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.                                                                                                                                                                                                    | 122            | 0                |
@@ -110,7 +114,7 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 41     | [Quidsup's NoTrack Tracker Blocklist](https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt)                                        | Tracker Domains Block List from quidsup.net                                                                                                                                                                                                                                                                                               | 14771          | 0                |
 | 42     | [Spam404](https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt)                                                                           | blocks scam sites                                                                                                                                                                                                                                                                                                                         | 7046           | 0                |
 | 43     | [Steven Black's ad-hoc list](https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts)                                              | This is the ad-hoc list from StevenBlack/hosts                                                                                                                                                                                                                                                                                            | 3020           | 0                |
-| 44     | [StopForumSpam](https://stopforumspam.com/downloads/toxic_domains_whole.txt)                                                                                 | Forum spammers                                                                                                                                                                                                                                                                                                                            | 27663          | 0                |
+| 44     | [StopForumSpam](https://stopforumspam.com/downloads/toxic_domains_whole.txt)                                                                                 | Forum spammers                                                                                                                                                                                                                                                                                                                            | 27676          | 0                |
 | 45     | [UT1 Blacklists - cryptojacking](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains)                             | -                                                                                                                                                                                                                                                                                                                                         | 8788           | 0                |
 | 46     | [VeleSila's yhosts - whitelist](https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt)                                                      | -                                                                                                                                                                                                                                                                                                                                         | 0              | 151              |
 | 47     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                    | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
@@ -123,9 +127,9 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 **Blocks porn, gambling, and snuff. Should only be used with the
 'General' List**
 
-- Sources: 15
-- Rules before processing: 30294
-- Rules after processing: 25424
+-   Sources: 15
+-   Rules before processing: 30294
+-   Rules after processing: 25424
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Porn, Gambling, Snuff is 16.08% lighter** than its combined sources
 
@@ -151,11 +155,11 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 
 **Blocks social media. Should only be used with the 'General' List**
 
-- Sources: 8
-- Rules before processing: 10588
-- Rules after processing: 4917
+-   Sources: 8
+-   Rules before processing: 10588
+-   Rules after processing: 4914
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.56% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.59% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -173,11 +177,11 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 **Blocks region specific domains. Should only be used with the 'General'
 List**
 
-- Sources: 22
-- Rules before processing: 19577
-- Rules after processing: 6847
+-   Sources: 22
+-   Rules before processing: 19577
+-   Rules after processing: 6837
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 65.03% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 65.08% lighter** than its combined sources
 
 | #      | Title                                                                                                                                           | Description                                                                                                                                                                                              | Blocking rules | Unblocking rules |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -203,3 +207,4 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 20     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_internal_filters.txt)                             | internal list - regional                                                                                                                                                                                 | 0              | 0                |
 | 21     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt)                            | internal list - general                                                                                                                                                                                  | 0              | 4418             |
 | 22     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_unblocked_domains.txt)                           | internal list - regional                                                                                                                                                                                 | 0              | 0                |
+
