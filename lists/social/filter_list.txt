@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
 ! Version: 2.02.07
-! Last modified: 07 Feb 2021 15:56:03 IST
+! Last modified: 07 Feb 2021 18:41:36 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -918,6 +918,7 @@
 ||chat.whatsapp.com^
 ||chatman-replay-us-east-1.periscope.tv^
 ||chatman-replay-us-west-2.periscope.tv^
+||chemistry.com^
 ||chesterdu78.skyrock.com^
 ||chicago-stepping.meetup.com^
 ||chickadvisor.com^
@@ -1698,6 +1699,7 @@
 ||facebook.us^
 ||faceparty.com^
 ||faces.com^
+||fairfax.com.au^
 ||familyden.com^
 ||familyoven.com^
 ||famiva.com^
@@ -1897,6 +1899,7 @@
 ||generalelectric.m.facebook.com^
 ||geni.com^
 ||get.telegram.org^
+||getglue.com^
 ||gh.linkedin.com^
 ||ghanaweb.com^
 ||gin.flickr.com^
@@ -2090,7 +2093,6 @@
 ||i-h1.pinimg.com^
 ||i.myspace.com^
 ||i.pinimg.com.edgekey.net^
-||i.pinimg.com.gslb.pinterest.com^
 ||i.redditmedia.com^
 ||i.reddituploads.com^
 ||i18n.discordapp.com^
@@ -3125,6 +3127,7 @@
 ||prod-video-us-west-1.periscope.tv^
 ||prod-video-us-west-2.periscope.tv^
 ||prod.facebook.com^
+||prod.pinterest.global.map.fastly.net^
 ||prod.tpc.skype.com^
 ||productclash.com^
 ||professional-black-bisexual-women-of-chicago.meetup.com^
@@ -3871,6 +3874,7 @@
 ||sociallife.com.br^
 ||sociallist.org^
 ||socialmarker.com^
+||socialtwist.com^
 ||socialvibe.com^
 ||soft.imtt.qq.com^
 ||soft.tbs.imtt.qq.com^
@@ -4460,7 +4464,6 @@
 ||widgets.bufferapp.com^
 ||widgets.dzone.com^
 ||widgets.flickr.com^
-||widgets.getglue.com^
 ||widgets.klout.com^
 ||widgets.pinterest.com^
 ||widgets.platform.twitter.com^
@@ -4824,6 +4827,7 @@
 ||z-p4-scontent-waw1-1.cdninstagram.com^
 ||z-p4-scontent.cdninstagram.com^
 ||z-p4-upload.facebook.com^
+||z-p4.facebook.com^
 ||z-p4.graph.instagram.com^
 ||z-p4.i.instagram.com^
 ||z-p4.upload.instagram.com^
