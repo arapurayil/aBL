@@ -498,28 +498,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "Quidsup's NoTrack Malware Blocklist",
-            "description": "Malware Domains Block List from quidsup.net",
-            "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
-            "abp_format": false,
-            "unblock_list": false,
-            "num_regex": 0,
-            "last_modified": "W/\"684e58c901bc94d3502c9bc22f1b8a2a\"",
-            "num_blocked": 412,
-            "num_unblocked": 0
-        },
-        {
-            "title": "Quidsup's NoTrack Tracker Blocklist",
-            "description": "Tracker Domains Block List from quidsup.net",
-            "url": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt",
-            "abp_format": false,
-            "unblock_list": false,
-            "num_regex": 0,
-            "last_modified": "W/\"8e5aef411b9fe0acf2b86ec4b99f2e73\"",
-            "num_blocked": 14771,
-            "num_unblocked": 0
-        },
-        {
             "title": "shallalist ISP",
             "description": "-",
             "url": "https://raw.githubusercontent.com/cbuijs/shallalist/master/isp/domains",
