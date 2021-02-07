@@ -7,7 +7,6 @@
 ![](https://img.shields.io/github/v/tag/arapurayil/abl)
 ![](https://img.shields.io/github/last-commit/arapurayil/abl)
 
-
 > a filter list optimized for DNS level blocking of ads, analytics, crypto-jacking and other such threats/nuisances.
 
 | #   | TITLE                           | DESCRIPTION                                                                                                                                       | ABP FILTER LIST                                                                                  |
@@ -16,7 +15,6 @@
 | 02  | Addon - Social Media            | Blocks social media. Should only be used with the 'General' List                                                                                  | [Link](https://github.com/arapurayil/aBL/raw/master/lists/social/filter_list.txt)                |
 | 03  | Addon - Porn, Gambling, Snuff   | Blocks porn, gambling, and snuff. Should only be used with the 'General' List                                                                     | [Link](https://github.com/arapurayil/aBL/raw/master/lists/porn_gambling_snuff/filter_list.txt)   |
 | 04  | Addon - Regional                | Blocks region specific domains. Should only be used with the 'General' List                                                                       | [Link](https://github.com/arapurayil/aBL/raw/master/lists/regional/filter_list.txt)              |
-
 
 ### About
 
@@ -48,13 +46,11 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
   - [Liberapay](https://liberapay.com/arapurayil)  
   <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
 
-
 ### Credits
 
 Credits to the maintainers/creators of the source lists used in this project.
 
 Please notify me if I have violated a license condition.
-
 
 ## General List
 
@@ -62,9 +58,9 @@ Please notify me if I have violated a license condition.
 resource abusers, malware, and phishing. Addon lists are available in
 the repo.**
 
--   Sources: 58
--   Rules before processing: 173835
--   Rules after processing: 151595
+- Sources: 58
+- Rules before processing: 173835
+- Rules after processing: 151595
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - General List is 12.79% lighter** than its combined sources
 
@@ -92,8 +88,8 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 20     | [Energized Basic Protection - Whitelist](https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt)                     | Basic list of whitelisted domains                                                                                                                                                                                                                                                                                                         | 0              | 10690            |
 | 21     | [Energized Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts)                                               | Core Energized Blacklist.                                                                                                                                                                                                                                                                                                                 | 21168          | 0                |
 | 22     | [EU US most prevalent ads & trackers](https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST)   | This blocklist is based on surveys of most used advertising and tracking technology (e.g. surveys of W3C, W3Tech and the on-line marketing community itself). These tech surveys are held once a year.                                                                                                                                    | 4181           | 0                |
-| 23     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                         | Risk content sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
-| 24     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                         | Spam sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                          | 73             | 0                |
+| 23     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                         | Risk content sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
+| 24     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                         | Spam sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                          | 73             | 0                |
 | 25     | [FadeMind's UncheckyAds](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)                                                   | Windows installers ads sources                                                                                                                                                                                                                                                                                                            | 10             | 0                |
 | 26     | [Fanboy's Anti-Cookie Filters](https://fanboy.co.nz/fanboy-cookiemonster.txt)                                                                                | This will remove cookie and privacy warnings (List already included in Annoyances List, don't add list if you're using the Annoyances List)                                                                                                                                                                                               | 115            | 0                |
 | 27     | [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/enhancedstats.txt)                                                                                | Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.                                                                                                                                                                                                    | 122            | 0                |
@@ -134,9 +130,9 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 **Blocks porn, gambling, and snuff. Should only be used with the
 'General' List**
 
--   Sources: 15
--   Rules before processing: 30294
--   Rules after processing: 25709
+- Sources: 15
+- Rules before processing: 30294
+- Rules after processing: 25709
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Porn, Gambling, Snuff is 15.14% lighter** than its combined sources
 
@@ -162,9 +158,9 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 
 **Blocks social media. Should only be used with the 'General' List**
 
--   Sources: 8
--   Rules before processing: 10588
--   Rules after processing: 4907
+- Sources: 8
+- Rules before processing: 10588
+- Rules after processing: 4907
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 53.66% lighter** than its combined sources
 
@@ -184,9 +180,9 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 **Blocks region specific domains. Should only be used with the 'General'
 List**
 
--   Sources: 22
--   Rules before processing: 19578
--   Rules after processing: 6894
+- Sources: 22
+- Rules before processing: 19578
+- Rules after processing: 6894
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 64.79% lighter** than its combined sources
 
@@ -214,4 +210,3 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 20     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_internal_filters.txt)                             | internal list - regional                                                                                                                                                                                 | 0              | 0                |
 | 21     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/general/_unblocked_domains.txt)                            | internal list - general                                                                                                                                                                                  | 0              | 0                |
 | 22     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/regional/_unblocked_domains.txt)                           | internal list - regional                                                                                                                                                                                 | 0              | 0                |
-
