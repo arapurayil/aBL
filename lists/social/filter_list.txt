@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
-! Version: 2.02.06
-! Last modified: 06 Feb 2021 17:39:56 IST
+! Version: 2.02.07
+! Last modified: 07 Feb 2021 00:49:12 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -24,7 +24,6 @@
 ||0-83.badoo.com^
 ||0-act.channel.facebook.com^
 ||0.beta.facebook.com^
-||0.facebook.com^
 ||0.telegram.org^
 ||0.twitter.com^
 ||0.vk.com^
@@ -639,7 +638,6 @@
 ||atlas-www-shv-04-prn2.facebook.com^
 ||atlas-www-shv-07-ash4.facebook.com^
 ||atlas-www-shv-09-frc1.facebook.com^
-||atlas.c10r.facebook.com^
 ||atlasalpha-shv-09-frc3.facebook.com^
 ||atlasinyour-shv-05-ash3.facebook.com^
 ||atomrain.slack.com^
@@ -1798,7 +1796,6 @@
 ||filamentapp-assets.s3.amazonaws.com^
 ||filamentapp.s3.amazonaws.com^
 ||file.api.wechat.com^
-||file.web.wechat.com^
 ||fileplatform.api.weibo.com^
 ||files-edge.slack.com^
 ||files-origin.slack.com^
@@ -2041,7 +2038,6 @@
 ||hk.weibo.com^
 ||hkextshort.weixin.qq.com^
 ||hkgtranscriptionteam.slack.com^
-||hkminorshort.weixin.qq.com^
 ||hksiraix.vk.com^
 ||hn-button.herokuapp.com^
 ||home.myspace.com^
@@ -2094,6 +2090,7 @@
 ||i-am-bored.com^
 ||i-h1.pinimg.com^
 ||i.myspace.com^
+||i.pinimg.com^
 ||i.pinimg.com.edgekey.net^
 ||i.pinimg.com.gslb.pinterest.com^
 ||i.redd.it^
@@ -4931,7 +4928,6 @@
 ||укроп-петрушка-огурцы.рф^
 ||хельга.рф^
 ||эхх.рф^
-@@||ad.apps.fm^$important
 @@||ad.apps.fm^$important
 @@||auth.tbn.ru^$important
 @@||cdn.warface.ru^$important
