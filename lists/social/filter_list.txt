@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
-! Version: 2.02.07
-! Last modified: 07 Feb 2021 21:05:20 IST
+! Version: 2.02.08
+! Last modified: 08 Feb 2021 18:50:33 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -1795,6 +1795,7 @@
 ||filamentapp-assets.s3.amazonaws.com^
 ||filamentapp.s3.amazonaws.com^
 ||file.api.wechat.com^
+||file.web.wechat.com^
 ||fileplatform.api.weibo.com^
 ||files-edge.slack.com^
 ||files-origin.slack.com^
@@ -1961,6 +1962,7 @@
 ||gusto.com^
 ||gw.linkedin.com^
 ||gymmeet.com^
+||h-ct-m-fbx.fbsbx.com.online-metrix.net^
 ||h5.qq.com^
 ||h5.qzone.qq.com^
 ||h5s.qzone.qq.com^
@@ -2037,6 +2039,7 @@
 ||hkextshort.weixin.qq.com^
 ||hkgtranscriptionteam.slack.com^
 ||hklong.weixin.qq.com^
+||hkminorshort.weixin.qq.com^
 ||hkshort.weixin.qq.com^
 ||hksiraix.vk.com^
 ||hn-button.herokuapp.com^
@@ -3124,6 +3127,7 @@
 ||prod-video-us-west-1.periscope.tv^
 ||prod-video-us-west-2.periscope.tv^
 ||prod.facebook.com^
+||prod.pinterest.global.map.fastly.net^
 ||prod.tpc.skype.com^
 ||productclash.com^
 ||professional-black-bisexual-women-of-chicago.meetup.com^
@@ -3289,6 +3293,7 @@
 ||ryze.com^
 ||s-external.ak.fbcdn.net^
 ||s-passets.pinimg.com^
+||s-pinimg-com.gslb.pinterest.com^
 ||s-static.ak.facebook.com.edgekey.net^
 ||s-static.ak.fbcdn.net^
 ||s-static.facebook.com^
