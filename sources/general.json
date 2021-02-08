@@ -9,7 +9,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:00:34 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:40:37 GMT",
             "num_blocked": 2,
             "num_unblocked": 0
         },
@@ -20,8 +20,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:00:22 GMT",
-            "num_blocked": 19,
+            "last_modified": "Mon, 08 Feb 2021 18:40:25 GMT",
+            "num_blocked": 8,
             "num_unblocked": 0
         },
         {
@@ -31,8 +31,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:00:05 GMT",
-            "num_blocked": 925,
+            "last_modified": "Mon, 08 Feb 2021 18:50:04 GMT",
+            "num_blocked": 951,
             "num_unblocked": 0
         },
         {
@@ -42,8 +42,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Fri, 05 Feb 2021 17:53:58 GMT",
-            "num_blocked": 9218,
+            "last_modified": "Mon, 08 Feb 2021 16:36:57 GMT",
+            "num_blocked": 9171,
             "num_unblocked": 0
         },
         {
@@ -53,7 +53,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 20:32:02 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:38:22 GMT",
             "num_blocked": 610,
             "num_unblocked": 3
         },
@@ -64,8 +64,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 20:32:06 GMT",
-            "num_blocked": 39792,
+            "last_modified": "Mon, 08 Feb 2021 18:38:27 GMT",
+            "num_blocked": 39809,
             "num_unblocked": 14
         },
         {
@@ -75,7 +75,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 20:31:51 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:38:13 GMT",
             "num_blocked": 1054,
             "num_unblocked": 2
         },
@@ -86,7 +86,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 20:31:52 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:38:13 GMT",
             "num_blocked": 15,
             "num_unblocked": 4
         },
@@ -97,8 +97,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 20:32:54 GMT",
-            "num_blocked": 6200,
+            "last_modified": "Mon, 08 Feb 2021 18:39:11 GMT",
+            "num_blocked": 6202,
             "num_unblocked": 9
         },
         {
@@ -196,7 +196,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:00:54 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:40:57 GMT",
             "num_blocked": 115,
             "num_unblocked": 0
         },
@@ -207,7 +207,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 11:34:48 GMT",
+            "last_modified": "Mon, 08 Feb 2021 16:58:01 GMT",
             "num_blocked": 7531,
             "num_unblocked": 0
         },
@@ -218,7 +218,7 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"79174e6ad0d31ea5b042b2f36d695957e120c2e7df90861200627ebf78938080\"",
+            "last_modified": "W/\"fc4043eaa6d21ca2c52617289d1c70b23b57ba2c2a6c381661cf33ca0c633c44\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -229,7 +229,7 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "W/\"a8034aa1424d388f3f805db7b85bffbf13c796dbc8c13bfa90c21501f1cc38df\"",
+            "last_modified": "W/\"a51b2209ffb57aaa81f591b9a008a323ddc90b8c146fedc70b8dfb9c1c2d4d53\"",
             "num_blocked": 21168,
             "num_unblocked": 0
         },
@@ -273,7 +273,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 09:50:09 GMT",
+            "last_modified": "Mon, 08 Feb 2021 17:50:09 GMT",
             "num_blocked": 115,
             "num_unblocked": 0
         },
@@ -295,7 +295,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:01:32 GMT",
+            "last_modified": "Mon, 08 Feb 2021 18:41:38 GMT",
             "num_blocked": 160,
             "num_unblocked": 0
         },
@@ -449,9 +449,9 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "Wed, 27 Jan 2021 16:31:57 GMT",
+            "last_modified": "Mon, 08 Feb 2021 16:37:47 GMT",
             "num_blocked": 0,
-            "num_unblocked": 464
+            "num_unblocked": 473
         },
         {
             "title": "ookangzheng blahdns whitelist",
@@ -537,8 +537,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 21:00:04 GMT",
-            "num_blocked": 27722,
+            "last_modified": "Mon, 08 Feb 2021 18:00:04 GMT",
+            "num_blocked": 27771,
             "num_unblocked": 0
         },
         {
