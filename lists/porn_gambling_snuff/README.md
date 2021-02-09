@@ -1,13 +1,13 @@
-# Addon - Porn, Gambling, Snuff
+# Addon - NSFW, Porn, Gambling, Snuff
 
-**Blocks porn, gambling, and snuff. Should only be used with the
+**Blocks nsfw, porn, gambling, and snuff. Should only be used with the
 'General' List**
 
 -   Sources: 15
 -   Rules before processing: 30478
 -   Rules after processing: 25836
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Porn, Gambling, Snuff is 15.23% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - NSFW, Porn, Gambling, Snuff is 15.23% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
