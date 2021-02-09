@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks region specific domains. Should only be used with the 'General' List
 ! Version: 2.02.09
-! Last modified: 09 Feb 2021 20:06:09 IST
+! Last modified: 09 Feb 2021 21:49:34 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -6929,23 +6929,23 @@
 ||укроп-петрушка-огурцы.рф^
 ||хельга.рф^
 ||эхх.рф^
-@@||ad.apps.fm^$important
-@@||auth.tbn.ru^$important
-@@||cdn.warface.ru^$important
-@@||dl.unlockapk.com^$important
-@@||drupalcampmsk.ru^$important
-@@||dtb-gymnet.de^$important*^$importantadmID^$important
-@@||feadrope.net^$important
-@@||isondled.net^$important
-@@||loadercdn.com^$important
-@@||partner.kards.qip.ru^$important
-@@||partners.drweb.com^$important
-@@||prerollads.nl^$important
-@@||redtram.fm^$important
-@@||reklamlar.my-debrid.net^$important
-@@||static.hdrezka.ac^$important
-@@||stream.pladform.ru^$important
-@@||thumb.oloadcdn.net^$important
-@@||uobsoe.com^$important
-@@||www*.tusfiles.net^$important
-@@||yagiay.com^$important
+@@||ad.apps.fm^
+@@||auth.tbn.ru^
+@@||cdn.warface.ru^
+@@||dl.unlockapk.com^
+@@||drupalcampmsk.ru^
+@@||dtb-gymnet.de^*^admID^
+@@||feadrope.net^
+@@||isondled.net^
+@@||loadercdn.com^
+@@||partner.kards.qip.ru^
+@@||partners.drweb.com^
+@@||prerollads.nl^
+@@||redtram.fm^
+@@||reklamlar.my-debrid.net^
+@@||static.hdrezka.ac^
+@@||stream.pladform.ru^
+@@||thumb.oloadcdn.net^
+@@||uobsoe.com^
+@@||www*.tusfiles.net^
+@@||yagiay.com^

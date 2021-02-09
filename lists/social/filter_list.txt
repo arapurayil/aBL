@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
 ! Version: 2.02.09
-! Last modified: 09 Feb 2021 20:06:09 IST
+! Last modified: 09 Feb 2021 21:49:34 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -24,6 +24,7 @@
 ||0-83.badoo.com^
 ||0-act.channel.facebook.com^
 ||0.beta.facebook.com^
+||0.facebook.com^
 ||0.telegram.org^
 ||0.twitter.com^
 ||0.vk.com^
@@ -3100,7 +3101,6 @@
 ||printer.discordapp.com^
 ||prius.meetup.com^
 ||privacy.reddit.com^
-||probe.twitter.com^
 ||prod-assets.periscope.tv^
 ||prod-chatman-ancillary-ap-northeast-1.periscope.tv^
 ||prod-chatman-ancillary-eu-central-1.periscope.tv^
@@ -4923,12 +4923,12 @@
 ||укроп-петрушка-огурцы.рф^
 ||хельга.рф^
 ||эхх.рф^
-@@||ad.apps.fm^$important
-@@||auth.tbn.ru^$important
-@@||cdn.warface.ru^$important
-@@||drupalcampmsk.ru^$important
-@@||loadercdn.com^$important
-@@||partner.kards.qip.ru^$important
-@@||partners.drweb.com^$important
-@@||redtram.fm^$important
-@@||stream.pladform.ru^$important
+@@||ad.apps.fm^
+@@||auth.tbn.ru^
+@@||cdn.warface.ru^
+@@||drupalcampmsk.ru^
+@@||loadercdn.com^
+@@||partner.kards.qip.ru^
+@@||partners.drweb.com^
+@@||redtram.fm^
+@@||stream.pladform.ru^
