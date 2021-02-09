@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
 ! Version: 2.02.09
-! Last modified: 09 Feb 2021 15:06:23 IST
+! Last modified: 09 Feb 2021 17:08:41 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -24,7 +24,6 @@
 ||0-83.badoo.com^
 ||0-act.channel.facebook.com^
 ||0.beta.facebook.com^
-||0.facebook.com^
 ||0.telegram.org^
 ||0.twitter.com^
 ||0.vk.com^
@@ -1961,7 +1960,6 @@
 ||gusto.com^
 ||gw.linkedin.com^
 ||gymmeet.com^
-||h-ct-m-fbx.fbsbx.com.online-metrix.net^
 ||h5.qq.com^
 ||h5.qzone.qq.com^
 ||h5s.qzone.qq.com^
@@ -2038,7 +2036,6 @@
 ||hkextshort.weixin.qq.com^
 ||hkgtranscriptionteam.slack.com^
 ||hklong.weixin.qq.com^
-||hkminorshort.weixin.qq.com^
 ||hkshort.weixin.qq.com^
 ||hksiraix.vk.com^
 ||hn-button.herokuapp.com^
@@ -2094,6 +2091,7 @@
 ||i-h1.pinimg.com^
 ||i.myspace.com^
 ||i.pinimg.com.edgekey.net^
+||i.pinimg.com.gslb.pinterest.com^
 ||i.redditmedia.com^
 ||i.reddituploads.com^
 ||i18n.discordapp.com^
@@ -3101,7 +3099,6 @@
 ||printer.discordapp.com^
 ||prius.meetup.com^
 ||privacy.reddit.com^
-||probe.twitter.com^
 ||prod-assets.periscope.tv^
 ||prod-chatman-ancillary-ap-northeast-1.periscope.tv^
 ||prod-chatman-ancillary-eu-central-1.periscope.tv^
@@ -3292,7 +3289,6 @@
 ||ryze.com^
 ||s-external.ak.fbcdn.net^
 ||s-passets.pinimg.com^
-||s-pinimg-com.gslb.pinterest.com^
 ||s-static.ak.facebook.com.edgekey.net^
 ||s-static.ak.fbcdn.net^
 ||s-static.facebook.com^
