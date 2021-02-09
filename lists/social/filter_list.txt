@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'General' List
-! Version: 2.02.08
-! Last modified: 08 Feb 2021 18:50:33 IST
+! Version: 2.02.09
+! Last modified: 09 Feb 2021 15:06:23 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -1795,7 +1795,6 @@
 ||filamentapp-assets.s3.amazonaws.com^
 ||filamentapp.s3.amazonaws.com^
 ||file.api.wechat.com^
-||file.web.wechat.com^
 ||fileplatform.api.weibo.com^
 ||files-edge.slack.com^
 ||files-origin.slack.com^
@@ -3102,6 +3101,7 @@
 ||printer.discordapp.com^
 ||prius.meetup.com^
 ||privacy.reddit.com^
+||probe.twitter.com^
 ||prod-assets.periscope.tv^
 ||prod-chatman-ancillary-ap-northeast-1.periscope.tv^
 ||prod-chatman-ancillary-eu-central-1.periscope.tv^
@@ -3127,7 +3127,6 @@
 ||prod-video-us-west-1.periscope.tv^
 ||prod-video-us-west-2.periscope.tv^
 ||prod.facebook.com^
-||prod.pinterest.global.map.fastly.net^
 ||prod.tpc.skype.com^
 ||productclash.com^
 ||professional-black-bisexual-women-of-chicago.meetup.com^
@@ -4068,6 +4067,7 @@
 ||tb.mybb.ru^
 ||tc.fileplaneta.com^
 ||td.linkedin.com^
+||td.twitter.com^
 ||te.reddit.com^
 ||teachstreet.com^
 ||team.vk.com^
