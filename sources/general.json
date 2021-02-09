@@ -443,17 +443,6 @@
             "num_unblocked": 1547
         },
         {
-            "title": "nuvem.pw adblock allowlist",
-            "description": "-",
-            "url": "https://pub.nuvem.pw/adblock/lists/allowlist.txt",
-            "abp_format": false,
-            "unblock_list": true,
-            "num_regexp": 0,
-            "last_modified": "Mon, 08 Feb 2021 16:37:47 GMT",
-            "num_blocked": 0,
-            "num_unblocked": 473
-        },
-        {
             "title": "ookangzheng blahdns whitelist",
             "description": "-",
             "url": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt",
