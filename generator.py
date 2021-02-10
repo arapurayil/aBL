@@ -287,26 +287,26 @@ def remove_duplicates_false(blg, blocked, unblocked_domains, regexp):
     num_raw_blocked_domains = {"unprocessed": len(blocked)}
     stats.update(num_raw_blocked_domains)
     blocked = set(blocked) - set(unblocked_domains)
-    if blg.category != "general":
-        dir_general = Path.joinpath(DirPath.output, "general")
-        file_general_false_positives = Path.joinpath(
-            DirPath.temp, f"false_positives_general.txt"
-        )
-        file_general_domains = Path.joinpath(dir_general, OutputFile.abp_filter)
-        if file_general_false_positives and file_general_domains:
-            general_false_positives = {
-                x.strip() for x in read_file(file_general_false_positives)
-            }
-            general_blocked_domains = {
-                x.strip()
-                for x in read_file(file_general_domains)
-                if not str(x).startswith("!")
-            }
-            general_blocked_domains = {
-                x.replace("||", "").replace("^", "") for x in general_blocked_domains
-            }
-            add_domains_to_remove = general_false_positives | general_blocked_domains
-            blocked -= add_domains_to_remove
+#     if blg.category != "general":
+#         dir_general = Path.joinpath(DirPath.output, "general")
+#         file_general_false_positives = Path.joinpath(
+#             DirPath.temp, f"false_positives_general.txt"
+#         )
+#         file_general_domains = Path.joinpath(dir_general, OutputFile.abp_filter)
+#         if file_general_false_positives and file_general_domains:
+#             general_false_positives = {
+#                 x.strip() for x in read_file(file_general_false_positives)
+#             }
+#             general_blocked_domains = {
+#                 x.strip()
+#                 for x in read_file(file_general_domains)
+#                 if not str(x).startswith("!")
+#             }
+#             general_blocked_domains = {
+#                 x.replace("||", "").replace("^", "") for x in general_blocked_domains
+#             }
+#             add_domains_to_remove = general_false_positives | general_blocked_domains
+#             blocked -= add_domains_to_remove
     num_blocked_domains = {
         "minus regex matches, duplicates, and false positives": len(blocked)
     }
