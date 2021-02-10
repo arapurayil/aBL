@@ -4,10 +4,10 @@
 List**
 
 -   Sources: 21
--   Rules before processing: 19608
--   Rules after processing: 6923
+-   Rules before processing: 19586
+-   Rules after processing: 18888
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 64.69% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 3.56% lighter** than its combined sources
 
 | #      | Title                                                                                                                                           | Description                                                                                                                                                                                              | Blocking rules | Unblocking rules |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -15,7 +15,7 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 02     | [AdGuard Chinese filter](https://filters.adtidy.org/extension/chromium/filters/224.txt)                                                         | Removes ads from websites in Chinese. Originally based on the EasyList China filter and subsequently modified by us according to the complaints from users.                                              | 6321           | 12               |
 | 03     | [AdGuard Dutch filter](https://filters.adtidy.org/extension/chromium/filters/8.txt)                                                             | Removes ads from websites in Dutch. Originally based on the EasyList Dutch filter and subsequently modified by us according to the complaints from users.                                                | 89             | 1                |
 | 04     | [AdGuard French filter](https://filters.adtidy.org/extension/chromium/filters/16.txt)                                                           | Removes ads from websites in French. Originally based on the Liste FR filter and subsequently modified by us according to the complaints from users.                                                     | 5542           | 4                |
-| 05     | [AdGuard German filter](https://filters.adtidy.org/extension/chromium/filters/6.txt)                                                            | Removes ads from websites in German. Originally based on the EasyList Germany filter and subsequently modified by us according to the complaints from users.                                             | 490            | 5                |
+| 05     | [AdGuard German filter](https://filters.adtidy.org/extension/chromium/filters/6.txt)                                                            | Removes ads from websites in German. Originally based on the EasyList Germany filter and subsequently modified by us according to the complaints from users.                                             | 469            | 5                |
 | 06     | [AdGuard Japanese filter](https://filters.adtidy.org/extension/chromium/filters/7.txt)                                                          | Removes ads from websites in Japanese. Originally based on the Fanboy’s Japanese filter and subsequently modified by us according to the complaints from users.                                          | 290            | 0                |
 | 07     | [AdGuard Russian filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                                           | Removes ads from websites in Russian. Initially based on RU AdList filter but subsequently developed completely independently. Currently, there are very little intersections with RU AdList left.       | 4394           | 9                |
 | 08     | [AdGuard Spanish/Portuguese filter](https://filters.adtidy.org/extension/chromium/filters/9.txt)                                                | Removes ads from websites in Spanish and Portuguese. Originally based on the Fanboy’s Spanish/Portuguese filter and subsequently modified by us according to the complaints from users.                  | 208            | 0                |
