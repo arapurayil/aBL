@@ -377,17 +377,6 @@
             "num_unblocked": 0
         },
         {
-            "title": "MMotti AdguardHome - regex.txt",
-            "description": "Regular expressions generated from various sources for advanced filtering for use with AdGuard Home.",
-            "url": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
-            "abp_format": true,
-            "unblock_list": false,
-            "num_regexp": 14,
-            "last_modified": "W/\"9568fcfd921399c2f6d0e0f30521c1c0ce47ce9fbffb0f06fd5de793a3480088\"",
-            "num_blocked": 14,
-            "num_unblocked": 0
-        },
-        {
             "title": "MVPS HOSTS file",
             "description": "-",
             "url": "http://winhelp2002.mvps.org/hosts.txt",

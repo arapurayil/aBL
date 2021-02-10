@@ -14,3 +14,22 @@
 /^pixels?[-.]/
 ! causes false positives 
 !/^stat(s|istics)?[0-9]*[_.-]/
+
+! https://github.com/arapurayil/aBL/edit/master/.temp/potential_social.txt
+||tagged.com^
+||reddit.com^
+||skyrock.com^
+||weibo.com^
+||tfbnw.net^
+||fbcdn.net^
+||twitter.com^
+||facebook.com^
+||vk.com^
+||pinterest.com^
+||weheartit.com^
+||meetup.com^
+||myspace.com^
+||badoo.com^
+||qq.com^
+||periscope.tv^
+||instagram.com^

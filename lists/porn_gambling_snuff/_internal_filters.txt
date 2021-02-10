@@ -14,3 +14,23 @@
 /^pixels?[-.]/
 ! causes false positives 
 !/^stat(s|istics)?[0-9]*[_.-]/
+
+! https://github.com/arapurayil/aBL/blob/master/.temp/potential_porn_gambling_snuff.txt
+||cliphunter.com^
+||adtrue24.com^
+||phncdn.com^
+||nudevista.com^
+||mtree.com^
+||chaturbate.com^
+||tube8.com^
+||trafficdeposit.com^
+||stripst.com^
+||cdn3x.com^
+||xxxcounter.com^
+||ero-advertising.com^
+||bongacams.com^
+||sextracker.de^
+||txxx.com^
+||dditscdn.com^
+||exmasters.com^
+||sextracker.com^
