@@ -9,7 +9,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:40:36 GMT",
+            "last_modified": "Wed, 10 Feb 2021 06:40:35 GMT",
             "num_blocked": 2,
             "num_unblocked": 0
         },
@@ -20,7 +20,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:40:24 GMT",
+            "last_modified": "Wed, 10 Feb 2021 06:40:23 GMT",
             "num_blocked": 8,
             "num_unblocked": 0
         },
@@ -31,8 +31,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:45:04 GMT",
-            "num_blocked": 1031,
+            "last_modified": "Wed, 10 Feb 2021 06:40:04 GMT",
+            "num_blocked": 1052,
             "num_unblocked": 0
         },
         {
@@ -196,7 +196,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:40:56 GMT",
+            "last_modified": "Wed, 10 Feb 2021 06:40:55 GMT",
             "num_blocked": 116,
             "num_unblocked": 0
         },
@@ -207,8 +207,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 20:01:12 GMT",
-            "num_blocked": 7533,
+            "last_modified": "Wed, 10 Feb 2021 03:24:04 GMT",
+            "num_blocked": 7536,
             "num_unblocked": 0
         },
         {
@@ -218,7 +218,7 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"3d72596f50bd4bb3fc5c8303b02e86830ade6810782b5cbf63113b336ec3c44c\"",
+            "last_modified": "W/\"222d533c25b484d56168505f3906c0de4f7c3241832541df74ea7cde96bdd227\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -229,7 +229,7 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "W/\"108d57bce0ee0156acd54f336e150465eb076d64a45818ead1abcf48682f2427\"",
+            "last_modified": "W/\"eef271d973a32abbf3ebdf13296429259ab25aa3e7a90bebee9dd6d1deab8de6\"",
             "num_blocked": 21169,
             "num_unblocked": 0
         },
@@ -273,7 +273,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:00:09 GMT",
+            "last_modified": "Wed, 10 Feb 2021 02:50:08 GMT",
             "num_blocked": 116,
             "num_unblocked": 0
         },
@@ -284,7 +284,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sun, 07 Feb 2021 09:45:07 GMT",
+            "last_modified": "Wed, 10 Feb 2021 03:45:07 GMT",
             "num_blocked": 122,
             "num_unblocked": 0
         },
@@ -295,7 +295,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:41:34 GMT",
+            "last_modified": "Wed, 10 Feb 2021 06:41:35 GMT",
             "num_blocked": 160,
             "num_unblocked": 0
         },
@@ -460,8 +460,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regexp": 0,
-            "last_modified": "Wed, 18 Nov 2020 00:57:49 GMT",
-            "num_blocked": 775,
+            "last_modified": "Tue, 09 Feb 2021 21:06:56 GMT",
+            "num_blocked": 776,
             "num_unblocked": 0
         },
         {
@@ -515,8 +515,8 @@
             "abp_format": false,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Tue, 09 Feb 2021 21:00:03 GMT",
-            "num_blocked": 27828,
+            "last_modified": "Wed, 10 Feb 2021 06:00:03 GMT",
+            "num_blocked": 27832,
             "num_unblocked": 0
         },
         {
@@ -570,9 +570,9 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regexp": 0,
-            "last_modified": "W/\"761dc195ec2d6483fcf87a687889357e221c4804a73982f0cdab7ac8a819c4ad\"",
-            "num_blocked": 0,
-            "num_unblocked": 2
+            "last_modified": "W/\"30c2110f270a1a54d5f7cda3c363ad072efe9b943350a01ac3221640ed927e22\"",
+            "num_blocked": 13,
+            "num_unblocked": 3
         },
         {
             "title": "_unblocked_domains",

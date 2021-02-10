@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Regional
 ! Author: arapurayil
 ! Description: Blocks region specific domains. Should only be used with the 'General' List
-! Version: 2.02.09
-! Last modified: 09 Feb 2021 21:49:34 IST
+! Version: 2.02.10
+! Last modified: 10 Feb 2021 06:44:01 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -5743,6 +5743,9 @@
 ||starsearchtool.com^
 ||starsvanslimpid.com^
 ||starzplay.com^
+||stat-analytics.mediavitrina.ru^
+||stat.gamy.ameba.jp^
+||stat.ovh^
 ||static-cn.plista.com^
 ||static-dscn.net^
 ||static-od.com^
@@ -5759,6 +5762,11 @@
 ||static.zucks.net.zimg.jp^
 ||staticbhyravabhotl.red^
 ||statisticresearch.com^
+||statistics.infowap.info^
+||stats.adn.es^
+||stats.atrl.co^
+||stats.folha.com.br^
+||stats.milenio.com^
 ||statstools.porn.fr^
 ||status.kino-dom.org^
 ||staubsefoo.com^
