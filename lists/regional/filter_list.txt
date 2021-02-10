@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks region specific domains. Should only be used with the 'General' List
 ! Version: 2.02.10
-! Last modified: 10 Feb 2021 11:16:53 IST
+! Last modified: 10 Feb 2021 18:50:06 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -5342,6 +5342,7 @@
 ||sscj123.com^
 ||ssh.*.com^
 ||sskzlabs.com^
+||ssl-google-analytics.l.google.com^
 ||ssp.virool.com^
 ||sspintrafmsmt.com^
 ||sspsky.com^
@@ -5875,6 +5876,7 @@
 ||umamdmo.com^
 ||umamistreet.analytics.qlook.net^
 ||umountry.info^
+||unbouncepages.com^
 ||uncn.jp^
 ||undedly.com^
 ||undef8trust.com^
