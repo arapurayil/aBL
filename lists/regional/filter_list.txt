@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Regional
 ! Author: arapurayil
 ! Description: Blocks region specific domains. Should only be used with the 'General' List
-! Version: 2.02.13
-! Last modified: 13 Feb 2021 18:49:09 IST
+! Version: 2.02.14
+! Last modified: 14 Feb 2021 18:49:14 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -519,7 +519,6 @@
 ||99doyan.com^
 ||99l.co^
 ||9a505e446b3cbc49ba0.com^
-||9ad16721d9d5c56.com^
 ||9ads.net^
 ||9amq5z4y1y.com^
 ||9d683ea679bc03ff.com^
@@ -4038,7 +4037,6 @@
 ||media.admob.com^
 ||media.alphaload.com^
 ||media.aso.altapress.ru^
-||media.fc2.com^
 ||media.foxweb.co.il^
 ||media.gssp.asia^
 ||media.mydas.mobi^
@@ -4192,7 +4190,6 @@
 ||motbw.com^
 ||mothima.com^
 ||motionlink.jp^
-||motivesbreastchopped.com^
 ||motobile.info^
 ||motorsregie.com^
 ||mov-c.appli-info.com^
@@ -4827,6 +4824,7 @@
 ||pop.naminews.ir^
 ||poparb.com^
 ||popcorntime.com.br^
+||popin.cc,badfilter^
 ||popitunder.com^
 ||poprevenue.com^
 ||popruexo.com^
@@ -5729,6 +5727,7 @@
 ||ssend.microad.jp^
 ||ssh.*.com^
 ||sskzlabs.com^
+||ssl-google-analytics.l.google.com^
 ||ssl.socdm.com^
 ||ssl.webtracker.jp^
 ||ssp-sync.i-mobile.co.jp^
