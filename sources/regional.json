@@ -20,8 +20,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:21 GMT",
-            "num_blocked": 6334,
+            "last_modified": "Sun, 14 Feb 2021 19:32:20 GMT",
+            "num_blocked": 6337,
             "num_unblocked": 12
         },
         {
@@ -31,7 +31,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:56 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:32:54 GMT",
             "num_blocked": 89,
             "num_unblocked": 1
         },
@@ -42,7 +42,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:11 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:32:10 GMT",
             "num_blocked": 5542,
             "num_unblocked": 4
         },
@@ -53,7 +53,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:54 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:32:52 GMT",
             "num_blocked": 446,
             "num_unblocked": 5
         },
@@ -64,8 +64,8 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:55 GMT",
-            "num_blocked": 293,
+            "last_modified": "Sun, 14 Feb 2021 19:32:53 GMT",
+            "num_blocked": 297,
             "num_unblocked": 0
         },
         {
@@ -75,7 +75,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:18 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:32:17 GMT",
             "num_blocked": 4399,
             "num_unblocked": 9
         },
@@ -86,7 +86,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:32:56 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:32:54 GMT",
             "num_blocked": 208,
             "num_unblocked": 0
         },
@@ -97,7 +97,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:31:52 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:31:48 GMT",
             "num_blocked": 314,
             "num_unblocked": 1
         },
@@ -130,7 +130,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "W/\"2f6d9f0f92f95be3ea924ee9a123cf583ae5c61e85a5fe5381c9777e2da88f8c\"",
+            "last_modified": "W/\"0f46644b2bf2b068d9bd859dce8740c43528f69158463b2c68f510877a909f2e\"",
             "num_blocked": 302,
             "num_unblocked": 0
         },
@@ -141,7 +141,7 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"95431238f1782920b3e3f8dec85edf3f9deba36c07ced894c5f725b5d75e1cf3\"",
+            "last_modified": "W/\"8af0fa4d1aa770cd7a840bf9ba5afdc462b7c76bdb533cbc61ddd89f4271dd12\"",
             "num_blocked": 0,
             "num_unblocked": 10690
         },
@@ -163,7 +163,7 @@
             "abp_format": true,
             "unblock_list": false,
             "num_regex": 0,
-            "last_modified": "Sat, 13 Feb 2021 20:30:15 GMT",
+            "last_modified": "Sun, 14 Feb 2021 19:30:15 GMT",
             "num_blocked": 120,
             "num_unblocked": 0
         },
@@ -174,9 +174,9 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"48184e23fe80726f72b6bdf49ff4c63b0e0455e102dc9674c5d5bfc2d801919d\"",
+            "last_modified": "W/\"f0fd8d991ce212afe1f5f079b454ca37ea584a4827fd2c5f762d26eb967826f7\"",
             "num_blocked": 0,
-            "num_unblocked": 1548
+            "num_unblocked": 1550
         },
         {
             "title": "Tiuxo's hosts - ads",
@@ -218,9 +218,9 @@
             "abp_format": false,
             "unblock_list": true,
             "num_regexp": 0,
-            "last_modified": "W/\"b04bc9a0a17740857faeac9f6a5b92dfeb772360a34c3874d931ae6ddc6227ae\"",
+            "last_modified": "W/\"7c99ee477ab29764e695ace01000747e59dd436ac616710831c143beae5e11eb\"",
             "num_blocked": 0,
-            "num_unblocked": 0
+            "num_unblocked": 108
         },
         {
             "title": "_unblocked_domains",
