@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Regional
 ! Author: arapurayil
 ! Description: Blocks region specific domains. Should only be used with the 'General' List
-! Version: 2.02.14
-! Last modified: 14 Feb 2021 18:49:14 IST
+! Version: 2.02.15
+! Last modified: 15 Feb 2021 18:50:15 IST
 ! Expires: 1 day (update frequency)
 !
 ! Repository: https://github.com/arapurayil/aBL
@@ -1842,7 +1842,6 @@
 ||configs-pc.com^
 ||congoro.com^
 ||conityles-angths.com^
-||contagiousarrangementsilly.com^
 ||content.acc-hd.de^
 ||content.mql5.com^
 ||contentpap.info^
@@ -4037,6 +4036,7 @@
 ||media.admob.com^
 ||media.alphaload.com^
 ||media.aso.altapress.ru^
+||media.fc2.com^
 ||media.foxweb.co.il^
 ||media.gssp.asia^
 ||media.mydas.mobi^
@@ -5727,7 +5727,6 @@
 ||ssend.microad.jp^
 ||ssh.*.com^
 ||sskzlabs.com^
-||ssl-google-analytics.l.google.com^
 ||ssl.socdm.com^
 ||ssl.webtracker.jp^
 ||ssp-sync.i-mobile.co.jp^
