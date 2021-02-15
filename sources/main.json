@@ -1,0 +1,396 @@
+{
+   "title":"The Main List",
+   "description":"Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.",
+   "sources":[
+      {
+         "name":"ABP Adblock Warning Removal List",
+         "desc":"The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
+         "url":"https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":2,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"ABP filters",
+         "desc":"Removes circumvention ads in Adblock Plus",
+         "url":"https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":8,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"abuse.ch URLhaus Host file",
+         "desc":"URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours",
+         "url":"https://urlhaus.abuse.ch/downloads/hostfile/",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":1019,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"AdAway",
+         "desc":"AdAway is an open source ad blocker for Android using the hosts file",
+         "url":"https://adaway.org/hosts.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":9168,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"AdGuard Annoyances filter",
+         "desc":"Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn\u2019t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn\u2019t duplicate it, so you can use them both together",
+         "url":"https://filters.adtidy.org/extension/chromium/filters/14.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":607,
+         "num_unblock_rules":3
+      },
+      {
+         "name":"AdGuard DNS filter",
+         "desc":"Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.",
+         "url":"https://filters.adtidy.org/extension/chromium/filters/15.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":38895,
+         "num_unblock_rules":14
+      },
+      {
+         "name":"AdGuard Mobile ads filter",
+         "desc":"Filter that blocks ads on mobile devices. Contains all known mobile ad networks.",
+         "url":"https://filters.adtidy.org/extension/chromium/filters/11.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":1037,
+         "num_unblock_rules":2
+      },
+      {
+         "name":"AdGuard Safari filter",
+         "desc":"Special filter for Safari 9 and above on iOS and MacOS to use in combination with AdGuard (or other) filter lists. We need a seperate filter because Safari's Content Blocking API does not fully support AdGuard's advanced rules syntax.",
+         "url":"https://filters.adtidy.org/extension/chromium/filters/12.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":14,
+         "num_unblock_rules":4
+      },
+      {
+         "name":"AdGuard Tracking Protection filter",
+         "desc":"The most comprehensive list of various online counters and web analytics tools. If you do not want your actions on the Internet be tracked, use this filter.",
+         "url":"https://filters.adtidy.org/extension/chromium/filters/3.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":6139,
+         "num_unblock_rules":9
+      },
+      {
+         "name":"crazy-max's WindowsSpyBlocker (Spy)",
+         "desc":"Block spying and tracking on Windows systems",
+         "url":"https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":378,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Dan Pollock\u2019s hosts file",
+         "desc":"Protects you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \\\"web bugs\\\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet",
+         "url":"https://someonewhocares.org/hosts/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":14654,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"EasyList Cookie List",
+         "desc":"EasyList Cookie List blocks cookies banners, GDPR overlay windows and other privacy-related notices",
+         "url":"https://easylist-downloads.adblockplus.org/easylist-cookie.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":116,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"EasyList EasyPrivacy",
+         "desc":"EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
+         "url":"https://easylist.to/easylist/easyprivacy.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":7512,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Energized Core Hosts",
+         "desc":"Core Energized Blacklist.",
+         "url":"https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":21169,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"FadeMind's add.Risk",
+         "desc":"Risk content sites based on http://www.hostsfile.org/hosts.html content.",
+         "url":"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":2565,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"FadeMind's add.Spam",
+         "desc":"Spam sites based on http://www.hostsfile.org/hosts.html content.",
+         "url":"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":73,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"FadeMind's UncheckyAds",
+         "desc":"Windows installers ads sources",
+         "url":"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":10,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Fanboy's Anti-Cookie Filters",
+         "desc":"This will remove cookie and privacy warnings (List already included in Annoyances List, don't add list if you're using the Annoyances List)",
+         "url":"https://fanboy.co.nz/fanboy-cookiemonster.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":116,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Fanboy's Enhanced Trackers List",
+         "desc":"Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.",
+         "url":"https://www.fanboy.co.nz/enhancedstats.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":122,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Fanboy's Notifications Blocking List",
+         "desc":"Specialization: removes website notification popups (included in Fanboy's Annoyances)",
+         "url":"https://easylist-downloads.adblockplus.org/fanboy-notifications.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":160,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Geoffrey Frogeye's block list of first-party only trackers",
+         "desc":"-",
+         "url":"https://hostfiles.frogeye.fr/firstparty-only-trackers.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":27781,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Hexxium Creation's Threat List",
+         "desc":"Blocks scams/phishing/malware/malvertising/exploits - and other general threats",
+         "url":"https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":2971,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"hoshsadiq's NoCoin Filter List",
+         "desc":"Blocking Web Browser Bitcoin Mining",
+         "url":"https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":695,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Matomo.org - referrer spammers",
+         "desc":"This is a community-contributed list of referrer spammers maintained by Matomo, the leading open source web analytics platform.",
+         "url":"https://raw.githubusercontent.com/matomo-org/referrer-spam-list/master/spammers.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":2052,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"MetaMask's ETH Phishing Detect",
+         "desc":"Utility for detecting phishing domains targeting Ethereum users.",
+         "url":"https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":1070,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"MVPS HOSTS file",
+         "desc":"-",
+         "url":"http://winhelp2002.mvps.org/hosts.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":8814,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"NextDNS CNAME Cloaking Blocklist",
+         "desc":"-",
+         "url":"https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":22,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home",
+         "desc":"This is a blocklist to block smart-TVs sending metadata back home, sometimes with the added benefit of blocking interface ads for apps and movie services.",
+         "url":"https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":143,
+         "num_unblock_rules":9
+      },
+      {
+         "name":"Personal Blocklist by WaLLy3K",
+         "desc":"Content added to this list has been manually verified, and is updated irregularly",
+         "url":"https://v.firebog.net/hosts/static/w3kbl.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":777,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Peter Lowe's Blocklist",
+         "desc":"Blocklist for use with Adblock Plus",
+         "url":"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":3568,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Spam404",
+         "desc":"blocks scam sites",
+         "url":"https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":7050,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"Steven Black's ad-hoc list",
+         "desc":"This is the ad-hoc list from StevenBlack/hosts",
+         "url":"https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":3022,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"StopForumSpam",
+         "desc":"Forum spammers",
+         "url":"https://stopforumspam.com/downloads/toxic_domains_whole.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":27849,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"UT1 Blacklists - cryptojacking",
+         "desc":"-",
+         "url":"https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":8788,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"ZeroDot1's CoinBlocker Domains List Optional",
+         "desc":"An additional list for administrators",
+         "url":"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":790,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"ZeroDot1's CoinBlocker List",
+         "desc":"A list for administrators to prevent mining in browsers",
+         "url":"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt",
+         "abp_format":false,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":3550,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"_internal_filters",
+         "desc":"internal list",
+         "url":"https://abl.arapurayil.com/core/filters_main.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":false,
+         "num_block_rules":0,
+         "num_unblock_rules":3
+      },
+      {
+         "name":"_internal_regex_rules",
+         "desc":"internal list",
+         "url":"https://abl.arapurayil.com/core/regex_rules.txt",
+         "abp_format":true,
+         "exclusions_list":false,
+         "regex_list":true,
+         "num_block_rules":13,
+         "num_unblock_rules":0
+      },
+      {
+         "name":"_unblocked_domains",
+         "desc":"internal list",
+         "url":"https://raw.githubusercontent.com/arapurayil/aBL_unblock/main/domains/main.txt",
+         "abp_format":false,
+         "exclusions_list":true,
+         "regex_list":false,
+         "num_block_rules":0,
+         "num_unblock_rules":0
+      }
+   ]
+}
