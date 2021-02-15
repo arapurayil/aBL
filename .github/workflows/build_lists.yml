@@ -6,7 +6,7 @@ on:
   schedule:
     - cron: '30 18 * * *'
   push:
-    branches: [ master ]
+    branches: [ beta ]
     paths:
        - '.github/workflows/build_lists.yml'
        - 'sources/*.json'
