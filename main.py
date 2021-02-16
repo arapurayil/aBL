@@ -969,7 +969,7 @@ def main():
             p_bar.set_description(
                 desc=f"Compressing rules — {lg.data_json[lg.j_key.title]}"
             )
-            blocked_domains += cname_list
+            blocked_domains |= cname_list
             blocked_domains = compress_rules(lg, blocked_domains)
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules
