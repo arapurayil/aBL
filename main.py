@@ -14,7 +14,6 @@ from json import load, loads, dump
 from pathlib import Path
 from textwrap import fill
 
-
 from dns import resolver, exception as dns_exception
 from regex import regex as re
 from requests import Session
@@ -128,9 +127,8 @@ class ListGenerator:
         name="name",
         url="url",
         desc="desc",
-        abp_format="abp_format",
-        exclusions_list="exclusions_list",
-        regex_list="regex_list",
+        format="format",
+        type="type",
         num_block_rules="num_block_rules",
         num_unblock_rules="num_unblock_rules",
     )
@@ -228,7 +226,7 @@ def extract_regex(content):
     return regex_rules
 
 
-def extract_hosts(content, is_false):
+def extract_hosts(content, list_type):
     """Extracts blocked or unblocked domains from hosts/domains style content."""
     pattern_scrub = [
         r"(?>\#|\!|\s+\#|\s+\!).*",
@@ -240,12 +238,14 @@ def extract_hosts(content, is_false):
     pattern = re.compile("|".join(f"(?:{p})" for p in pattern_scrub), re.V1)
     domains = [re.sub(pattern, "", x, concurrent=True) for x in content]
     domains = [x for x in domains if valid_domain(x)]
-    blocked_domains, unblocked_domains = [], []
-    if is_false:
+    blocked_domains, unblocked_domains, cname_list = [], [], []
+    if list_type == "unblock":
         unblocked_domains = domains
-    else:
+    if list_type == "block":
         blocked_domains = domains
-    return blocked_domains, unblocked_domains
+    if list_type == "cname":
+        cname_list = domains
+    return blocked_domains, unblocked_domains, cname_list
 
 
 def get_response(url):
@@ -273,22 +273,31 @@ def get_content(url):
 def worker_process_sources(item, blg):
     """Worker for process_sources via ThreadPoolExecutor."""
     unprocessed = get_content(item[blg.i_key.url]).splitlines()
-    blocked_domains, unblocked_domains, unblock_rules, regex_rules = [], [], [], []
-    if item[blg.i_key.abp_format] and not item[blg.i_key.regex_list]:
-        blocked_domains, unblocked_domains, unblock_rules, regex_rules = extract_abp(
-            unprocessed
-        )
-    if item[blg.i_key.regex_list]:
+    blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list = (
+        [],
+        [],
+        [],
+        [],
+        [],
+    )
+    if item[blg.i_key.type] == "regex":
         regex_rules = extract_regex(unprocessed)
-    if not item[blg.i_key.abp_format]:
-        blocked_domains, unblocked_domains = extract_hosts(
-            unprocessed, item[blg.i_key.exclusions_list]
-        )
-
+    else:
+        if item[blg.i_key.format] == "abp":
+            (
+                blocked_domains,
+                unblocked_domains,
+                unblock_rules,
+                regex_rules,
+            ) = extract_abp(unprocessed)
+        if item[blg.i_key.format] == "domains":
+            blocked_domains, unblocked_domains, cname_list = extract_hosts(
+                unprocessed, item[blg.i_key.type]
+            )
     item[blg.i_key.num_block_rules] = len(blocked_domains) + len(regex_rules)
     item[blg.i_key.num_unblock_rules] = len(unblocked_domains)
     write_file(blg.data_json, blg.file_json)
-    return blocked_domains, unblocked_domains, unblock_rules, regex_rules
+    return blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list
 
 
 def remove_common_sub(domains):
@@ -368,7 +377,13 @@ def process_sources(blg):
         blg.data_json[blg.j_key.sources], key=lambda x: x[blg.i_key.name].upper()
     )
     with ProcessPoolExecutor() as pool:
-        blocked_domains, unblocked_domains, unblock_rules, regex_rules = zip(
+        (
+            blocked_domains,
+            unblocked_domains,
+            unblock_rules,
+            regex_rules,
+            cname_list,
+        ) = zip(
             *pool.map(
                 worker_process_sources,
                 blg.data_json[blg.j_key.sources],
@@ -381,8 +396,9 @@ def process_sources(blg):
     unblocked_domains = chain.from_iterable(unblocked_domains)
     unblock_rules = chain.from_iterable(unblock_rules)
     regex_rules = chain.from_iterable(regex_rules)
+    cname_list = chain.from_iterable(cname_list)
 
-    return blocked_domains, unblocked_domains, unblock_rules, regex_rules
+    return blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list
 
 
 def worker_get_not_active(item):
@@ -511,7 +527,12 @@ def compress_rules(blg, all_domains):
         with ProcessPoolExecutor() as pool:
             unmatched_subdomains = list(
                 tqdm(
-                    pool.map(worker_unmatched_item, sub_domains, repeat(pattern), chunksize=100),
+                    pool.map(
+                        worker_unmatched_item,
+                        sub_domains,
+                        repeat(pattern),
+                        chunksize=100,
+                    ),
                     desc=f"Matching redundant sub-domains — {blg.data_json[blg.j_key.title]}",
                     total=len(sub_domains),
                     leave=False,
@@ -910,6 +931,7 @@ def main():
                 unblocked_domains,
                 unblock_rules,
                 regex_rules,
+                cname_list,
             ) = process_sources(lg)
 
             stats = {}
@@ -917,10 +939,12 @@ def main():
             unblocked_domains = list(unblocked_domains)
             unblock_rules = list(unblock_rules)
             regex_rules = list(regex_rules)
+            cname_list = list(cname_list)
             num_unprocessed = {
                 "unprocessed": len(blocked_domains)
-                + len(unblocked_domains)
+                + len(unblock_rules)
                 + len(regex_rules)
+                + len(cname_list)
             }
             stats.update(num_unprocessed)
 
@@ -928,6 +952,7 @@ def main():
             unblocked_domains = set(unblocked_domains)
             unblock_rules = set(unblock_rules)
             regex_rules = set(regex_rules)
+            cname_list = set(cname_list)
             p_bar.set_description(
                 desc=f"Applying exclusions — {lg.data_json[lg.j_key.title]}"
             )
@@ -944,6 +969,7 @@ def main():
             p_bar.set_description(
                 desc=f"Compressing rules — {lg.data_json[lg.j_key.title]}"
             )
+            blocked_domains += cname_list
             blocked_domains = compress_rules(lg, blocked_domains)
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules

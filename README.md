@@ -59,6 +59,7 @@ Please notify me if I have violated a license condition.
 **Blocks ads, analytics, trackers, crypto-jacking & other such
 threats/nuisances. Addon lists are available to extend this list.**
 
+<<<<<<< Updated upstream
 -   Sources: 39
 -   Rules before processing: 247072
 -   Rules after processing: 128437
@@ -106,4 +107,19 @@ The **aBL - The Main List is 48.02% lighter** than its combined sources
 | 37     | [\_internal\_filters](https://abl.arapurayil.com/core/filters_main.txt)                                                                                    | internal list                                                                                                                                                                                                                                                                                                                             | 0              | 3                |
 | 38     | [\_internal\_regex\_rules](https://abl.arapurayil.com/core/regex_rules.txt)                                                                                | internal list                                                                                                                                                                                                                                                                                                                             | 13             | 0                |
 | 39     | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/aBL_unblock/main/domains/main.txt)                                                     | internal list                                                                                                                                                                                                                                                                                                                             | 0              | 44698            |
+=======
+-   Sources: 5
+-   Rules before processing: 985
+-   Rules after processing: 955
+
+The **aBL - The Main List is 3.05% lighter** than its combined sources
+
+| #   | Title                                                                                                                   | Description                                                                                                                                                                                                       | Blocking rules | Unblocking rules |
+| --- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
+| 01  | [ABP Adblock Warning Removal List](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt)                   | The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.                                                                                     | 2              | 0                |
+| 02  | [abuse.ch URLhaus Host file](https://urlhaus.abuse.ch/downloads/hostfile/)                                              | URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours       | 970            | 0                |
+| 03  | [NextDNS CNAME Cloaking Blocklist](https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains)   | -                                                                                                                                                                                                                 | 0              | 0                |
+| 04  | [\_internal\_regex\_rules](https://abl.arapurayil.com/core/regex_rules.txt)                                             | internal list                                                                                                                                                                                                     | 13             | 0                |
+| 05  | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/aBL_unblock/main/domains/main.txt)                  | internal list                                                                                                                                                                                                     | 0              | 0                |
+>>>>>>> Stashed changes
 
