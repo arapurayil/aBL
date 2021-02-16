@@ -3,6 +3,7 @@ aBL - Generator
 """
 from base64 import b64encode
 from collections import namedtuple, Counter
+from concurrent.futures.process import ProcessPoolExecutor
 from concurrent.futures.thread import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime
@@ -332,7 +333,7 @@ def get_cname(domains):
     with ThreadPoolExecutor(max_workers=100) as pool:
         domains_cname = list(
             tqdm(
-                pool.map(worker_get_cname, domains),
+                pool.map(worker_get_cname, domains, chunksize=10),
                 total=len(domains),
                 desc=f"Fetching CNAMEs",
                 leave=False,
@@ -366,12 +367,13 @@ def process_sources(blg):
     blg.data_json[blg.j_key.sources] = sorted(
         blg.data_json[blg.j_key.sources], key=lambda x: x[blg.i_key.name].upper()
     )
-    with ThreadPoolExecutor() as pool:
+    with ProcessPoolExecutor() as pool:
         blocked_domains, unblocked_domains, unblock_rules, regex_rules = zip(
             *pool.map(
                 worker_process_sources,
                 blg.data_json[blg.j_key.sources],
                 repeat(blg),
+                chunksize=10,
             )
         )
 
@@ -402,10 +404,10 @@ def get_not_active(domains):
     """
     Gets non active domains.
     """
-    with ThreadPoolExecutor(max_workers=50) as pool:
+    with ThreadPoolExecutor(max_workers=100) as pool:
         not_active = list(
             tqdm(
-                pool.map(worker_get_not_active, domains, chunksize=100),
+                pool.map(worker_get_not_active, domains, chunksize=10),
                 total=len(domains),
                 leave=False,
             )
@@ -468,7 +470,7 @@ def compress_rules(blg, all_domains):
         domains_to_check = all_domains
         identified_main_domains = None
 
-    with ThreadPoolExecutor() as pool:
+    with ProcessPoolExecutor() as pool:
         main_domains = list(
             tqdm(
                 pool.map(worker_return_main_domain, domains_to_check, chunksize=100),
@@ -484,7 +486,7 @@ def compress_rules(blg, all_domains):
     if None in main_domains:
         main_domains.remove(None)
     sub_domains = all_domains - main_domains
-    with ThreadPoolExecutor() as pool:
+    with ProcessPoolExecutor() as pool:
         sub_main_domains = list(
             tqdm(
                 pool.map(worker_extract_registered_domain, sub_domains, chunksize=100),
@@ -506,10 +508,10 @@ def compress_rules(blg, all_domains):
             + r")$",
             re.V1,
         )
-        with ThreadPoolExecutor() as pool:
+        with ProcessPoolExecutor() as pool:
             unmatched_subdomains = list(
                 tqdm(
-                    pool.map(worker_unmatched_item, sub_domains, repeat(pattern)),
+                    pool.map(worker_unmatched_item, sub_domains, repeat(pattern), chunksize=100),
                     desc=f"Matching redundant sub-domains — {blg.data_json[blg.j_key.title]}",
                     total=len(sub_domains),
                     leave=False,
