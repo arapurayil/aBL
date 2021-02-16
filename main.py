@@ -582,6 +582,12 @@ def gen_checksum(file_blocklist):
     write_file(data, file_blocklist)
 
 
+def write_version(blg):
+    """Writes version number to a file."""
+    file_version = Path.joinpath(DirPath.base, "version.txt")
+    write_file(blg.info.version, file_version)
+
+
 def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
     """
     Generate filter list
@@ -633,6 +639,7 @@ def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
                 file.write(line)
 
     gen_checksum(file_filter)
+    write_version(blg)
 
 
 def category_section_main(blg, stats):
