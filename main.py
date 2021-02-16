@@ -333,7 +333,7 @@ def get_cname(domains):
     with ThreadPoolExecutor(max_workers=100) as pool:
         domains_cname = list(
             tqdm(
-                pool.map(worker_get_cname, domains, chunksize=10),
+                pool.map(worker_get_cname, domains, chunksize=100),
                 total=len(domains),
                 desc=f"Fetching CNAMEs",
                 leave=False,
