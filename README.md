@@ -42,9 +42,11 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
   <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
 
 
-| #   | TITLE           | DESCRIPTION                                                                                                                      | DOWNLOAD LINK                                                                            |
-| --- | --------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 01  | The Main List   | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/lists/main.txt](https://abl.arapurayil.com/lists/main.txt)   |
+| #   | TITLE                  | DESCRIPTION                                                                                                                      | DOWNLOAD LINK                                                                                |
+| --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 01  | The Main List          | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/lists/main.txt](https://abl.arapurayil.com/lists/main.txt)       |
+| 02  | Addon - NSFW           | Blocks nsfw content including porn, gambling, snuff ,etc. Should only be used with the 'Main' List                               | [https://abl.arapurayil.com/lists/nsfw.txt](https://abl.arapurayil.com/lists/nsfw.txt)       |
+| 03  | Addon - Social Media   | Blocks social media. Should only be used with the 'General' List                                                                 | [https://abl.arapurayil.com/lists/social.txt](https://abl.arapurayil.com/lists/social.txt)   |
 
 ### Credits
 
@@ -60,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 52
--   Rules before processing: 223072
--   Rules after processing: 132470
+-   Rules before processing: 223111
+-   Rules after processing: 1855943
 
-The **aBL - The Main List is 40.62% lighter** than its combined sources
+The **aBL - The Main List is -731.85% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -119,4 +121,51 @@ The **aBL - The Main List is 40.62% lighter** than its combined sources
 | 50     | [UT1 Blacklists - cryptojacking](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains)                           | -                                                                                                                                                                                                                                                                                                                                         | 8788           | 0                |
 | 51     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                  | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
 | 52     | [ZeroDot1's CoinBlocker List](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt)                                                    | A list for administrators to prevent mining in browsers                                                                                                                                                                                                                                                                                   | 3550           | 0                |
+
+## Addon - NSFW
+**[Download](https://abl.arapurayil.com/lists/nsfw.txt)**
+
+**Blocks nsfw content including porn, gambling, snuff ,etc. Should only
+be used with the 'Main' List**
+
+-   Sources: 12
+-   Rules before processing: 63939
+-   Rules after processing: 4
+
+The **aBL - Addon - NSFW is 99.99% lighter** than its combined sources
+
+| #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
+| 01     | [chadmayfield's Porn Top 1m (Light List)](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list)   | Top 1 million                              | 11868          | 0                |
+| 02     | [Clefspeare13's pornhosts](https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts)                                                  | A consolidated anti porn hosts file.       | 16470          | 0                |
+| 03     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 864            | 0                |
+| 04     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 21             | 0                |
+| 05     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 102            | 0                |
+| 06     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 15534          | 0                |
+| 07     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2393           | 0                |
+| 08     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 15083          | 0                |
+| 09     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 18             | 0                |
+| 10     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
+| 11     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1200           | 0                |
+| 12     | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_internal_filters.txt)                             | internal list - porn,gambling & snuff      | 31             | 0                |
+
+## Addon - Social Media
+**[Download](https://abl.arapurayil.com/lists/social.txt)**
+
+**Blocks social media. Should only be used with the 'General' List**
+
+-   Sources: 6
+-   Rules before processing: 11771
+-   Rules after processing: 117
+
+The **aBL - Addon - Social Media is 99.01% lighter** than its combined sources
+
+| #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
+| --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4401           | 9                |
+| 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 0                |
+| 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2810           | 0                |
+| 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
+| 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
+| 06  | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt)            | internal list - social                                                                                     | 30             | 0                |
 
