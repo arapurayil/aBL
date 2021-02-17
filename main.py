@@ -637,6 +637,12 @@ def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
         unblock_rules = [x for x in unblock_rules if x not in unblock_rules_main]
         regex_rules = [x for x in regex_rules if x not in regex_rules_main]
 
+    _num_processed = 0
+    _num_processed += len(block_rules)
+    _num_processed += len(unblock_rules)
+    _num_processed += len(regex_rules)
+    _num_processed += len(override_rules)
+
     block_rules = "\n".join(block_rules) + "\n"
     unblock_rules = "\n".join(unblock_rules) + "\n"
     regex_rules = "\n".join(regex_rules) + "\n"
@@ -661,7 +667,7 @@ def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
 
     gen_checksum(file_filter)
     write_version(blg)
-    return block_rules, unblock_rules, regex_rules, override_rules
+    return _num_processed
 
 
 def category_section_main(blg, stats):
@@ -975,14 +981,11 @@ def main():
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules
             )
-            block_rules, unblock_rules, regex_rules, override_rules = gen_filter_list(
+            _num_processed = gen_filter_list(
                 lg, blocked_domains, unblock_rules, regex_rules
             )
             num_processed = {
-                "processed": len(block_rules)
-                + len(unblock_rules)
-                + len(regex_rules)
-                + len(override_rules)
+                "processed": _num_processed
             }
             stats.update(num_processed)
             gen_category(lg, stats)
