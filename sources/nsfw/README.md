@@ -6,15 +6,15 @@ be used with the 'Main' List**
 
 -   Sources: 12
 -   Rules before processing: 63939
--   Rules after processing: 4
+-   Rules after processing: 0
 
-The **aBL - Addon - NSFW is 99.99% lighter** than its combined sources
+The **aBL - Addon - NSFW is 100.00% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
 | 01     | [chadmayfield's Porn Top 1m (Light List)](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list)   | Top 1 million                              | 11868          | 0                |
 | 02     | [Clefspeare13's pornhosts](https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts)                                                  | A consolidated anti porn hosts file.       | 16470          | 0                |
-| 03     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 864            | 0                |
+| 03     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 863            | 0                |
 | 04     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 21             | 0                |
 | 05     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 102            | 0                |
 | 06     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 15534          | 0                |
