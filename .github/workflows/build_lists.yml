@@ -4,7 +4,7 @@
 name: daily auto update
 on:
   schedule:
-    - cron: '31 18 * * *'
+    - cron: '30 18 * * *'
   push:
     branches: [ beta ]
     paths:
