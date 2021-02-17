@@ -661,6 +661,7 @@ def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
 
     gen_checksum(file_filter)
     write_version(blg)
+    return block_rules, unblock_rules, regex_rules, override_rules
 
 
 def category_section_main(blg, stats):
@@ -974,11 +975,14 @@ def main():
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules
             )
-            gen_filter_list(lg, blocked_domains, unblock_rules, regex_rules)
+            block_rules, unblock_rules, regex_rules, override_rules = gen_filter_list(
+                lg, blocked_domains, unblock_rules, regex_rules
+            )
             num_processed = {
-                "processed": len(blocked_domains)
-                + len(unblocked_domains)
+                "processed": len(block_rules)
+                + len(unblock_rules)
                 + len(regex_rules)
+                + len(override_rules)
             }
             stats.update(num_processed)
             gen_category(lg, stats)
