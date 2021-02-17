@@ -3,8 +3,8 @@
    "description":"Blocks social media. Should only be used with the 'General' List",
    "sources":[
       {
-         "title":"AdGuard Social media filter",
-         "description":"Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.",
+         "name":"AdGuard Social media filter",
+         "desc":"Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.",
          "url":"https://filters.adtidy.org/extension/chromium/filters/1.txt",
          "format":"abp",
          "type":"block",
@@ -12,8 +12,8 @@
          "num_unblock_rules":9
       },
       {
-         "title":"Energized Core Social Blacklist",
-         "description":"Core Energized Blacklist.",
+         "name":"Energized Core Social Blacklist",
+         "desc":"Core Energized Blacklist.",
          "url":"https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social",
          "abp_format":false,
          "type":"block",
@@ -21,8 +21,8 @@
          "num_unblock_rules":0
       },
       {
-         "title":"Sinfonietta's Social media hosts",
-         "description":"-",
+         "name":"Sinfonietta's Social media hosts",
+         "desc":"-",
          "url":"https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
          "abp_format":false,
          "type":"block",
@@ -30,8 +30,8 @@
          "num_unblock_rules":0
       },
       {
-         "title":"Tiuxo's hosts - social",
-         "description":"-",
+         "name":"Tiuxo's hosts - social",
+         "desc":"-",
          "url":"https://raw.githubusercontent.com/tiuxo/hosts/master/social",
          "abp_format":false,
          "type":"block",
@@ -39,8 +39,8 @@
          "num_unblock_rules":0
       },
       {
-         "title":"UT1 Blacklists - social",
-         "description":"-",
+         "name":"UT1 Blacklists - social",
+         "desc":"-",
          "url":"https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains",
          "abp_format":false,
          "type":"block",
@@ -48,8 +48,8 @@
          "num_unblock_rules":0
       },
       {
-         "title":"_internal_filters",
-         "description":"internal list - social",
+         "name":"_internal_filters",
+         "desc":"internal list - social",
          "url":"https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt",
          "format":"abp",
          "type":"block",
