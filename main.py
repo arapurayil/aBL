@@ -13,6 +13,8 @@ from itertools import repeat, chain
 from json import load, loads, dump
 from pathlib import Path
 from textwrap import fill
+from PyFunceble import DomainAndIPAvailabilityChecker as DomainStatus
+
 
 from dns import resolver, exception as dns_exception
 from regex import regex as re
@@ -361,7 +363,8 @@ def remove_unblocked_from_blocked(blocked_domains, unblocked_domains):
 
     """
     unblocked_domains |= remove_common_sub(unblocked_domains)
-    unblocked_domains |= get_cname(unblocked_domains)
+    # cnames are included in the unblock list
+    # unblocked_domains |= get_cname(unblocked_domains)
     blocked_domains -= unblocked_domains
 
     return blocked_domains, unblocked_domains
@@ -405,14 +408,7 @@ def worker_get_not_active(item):
     """
     Worker for get_not_active
     """
-    try:
-        dns_resolver().resolve(item)
-    except (
-        resolver.NXDOMAIN,
-        resolver.NoAnswer,
-        dns_exception.Timeout,
-        resolver.NoNameservers,
-    ):
+    if not DomainStatus(item).get_status().is_active():
         return item
 
 
@@ -420,10 +416,10 @@ def get_not_active(domains):
     """
     Gets non active domains.
     """
-    with ThreadPoolExecutor(max_workers=100) as pool:
+    with ThreadPoolExecutor(max_workers=10) as pool:
         not_active = list(
             tqdm(
-                pool.map(worker_get_not_active, domains, chunksize=10),
+                pool.map(worker_get_not_active, domains, chunksize=100),
                 total=len(domains),
                 leave=False,
             )
@@ -968,11 +964,11 @@ def main():
             )
             blocked_domains = set(blocked_domains)
             unblocked_domains = set(unblocked_domains)
-
-            p_bar.set_description(
-                desc=f"Removing non-active domains — {lg.data_json[lg.j_key.title]}"
-            )
-            blocked_domains, not_active_blocked_domains = only_active(blocked_domains)
+            # time-consuming
+            # p_bar.set_description(
+            #     desc=f"Removing non-active domains — {lg.data_json[lg.j_key.title]}"
+            # )
+            # blocked_domains, not_active_blocked_domains = only_active(blocked_domains)
             p_bar.set_description(
                 desc=f"Compressing rules — {lg.data_json[lg.j_key.title]}"
             )
