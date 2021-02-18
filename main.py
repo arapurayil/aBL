@@ -13,7 +13,7 @@ from itertools import repeat, chain
 from json import load, loads, dump
 from pathlib import Path
 from textwrap import fill
-from PyFunceble import DomainAndIPAvailabilityChecker as DomainStatus
+# from PyFunceble import DomainAndIPAvailabilityChecker as DomainStatus
 
 
 from dns import resolver, exception as dns_exception
@@ -404,36 +404,36 @@ def process_sources(blg):
     return blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list
 
 
-def worker_get_not_active(item):
-    """
-    Worker for get_not_active
-    """
-    if not DomainStatus(item).get_status().is_active():
-        return item
-
-
-def get_not_active(domains):
-    """
-    Gets non active domains.
-    """
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        not_active = list(
-            tqdm(
-                pool.map(worker_get_not_active, domains, chunksize=100),
-                total=len(domains),
-                leave=False,
-            )
-        )
-    return not_active
-
-
-def only_active(domains):
-    """
-    Removes non-active domains from list of domains
-    """
-    not_active_domains = get_not_active(domains)
-    active_domains = domains - set(not_active_domains)
-    return active_domains, not_active_domains
+# def worker_get_not_active(item):
+#     """
+#     Worker for get_not_active
+#     """
+#     if not DomainStatus(item).get_status().is_active():
+#         return item
+# 
+# 
+# def get_not_active(domains):
+#     """
+#     Gets non active domains.
+#     """
+#     with ThreadPoolExecutor(max_workers=10) as pool:
+#         not_active = list(
+#             tqdm(
+#                 pool.map(worker_get_not_active, domains, chunksize=100),
+#                 total=len(domains),
+#                 leave=False,
+#             )
+#         )
+#     return not_active
+# 
+# 
+# def only_active(domains):
+#     """
+#     Removes non-active domains from list of domains
+#     """
+#     not_active_domains = get_not_active(domains)
+#     active_domains = domains - set(not_active_domains)
+#     return active_domains, not_active_domains
 
 
 def extract_tld(domain):
