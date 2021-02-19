@@ -1,14 +1,14 @@
 # Addon - NSFW
-**[Download](https://abl.arapurayil.com/lists/nsfw.txt)**
+**[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
 
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
 -   Sources: 15
 -   Rules before processing: 63934
--   Rules after processing: 24635
+-   Rules after processing: 23022
 
-The **aBL - Addon - NSFW is 61.47% lighter** than its combined sources
+The **aBL - Addon - NSFW is 63.99% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |

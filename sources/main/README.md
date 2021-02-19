@@ -1,14 +1,14 @@
 # The Main List
-**[Download](https://abl.arapurayil.com/lists/main.txt)**
+**[Download](https://abl.arapurayil.com/filters/main.txt)**
 
 **Blocks ads, analytics, trackers, crypto-jacking & other such
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 52
--   Rules before processing: 223305
--   Rules after processing: 142257
+-   Rules before processing: 223236
+-   Rules after processing: 102186
 
-The **aBL - The Main List is 36.29% lighter** than its combined sources
+The **aBL - The Main List is 54.23% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -62,6 +62,6 @@ The **aBL - The Main List is 36.29% lighter** than its combined sources
 | 48     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                  | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
 | 49     | [ZeroDot1's CoinBlocker List](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt)                                                    | A list for administrators to prevent mining in browsers                                                                                                                                                                                                                                                                                   | 3550           | 0                |
 | 50     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 31             | 0                |
-| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 31             | 0                |
-| 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 31             | 0                |
+| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
+| 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 13             | 0                |
 

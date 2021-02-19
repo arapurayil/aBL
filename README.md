@@ -42,11 +42,11 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
   <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
 
 
-| #   | TITLE                  | DESCRIPTION                                                                                                                      | DOWNLOAD LINK                                                                                |
-| --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 01  | The Main List          | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/lists/main.txt](https://abl.arapurayil.com/lists/main.txt)       |
-| 02  | Addon - NSFW           | Blocks nsfw content including porn, gambling, snuff ,etc. Should only be used with the 'Main' List                               | [https://abl.arapurayil.com/lists/nsfw.txt](https://abl.arapurayil.com/lists/nsfw.txt)       |
-| 03  | Addon - Social Media   | Blocks social media. Should only be used with the 'General' List                                                                 | [https://abl.arapurayil.com/lists/social.txt](https://abl.arapurayil.com/lists/social.txt)   |
+| #   | TITLE                  | DESCRIPTION                                                                                                                      | DOWNLOAD LINK                                                                                    |
+| --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 01  | The Main List          | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/filters/main.txt](https://abl.arapurayil.com/filters/main.txt)       |
+| 02  | Addon - NSFW           | Blocks nsfw content including porn, gambling, snuff ,etc. Should only be used with the 'Main' List                               | [https://abl.arapurayil.com/filters/nsfw.txt](https://abl.arapurayil.com/filters/nsfw.txt)       |
+| 03  | Addon - Social Media   | Blocks social media. Should only be used with the 'General' List                                                                 | [https://abl.arapurayil.com/filters/social.txt](https://abl.arapurayil.com/filters/social.txt)   |
 
 ### Credits
 
@@ -56,16 +56,16 @@ Please notify me if I have violated a license condition.
 
 
 ## The Main List
-**[Download](https://abl.arapurayil.com/lists/main.txt)**
+**[Download](https://abl.arapurayil.com/filters/main.txt)**
 
 **Blocks ads, analytics, trackers, crypto-jacking & other such
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 52
--   Rules before processing: 223305
--   Rules after processing: 142257
+-   Rules before processing: 223236
+-   Rules after processing: 102186
 
-The **aBL - The Main List is 36.29% lighter** than its combined sources
+The **aBL - The Main List is 54.23% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -119,20 +119,20 @@ The **aBL - The Main List is 36.29% lighter** than its combined sources
 | 48     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                  | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
 | 49     | [ZeroDot1's CoinBlocker List](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt)                                                    | A list for administrators to prevent mining in browsers                                                                                                                                                                                                                                                                                   | 3550           | 0                |
 | 50     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 31             | 0                |
-| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 31             | 0                |
-| 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 31             | 0                |
+| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
+| 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 13             | 0                |
 
 ## Addon - NSFW
-**[Download](https://abl.arapurayil.com/lists/nsfw.txt)**
+**[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
 
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
 -   Sources: 15
 -   Rules before processing: 63934
--   Rules after processing: 24635
+-   Rules after processing: 23022
 
-The **aBL - Addon - NSFW is 61.47% lighter** than its combined sources
+The **aBL - Addon - NSFW is 63.99% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -153,24 +153,24 @@ The **aBL - Addon - NSFW is 61.47% lighter** than its combined sources
 | 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 31             | 0                |
 
 ## Addon - Social Media
-**[Download](https://abl.arapurayil.com/lists/social.txt)**
+**[Download](https://abl.arapurayil.com/filters/social.txt)**
 
 **Blocks social media. Should only be used with the 'General' List**
 
 -   Sources: 8
 -   Rules before processing: 11790
--   Rules after processing: 1433
+-   Rules after processing: 1322
 
-The **aBL - Addon - Social Media is 87.85% lighter** than its combined sources
+The **aBL - Addon - Social Media is 88.79% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4379           | 9                |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4380           | 9                |
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 0                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2810           | 0                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
 | 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
-| 06  | [\_core\_social\_blocked](https://abl.arapurayil.com/core/social_blocked.txt)                                                | internal blocked domain list - social                                                                      | 31             | 0                |
-| 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 31             | 0                |
-| 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 31             | 0                |
+| 06  | [\_core\_social\_blocked](https://abl.arapurayil.com/core/social_blocked.txt)                                                | internal blocked domain list - social                                                                      | 0              | 0                |
+| 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 22             | 0                |
+| 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 13             | 0                |
 
