@@ -21,6 +21,15 @@
             "num_unblock_rules": 0
         },
         {
+            "name": "Core regex rules (main)",
+            "desc": "internal list",
+            "url": "https://abl.arapurayil.com/core/regex_rules.txt",
+            "format": "abp",
+            "type": "regex",
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
+        },
+        {
             "name": "EasyList adult adservers",
             "desc": "-",
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt",
@@ -102,10 +111,28 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "_internal_filters",
-            "desc": "internal list - porn,gambling & snuff",
-            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/porn_gambling_snuff/_internal_filters.txt",
+            "name": "_core_nsfw_blocked",
+            "desc": "internal blocked domain list - nsfw",
+            "url": "https://abl.arapurayil.com/core/nsfw_blocked.txt",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_nsfw_regex",
+            "desc": "internal regex list - nsfw",
+            "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
             "format": "abp",
+            "type": "regex",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_nsfw_cname",
+            "desc": "internal cname list - nsfw",
+            "url": "https://abl.arapurayil.com/core/cname_regex.txt",
+            "format": "domains",
             "type": "block",
             "num_block_rules": 31,
             "num_unblock_rules": 0

@@ -8,7 +8,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4380,
+            "num_block_rules": 4379,
             "num_unblock_rules": 9
         },
         {
@@ -48,12 +48,30 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "_internal_filters",
-            "desc": "internal list - social",
-            "url": "https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt",
-            "format": "abp",
+            "name": "_core_social_blocked",
+            "desc": "internal blocked domain list - social",
+            "url": "https://abl.arapurayil.com/core/social_blocked.txt",
+            "format": "domains",
             "type": "block",
-            "num_block_rules": 17,
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_social_regex",
+            "desc": "internal regex list - social",
+            "url": "https://abl.arapurayil.com/core/social_regex.txt",
+            "format": "abp",
+            "type": "regex",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_social_cname",
+            "desc": "internal cname list - social",
+            "url": "https://abl.arapurayil.com/core/social_cname.txt",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 31,
             "num_unblock_rules": 0
         }
     ]

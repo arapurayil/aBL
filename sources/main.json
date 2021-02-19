@@ -165,33 +165,6 @@
             "num_unblock_rules": 1
         },
         {
-            "name": "Core filter (main)",
-            "desc": "internal list",
-            "url": "https://abl.arapurayil.com/core/filters_main.txt",
-            "format": "abp",
-            "type": "block",
-            "num_block_rules": 0,
-            "num_unblock_rules": 3
-        },
-        {
-            "name": "Core regex rules (main)",
-            "desc": "internal list",
-            "url": "https://abl.arapurayil.com/core/regex_rules.txt",
-            "format": "abp",
-            "type": "regex",
-            "num_block_rules": 13,
-            "num_unblock_rules": 0
-        },
-        {
-            "name": "Core unblocked domains (main)",
-            "desc": "internal list",
-            "url": "https://raw.githubusercontent.com/arapurayil/aBL_unblock/main/domains/main.txt",
-            "format": "domains",
-            "type": "unblock",
-            "num_block_rules": 0,
-            "num_unblock_rules": 44698
-        },
-        {
             "name": "crazy-max's WindowsSpyBlocker (Spy)",
             "desc": "Block spying and tracking on Windows systems",
             "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
@@ -431,7 +404,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 27979,
+            "num_block_rules": 27940,
             "num_unblock_rules": 0
         },
         {
@@ -468,6 +441,33 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 3550,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_main_blocked",
+            "desc": "internal blocked domain list - main",
+            "url": "https://abl.arapurayil.com/core/main_blocked.txt",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_main_regex",
+            "desc": "internal regex list - main",
+            "url": "https://abl.arapurayil.com/core/main_regex.txt",
+            "format": "abp",
+            "type": "regex",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_main_cname",
+            "desc": "internal cname list - main",
+            "url": "https://abl.arapurayil.com/core/main_cname.txt",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 31,
             "num_unblock_rules": 0
         }
     ]
