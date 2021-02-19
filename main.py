@@ -13,6 +13,7 @@ from itertools import repeat, chain
 from json import load, loads, dump
 from pathlib import Path
 from textwrap import fill
+
 # from PyFunceble import DomainAndIPAvailabilityChecker as DomainStatus
 
 
@@ -98,7 +99,7 @@ class ItemKey:
 class ListInfo:
     """Values for the list header."""
 
-    title = "arapurayil's Block List - aBL"
+    title = "aBL"
     author = "arapurayil"
     version = (
         str(int(datetime.now().strftime("%Y")) - 2019)
@@ -142,7 +143,7 @@ class ListGenerator:
             f"repl_cmt Version: {ListInfo.version}\n"
             f"repl_cmt Last modified: {ListInfo.last_modified}\n"
             f"repl_cmt Expires: {ListInfo.expires} (update frequency)\n"
-            f"repl_cmt Repository: {ListInfo.home}\n"
+            f"repl_cmt Home: {ListInfo.home}\n"
             f"repl_cmt Repository: {ListInfo.repo}\n"
             f"repl_cmt Issues: {ListInfo.repo}/issues\n"
             f"repl_cmt Please report the domains you wish to block/unblock via 'Issues'\n"
@@ -410,8 +411,8 @@ def process_sources(blg):
 #     """
 #     if not DomainStatus(item).get_status().is_active():
 #         return item
-# 
-# 
+#
+#
 # def get_not_active(domains):
 #     """
 #     Gets non active domains.
@@ -425,8 +426,8 @@ def process_sources(blg):
 #             )
 #         )
 #     return not_active
-# 
-# 
+#
+#
 # def only_active(domains):
 #     """
 #     Removes non-active domains from list of domains
@@ -563,7 +564,9 @@ def regex_redundant(blocked_domains, unblocked_domains, unblock_rules, regex_rul
     matched_unblocked_rules = [
         x.replace(x, f"@@||{x}^") for x in matched_unblocked_domains
     ]
-    unblock_rules |= set(matched_unblocked_rules)
+    # unblock_rules |= set(matched_unblocked_rules)
+    # unblock rules from source list is avoided
+    unblock_rules = set(matched_unblocked_rules)
 
     return blocked_domains, unblock_rules
 
@@ -977,12 +980,11 @@ def main():
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules
             )
+            print(blocked_domains)
             _num_processed = gen_filter_list(
                 lg, blocked_domains, unblock_rules, regex_rules
             )
-            num_processed = {
-                "processed": _num_processed
-            }
+            num_processed = {"processed": _num_processed}
             stats.update(num_processed)
             gen_category(lg, stats)
             if datetime.now().strftime("%A") == "Saturday":
