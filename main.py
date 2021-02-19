@@ -405,36 +405,47 @@ def process_sources(blg):
     return blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list
 
 
-# def worker_get_not_active(item):
-#     """
-#     Worker for get_not_active
-#     """
-#     if not DomainStatus(item).get_status().is_active():
-#         return item
-#
-#
-# def get_not_active(domains):
-#     """
-#     Gets non active domains.
-#     """
-#     with ThreadPoolExecutor(max_workers=10) as pool:
-#         not_active = list(
-#             tqdm(
-#                 pool.map(worker_get_not_active, domains, chunksize=100),
-#                 total=len(domains),
-#                 leave=False,
-#             )
-#         )
-#     return not_active
-#
-#
-# def only_active(domains):
-#     """
-#     Removes non-active domains from list of domains
-#     """
-#     not_active_domains = get_not_active(domains)
-#     active_domains = domains - set(not_active_domains)
-#     return active_domains, not_active_domains
+def worker_get_not_active(item):
+    """
+    Worker for get_not_active
+    """
+    # time consuming
+    # if not DomainStatus(item).get_status().is_active():
+    #     return item
+    try:
+        dns_resolver().resolve(item)
+    except (
+            resolver.NoAnswer,
+            resolver.NXDOMAIN,
+            resolver.NoNameservers,
+    ):
+        return item
+    except dns_exception.Timeout:
+        pass
+
+
+def get_not_active(domains):
+    """
+    Gets non active domains.
+    """
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        not_active = list(
+            tqdm(
+                pool.map(worker_get_not_active, domains, chunksize=100),
+                total=len(domains),
+                leave=False,
+            )
+        )
+    return not_active
+
+
+def only_active(domains):
+    """
+    Removes non-active domains from list of domains
+    """
+    not_active_domains = get_not_active(domains)
+    active_domains = domains - set(not_active_domains)
+    return active_domains, not_active_domains
 
 
 def extract_tld(domain):
@@ -680,7 +691,7 @@ def category_section_main(blg, stats):
     )
     link_filter = markdown_strings.link(
         "Download",
-        f"{blg.info.home}/lists/{blg.category}.txt",
+        f"{blg.info.home}/filters/{blg.category}.txt",
     )
     main_title = (
         markdown_strings.header(f"{blg.data_json[blg.j_key.title]}", 1)
@@ -820,8 +831,8 @@ def blocklist_section_table(list_sources):
             file_json=file,
         )
         filter_list_link = markdown_strings.link(
-            f"{blg.info.home}/lists/{blg.category}.txt",
-            f"{blg.info.home}/lists/{blg.category}.txt",
+            f"{blg.info.home}/filters/{blg.category}.txt",
+            f"{blg.info.home}/filters/{blg.category}.txt",
         )
         if len(str(index + 1).zfill(2)) > tbl_pad.c1:
             tbl_pad_arr[0] = len(str(index + 1).zfill(2)) + 2
@@ -837,8 +848,8 @@ def blocklist_section_table(list_sources):
             file_json=file,
         )
         filter_list_link = markdown_strings.link(
-            f"{blg.info.home}/lists/{blg.category}.txt",
-            f"{blg.info.home}/lists/{blg.category}.txt",
+            f"{blg.info.home}/filters/{blg.category}.txt",
+            f"{blg.info.home}/filters/{blg.category}.txt",
         )
         row = markdown_strings.table_row(
             [
@@ -967,11 +978,10 @@ def main():
             )
             blocked_domains = set(blocked_domains)
             unblocked_domains = set(unblocked_domains)
-            # time-consuming
-            # p_bar.set_description(
-            #     desc=f"Removing non-active domains — {lg.data_json[lg.j_key.title]}"
-            # )
-            # blocked_domains, not_active_blocked_domains = only_active(blocked_domains)
+            p_bar.set_description(
+                desc=f"Removing non-active domains — {lg.data_json[lg.j_key.title]}"
+            )
+            blocked_domains, not_active_blocked_domains = only_active(blocked_domains)
             p_bar.set_description(
                 desc=f"Compressing rules — {lg.data_json[lg.j_key.title]}"
             )
