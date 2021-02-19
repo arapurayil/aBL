@@ -3,18 +3,20 @@
 
 **Blocks social media. Should only be used with the 'General' List**
 
--   Sources: 6
--   Rules before processing: 11772
--   Rules after processing: 0
+-   Sources: 8
+-   Rules before processing: 11790
+-   Rules after processing: 1433
 
-The **aBL - Addon - Social Media is 100.00% lighter** than its combined sources
+The **aBL - Addon - Social Media is 87.85% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4380           | 9                |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4379           | 9                |
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 0                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2810           | 0                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
 | 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
-| 06  | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt)            | internal list - social                                                                                     | 17             | 0                |
+| 06  | [\_core\_social\_blocked](https://abl.arapurayil.com/core/social_blocked.txt)                                                | internal blocked domain list - social                                                                      | 31             | 0                |
+| 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 31             | 0                |
+| 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 31             | 0                |
 

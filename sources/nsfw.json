@@ -120,20 +120,20 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "_core_nsfw_regex",
-            "desc": "internal regex list - nsfw",
-            "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
-            "format": "abp",
-            "type": "regex",
-            "num_block_rules": 31,
-            "num_unblock_rules": 0
-        },
-        {
             "name": "_core_nsfw_cname",
             "desc": "internal cname list - nsfw",
             "url": "https://abl.arapurayil.com/core/cname_regex.txt",
             "format": "domains",
             "type": "block",
+            "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_nsfw_regex",
+            "desc": "internal regex list - nsfw",
+            "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
+            "format": "abp",
+            "type": "regex",
             "num_block_rules": 31,
             "num_unblock_rules": 0
         }
