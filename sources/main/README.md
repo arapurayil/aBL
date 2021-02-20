@@ -4,11 +4,11 @@
 **Blocks ads, analytics, trackers, crypto-jacking & other such
 threats/nuisances. Addon lists are available to extend this list.**
 
--   Sources: 52
--   Rules before processing: 223236
--   Rules after processing: 102186
+-   Sources: 53
+-   Rules before processing: 223213
+-   Rules after processing: 115187
 
-The **aBL - The Main List is 54.23% lighter** than its combined sources
+The **aBL - The Main List is 48.40% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -64,4 +64,5 @@ The **aBL - The Main List is 54.23% lighter** than its combined sources
 | 50     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 31             | 0                |
 | 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
 | 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 13             | 0                |
+| 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 13             | 0                |
 

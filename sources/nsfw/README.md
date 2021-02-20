@@ -4,11 +4,11 @@
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
--   Sources: 15
+-   Sources: 16
 -   Rules before processing: 63934
--   Rules after processing: 23022
+-   Rules after processing: 23956
 
-The **aBL - Addon - NSFW is 63.99% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.53% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -27,4 +27,5 @@ The **aBL - Addon - NSFW is 63.99% lighter** than its combined sources
 | 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 31             | 0                |
 | 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/cname_regex.txt)                                                                                     | internal cname list - nsfw                 | 31             | 0                |
 | 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 31             | 0                |
+| 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 13             | 0                |
 

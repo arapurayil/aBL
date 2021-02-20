@@ -116,7 +116,7 @@
             "url": "https://abl.arapurayil.com/core/nsfw_blocked.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 31,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         },
         {
@@ -125,7 +125,7 @@
             "url": "https://abl.arapurayil.com/core/cname_regex.txt",
             "format": "domains",
             "type": "cname",
-            "num_block_rules": 31,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
             "format": "abp",
             "type": "regex",
-            "num_block_rules": 31,
+            "num_block_rules": 13,
             "num_unblock_rules": 0
         },
         {
@@ -143,7 +143,7 @@
             "url": "https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt",
             "format": "domains",
             "type": "unblock",
-            "num_block_rules": 13,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         }
     ]
