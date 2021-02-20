@@ -415,9 +415,9 @@ def worker_get_not_active(item):
     try:
         dns_resolver().resolve(item)
     except (
-            resolver.NoAnswer,
-            resolver.NXDOMAIN,
-            resolver.NoNameservers,
+        resolver.NoAnswer,
+        resolver.NXDOMAIN,
+        resolver.NoNameservers,
     ):
         return item
     except dns_exception.Timeout:
@@ -519,6 +519,16 @@ def compress_rules(blg, all_domains):
                 leave=False,
             )
         )
+    file_potential = is_path(
+        Path.joinpath(DirPath.temp, f"potential_{blg.category}.txt")
+    )
+    potential = [x for x in sub_main_domains]
+    potential = Counter(potential).most_common()
+    num = 10
+    potential = {k for k, v in potential if v > num}
+    potential = "\n".join(filter(None, potential))
+    write_file(potential, file_potential)
+
     sub_main_domains = set(sub_main_domains)
     if None in sub_main_domains:
         sub_main_domains.remove(None)
@@ -785,34 +795,6 @@ def gen_category(blg, stats):
     write_file(data_md, file_category)
 
 
-def gen_potential(blg, blocked_domains, unblocked_domains, num=10):
-    """Generates a list of frequently blocked main domains."""
-    file_potential = is_path(
-        Path.joinpath(DirPath.temp, f"potential_{blg.category}.txt")
-    )
-    cached_potential = [x.strip() for x in read_file(file_potential)]
-    domains_to_check = (
-        blocked_domains - cached_potential if cached_potential else blocked_domains
-    )
-    with ThreadPoolExecutor() as pool:
-        main_domains = list(
-            tqdm(
-                pool.map(
-                    worker_extract_registered_domain, domains_to_check, chunksize=100
-                ),
-                desc=f"Identifying potential domains — {blg.data_json[blg.j_key.title]}",
-                total=len(domains_to_check),
-                Leave=False,
-            )
-        )
-    potential = [x for x in main_domains if x not in unblocked_domains]
-    potential = Counter(potential).most_common()
-    potential = {k for k, v in potential if v > num}
-    potential |= cached_potential
-    potential = "\n".join(filter(None, potential))
-    write_file(potential, file_potential)
-
-
 def blocklist_section_table(list_sources):
     """The table for the blocklist README.md file."""
     tbl_col_tup = namedtuple("tbl_col_tup", "c1, c2, c3, c4")
@@ -996,8 +978,6 @@ def main():
             num_processed = {"processed": _num_processed}
             stats.update(num_processed)
             gen_category(lg, stats)
-            if datetime.now().strftime("%A") == "Saturday":
-                gen_potential(lg, blocked_domains, unblocked_domains)
 
             if i == len(list_source) - 1:
                 p_bar.set_description(
