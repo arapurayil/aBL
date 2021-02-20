@@ -428,7 +428,7 @@ def get_not_active(domains):
     """
     Gets non active domains.
     """
-    with ThreadPoolExecutor(max_workers=10) as pool:
+    with ThreadPoolExecutor(max_workers=100) as pool:
         not_active = list(
             tqdm(
                 pool.map(worker_get_not_active, domains, chunksize=100),
@@ -990,7 +990,6 @@ def main():
             blocked_domains, unblock_rules = regex_redundant(
                 blocked_domains, unblocked_domains, unblock_rules, regex_rules
             )
-            print(blocked_domains)
             _num_processed = gen_filter_list(
                 lg, blocked_domains, unblock_rules, regex_rules
             )
