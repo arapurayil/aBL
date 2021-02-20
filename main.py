@@ -573,7 +573,7 @@ def match_regex(domains, regex_rules):
     """
     regex_list = [x[1:-1] for x in regex_rules]
     pattern = re.compile("|".join(regex_list))
-    matches = [x for x in domains if re.match(pattern, x, concurrent=True)]
+    matches = [x for x in domains if re.findall(pattern, x, concurrent=True)]
     return matches
 
 
