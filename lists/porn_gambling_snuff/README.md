@@ -5,9 +5,9 @@
 
 -   Sources: 14
 -   Rules before processing: 30687
--   Rules after processing: 25089
+-   Rules after processing: 25088
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - NSFW, Porn, Gambling, Snuff is 18.24% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - NSFW, Porn, Gambling, Snuff is 18.25% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
