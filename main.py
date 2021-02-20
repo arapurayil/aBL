@@ -297,7 +297,9 @@ def worker_process_sources(item, blg):
             blocked_domains, unblocked_domains, cname_list = extract_hosts(
                 unprocessed, item[blg.i_key.type]
             )
-    item[blg.i_key.num_block_rules] = len(blocked_domains) + len(regex_rules)
+    item[blg.i_key.num_block_rules] = (
+        len(blocked_domains) + len(regex_rules) + len(cname_list)
+    )
     item[blg.i_key.num_unblock_rules] = len(unblocked_domains)
     write_file(blg.data_json, blg.file_json)
     return blocked_domains, unblocked_domains, unblock_rules, regex_rules, cname_list

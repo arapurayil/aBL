@@ -122,7 +122,7 @@
         {
             "name": "_core_nsfw_cname",
             "desc": "internal cname list - nsfw",
-            "url": "https://abl.arapurayil.com/core/cname_regex.txt",
+            "url": "https://abl.arapurayil.com/core/nsfw_cname.txt",
             "format": "domains",
             "type": "cname",
             "num_block_rules": 0,
