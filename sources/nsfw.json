@@ -124,7 +124,7 @@
             "desc": "internal cname list - nsfw",
             "url": "https://abl.arapurayil.com/core/cname_regex.txt",
             "format": "domains",
-            "type": "block",
+            "type": "cname",
             "num_block_rules": 31,
             "num_unblock_rules": 0
         },
@@ -135,6 +135,15 @@
             "format": "abp",
             "type": "regex",
             "num_block_rules": 31,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_nsfw_unblock",
+            "desc": "internal unblock list - nsfw",
+            "url": "https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt",
+            "format": "domains",
+            "type": "unblock",
+            "num_block_rules": 13,
             "num_unblock_rules": 0
         }
     ]

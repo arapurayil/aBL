@@ -61,7 +61,7 @@
             "desc": "internal cname list - social",
             "url": "https://abl.arapurayil.com/core/social_cname.txt",
             "format": "domains",
-            "type": "block",
+            "type": "cname",
             "num_block_rules": 22,
             "num_unblock_rules": 0
         },
@@ -71,6 +71,15 @@
             "url": "https://abl.arapurayil.com/core/social_regex.txt",
             "format": "abp",
             "type": "regex",
+            "num_block_rules": 13,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_core_social_unblock",
+            "desc": "internal unblock list - social",
+            "url": "https://github.com/arapurayil/aBL_unblock/raw/main/domains/social.txt",
+            "format": "domains",
+            "type": "unblock",
             "num_block_rules": 13,
             "num_unblock_rules": 0
         }
