@@ -5,10 +5,10 @@
 be used with the 'Main' List**
 
 -   Sources: 16
--   Rules before processing: 63934
--   Rules after processing: 23956
+-   Rules before processing: 63956
+-   Rules after processing: 23897
 
-The **aBL - Addon - NSFW is 62.53% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.64% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -24,8 +24,8 @@ The **aBL - Addon - NSFW is 62.53% lighter** than its combined sources
 | 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 18             | 0                |
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
 | 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1200           | 0                |
-| 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 31             | 0                |
-| 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/cname_regex.txt)                                                                                     | internal cname list - nsfw                 | 31             | 0                |
-| 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 31             | 0                |
-| 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 13             | 0                |
+| 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 0              | 0                |
+| 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/nsfw_cname.txt)                                                                                      | internal cname list - nsfw                 | 0              | 0                |
+| 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 13             | 0                |
+| 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 0              | 0                |
 
