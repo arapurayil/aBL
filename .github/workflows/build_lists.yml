@@ -9,7 +9,7 @@ on:
     branches: [ master ]
     paths:
        - '.github/workflows/build_lists.yml'
-       - 'sources/*.json'
+#        - 'sources/*.json'
 
 jobs:
   check_url:
