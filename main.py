@@ -297,6 +297,7 @@ def worker_process_sources(item, blg):
             blocked_domains, unblocked_domains, cname_list = extract_hosts(
                 unprocessed, item[blg.i_key.type]
             )
+
     item[blg.i_key.num_block_rules] = (
         len(blocked_domains) + len(regex_rules) + len(cname_list)
     )
@@ -365,7 +366,7 @@ def remove_unblocked_from_blocked(blocked_domains, unblocked_domains):
     Remove excluded domains from blocked domains
 
     """
-    unblocked_domains |= remove_common_sub(unblocked_domains)
+    # unblocked_domains |= remove_common_sub(unblocked_domains)
     # cnames are included in the unblock list
     # unblocked_domains |= get_cname(unblocked_domains)
     blocked_domains -= unblocked_domains
