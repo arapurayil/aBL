@@ -62,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 53
--   Rules before processing: 223213
--   Rules after processing: 114657
+-   Rules before processing: 223212
+-   Rules after processing: 113887
 
-The **aBL - The Main List is 48.63% lighter** than its combined sources
+The **aBL - The Main List is 48.98% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -119,9 +119,9 @@ The **aBL - The Main List is 48.63% lighter** than its combined sources
 | 48     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                  | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
 | 49     | [ZeroDot1's CoinBlocker List](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt)                                                    | A list for administrators to prevent mining in browsers                                                                                                                                                                                                                                                                                   | 3550           | 0                |
 | 50     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 31             | 0                |
-| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 0              | 0                |
+| 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
 | 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 13             | 0                |
-| 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 45193            |
+| 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44912            |
 
 ## Addon - NSFW
 **[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
@@ -131,9 +131,9 @@ be used with the 'Main' List**
 
 -   Sources: 16
 -   Rules before processing: 63956
--   Rules after processing: 23897
+-   Rules after processing: 23947
 
-The **aBL - Addon - NSFW is 62.64% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.56% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -150,7 +150,7 @@ The **aBL - Addon - NSFW is 62.64% lighter** than its combined sources
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
 | 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1200           | 0                |
 | 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 0              | 0                |
-| 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/nsfw_cname.txt)                                                                                      | internal cname list - nsfw                 | 0              | 0                |
+| 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/nsfw_cname.txt)                                                                                      | internal cname list - nsfw                 | 22             | 0                |
 | 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 13             | 0                |
 | 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 0              | 0                |
 
@@ -161,9 +161,9 @@ The **aBL - Addon - NSFW is 62.64% lighter** than its combined sources
 
 -   Sources: 9
 -   Rules before processing: 11792
--   Rules after processing: 1853
+-   Rules after processing: 1867
 
-The **aBL - Addon - Social Media is 84.29% lighter** than its combined sources
+The **aBL - Addon - Social Media is 84.17% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -173,7 +173,7 @@ The **aBL - Addon - Social Media is 84.29% lighter** than its combined sources
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
 | 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
 | 06  | [\_core\_social\_blocked](https://abl.arapurayil.com/core/social_blocked.txt)                                                | internal blocked domain list - social                                                                      | 0              | 0                |
-| 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 0              | 0                |
+| 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 22             | 0                |
 | 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 13             | 0                |
 | 09  | [\_core\_social\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/social.txt)                             | internal unblock list - social                                                                             | 0              | 0                |
 
