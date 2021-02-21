@@ -5,10 +5,10 @@
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 53
--   Rules before processing: 223212
--   Rules after processing: 113887
+-   Rules before processing: 223139
+-   Rules after processing: 116735
 
-The **aBL - The Main List is 48.98% lighter** than its combined sources
+The **aBL - The Main List is 47.69% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |

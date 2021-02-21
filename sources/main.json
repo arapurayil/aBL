@@ -467,7 +467,7 @@
             "url": "https://abl.arapurayil.com/core/main_regex.txt",
             "format": "abp",
             "type": "regex",
-            "num_block_rules": 13,
+            "num_block_rules": 12,
             "num_unblock_rules": 0
         },
         {
@@ -477,7 +477,7 @@
             "format": "domains",
             "type": "unblock",
             "num_block_rules": 0,
-            "num_unblock_rules": 44912
+            "num_unblock_rules": 44911
         }
     ]
 }
