@@ -1,11 +1,12 @@
 # Addon - Social Media
+
 **[Download](https://abl.arapurayil.com/filters/social.txt)**
 
 **Blocks social media. Should only be used with the 'General' List**
 
--   Sources: 9
--   Rules before processing: 11791
--   Rules after processing: 1865
+- Sources: 9
+- Rules before processing: 11791
+- Rules after processing: 1865
 
 The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
 
@@ -20,4 +21,3 @@ The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
 | 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 22             | 0                |
 | 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 13             | 0                |
 | 09  | [\_core\_social\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/social.txt)                             | internal unblock list - social                                                                             | 0              | 0                |
-
