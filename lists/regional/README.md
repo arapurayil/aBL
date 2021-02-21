@@ -4,15 +4,15 @@
 List**
 
 -   Sources: 21
--   Rules before processing: 19623
--   Rules after processing: 6928
+-   Rules before processing: 19624
+-   Rules after processing: 6925
 
-By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 64.69% lighter** than its combined sources
+By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Regional is 64.71% lighter** than its combined sources
 
 | #      | Title                                                                                                                                           | Description                                                                                                                                                                                              | Blocking rules | Unblocking rules |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
 | 01     | [ABPindo](https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt)                                   | Additional filters for EasyList block Indonesian and Malaysian language ads. (translated)                                                                                                                | 597            | 0                |
-| 02     | [AdGuard Chinese filter](https://filters.adtidy.org/extension/chromium/filters/224.txt)                                                         | Removes ads from websites in Chinese. Originally based on the EasyList China filter and subsequently modified by us according to the complaints from users.                                              | 6356           | 12               |
+| 02     | [AdGuard Chinese filter](https://filters.adtidy.org/extension/chromium/filters/224.txt)                                                         | Removes ads from websites in Chinese. Originally based on the EasyList China filter and subsequently modified by us according to the complaints from users.                                              | 6357           | 12               |
 | 03     | [AdGuard Dutch filter](https://filters.adtidy.org/extension/chromium/filters/8.txt)                                                             | Removes ads from websites in Dutch. Originally based on the EasyList Dutch filter and subsequently modified by us according to the complaints from users.                                                | 89             | 1                |
 | 04     | [AdGuard French filter](https://filters.adtidy.org/extension/chromium/filters/16.txt)                                                           | Removes ads from websites in French. Originally based on the Liste FR filter and subsequently modified by us according to the complaints from users.                                                     | 5544           | 4                |
 | 05     | [AdGuard German filter](https://filters.adtidy.org/extension/chromium/filters/6.txt)                                                            | Removes ads from websites in German. Originally based on the EasyList Germany filter and subsequently modified by us according to the complaints from users.                                             | 448            | 5                |
