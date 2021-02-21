@@ -2,9 +2,9 @@
 
 **Blocks social media. Should only be used with the 'General' List**
 
--   Sources: 7
--   Rules before processing: 10618
--   Rules after processing: 1299
+- Sources: 7
+- Rules before processing: 10618
+- Rules after processing: 1299
 
 By using regex rules and by removing duplicates, false-positives and redundant sub-domains the **aBL - Addon - Social Media is 87.77% lighter** than its combined sources
 
@@ -17,4 +17,3 @@ By using regex rules and by removing duplicates, false-positives and redundant s
 | 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
 | 06  | [\_internal\_filters](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_internal_filters.txt)            | internal list - social                                                                                     | 30             | 0                |
 | 07  | [\_unblocked\_domains](https://raw.githubusercontent.com/arapurayil/abl/master/lists/social/_unblocked_domains.txt)          | internal list - social                                                                                     | 0              | 0                |
-

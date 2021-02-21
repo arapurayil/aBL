@@ -9,8 +9,6 @@
 ![](https://img.shields.io/github/v/tag/arapurayil/abl)
 ![](https://img.shields.io/github/last-commit/arapurayil/abl)
 
-
-
 ### About
 
 - The focus here is on generating a list which doesn't hamper usability while not compromising on privacy/security.  
@@ -41,7 +39,6 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
   - [Liberapay](https://liberapay.com/arapurayil)  
   <!-- - [Patreon](https://www.patreon.com/arapurayil) -->
 
-
 | #   | TITLE                  | DESCRIPTION                                                                                                                      | DOWNLOAD LINK                                                                                    |
 | --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | 01  | The Main List          | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/filters/main.txt](https://abl.arapurayil.com/filters/main.txt)       |
@@ -54,16 +51,16 @@ Credits to the maintainers/creators of the source lists used in this project.
 
 Please notify me if I have violated a license condition.
 
-
 ## The Main List
+
 **[Download](https://abl.arapurayil.com/filters/main.txt)**
 
 **Blocks ads, analytics, trackers, crypto-jacking & other such
 threats/nuisances. Addon lists are available to extend this list.**
 
--   Sources: 53
--   Rules before processing: 223139
--   Rules after processing: 116735
+- Sources: 53
+- Rules before processing: 223139
+- Rules after processing: 116735
 
 The **aBL - The Main List is 47.69% lighter** than its combined sources
 
@@ -93,8 +90,8 @@ The **aBL - The Main List is 47.69% lighter** than its combined sources
 | 22     | [EasyList EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)                                                                                       | EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.                                                                                                             | 7513           | 0                |
 | 23     | [EasyList Hebrew](https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt)                                                     | -                                                                                                                                                                                                                                                                                                                                         | 296            | 0                |
 | 24     | [Energized Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts)                                             | Core Energized Blacklist.                                                                                                                                                                                                                                                                                                                 | 21169          | 0                |
-| 25     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                       | Risk content sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
-| 26     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                       | Spam sites based on http://www.hostsfile.org/hosts.html content.                                                                                                                                                                                                                                                                          | 73             | 0                |
+| 25     | [FadeMind's add.Risk](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)                                                       | Risk content sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                  | 2565           | 0                |
+| 26     | [FadeMind's add.Spam](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)                                                       | Spam sites based on <http://www.hostsfile.org/hosts.html> content.                                                                                                                                                                                                                                                                          | 73             | 0                |
 | 27     | [FadeMind's UncheckyAds](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)                                                 | Windows installers ads sources                                                                                                                                                                                                                                                                                                            | 10             | 0                |
 | 28     | [Fanboy's Anti-Cookie Filters](https://fanboy.co.nz/fanboy-cookiemonster.txt)                                                                              | This will remove cookie and privacy warnings (List already included in Annoyances List, don't add list if you're using the Annoyances List)                                                                                                                                                                                               | 116            | 0                |
 | 29     | [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/enhancedstats.txt)                                                                              | Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.                                                                                                                                                                                                    | 122            | 0                |
@@ -124,14 +121,15 @@ The **aBL - The Main List is 47.69% lighter** than its combined sources
 | 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44912            |
 
 ## Addon - NSFW
+
 **[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
 
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
--   Sources: 16
--   Rules before processing: 63955
--   Rules after processing: 23916
+- Sources: 16
+- Rules before processing: 63955
+- Rules after processing: 23916
 
 The **aBL - Addon - NSFW is 62.60% lighter** than its combined sources
 
@@ -155,13 +153,14 @@ The **aBL - Addon - NSFW is 62.60% lighter** than its combined sources
 | 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 0              | 0                |
 
 ## Addon - Social Media
+
 **[Download](https://abl.arapurayil.com/filters/social.txt)**
 
 **Blocks social media. Should only be used with the 'General' List**
 
--   Sources: 9
--   Rules before processing: 11791
--   Rules after processing: 1865
+- Sources: 9
+- Rules before processing: 11791
+- Rules after processing: 1865
 
 The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
 
@@ -176,4 +175,3 @@ The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
 | 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 22             | 0                |
 | 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 13             | 0                |
 | 09  | [\_core\_social\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/social.txt)                             | internal unblock list - social                                                                             | 0              | 0                |
-
