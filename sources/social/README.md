@@ -1,14 +1,13 @@
 # Addon - Social Media
-
 **[Download](https://abl.arapurayil.com/filters/social.txt)**
 
 **Blocks social media. Should only be used with the 'General' List**
 
-- Sources: 9
-- Rules before processing: 11791
-- Rules after processing: 1865
+-   Sources: 9
+-   Rules before processing: 11791
+-   Rules after processing: 1882
 
-The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
+The **aBL - Addon - Social Media is 84.04% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -19,5 +18,6 @@ The **aBL - Addon - Social Media is 84.18% lighter** than its combined sources
 | 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 655            | 0                |
 | 06  | [\_core\_social\_blocked](https://abl.arapurayil.com/core/social_blocked.txt)                                                | internal blocked domain list - social                                                                      | 0              | 0                |
 | 07  | [\_core\_social\_cname](https://abl.arapurayil.com/core/social_cname.txt)                                                    | internal cname list - social                                                                               | 22             | 0                |
-| 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 13             | 0                |
+| 08  | [\_core\_social\_regex](https://abl.arapurayil.com/core/social_regex.txt)                                                    | internal regex list - social                                                                               | 12             | 0                |
 | 09  | [\_core\_social\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/social.txt)                             | internal unblock list - social                                                                             | 0              | 0                |
+

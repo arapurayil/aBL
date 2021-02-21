@@ -1,15 +1,14 @@
 # Addon - NSFW
-
 **[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
 
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
-- Sources: 16
-- Rules before processing: 63955
-- Rules after processing: 23916
+-   Sources: 16
+-   Rules before processing: 63955
+-   Rules after processing: 23928
 
-The **aBL - Addon - NSFW is 62.60% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.59% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -27,5 +26,6 @@ The **aBL - Addon - NSFW is 62.60% lighter** than its combined sources
 | 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1200           | 0                |
 | 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 0              | 0                |
 | 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/nsfw_cname.txt)                                                                                      | internal cname list - nsfw                 | 22             | 0                |
-| 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 13             | 0                |
+| 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 12             | 0                |
 | 16     | [\_core\_nsfw\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/nsfw.txt)                                                               | internal unblock list - nsfw               | 0              | 0                |
+
