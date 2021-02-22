@@ -356,7 +356,7 @@
         {
             "name": "NextDNS Privacy - alexa",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/alexa",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/alexa",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -365,7 +365,7 @@
         {
             "name": "NextDNS Privacy - apple",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/apple",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/apple",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -374,7 +374,7 @@
         {
             "name": "NextDNS Privacy - huawei",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/huawei",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/huawei",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -383,7 +383,7 @@
         {
             "name": "NextDNS Privacy - roku",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/roku",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/roku",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -392,7 +392,7 @@
         {
             "name": "NextDNS Privacy - samsung",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/samsung",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/samsung",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -401,7 +401,7 @@
         {
             "name": "NextDNS Privacy - sonos",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/sonos",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/sonos",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -410,7 +410,7 @@
         {
             "name": "NextDNS Privacy - windows",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/windows",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/windows",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
@@ -419,7 +419,7 @@
         {
             "name": "NextDNS Privacy - xiaomi",
             "desc": "NextDNS Native list",
-            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/xiaomi",
+            "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/xiaomi",
             "format": "domains",
             "type": "block",
             "num_block_rules": 0,
