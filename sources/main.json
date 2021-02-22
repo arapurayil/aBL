@@ -444,6 +444,15 @@
             "num_unblock_rules": 0
         },
         {
+            "name": "NextDNS Privacy - Windows",
+            "desc": "NextDNS Native list",
+            "url": "https://github.com/nextdns/metadata/raw/master/privacy/native/windows",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
+        },
+        {
             "name": "_core_main_blocked",
             "desc": "internal blocked domain list - main",
             "url": "https://abl.arapurayil.com/core/main_blocked.txt",
