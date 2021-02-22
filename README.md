@@ -62,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 53
--   Rules before processing: 223154
--   Rules after processing: 116545
+-   Rules before processing: 223099
+-   Rules after processing: 115379
 
-The **aBL - The Main List is 47.77% lighter** than its combined sources
+The **aBL - The Main List is 48.28% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -121,7 +121,7 @@ The **aBL - The Main List is 47.77% lighter** than its combined sources
 | 50     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 31             | 0                |
 | 51     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
 | 52     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 12             | 0                |
-| 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44911            |
+| 53     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44949            |
 
 ## Addon - NSFW
 **[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
@@ -131,9 +131,9 @@ be used with the 'Main' List**
 
 -   Sources: 16
 -   Rules before processing: 63955
--   Rules after processing: 23928
+-   Rules after processing: 23901
 
-The **aBL - Addon - NSFW is 62.59% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.63% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -161,9 +161,9 @@ The **aBL - Addon - NSFW is 62.59% lighter** than its combined sources
 
 -   Sources: 9
 -   Rules before processing: 11791
--   Rules after processing: 1882
+-   Rules after processing: 1577
 
-The **aBL - Addon - Social Media is 84.04% lighter** than its combined sources
+The **aBL - Addon - Social Media is 86.63% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
