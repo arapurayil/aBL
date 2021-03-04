@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 28503,
+            "num_block_rules": 28585,
             "num_unblock_rules": 0
         },
         {
@@ -521,7 +521,7 @@
             "url": "https://abl.arapurayil.com/core/main_blocked.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 8,
             "num_unblock_rules": 0
         },
         {
