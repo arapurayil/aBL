@@ -4,10 +4,10 @@
 **Blocks social media. Should only be used with the 'General' List**
 
 -   Sources: 9
--   Rules before processing: 11797
--   Rules after processing: 1622
+-   Rules before processing: 11798
+-   Rules after processing: 1883
 
-The **aBL - Addon - Social Media is 86.25% lighter** than its combined sources
+The **aBL - Addon - Social Media is 84.04% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
