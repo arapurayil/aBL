@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 28745,
+            "num_block_rules": 28763,
             "num_unblock_rules": 0
         },
         {
@@ -494,7 +494,7 @@
             "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 13564,
+            "num_block_rules": 13577,
             "num_unblock_rules": 0
         },
         {
