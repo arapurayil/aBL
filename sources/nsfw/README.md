@@ -5,10 +5,10 @@
 be used with the 'Main' List**
 
 -   Sources: 16
--   Rules before processing: 87761
--   Rules after processing: 24046
+-   Rules before processing: 87764
+-   Rules after processing: 24032
 
-The **aBL - Addon - NSFW is 72.60% lighter** than its combined sources
+The **aBL - Addon - NSFW is 72.62% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
