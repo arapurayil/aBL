@@ -62,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 61
--   Rules before processing: 235228
--   Rules after processing: 120679
+-   Rules before processing: 235177
+-   Rules after processing: 119779
 
-The **aBL - The Main List is 48.70% lighter** than its combined sources
+The **aBL - The Main List is 49.07% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -139,9 +139,9 @@ be used with the 'Main' List**
 
 -   Sources: 16
 -   Rules before processing: 64398
--   Rules after processing: 24044
+-   Rules after processing: 23990
 
-The **aBL - Addon - NSFW is 62.66% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.75% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -169,9 +169,9 @@ The **aBL - Addon - NSFW is 62.66% lighter** than its combined sources
 
 -   Sources: 9
 -   Rules before processing: 11819
--   Rules after processing: 1886
+-   Rules after processing: 1650
 
-The **aBL - Addon - Social Media is 84.04% lighter** than its combined sources
+The **aBL - Addon - Social Media is 86.04% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
