@@ -458,7 +458,7 @@
             "url": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7051,
+            "num_block_rules": 7055,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 29597,
+            "num_block_rules": 29617,
             "num_unblock_rules": 0
         },
         {
