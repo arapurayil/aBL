@@ -368,7 +368,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/apple",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 10,
             "num_unblock_rules": 0
         },
         {
@@ -377,7 +377,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/huawei",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 8,
             "num_unblock_rules": 0
         },
         {
@@ -386,7 +386,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/roku",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 1,
             "num_unblock_rules": 0
         },
         {
@@ -395,7 +395,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/samsung",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 4,
             "num_unblock_rules": 0
         },
         {
@@ -404,7 +404,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/sonos",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 2,
             "num_unblock_rules": 0
         },
         {
@@ -413,7 +413,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/windows",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 24,
             "num_unblock_rules": 0
         },
         {
@@ -422,7 +422,7 @@
             "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/native/xiaomi",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 0,
+            "num_block_rules": 9,
             "num_unblock_rules": 0
         },
         {
@@ -431,7 +431,7 @@
             "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 143,
+            "num_block_rules": 142,
             "num_unblock_rules": 9
         },
         {
