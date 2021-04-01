@@ -62,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 61
--   Rules before processing: 237226
--   Rules after processing: 121608
+-   Rules before processing: 238942
+-   Rules after processing: 122860
 
-The **aBL - The Main List is 48.74% lighter** than its combined sources
+The **aBL - The Main List is 48.58% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -121,7 +121,7 @@ The **aBL - The Main List is 48.74% lighter** than its combined sources
 | 50     | [Peter Lowe's Blocklist](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)                              | Blocklist for use with Adblock Plus                                                                                                                                                                                                                                                                                                       | 3570           | 0                |
 | 51     | [Spam404](https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt)                                                                         | blocks scam sites                                                                                                                                                                                                                                                                                                                         | 7055           | 0                |
 | 52     | [Steven Black's ad-hoc list](https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts)                                            | This is the ad-hoc list from StevenBlack/hosts                                                                                                                                                                                                                                                                                            | 3043           | 0                |
-| 53     | [StopForumSpam](https://stopforumspam.com/downloads/toxic_domains_whole.txt)                                                                               | Forum spammers                                                                                                                                                                                                                                                                                                                            | 29652          | 0                |
+| 53     | [StopForumSpam](https://stopforumspam.com/downloads/toxic_domains_whole.txt)                                                                               | Forum spammers                                                                                                                                                                                                                                                                                                                            | 29689          | 0                |
 | 54     | [Tiuxo's hosts - ads](https://raw.githubusercontent.com/tiuxo/hosts/master/ads)                                                                            | -                                                                                                                                                                                                                                                                                                                                         | 2211           | 0                |
 | 55     | [UT1 Blacklists - cryptojacking](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains)                           | -                                                                                                                                                                                                                                                                                                                                         | 13577          | 0                |
 | 56     | [ZeroDot1's CoinBlocker Domains List Optional](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt)                                  | An additional list for administrators                                                                                                                                                                                                                                                                                                     | 790            | 0                |
@@ -139,9 +139,9 @@ be used with the 'Main' List**
 
 -   Sources: 16
 -   Rules before processing: 64397
--   Rules after processing: 24010
+-   Rules after processing: 23990
 
-The **aBL - Addon - NSFW is 62.72% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.75% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -169,13 +169,13 @@ The **aBL - Addon - NSFW is 62.72% lighter** than its combined sources
 
 -   Sources: 9
 -   Rules before processing: 11820
--   Rules after processing: 1625
+-   Rules after processing: 1873
 
-The **aBL - Addon - Social Media is 86.25% lighter** than its combined sources
+The **aBL - Addon - Social Media is 84.15% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4409           | 9                |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4410           | 9                |
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 0                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2810           | 0                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
