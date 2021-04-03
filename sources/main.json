@@ -458,7 +458,7 @@
             "url": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7055,
+            "num_block_rules": 7057,
             "num_unblock_rules": 0
         },
         {
@@ -467,7 +467,7 @@
             "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 3043,
+            "num_block_rules": 3074,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 29842,
+            "num_block_rules": 29851,
             "num_unblock_rules": 0
         },
         {
