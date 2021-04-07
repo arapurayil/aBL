@@ -6,9 +6,9 @@ be used with the 'Main' List**
 
 -   Sources: 16
 -   Rules before processing: 64319
--   Rules after processing: 23903
+-   Rules after processing: 23929
 
-The **aBL - Addon - NSFW is 62.84% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.80% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -23,7 +23,7 @@ The **aBL - Addon - NSFW is 62.84% lighter** than its combined sources
 | 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 15083          | 0                |
 | 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 18             | 0                |
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
-| 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1202           | 0                |
+| 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1201           | 0                |
 | 13     | [\_core\_nsfw\_blocked](https://abl.arapurayil.com/core/nsfw_blocked.txt)                                                                                  | internal blocked domain list - nsfw        | 0              | 0                |
 | 14     | [\_core\_nsfw\_cname](https://abl.arapurayil.com/core/nsfw_cname.txt)                                                                                      | internal cname list - nsfw                 | 22             | 0                |
 | 15     | [\_core\_nsfw\_regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                                      | internal regex list - nsfw                 | 12             | 0                |
