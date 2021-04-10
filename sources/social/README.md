@@ -5,9 +5,9 @@
 
 -   Sources: 9
 -   Rules before processing: 11826
--   Rules after processing: 1854
+-   Rules after processing: 1866
 
-The **aBL - Addon - Social Media is 84.32% lighter** than its combined sources
+The **aBL - Addon - Social Media is 84.22% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
