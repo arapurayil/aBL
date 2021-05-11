@@ -458,7 +458,7 @@
             "url": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7106,
+            "num_block_rules": 7107,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 31113,
+            "num_block_rules": 31121,
             "num_unblock_rules": 0
         },
         {
@@ -503,7 +503,7 @@
             "url": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 790,
+            "num_block_rules": 1557,
             "num_unblock_rules": 0
         },
         {
@@ -512,7 +512,7 @@
             "url": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 3550,
+            "num_block_rules": 3545,
             "num_unblock_rules": 0
         },
         {
