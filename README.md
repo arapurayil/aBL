@@ -62,10 +62,10 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 61
--   Rules before processing: 248728
--   Rules after processing: 124354
+-   Rules before processing: 248668
+-   Rules after processing: 123846
 
-The **aBL - The Main List is 50.00% lighter** than its combined sources
+The **aBL - The Main List is 50.20% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                                                                                                                                                                                                                                                                                                               | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
@@ -129,7 +129,7 @@ The **aBL - The Main List is 50.00% lighter** than its combined sources
 | 58     | [\_core\_main\_blocked](https://abl.arapurayil.com/core/main_blocked.txt)                                                                                  | internal blocked domain list - main                                                                                                                                                                                                                                                                                                       | 8              | 0                |
 | 59     | [\_core\_main\_cname](https://abl.arapurayil.com/core/main_cname.txt)                                                                                      | internal cname list - main                                                                                                                                                                                                                                                                                                                | 22             | 0                |
 | 60     | [\_core\_main\_regex](https://abl.arapurayil.com/core/main_regex.txt)                                                                                      | internal regex list - main                                                                                                                                                                                                                                                                                                                | 12             | 0                |
-| 61     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44767            |
+| 61     | [\_core\_main\_unblock](https://github.com/arapurayil/aBL_unblock/raw/main/domains/main.txt)                                                               | internal unblock list - main                                                                                                                                                                                                                                                                                                              | 0              | 44541            |
 
 ## Addon - NSFW
 **[Download](https://abl.arapurayil.com/filters/nsfw.txt)**
@@ -138,10 +138,10 @@ The **aBL - The Main List is 50.00% lighter** than its combined sources
 be used with the 'Main' List**
 
 -   Sources: 16
--   Rules before processing: 64346
--   Rules after processing: 23860
+-   Rules before processing: 64347
+-   Rules after processing: 23866
 
-The **aBL - Addon - NSFW is 62.92% lighter** than its combined sources
+The **aBL - Addon - NSFW is 62.91% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -168,14 +168,14 @@ The **aBL - Addon - NSFW is 62.92% lighter** than its combined sources
 **Blocks social media. Should only be used with the 'General' List**
 
 -   Sources: 9
--   Rules before processing: 11864
--   Rules after processing: 1917
+-   Rules before processing: 11865
+-   Rules after processing: 1922
 
-The **aBL - Addon - Social Media is 83.84% lighter** than its combined sources
+The **aBL - Addon - Social Media is 83.80% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4452           | 9                |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4454           | 9                |
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 0                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2810           | 0                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 0                |
