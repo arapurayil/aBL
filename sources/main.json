@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 31929,
+            "num_block_rules": 31936,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 2211,
+            "num_block_rules": 1727,
             "num_unblock_rules": 0
         },
         {
