@@ -98,8 +98,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/6.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 443,
-            "num_unblock_rules": 5
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "AdGuard Japanese filter",
@@ -107,7 +107,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/7.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 295,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         },
         {
@@ -116,8 +116,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 1037,
-            "num_unblock_rules": 2
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "AdGuard Russian filter",
@@ -125,8 +125,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4374,
-            "num_unblock_rules": 9
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "AdGuard Safari filter",
@@ -134,8 +134,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/12.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 14,
-            "num_unblock_rules": 4
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "AdGuard Spanish/Portuguese filter",
@@ -143,7 +143,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/9.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 206,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         },
         {
@@ -152,8 +152,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 6140,
-            "num_unblock_rules": 9
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "AdGuard Turkish filter",
@@ -161,8 +161,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/13.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 312,
-            "num_unblock_rules": 1
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
         },
         {
             "name": "crazy-max's WindowsSpyBlocker (Spy)",
@@ -170,7 +170,7 @@
             "url": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 378,
+            "num_block_rules": 375,
             "num_unblock_rules": 0
         },
         {
@@ -179,7 +179,7 @@
             "url": "https://someonewhocares.org/hosts/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 14661,
+            "num_block_rules": 15514,
             "num_unblock_rules": 0
         },
         {
