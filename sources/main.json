@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1119,
+            "num_block_rules": 1116,
             "num_unblock_rules": 0
         },
         {
@@ -215,7 +215,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 22316,
+            "num_block_rules": 22317,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 32391,
+            "num_block_rules": 32392,
             "num_unblock_rules": 0
         },
         {
