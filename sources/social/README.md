@@ -1,7 +1,7 @@
 # Addon - Social Media
 **[Download](https://abl.arapurayil.com/filters/social.txt)**
 
-**Blocks social media. Should only be used with the 'General' List**
+**Blocks social media. Should only be used with the 'Main' List**
 
 -   Sources: 7
 -   Rules before processing: 11851

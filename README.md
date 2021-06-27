@@ -46,7 +46,7 @@ NOTE: It will work wherever ABP format is supported, ex: ublock origin, but is b
 | --- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | 01  | The Main List          | Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.   | [https://abl.arapurayil.com/filters/main.txt](https://abl.arapurayil.com/filters/main.txt)       |
 | 02  | Addon - NSFW           | Blocks nsfw content including porn, gambling, snuff ,etc. Should only be used with the 'Main' List                               | [https://abl.arapurayil.com/filters/nsfw.txt](https://abl.arapurayil.com/filters/nsfw.txt)       |
-| 03  | Addon - Social Media   | Blocks social media. Should only be used with the 'General' List                                                                 | [https://abl.arapurayil.com/filters/social.txt](https://abl.arapurayil.com/filters/social.txt)   |
+| 03  | Addon - Social Media   | Blocks social media. Should only be used with the 'Main' List                                                                    | [https://abl.arapurayil.com/filters/social.txt](https://abl.arapurayil.com/filters/social.txt)   |
 
 ### Credits
 
@@ -62,8 +62,8 @@ Please notify me if I have violated a license condition.
 threats/nuisances. Addon lists are available to extend this list.**
 
 -   Sources: 59
--   Rules before processing: 246729
--   Rules after processing: 146606
+-   Rules before processing: 246736
+-   Rules after processing: 146607
 
 The **aBL - The Main List is 40.58% lighter** than its combined sources
 
@@ -72,7 +72,7 @@ The **aBL - The Main List is 40.58% lighter** than its combined sources
 | 01     | [ABP Adblock Warning Removal List](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt)                                                      | The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.                                                                                                                                                                                                             | 2              | 0                |
 | 02     | [ABP filters](https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt)                                                                          | Removes circumvention ads in Adblock Plus                                                                                                                                                                                                                                                                                                 | 8              | 0                |
 | 03     | [ABPindo](https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt)                                              | Additional filters for EasyList block Indonesian and Malaysian language ads. (translated)                                                                                                                                                                                                                                                 | 593            | 0                |
-| 04     | [abuse.ch URLhaus Host file](https://urlhaus.abuse.ch/downloads/hostfile/)                                                                                 | URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours                                                                                                                               | 1101           | 0                |
+| 04     | [abuse.ch URLhaus Host file](https://urlhaus.abuse.ch/downloads/hostfile/)                                                                                 | URLhaus host file does only include domain names associated with malware URLs that are either active (malware sites that currently serve a payload) or that have been added to URLhaus in the past 48 hours                                                                                                                               | 1108           | 0                |
 | 05     | [AdAway](https://adaway.org/hosts.txt)                                                                                                                     | AdAway is an open source ad blocker for Android using the hosts file                                                                                                                                                                                                                                                                      | 8240           | 0                |
 | 06     | [AdGuard Annoyances filter](https://filters.adtidy.org/extension/chromium/filters/14.txt)                                                                  | Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together       | 663            | 3                |
 | 07     | [AdGuard Chinese filter](https://filters.adtidy.org/extension/chromium/filters/224.txt)                                                                    | Removes ads from websites in Chinese. Originally based on the EasyList China filter and subsequently modified by us according to the complaints from users.                                                                                                                                                                               | 5587           | 12               |
@@ -161,7 +161,7 @@ The **aBL - Addon - NSFW is 55.56% lighter** than its combined sources
 ## Addon - Social Media
 **[Download](https://abl.arapurayil.com/filters/social.txt)**
 
-**Blocks social media. Should only be used with the 'General' List**
+**Blocks social media. Should only be used with the 'Main' List**
 
 -   Sources: 7
 -   Rules before processing: 11851
