@@ -19,8 +19,7 @@
     "Deduplicate",
     "RemoveComments",
     "RemoveModifiers",
-    "Validate",
-    "InvertAllow"
+    "Validate"
   ],
   "exclusions_sources": [
     "https://github.com/arapurayil/aBL/raw/main/core/main_regex.txt",
