@@ -1,0 +1,29 @@
+{
+  "name": "aBL - (nsfw)",
+  "description": "Block rules for aBL - nsfw",
+  "homepage": "https://abl.arapurayil.com/",
+  "license": "GPLv3",
+  "sources": [
+    {
+      "name": "aBL - nsfw",
+      "source": "/home/runner/work/aBL/aBL/lists/nsfw.txt",
+      "type": "hosts"
+    },
+    {
+      "name": "aXL - unblock - nsfw",
+      "source": "https://github.com/arapurayil/aXL/raw/main/lists/nsfw_unblock.txt",
+      "type": "adblock"
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments",
+    "RemoveModifiers",
+    "Validate",
+    "InvertAllow"
+  ],
+  "exclusions_sources": [
+    "https://github.com/arapurayil/aBL/raw/main/core/nsfw_regex.txt",
+    "https://github.com/arapurayil/aXL/raw/main/lists/nsfw.txt"
+  ]
+}

@@ -4,10 +4,11 @@ Markdown is a markup language with plain text formatting syntax. This package
 allows the creation of markdown-compliant strings. For information about
 markdown see:
 
--   http://commonmark.org/
+-   https://commonmark.org/
 -   https://daringfireball.net/projects/markdown/
 
 """
+
 
 # Helper functions
 
@@ -34,7 +35,7 @@ def header(header_text, header_level, style="atx"):
             raise ValueError(f"Invalid level {header_level} for setext")
         header_character = "=" if header_level == 1 else "-"
         header_string = (header_character * 3) + header_character * (
-            len(header_text) - 3
+                len(header_text) - 3
         )
         return f"{esc_format(header_text)}\n{header_string}"
     else:
@@ -60,7 +61,7 @@ def code_block(text, language=""):
     """Return a code block."""
     if language:
         return f"```{language}\n{text}\n```"
-    return "\n".join([f"    {item}" for item in text.split("\n")])
+    return "\n".join(f"    {item}" for item in text.split("\n"))
 
 
 # Links
@@ -84,7 +85,7 @@ def image(alt_text, link_url, title=""):
 
 def unordered_list(text_list):
     """Return an unordered list from an list."""
-    return "\n".join([f"-   {esc_format(item)}" for item in text_list])
+    return "\n".join(f"-   {esc_format(item)}" for item in text_list)
 
 
 def ordered_list(text_list):
@@ -102,7 +103,7 @@ def ordered_list(text_list):
 
 def blockquote(text):
     """Return a blockquote."""
-    return "\n".join([f"> {esc_format(item)}" for item in text.split("\n")])
+    return "\n".join(f"> {esc_format(item)}" for item in text.split("\n"))
 
 
 def horizontal_rule(length=79, style="_"):
@@ -161,7 +162,7 @@ def table_delimiter_row(number_of_columns, column_lengths=-1):
         for column_number in range(number_of_columns)
     ]
 
-    # use table row for acctually creating the table row
+    # use table row for actually creating the table row
     return table_row(delimiter_row)
 
 
@@ -199,7 +200,7 @@ def table_from_rows(table_list):
     # transpose the list
     number_of_rows = len(table_list)
     transposed = []
-    for column_number in range(0, number_of_rows):
+    for column_number in range(number_of_rows):
         column_list = [row[column_number] for row in table_list]
 
         transposed.append(column_list)

@@ -1,0 +1,29 @@
+{
+  "name": "aBL - (social)",
+  "description": "Block rules for aBL - social",
+  "homepage": "https://abl.arapurayil.com/",
+  "license": "GPLv3",
+  "sources": [
+    {
+      "name": "aBL - social",
+      "source": "/home/runner/work/aBL/aBL/lists/social.txt",
+      "type": "hosts"
+    },
+    {
+      "name": "aXL - unblock - social",
+      "source": "https://github.com/arapurayil/aXL/raw/main/lists/social_unblock.txt",
+      "type": "adblock"
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments",
+    "RemoveModifiers",
+    "Validate",
+    "InvertAllow"
+  ],
+  "exclusions_sources": [
+    "https://github.com/arapurayil/aBL/raw/main/core/social_regex.txt",
+    "https://github.com/arapurayil/aXL/raw/main/lists/social.txt"
+  ]
+}

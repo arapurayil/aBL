@@ -1,0 +1,29 @@
+{
+  "name": "aBL - (main)",
+  "description": "Block rules for aBL - main",
+  "homepage": "https://abl.arapurayil.com/",
+  "license": "GPLv3",
+  "sources": [
+    {
+      "name": "aBL - main",
+      "source": "/home/runner/work/aBL/aBL/lists/main.txt",
+      "type": "hosts"
+    },
+    {
+      "name": "aXL - unblock - main",
+      "source": "https://github.com/arapurayil/aXL/raw/main/lists/main_unblock.txt",
+      "type": "adblock"
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments",
+    "RemoveModifiers",
+    "Validate",
+    "InvertAllow"
+  ],
+  "exclusions_sources": [
+    "https://github.com/arapurayil/aBL/raw/main/core/main_regex.txt",
+    "https://github.com/arapurayil/aXL/raw/main/lists/main.txt"
+  ]
+}
