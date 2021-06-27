@@ -1,69 +1,69 @@
 {
-  "title": "Addon - Social Media",
-  "description": "Blocks social media. Should only be used with the 'General' List",
-  "sources": [
-    {
-      "name": "AdGuard Social media filter",
-      "desc": "Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.",
-      "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
-      "format": "abp",
-      "type": "block",
-      "num_block_rules": 4475,
-      "num_unblock_rules": 9
-    },
-    {
-      "name": "Energized Core Social Blacklist",
-      "desc": "Core Energized Blacklist.",
-      "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social",
-      "format": "domains",
-      "type": "block",
-      "num_block_rules": 3897,
-      "num_unblock_rules": 0
-    },
-    {
-      "name": "Sinfonietta's Social media hosts",
-      "desc": "-",
-      "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
-      "format": "domains",
-      "type": "block",
-      "num_block_rules": 2810,
-      "num_unblock_rules": 0
-    },
-    {
-      "name": "Tiuxo's hosts - social",
-      "desc": "-",
-      "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/social",
-      "format": "domains",
-      "type": "block",
-      "num_block_rules": 4,
-      "num_unblock_rules": 0
-    },
-    {
-      "name": "UT1 Blacklists - social",
-      "desc": "-",
-      "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains",
-      "format": "domains",
-      "type": "block",
-      "num_block_rules": 656,
-      "num_unblock_rules": 0
-    },
-    {
-      "name": "_ aBL core filter - social",
-      "desc": "Internal filter - social",
-      "url": "https://abl.arapurayil.com/core/social_filter.txt",
-      "format": "abp",
-      "type": "block",
-      "num_block_rules": 8,
-      "num_unblock_rules": 0
-    },
-    {
-      "name": "_ aBL core filter - social - regex",
-      "desc": "Internal filter - social - regex",
-      "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
-      "format": "abp",
-      "type": "regex",
-      "num_block_rules": 12,
-      "num_unblock_rules": 0
-    }
-  ]
+    "title": "Addon - Social Media",
+    "description": "Blocks social media. Should only be used with the 'General' List",
+    "sources": [
+        {
+            "name": "AdGuard Social media filter",
+            "desc": "Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.",
+            "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
+            "format": "abp",
+            "type": "block",
+            "num_block_rules": 4475,
+            "num_unblock_rules": 9
+        },
+        {
+            "name": "Energized Core Social Blacklist",
+            "desc": "Core Energized Blacklist.",
+            "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 3897,
+            "num_unblock_rules": 9
+        },
+        {
+            "name": "Sinfonietta's Social media hosts",
+            "desc": "-",
+            "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 2810,
+            "num_unblock_rules": 9
+        },
+        {
+            "name": "Tiuxo's hosts - social",
+            "desc": "-",
+            "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/social",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 4,
+            "num_unblock_rules": 9
+        },
+        {
+            "name": "UT1 Blacklists - social",
+            "desc": "-",
+            "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains",
+            "format": "domains",
+            "type": "block",
+            "num_block_rules": 656,
+            "num_unblock_rules": 9
+        },
+        {
+            "name": "_ aBL core filter - social",
+            "desc": "Internal filter - social",
+            "url": "https://abl.arapurayil.com/core/social_filter.txt",
+            "format": "abp",
+            "type": "block",
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
+        },
+        {
+            "name": "_ aBL core filter - social - regex",
+            "desc": "Internal filter - social - regex",
+            "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
+            "format": "abp",
+            "type": "regex",
+            "num_block_rules": 0,
+            "num_unblock_rules": 0
+        }
+    ]
 }
