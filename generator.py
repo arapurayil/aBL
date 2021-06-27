@@ -92,11 +92,11 @@ class ListInfo:
     title = "aBL"
     author = "arapurayil"
     version = (
-            str(int(datetime.now().strftime("%Y")) - 2019)
-            + "."
-            + datetime.now().strftime("%m")
-            + "."
-            + datetime.now().strftime("%d")
+        str(int(datetime.now().strftime("%Y")) - 2019)
+        + "."
+        + datetime.now().strftime("%m")
+        + "."
+        + datetime.now().strftime("%d")
     )
     last_modified = datetime.now().strftime("%d %b %Y %H:%M:%S UTC")
     expires = "12 hours"
@@ -194,7 +194,7 @@ def extract_abp(content):
         x
         for x in content
         if re.match(pattern_supported_block, x, concurrent=True)
-           and not re.match(pattern_unsupported, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
     ]
 
     blocked_domains = [
@@ -206,7 +206,7 @@ def extract_abp(content):
         x
         for x in content
         if re.match(pattern_supported_unblock, x, concurrent=True)
-           and not re.match(pattern_unsupported, x, concurrent=True)
+        and not re.match(pattern_unsupported, x, concurrent=True)
     ]
     unblocked_domains = [
         x.replace("@@||", "").replace("^", "").replace("$important", "")
@@ -392,8 +392,8 @@ def gen_filter_list(blg, blocked_domains, unblock_rules, regex_rules):
     list_title = f"{blg.info.title} - {blg.data_json[blg.j_key.title]}"
     header = (
         str(blg.info.header)
-            .replace("repl_cat_title", list_title)
-            .replace("repl_cat_desc", blg.data_json[blg.j_key.desc])
+        .replace("repl_cat_title", list_title)
+        .replace("repl_cat_desc", blg.data_json[blg.j_key.desc])
     )
     if blg.category != "main":
         file_general_list = Path.joinpath(DirPath.output_filters, "main.txt")
@@ -437,8 +437,8 @@ def category_section_main(blg, stats):
     """Generates the main section of the category README.md file."""
     value_percentage = float(
         (
-                (int(stats["unprocessed"]) - int(stats["processed"]))
-                / int(stats["unprocessed"])
+            (int(stats["unprocessed"]) - int(stats["processed"]))
+            / int(stats["unprocessed"])
         )
         * 100
     )
@@ -447,11 +447,11 @@ def category_section_main(blg, stats):
         f"{blg.info.home}/filters/{blg.category}.txt",
     )
     main_title = (
-            markdown_strings.header(f"{blg.data_json[blg.j_key.title]}", 1)
-            + "\n"
-            + "**"
-            + link_filter
-            + "**"
+        markdown_strings.header(f"{blg.data_json[blg.j_key.title]}", 1)
+        + "\n"
+        + "**"
+        + link_filter
+        + "**"
     )
 
     main_desc = markdown_strings.bold(f"{fill(blg.data_json[blg.j_key.desc])}")
@@ -492,7 +492,7 @@ def category_section_table(blg):
             tbl_pad_arr[0] = len(str({index + 1}).zfill(2)) + 2
         if len(str(f"[{key[blg.i_key.name]}]({key[blg.i_key.url]})")) > tbl_pad.c2:
             tbl_pad_arr[1] = (
-                    len(str(f"[{key[blg.i_key.name]}]({key[blg.i_key.url]})")) + 2
+                len(str(f"[{key[blg.i_key.name]}]({key[blg.i_key.url]})")) + 2
             )
         if len(str({key[blg.i_key.desc]})) > tbl_pad.c3:
             tbl_pad_arr[2] = len(str({key[blg.i_key.desc]})) + 2
@@ -700,8 +700,8 @@ def main():
             stats = {}
             num_unprocessed = {
                 "unprocessed": len(blocked_domains)
-                               + len(unblock_rules)
-                               + len(regex_rules)
+                + len(unblock_rules)
+                + len(regex_rules)
             }
             stats.update(num_unprocessed)
             blocked_domains = set(blocked_domains) - set(unblocked_domains)
@@ -714,7 +714,9 @@ def main():
                 x.replace("||", "").replace("^", "").replace("$important", "")
                 for x in block_rules
             ]
-            num_processed = gen_filter_list(li_ge, block_rules, unblock_rules, regex_rules)
+            num_processed = gen_filter_list(
+                li_ge, block_rules, unblock_rules, regex_rules
+            )
             num_processed = {"processed": num_processed}
             stats.update(num_processed)
             gen_category(li_ge, stats)

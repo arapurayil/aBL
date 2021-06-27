@@ -35,7 +35,7 @@ def header(header_text, header_level, style="atx"):
             raise ValueError(f"Invalid level {header_level} for setext")
         header_character = "=" if header_level == 1 else "-"
         header_string = (header_character * 3) + header_character * (
-                len(header_text) - 3
+            len(header_text) - 3
         )
         return f"{esc_format(header_text)}\n{header_string}"
     else:
