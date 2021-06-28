@@ -5,10 +5,10 @@
 be used with the 'Main' List**
 
 -   Sources: 14
--   Rules before processing: 67981
--   Rules after processing: 30211
+-   Rules before processing: 68187
+-   Rules after processing: 30370
 
-The **aBL - Addon - NSFW is 55.56% lighter** than its combined sources
+The **aBL - Addon - NSFW is 55.46% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -19,9 +19,9 @@ The **aBL - Addon - NSFW is 55.56% lighter** than its combined sources
 | 05     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 18             | 0                |
 | 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 96             | 0                |
 | 07     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 15540          | 0                |
-| 08     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2393           | 0                |
-| 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 15101          | 0                |
-| 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 18             | 0                |
+| 08     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2467           | 0                |
+| 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 15232          | 0                |
+| 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 19             | 0                |
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
 | 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1202           | 0                |
 | 13     | [\_ aBL core filter - nsfw](https://abl.arapurayil.com/core/nsfw_filter.txt)                                                                               | Internal filter - nsfw                     | 0              | 0                |

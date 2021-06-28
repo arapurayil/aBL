@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'Main' List
 ! Version: 2.06.28
-! Last modified: 28 Jun 2021 00:25:47 UTC
+! Last modified: 28 Jun 2021 08:08:37 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -288,6 +288,7 @@
 ||adimg.uve.weibo.com^
 ||adlog.plus.google.com^
 ||admin-official.line.me^
+||admin-staging.joinclubhouse.com^
 ||admin.datememe.com^
 ||admin.integration.viber.com^
 ||admin.periscope.tv^
@@ -1360,6 +1361,7 @@
 ||commsconnect.linkedin.com^
 ||community-test.linkedin.com^
 ||community.instagram.com^
+||community.joinclubhouse.com^
 ||community.linkedin.com^
 ||communitybuilders.meetup.com^
 ||company.verified.weibo.com^
@@ -2919,6 +2921,7 @@
 ||ing.weibo.com^
 ||initiumdevs.slack.com^
 ||inshocking.ru^
+||instagr.am^
 ||instagram-press.com^
 ||instagram-shv-01-ams2.fbcdn.net^
 ||instagram-shv-01-ams3.fbcdn.net^
@@ -2996,6 +2999,7 @@
 ||invites.myspace.com^
 ||inyour-slb-01-05-ash3.facebook.com^
 ||inyour.facebook.com^
+||ios.joinclubhouse.com^
 ||ios.renren.com^
 ||ipad.imo.im^
 ||ipay.renren.com^
@@ -3078,6 +3082,7 @@
 ||jobs0.meetup.com^
 ||joga.com^
 ||join.skype.com^
+||joinclubhouse.com^
 ||joox.app.wechat.com^
 ||jophiel.map.qq.com^
 ||joycasino.com^
@@ -5302,6 +5307,7 @@
 ||staff.tumblr.com^
 ||staging-commerce.pinterest.com^
 ||staging.app-analytics.snapchat.com^
+||staging.joinclubhouse.com^
 ||staging.server-analytics.snapchat.com^
 ||stanleyblackanddecker.m.facebook.com^
 ||star-mini.c10r.facebook.com^
@@ -5548,6 +5554,7 @@
 ||termwiki.com^
 ||test.imo.im^
 ||testdrive.kik.com^
+||testflight.joinclubhouse.com^
 ||testserver.musical.ly^
 ||tetz.slack.com^
 ||texas-holdem-poker-tournaments.meetup.com^
@@ -6044,6 +6051,7 @@
 ||weihuialert.yy.com^
 ||weirenwu.weibo.com^
 ||weixin110.qq.com^
+||welcome.joinclubhouse.com^
 ||wellwer.com^
 ||wendy-la-baka.skyrock.com^
 ||weourfamily.com^
