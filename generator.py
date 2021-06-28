@@ -1,3 +1,10 @@
+"""
+title: aBL - generator
+description: Generates lists of excluded domains and unblock rules for aBL.
+author: arapurayil
+credits: https://github.com/AdguardTeam/HostlistCompiler
+license: GPLv3
+"""
 import subprocess
 from base64 import b64encode
 from collections import namedtuple
