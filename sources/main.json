@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1094,
+            "num_block_rules": 1101,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5587,
+            "num_block_rules": 5588,
             "num_unblock_rules": 12
         },
         {
@@ -125,7 +125,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4475,
+            "num_block_rules": 4477,
             "num_unblock_rules": 9
         },
         {
@@ -143,7 +143,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/9.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 209,
+            "num_block_rules": 210,
             "num_unblock_rules": 0
         },
         {
@@ -152,7 +152,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 15540,
+            "num_block_rules": 15848,
             "num_unblock_rules": 9
         },
         {
@@ -197,7 +197,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 14191,
+            "num_block_rules": 14192,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 32401,
+            "num_block_rules": 32406,
             "num_unblock_rules": 0
         },
         {
