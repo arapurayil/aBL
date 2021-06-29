@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
 ! Checksum: 1B2M2Y8AsgTpgAmY7PhCfg
-! Title: aBL - Addon - Social Media
+! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'Main' List
 ! Version: 2.06.29
-! Last modified: 29 Jun 2021 00:24:53 UTC
+! Last modified: 29 Jun 2021 05:05:36 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -2162,6 +2162,7 @@
 ||eu.badoo.com^
 ||eu1.badoo.com^
 ||eu2.badoo.com^
+||euadw.com^
 ||eul.badoo.com^
 ||eus1-api.asm.skype.com^
 ||event-web.line.me^
@@ -2884,6 +2885,8 @@
 ||img.teams.skype.com^
 ||img.wechat.com^
 ||img1.ask.fm^
+||img1458.r.worldssl.net^
+||img1461.r.worldssl.net^
 ||img2.ask.fm^
 ||img4.ask.fm^
 ||img6.ask.fm^
@@ -3092,6 +3095,7 @@
 ||jp.twimg.com^
 ||jp.weibo.com^
 ||jqdnvg.com^
+||jsc.idealmedia.io^
 ||jsrlfg.com^
 ||jss.medium.com^
 ||judysbook.com^
@@ -3118,6 +3122,7 @@
 ||kik.com^
 ||killerstartups.com^
 ||kilopog.com^
+||kinogo.r.worldssl.net^
 ||kinott.com^
 ||kinzin.com^
 ||kirtsy.com^
@@ -3517,6 +3522,7 @@
 ||messenger.telegram.org^
 ||messymarv.skyrock.com^
 ||meta-api.reddit.com^
+||metaffiliation.com^
 ||metaliners.ru^
 ||metric.gotinder.com^
 ||metrics.yy.com^
@@ -4016,6 +4022,7 @@
 ||partner-earning.com^
 ||partner.badoo.com^
 ||partner.eu1.badoo.com^
+||partner.mediametrics.ru^
 ||partners-api.pinterest.com^
 ||partners-office.integration.viber.com^
 ||partners-office.viber.com^
@@ -4145,6 +4152,7 @@
 ||pinterest.com.gslb.pinterest.com^
 ||pinterest.fr^
 ||pipe.skype.com^
+||pipki.r.worldssl.net^
 ||pir.zspb.ru^
 ||pixel.facebook.com^
 ||pixel.reddit.com^
@@ -5663,6 +5671,7 @@
 ||tr.ssl.meetme.com^
 ||tr.swarmapp.com^
 ||tr.www.meetme.com^
+||tradedoubler.com^
 ||tradeone.com.ua^
 ||trafmag.com^
 ||trailfire.com^
@@ -5675,6 +5684,7 @@
 ||translations.telegram.org^
 ||transparency.twitter.com^
 ||trap.skype.com^
+||traq.li^
 ||travbuddy.com^
 ||travel-club.meetup.com^
 ||travellerspoint.com^
@@ -6131,6 +6141,7 @@
 ||white.ish.instagram.com^
 ||whoissick.org^
 ||wibiya.com^
+||widget.admitad.com^
 ||widget.mediastealer.com^
 ||widget.pushbullet.com^
 ||widget.renren.com^
