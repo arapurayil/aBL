@@ -96,7 +96,7 @@ class ItemKey:
 class ListInfo:
     """Values for the list header."""
 
-    title = "aBL"
+    title = "arapurayil's Block List (aBL)"
     author = "arapurayil"
     version = (
         str(int(datetime.now().strftime("%Y")) - 2019)
@@ -629,7 +629,7 @@ def gen_project_readme(list_source):
     about = read_file(file_about, data_type="str")
     notes = read_file(file_notes, data_type="str")
     info_add = markdown_strings.blockquote(
-        "filter lists optimized for DNS level blocking of ads, "
+        "Filter lists optimized for DNS level blocking of ads, "
         "analytics, crypto-jacking and other such threats/nuisances."
     )
     section = [
