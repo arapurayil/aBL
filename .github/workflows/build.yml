@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow every 8 hours or on push/pull request events but only for the main branch
   schedule:
-    - cron:  '0 */8 * * *'
+    - cron:  '0 */12 * * *'
   push:
     branches: [ main ]
   pull_request:
