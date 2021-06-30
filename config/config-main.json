@@ -12,7 +12,10 @@
     {
       "name": "aXL - unblock - main",
       "source": "https://axl.arapurayil.com/lists/main_unblock.txt",
-      "type": "adblock"
+      "type": "adblock",
+      "inclusions": [
+        "/@@/"
+      ]
     }
   ],
   "transformations": [
