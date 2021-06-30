@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.
 ! Version: 2.06.30
-! Last modified: 30 Jun 2021 16:32:18 UTC
+! Last modified: 30 Jun 2021 16:43:38 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -19183,7 +19183,6 @@
 ||api-lytics.macpaw.com^
 ||api-metrics-canary.flurry.com^
 ||api-metrics.flurry.com^
-||api-ms.cobainaja.id^
 ||api-pl.kdrag0n.dev^
 ||api-proxy.bee7.com^
 ||api-publishers.propellerads.com^
@@ -40914,7 +40913,6 @@
 ||demo.energianmittaus.fi^
 ||demo.exclusivev2.uproducts.in^
 ||demo.fcmtravel.com^
-||demo.g-mart.in^
 ||demo.lib-oa-2.net.daraz.com^
 ||demo.promatis.de^
 ||demo.r-ln-1.net.daraz.com^
@@ -43316,7 +43314,6 @@
 ||download.cm^
 ||download.createyournextcustomer.com^
 ||download.dnvgl.com^
-||download.doumaibiji.cn^
 ||download.electrum.org^
 ||download.exrnybuf.cn^
 ||download.filmfanatic.com^
@@ -59194,6 +59191,7 @@
 ||hasdarot.space^
 ||hasdarot.tv^
 ||hasdarot.xyz^
+||haseebkishadi.com^
 ||hasevo.com^
 ||hasgama.cf^
 ||hasgama.gq^
@@ -70473,7 +70471,6 @@
 ||kuludelo.com^
 ||kumail8.info^
 ||kumanaun.net^
-||kumaralok.in^
 ||kumed.hrm.healthgrades.com^
 ||kumekqeccmob.com^
 ||kumisgonds69.me^
@@ -71443,6 +71440,7 @@
 ||lddt.de^
 ||lddz.com^
 ||ldfo.com^
+||ldgcorp.com^
 ||ldglob01.adtech.fr^
 ||ldglob01.adtech.us^
 ||ldglob02.adtech.fr^
@@ -93025,7 +93023,6 @@
 ||p18591.infopicked.com^
 ||p1g5online.com^
 ||p2.assetscdn.stream^
-||p2.d9media.cn^
 ||p2.fokus.no^
 ||p2.fwpixel.com^
 ||p2.interestingz.pw^
@@ -99197,6 +99194,7 @@
 ||pshi.com^
 ||psi-performance.de^
 ||psi.tubemogul.com^
+||psicheaurora.it^
 ||psisalte.com^
 ||psitchie.com^
 ||psiwaphado.pro^
@@ -136612,6 +136610,7 @@
 ||wlzrvihznn.bid^
 ||wm-abms.com^
 ||wm-dornbirn2017.at^
+||wm-mxc.com^
 ||wm-panel.com^
 ||wm-space.youero.com^
 ||wm.banners.sextracker.com^
@@ -142842,9 +142841,13 @@
 ||zzzthxsyvbzk.cf^
 ||zzzz1717.com^
 ||zzzzzzzzzzzzz.com^
+@@||78.46.107.144
+@@||a.adwolf.ru^|
+@@||ac.ebis.ne.jp^|
 @@||ad.apps.fm^
 @@||ad.ourgame.com^
 @@||adcdn.pingan.com^
+@@||admin.dable.io^|
 @@||adserver.va3.megaphone.cloud^
 @@||advertisement.alibabacorp.com^
 @@||advertisement.tanx.com.gds.alibabadns.com^
@@ -142857,6 +142860,7 @@
 @@||affiliate.dmm.com^
 @@||affiliate.hitbtc.com^
 @@||affiliate.twitch.tv^
+@@||afi-b.com^|
 @@||analytics.blue^
 @@||analytics.bsgwireless.com^
 @@||analytics.console.aws.a2z.com^
@@ -142869,6 +142873,7 @@
 @@||analytics.twitter.com^
 @@||api.ads.tvb.com^
 @@||app-advertise.zhihuishu.com^
+@@||artifactory.appodeal.com^|
 @@||auth.tbn.ru^
 @@||banner.dna.fi^
 @@||banner.play-asia.com^
@@ -142879,23 +142884,57 @@
 @@||beacon.errorception.com^
 @@||beacon.geo.netflix.com^
 @@||beacon.netflix.com^
+@@||billing.ngs.ru
 @@||blubroid.de^
 @@||buyad.bi-xenon.cn^
 @@||cdn.warface.ru^
+@@||chaosroad.com^
+@@||cindyholbrook.lpages.co^|
+@@||cm-beacon.nakanohito.jp^|
+@@||cm-widget.nakanohito.jp^|
+@@||confaelshop.com.ua
 @@||cookie-bar.eu^
 @@||cookieconsent.insites.com^
 @@||counter-strike.net^
+@@||cp.mchost.ru^
+@@||daikoku.ebis.ne.jp^|
 @@||dl.unlockapk.com^
+@@||ecoteka.ru^
+@@||email.*.skyeng.ru^|
 @@||email.awscloud.com^
+@@||email.elitedangerous.com^|
+@@||envato.market^|
 @@||feadrope.net^
+@@||feed.adrelayer.com^|
+@@||forpost.kia.ru
+@@||galaxy.mobstudio.ru
+@@||galaxy2.mobstudio.ru
+@@||gibdd.ru^
+@@||gvoconference.com
+@@||image*.putlockers.
 @@||img.ads.tvb.com^
 @@||incoming.telemetry.mozilla.org^
 @@||isondled.net^
+@@||italiashare.*advertisement.js
+@@||klcheck.com^
+@@||kpn.com^
+@@||license.ivi.ru
+@@||lk-subscr.tricolor.tv^
 @@||loadercdn.com^
+@@||logentries.com^|
 @@||mads.amazon-adsystem.com^
 @@||mads.amazon.com^
+@@||mchs.gov.ru^
+@@||my.tealiumiq.com^|
+@@||my.velcom.by^
+@@||nestle.ivi.ru^
 @@||newad.mail.wo.cn^
+@@||nineto5mac-d.openx.net^|
+@@||old-games.org^
+@@||omsc.kpn.com^|
+@@||oneline.nextday.media^|
 @@||partner.kards.qip.ru^
+@@||partner.paystream.ru
 @@||pics.porndroids.com^
 @@||pixel.everesttech.net^
 @@||pixel.nymag.com^
@@ -142905,8 +142944,13 @@
 @@||redirect.appmetrica.yandex.net^
 @@||redtram.fm^
 @@||reklamlar.my-debrid.net^
+@@||seur.com^
+@@||smartpixel.tv
 @@||static.hdrezka.ac^
 @@||stream.pladform.ru^
+@@||support-beacon.nakanohito.jp^|
+@@||support-widget.nakanohito.jp^|
+@@||tags.crwdcntrl.net^|
 @@||telemetry-in.battle.net^
 @@||telemetry-incoming.r53-2.services.mozilla.com^
 @@||telemetry-prd.ap.tesla.services^
@@ -142914,9 +142958,12 @@
 @@||telemetry.api.swiftkey.com^
 @@||telemetry.microsoft.com^
 @@||telemetry.soundcloud.com^
+@@||track.rutarget.ru^|
 @@||uobsoe.com^
+@@||uralsibins.ru^
 @@||use.adserver.snapads.com^
 @@||webtrack.dhlglobalmail.com^
+@@||xda-cdn.com
 @@||yagiay.com^
 @@||yohalabs.com^
 /^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/

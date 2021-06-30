@@ -9,7 +9,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 2,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 1
         },
         {
             "name": "ABP filters",
@@ -27,7 +27,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 593,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 67
         },
         {
             "name": "abuse.ch URLhaus Host file",
@@ -36,7 +36,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 1557,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 67
         },
         {
             "name": "AdAway",
@@ -45,7 +45,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 8239,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 67
         },
         {
             "name": "AdGuard Annoyances filter",
@@ -54,7 +54,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 665,
-            "num_unblock_rules": 3
+            "num_unblock_rules": 45
         },
         {
             "name": "AdGuard Chinese filter",
@@ -62,8 +62,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5627,
-            "num_unblock_rules": 12
+            "num_block_rules": 5628,
+            "num_unblock_rules": 188
         },
         {
             "name": "AdGuard DNS filter",
@@ -72,7 +72,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 37366,
-            "num_unblock_rules": 15
+            "num_unblock_rules": 81
         },
         {
             "name": "AdGuard Dutch filter",
@@ -81,7 +81,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 68,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 2
         },
         {
             "name": "AdGuard French filter",
@@ -90,7 +90,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 5049,
-            "num_unblock_rules": 4
+            "num_unblock_rules": 65
         },
         {
             "name": "AdGuard German filter",
@@ -99,7 +99,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 394,
-            "num_unblock_rules": 4
+            "num_unblock_rules": 67
         },
         {
             "name": "AdGuard Japanese filter",
@@ -108,7 +108,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 337,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 6
         },
         {
             "name": "AdGuard Mobile ads filter",
@@ -117,7 +117,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 991,
-            "num_unblock_rules": 2
+            "num_unblock_rules": 13
         },
         {
             "name": "AdGuard Russian filter",
@@ -126,7 +126,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 4480,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "AdGuard Safari filter",
@@ -135,7 +135,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 14,
-            "num_unblock_rules": 4
+            "num_unblock_rules": 264
         },
         {
             "name": "AdGuard Spanish/Portuguese filter",
@@ -144,7 +144,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 211,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 39
         },
         {
             "name": "AdGuard Tracking Protection filter",
@@ -153,7 +153,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 15852,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 19
         },
         {
             "name": "AdGuard Turkish filter",
@@ -162,7 +162,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 321,
-            "num_unblock_rules": 1
+            "num_unblock_rules": 17
         },
         {
             "name": "crazy-max's WindowsSpyBlocker (Spy)",
@@ -171,7 +171,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 375,
-            "num_unblock_rules": 1
+            "num_unblock_rules": 17
         },
         {
             "name": "Dan Pollock\u2019s hosts file",
@@ -180,7 +180,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 15516,
-            "num_unblock_rules": 1
+            "num_unblock_rules": 17
         },
         {
             "name": "EasyList Cookie List",
@@ -198,7 +198,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 14196,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 12
         },
         {
             "name": "EasyList Hebrew",
@@ -207,7 +207,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 300,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 22
         },
         {
             "name": "Energized Core Hosts",
@@ -216,7 +216,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 22319,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 22
         },
         {
             "name": "FadeMind's add.Risk",
@@ -225,7 +225,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 2556,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 22
         },
         {
             "name": "FadeMind's add.Spam",
@@ -234,7 +234,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 73,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 22
         },
         {
             "name": "FadeMind's UncheckyAds",
@@ -243,7 +243,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 10,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 22
         },
         {
             "name": "Fanboy's Anti-Cookie Filters",
@@ -252,7 +252,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 120,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 5
         },
         {
             "name": "Fanboy's Enhanced Trackers List",
@@ -261,7 +261,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 123,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 249
         },
         {
             "name": "Fanboy's Indian",
@@ -315,7 +315,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 121,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "Matomo.org - referrer spammers",
@@ -324,7 +324,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 2056,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "MetaMask's ETH Phishing Detect",
@@ -333,7 +333,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 1070,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "MVPS HOSTS file",
@@ -342,7 +342,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 8729,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS CNAME Cloaking Blocklist",
@@ -351,7 +351,7 @@
             "format": "domains",
             "type": "cname",
             "num_block_rules": 0,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - alexa",
@@ -360,7 +360,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 3,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - apple",
@@ -369,7 +369,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 10,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - huawei",
@@ -378,7 +378,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 8,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - roku",
@@ -387,7 +387,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 1,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - samsung",
@@ -396,7 +396,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 4,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - sonos",
@@ -405,7 +405,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 2,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - windows",
@@ -414,7 +414,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 24,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "NextDNS Privacy - xiaomi",
@@ -423,7 +423,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 9,
-            "num_unblock_rules": 0
+            "num_unblock_rules": 10
         },
         {
             "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist for AdGuard Home",

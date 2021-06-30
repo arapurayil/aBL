@@ -9,7 +9,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 4480,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "Energized Core Social Blacklist",
@@ -18,7 +18,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 3897,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "Sinfonietta's Social media hosts",
@@ -27,7 +27,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 2820,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "Tiuxo's hosts - social",
@@ -36,7 +36,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 4,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "UT1 Blacklists - social",
@@ -45,7 +45,7 @@
             "format": "domains",
             "type": "block",
             "num_block_rules": 656,
-            "num_unblock_rules": 9
+            "num_unblock_rules": 141
         },
         {
             "name": "_ aBL core filter - social",

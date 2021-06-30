@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'Main' List
 ! Version: 2.06.30
-! Last modified: 30 Jun 2021 16:32:18 UTC
+! Last modified: 30 Jun 2021 16:43:38 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -6751,6 +6751,25 @@
 ||zymsc.bs2cdn.yy.com^
 ||zz.reddit.com^
 ||zzsf.renren.com^
+@@||admin*.planeta.ru^
+@@||advertising.yandex.ru
+@@||api.privatbank.ua^
+@@||b.vimeocdn.com
+@@||code.google.com
 @@||drupalcampmsk.ru^
+@@||ibank.asb.by^
+@@||kvartplata.ru^
+@@||lisa.motivtelecom.ru^
+@@||login.vk.com
+@@||magnitogorsk.ru^
+@@||nalog.ru^
+@@||op.yandex.ru
+@@||oplata.kykyryza.ru^
 @@||partners.drweb.com^
+@@||queue.vk.com^
+@@||tile.openstreetmap.org
+@@||transfers.privatbank.ua^
+@@||wikimart.ru^|
+@@||yandex-team.ru^
+@@||zakupki.gov.ru^
 
