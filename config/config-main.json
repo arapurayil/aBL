@@ -27,9 +27,5 @@
     "RemoveComments",
     "RemoveModifiers",
     "Validate"
-  ],
-  "exclusions_sources": [
-    "https://abl.arapurayil.com/core/main_regex.txt",
-    "https://axl.arapurayil.com/lists/main.txt"
   ]
 }
