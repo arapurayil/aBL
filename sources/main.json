@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1556,
+            "num_block_rules": 1565,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5626,
+            "num_block_rules": 5627,
             "num_unblock_rules": 12
         },
         {
@@ -71,7 +71,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37359,
+            "num_block_rules": 37366,
             "num_unblock_rules": 15
         },
         {
@@ -152,7 +152,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 15851,
+            "num_block_rules": 15852,
             "num_unblock_rules": 9
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 32446,
+            "num_block_rules": 32448,
             "num_unblock_rules": 0
         },
         {
@@ -521,7 +521,7 @@
             "url": "https://abl.arapurayil.com/core/main_filter.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8,
+            "num_block_rules": 10,
             "num_unblock_rules": 0
         },
         {
@@ -530,7 +530,7 @@
             "url": "https://abl.arapurayil.com/core/main_regex.txt",
             "format": "abp",
             "type": "regex",
-            "num_block_rules": 20,
+            "num_block_rules": 22,
             "num_unblock_rules": 0
         }
     ]
