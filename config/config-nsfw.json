@@ -12,7 +12,10 @@
     {
       "name": "aXL - unblock - nsfw",
       "source": "https://axl.arapurayil.com/lists/nsfw_unblock.txt",
-      "type": "adblock"
+      "type": "adblock",
+      "inclusions": [
+        "/@@/"
+      ]
     }
   ],
   "transformations": [
