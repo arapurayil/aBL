@@ -208,7 +208,7 @@ def extract_abp(content):
         re.sub(pattern_scrub_blocked, "", x, concurrent=True) for x in block_rules
     ]
     blocked_domains = [x for x in blocked_domains if valid_domain(x)]
-    pattern_supported_unblock = re.compile(r"@@\|\|.+\^$")
+    pattern_supported_unblock = re.compile(r"@@\|\|.*")
     unblock_rules = [
         x
         for x in content
