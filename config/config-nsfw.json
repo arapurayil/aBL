@@ -7,7 +7,11 @@
     {
       "name": "aBL - nsfw",
       "source": "/home/runner/work/aBL/aBL/filters/nsfw.txt",
-      "type": "hosts"
+      "type": "adblock",
+      "exclusions_sources": [
+        "https://abl.arapurayil.com/core/nsfw_regex.txt",
+        "https://axl.arapurayil.com/lists/nsfw.txt"
+      ]
     },
     {
       "name": "aXL - unblock - nsfw",
@@ -16,16 +20,18 @@
       "inclusions": [
         "/@@/"
       ]
+    },
+    {
+      "name": "aXL - unblock - nsfw - regex",
+      "source": "https://abl.arapurayil.com/core/nsfw_regex.txt",
+      "type": "adblock"
     }
   ],
   "transformations": [
     "Deduplicate",
     "RemoveComments",
     "RemoveModifiers",
-    "Validate"
-  ],
-  "exclusions_sources": [
-    "https://abl.arapurayil.com/core/nsfw_regex.txt",
-    "https://axl.arapurayil.com/lists/nsfw.txt"
+    "Validate",
+    "Compress"
   ]
 }
