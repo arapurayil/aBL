@@ -22,7 +22,7 @@
       ]
     },
     {
-      "name": "aXL - unblock - main",
+      "name": "aXL - unblock - main - regex",
       "source": "https://abl.arapurayil.com/core/main_regex.txt",
       "type": "adblock"
     }
@@ -31,6 +31,7 @@
     "Deduplicate",
     "RemoveComments",
     "RemoveModifiers",
-    "Validate"
+    "Validate",
+    "Compress"
   ]
 }
