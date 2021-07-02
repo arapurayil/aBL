@@ -7,7 +7,11 @@
     {
       "name": "aBL - social",
       "source": "/home/runner/work/aBL/aBL/filters/social.txt",
-      "type": "hosts"
+      "type": "adblock",
+      "exclusions_sources": [
+        "https://abl.arapurayil.com/core/social_regex.txt",
+        "https://axl.arapurayil.com/lists/social.txt"
+      ]
     },
     {
       "name": "aXL - unblock - social",
@@ -16,16 +20,18 @@
       "inclusions": [
         "/@@/"
       ]
+    },
+    {
+      "name": "aXL - unblock - social - regex",
+      "source": "https://abl.arapurayil.com/core/social_regex.txt",
+      "type": "adblock"
     }
   ],
   "transformations": [
     "Deduplicate",
     "RemoveComments",
     "RemoveModifiers",
-    "Validate"
-  ],
-  "exclusions_sources": [
-    "https://abl.arapurayil.com/core/social_regex.txt",
-    "https://axl.arapurayil.com/lists/social.txt"
+    "Validate",
+    "Compress"
   ]
 }
