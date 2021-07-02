@@ -717,10 +717,6 @@ def main():
             gen_filter_list(li_ge, blocked_domains, unblock_rules, regex_rules)
             run_hostlist_compiler(li_ge)
             block_rules, unblock_rules, regex_rules = read_filter(li_ge)
-            block_rules = [
-                x.replace("||", "").replace("^", "").replace("$important", "")
-                for x in block_rules
-            ]
             num_processed = gen_filter_list(
                 li_ge, block_rules, unblock_rules, regex_rules
             )
