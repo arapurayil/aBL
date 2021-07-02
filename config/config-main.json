@@ -7,7 +7,7 @@
     {
       "name": "aBL - main",
       "source": "/home/runner/work/aBL/aBL/filters/main.txt",
-      "type": "hosts",
+      "type": "adblock",
       "exclusions_sources": [
         "https://abl.arapurayil.com/core/main_regex.txt",
         "https://axl.arapurayil.com/lists/main.txt"
@@ -20,6 +20,11 @@
       "inclusions": [
         "@@"
       ]
+    },
+    {
+      "name": "aXL - unblock - main",
+      "source": "https://abl.arapurayil.com/core/main_regex.txt",
+      "type": "adblock"
     }
   ],
   "transformations": [
