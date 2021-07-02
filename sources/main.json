@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1304,
+            "num_block_rules": 1260,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5645,
+            "num_block_rules": 5647,
             "num_unblock_rules": 12
         },
         {
@@ -449,7 +449,7 @@
             "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 3629,
+            "num_block_rules": 3622,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 32494,
+            "num_block_rules": 32495,
             "num_unblock_rules": 0
         },
         {
