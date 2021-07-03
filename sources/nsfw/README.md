@@ -4,7 +4,7 @@
 **Blocks nsfw content including porn, gambling, snuff ,etc. Should only
 be used with the 'Main' List**
 
--   Sources: 14
+-   Sources: 13
 -   Rules before processing: 68189
 -   Rules after processing: 25427
 
@@ -25,5 +25,4 @@ The **aBL - Addon - NSFW is 62.71% lighter** than its combined sources
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
 | 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1202           | 0                |
 | 13     | [\_ aBL core filter - nsfw](https://abl.arapurayil.com/core/nsfw_filter.txt)                                                                               | Internal filter - nsfw                     | 0              | 0                |
-| 14     | [\_ aBL core filter - nsfw - regex](https://abl.arapurayil.com/core/nsfw_regex.txt)                                                                        | Internal filter - nsfw - regex             | 0              | 0                |
 
