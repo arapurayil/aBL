@@ -118,15 +118,6 @@
             "type": "block",
             "num_block_rules": 0,
             "num_unblock_rules": 0
-        },
-        {
-            "name": "_ aBL core filter - nsfw - regex",
-            "desc": "Internal filter - nsfw - regex",
-            "url": "https://abl.arapurayil.com/core/nsfw_regex.txt",
-            "format": "abp",
-            "type": "regex",
-            "num_block_rules": 0,
-            "num_unblock_rules": 0
         }
     ]
 }
