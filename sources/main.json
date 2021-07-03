@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1260,
+            "num_block_rules": 1732,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5647,
+            "num_block_rules": 5650,
             "num_unblock_rules": 12
         },
         {
@@ -71,7 +71,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37433,
+            "num_block_rules": 37485,
             "num_unblock_rules": 15
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/6.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 394,
+            "num_block_rules": 395,
             "num_unblock_rules": 4
         },
         {
@@ -116,7 +116,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 991,
+            "num_block_rules": 993,
             "num_unblock_rules": 2
         },
         {
@@ -152,7 +152,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 15856,
+            "num_block_rules": 15872,
             "num_unblock_rules": 9
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 32495,
+            "num_block_rules": 32500,
             "num_unblock_rules": 0
         },
         {
