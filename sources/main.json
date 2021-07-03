@@ -66,6 +66,15 @@
             "num_unblock_rules": 12
         },
         {
+            "name": "AdGuard CNAME disguised trackers list",
+            "desc": "The list of trackers that disguise the real trackers by using CNAME records.",
+            "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt",
+            "format": "abp",
+            "type": "block",
+            "num_block_rules": 5650,
+            "num_unblock_rules": 12
+        },
+        {
             "name": "AdGuard DNS filter",
             "desc": "Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.",
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
@@ -185,7 +194,7 @@
         {
             "name": "EasyList Cookie List",
             "desc": "EasyList Cookie List blocks cookies banners, GDPR overlay windows and other privacy-related notices",
-            "url": "https://easylist-downloads.adblockplus.org/easylist-cookie.txt",
+            "url": "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
             "num_block_rules": 0,
@@ -202,7 +211,7 @@
         },
         {
             "name": "EasyList Hebrew",
-            "desc": "-",
+            "desc": "EasyList Regional - Hebrew",
             "url": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
             "format": "abp",
             "type": "block",
@@ -265,7 +274,7 @@
         },
         {
             "name": "Fanboy's Indian",
-            "desc": "-",
+            "desc": "Fanboy's Regional - Indian",
             "url": "https://www.fanboy.co.nz/fanboy-indian.txt",
             "format": "abp",
             "type": "block",
@@ -282,9 +291,9 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "Geoffrey Frogeye's block list of first-party only trackers",
-            "desc": "-",
-            "url": "https://hostfiles.frogeye.fr/firstparty-only-trackers.txt",
+            "name": "Geoffrey Frogeye's block list of first-party trackers",
+            "desc": "List of first-party trackers",
+            "url": "https://hostfiles.frogeye.fr/firstparty-trackers.txt",
             "format": "domains",
             "type": "block",
             "num_block_rules": 27781,
@@ -337,7 +346,7 @@
         },
         {
             "name": "MVPS HOSTS file",
-            "desc": "-",
+            "desc": "MVPS HOSTS includes entries for most major parasites, hijackers and unwanted Adware/Spyware programs",
             "url": "http://winhelp2002.mvps.org/hosts.txt",
             "format": "domains",
             "type": "block",
@@ -346,10 +355,10 @@
         },
         {
             "name": "NextDNS CNAME Cloaking Blocklist",
-            "desc": "-",
+            "desc": "A list of domains used by tracking companies as CNAME destination when disguising third-party trackers as first-party trackers",
             "url": "https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains",
             "format": "domains",
-            "type": "cname",
+            "type": "block",
             "num_block_rules": 0,
             "num_unblock_rules": 0
         },
@@ -481,7 +490,7 @@
         },
         {
             "name": "Tiuxo's hosts - ads",
-            "desc": "-",
+            "desc": "Categorized hosts files for DNS based content blocking",
             "url": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
             "format": "domains",
             "type": "block",
@@ -490,7 +499,7 @@
         },
         {
             "name": "UT1 Blacklists - cryptojacking",
-            "desc": "-",
+            "desc": "Mining site by hijacking",
             "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/cryptojacking/domains",
             "format": "domains",
             "type": "block",
@@ -498,7 +507,7 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "ZeroDot1's CoinBlocker Domains List Optional",
+            "name": "ZeroDot1's CoinBlocker Domains List - Optional",
             "desc": "An additional list for administrators",
             "url": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt",
             "format": "domains",
