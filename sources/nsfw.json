@@ -80,7 +80,7 @@
             "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 15232,
+            "num_block_rules": 15253,
             "num_unblock_rules": 0
         },
         {
@@ -89,7 +89,7 @@
             "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 19,
+            "num_block_rules": 20,
             "num_unblock_rules": 0
         },
         {
