@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1144,
+            "num_block_rules": 1197,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5636,
+            "num_block_rules": 5643,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37233,
+            "num_block_rules": 37255,
             "num_unblock_rules": 15
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4491,
+            "num_block_rules": 4492,
             "num_unblock_rules": 9
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 13251,
+            "num_block_rules": 13254,
             "num_unblock_rules": 9
         },
         {
@@ -323,7 +323,7 @@
             "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 121,
+            "num_block_rules": 122,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 33358,
+            "num_block_rules": 33369,
             "num_unblock_rules": 0
         },
         {
