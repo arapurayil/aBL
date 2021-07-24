@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1221,
+            "num_block_rules": 1200,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5649,
+            "num_block_rules": 5653,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37251,
+            "num_block_rules": 37339,
             "num_unblock_rules": 15
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4492,
+            "num_block_rules": 4493,
             "num_unblock_rules": 9
         },
         {
@@ -188,7 +188,7 @@
             "url": "https://someonewhocares.org/hosts/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 15532,
+            "num_block_rules": 15533,
             "num_unblock_rules": 1
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 16091,
+            "num_block_rules": 16071,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 33378,
+            "num_block_rules": 33387,
             "num_unblock_rules": 0
         },
         {
