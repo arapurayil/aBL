@@ -44,7 +44,7 @@
             "url": "https://adaway.org/hosts.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 8226,
+            "num_block_rules": 8334,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5722,
+            "num_block_rules": 5725,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37637,
+            "num_block_rules": 37657,
             "num_unblock_rules": 15
         },
         {
@@ -116,7 +116,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/7.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 341,
+            "num_block_rules": 339,
             "num_unblock_rules": 0
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4499,
+            "num_block_rules": 4500,
             "num_unblock_rules": 9
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17885,
+            "num_block_rules": 17889,
             "num_unblock_rules": 9
         },
         {
@@ -215,7 +215,7 @@
             "url": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 300,
+            "num_block_rules": 301,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1849,
+            "num_block_rules": 1865,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 33639,
+            "num_block_rules": 33662,
             "num_unblock_rules": 0
         },
         {
