@@ -4,7 +4,7 @@
 ! Author: arapurayil
 ! Description: Blocks ads, analytics, trackers, crypto-jacking & other such threats/nuisances. Addon lists are available to extend this list.
 ! Version: 2.08.04
-! Last modified: 04 Aug 2021 00:33:55 UTC
+! Last modified: 04 Aug 2021 12:17:00 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -5332,6 +5332,7 @@
 ||2819.linux2.testsider.dk^
 ||283.laobanfa.com^
 ||2881788.com^
+||2886996.com^
 ||2894c9d5b32.com^
 ||2898.com^
 ||28acglz.com^
@@ -7145,6 +7146,7 @@
 ||9amq5z4y1y.com^
 ||9avz.net^
 ||9bb6fa4987e.com^
+||9c1k.cn^
 ||9c2im748gw.musee-pla.com^
 ||9c40a04e9732e6a6.com^
 ||9c690ac2bcb.com^
@@ -8962,7 +8964,6 @@
 ||abyrnelaw.com^
 ||abyssmail.com^
 ||abyssnet.org^
-||abyssos.eu^
 ||abyvhqmfnvih.com^
 ||abz.com^
 ||ac-1.tsigs.com^
@@ -14391,6 +14392,7 @@
 ||aidswiki.de^
 ||aidswin.org^
 ||aiea6gaza.com^
+||aiecons.com^
 ||aieen.com^
 ||aienvr.com^
 ||aifei0755.net^
@@ -15754,6 +15756,7 @@
 ||amuseer.com^
 ||amusun.com^
 ||amvest-capital.com^
+||amwebz.com^
 ||amydupire.com^
 ||amylynnandrews.xyz^
 ||amytcon.cf^
@@ -16083,7 +16086,6 @@
 ||analytics.lisnr.com^
 ||analytics.live-panorama.com^
 ||analytics.liveact.cri-mw.jp^
-||analytics.livehindustan.com^
 ||analytics.livesense.marketing^
 ||analytics.lk.api.ditto.com^
 ||analytics.locallogic.co^
@@ -17556,6 +17558,7 @@
 ||applink.site^
 ||applipromotion.com^
 ||apploading.mobi^
+||applog.yiche.com^
 ||applog.zaycev.net^
 ||applogs-v2.pixelfederation.com^
 ||applogs.pixelfederation.com^
@@ -18041,6 +18044,7 @@
 ||armiesgaspclue.com^
 ||armiesgiddinesscanes.com^
 ||arminius.io^
+||armiounaslehto.fi^
 ||armlyemoan.com^
 ||armolipid.ru^
 ||armoneandwa.pro^
@@ -18780,6 +18784,7 @@
 ||attantarow.ru^
 ||attax.site^
 ||attb.com^
+||attefs.site^
 ||attempt103.com^
 ||attemptify.com^
 ||attendrai.com^
@@ -19753,7 +19758,6 @@
 ||b2c.com^
 ||b2chn.com^
 ||b2e92952aa6.com^
-||b2rhospitality.com^
 ||b34fdweffir.net^
 ||b34rightym.com^
 ||b374fkbz.buzz^
@@ -20177,6 +20181,7 @@
 ||banaboende.cd^
 ||banalbjar.com^
 ||banamertur.com^
+||banana.le.com^
 ||banana24.xyz^
 ||bananacashback.com^
 ||bananadream.site^
@@ -22007,7 +22012,6 @@
 ||bgkecb.com^
 ||bgl1dr1-a-fixed.sancharnet.in^
 ||bgl1pp1-a-fixed.sancharnet.in^
-||bglog.bitauto.com^
 ||bgmj.com^
 ||bgmtracker.com^
 ||bgob.com^
@@ -23180,6 +23184,7 @@
 ||blockcrein.info^
 ||blockcruncher.com^
 ||blockcrushers.xyz^
+||blockdetector.org^
 ||blockertools.net^
 ||blockexplorer.funkymonkey.org^
 ||blockfind.me^
@@ -23895,6 +23900,7 @@
 ||book4hacktools.com^
 ||book9.net^
 ||booka.info^
+||booka.press^
 ||bookabus.org^
 ||bookadir.site^
 ||bookafil.site^
@@ -28125,6 +28131,7 @@
 ||cherniy2sviter11j.com^
 ||cherriesdate.com^
 ||cherriesobituary.com^
+||cherry.le.com^
 ||cherrycake.org^
 ||cherryemoore.com^
 ||cherryhi.app.ur.gcion.com^
@@ -28304,6 +28311,7 @@
 ||chnvilhrmeaw.bid^
 ||choanabethump.com^
 ||chobam15.net^
+||chocalatebarnyc.com^
 ||chocam.com^
 ||chocheligli.pro^
 ||choco.la^
@@ -29060,7 +29068,6 @@
 ||click.ad1.ru^
 ||click.affiliate.ameba.jp^
 ||click.airmalta-mail.com^
-||click.ali213.net^
 ||click.amazingfacts.org^
 ||click.appinthestore.com^
 ||click.bible.com^
@@ -29109,7 +29116,6 @@
 ||click.marketing.carousell.com^
 ||click.mmosite.com^
 ||click.negociosdigitaisnapratica.com.br^
-||click.oneplus.cn^
 ||click.outreach.io^
 ||click.quickenloansnow.com^
 ||click.risksource.com^
@@ -29444,7 +29450,6 @@
 ||clksecure.com^
 ||clksite.com^
 ||clkstat.china.cn^
-||clkstat.qihoo.com^
 ||clktrk.com^
 ||clktrk.display.io^
 ||clloudia.com^
@@ -32560,9 +32565,9 @@
 ||count.daem0n.com^
 ||count.fr^
 ||count.im^
-||count.kandian.com^
 ||count.livetv.ru^
 ||count.livetv.sx^
+||count.ly^
 ||count.munhwa.com^
 ||count.orca-pass.net^
 ||count.prx.org^
@@ -33123,6 +33128,7 @@
 ||creamssicsite.com^
 ||creara-media.com^
 ||creara-media.ru^
+||crearechile.cl^
 ||crearenmexico.com^
 ||creasureeffe.club^
 ||creatchristorisalmos.info^
@@ -37579,7 +37585,6 @@
 ||dl-rms.com^
 ||dl-sharefile.com^
 ||dl-sync.com^
-||dl.1003b.56a.com^
 ||dl.benefits.express-scripts.com^
 ||dl.bestofupload.info^
 ||dl.cm.ksmobile.com^
@@ -43308,7 +43313,6 @@
 ||exaee.com^
 ||exaf.jp^
 ||exaltic.com^
-||exaltmathiasministries.org^
 ||exam.jsamovies.com^
 ||examcheap.com^
 ||examinerprospectsbutton.com^
@@ -43472,6 +43476,7 @@
 ||expepp.de^
 ||experclick.com^
 ||experianmarketingservices.digital^
+||experianmatch.info^
 ||experience.aifsabroad.com^
 ||experience.contextly.com^
 ||experience.rehmann.com^
@@ -45220,7 +45225,6 @@
 ||files.pbgiris.com^
 ||files.streamlyn.com^
 ||files59.com^
-||files6.uludagbilisim.com^
 ||filesa.site^
 ||filesarena.net^
 ||filesb.site^
@@ -50341,7 +50345,6 @@
 ||glimermann.com^
 ||glimmerswiftlyforgery.com^
 ||glimtors.net^
-||glinkelectronics.com^
 ||glishais.net^
 ||glispa.com^
 ||glissinternational.com^
@@ -62605,6 +62608,7 @@
 ||kaiwh.us^
 ||kaixinjiehun.com^
 ||kaiyiluye.com^
+||kaizenjanitorial.com^
 ||kaizenplatform.net^
 ||kaizentraffic.com^
 ||kajahdfssa.net^
@@ -66050,7 +66054,6 @@
 ||lifespeaker.ru^
 ||lifestreetmedia.com^
 ||lifestyle24h.com^
-||lifestyledrinks.pl^
 ||lifestyleoptimizer.com^
 ||lifetimeactivatewasp.com^
 ||lifetimeappdeals.com^
@@ -67092,6 +67095,7 @@
 ||log-api.aillis.net^
 ||log-collector.shopee.vn^
 ||log-collector.svctr.zynga.com^
+||log-live.direct.ly^
 ||log-marketing.jp^
 ||log-player.arte.tv^
 ||log-upload-eur.mihoyo.com^
@@ -70505,6 +70509,7 @@
 ||maps.wrengostic.com^
 ||mapuchesystem.com^
 ||mapyatirim.com^
+||maquinadosgutierrez.com^
 ||mar-notification.com^
 ||mar.vip.com^
 ||marallgel.website^
@@ -72648,6 +72653,7 @@
 ||mc.tvzhe.com^
 ||mc.webvisor.org^
 ||mc1.xyz^
+||mc2.krystalclearlogics.com^
 ||mc876.com^
 ||mcagbtdcwklf.com^
 ||mcalts.store^
@@ -74842,6 +74848,7 @@
 ||mgsue.cn^
 ||mgt7.madeindesign.it^
 ||mgtbn.listenmusic.fun^
+||mgtw.xyz^
 ||mguxfp.imovirtual.com^
 ||mguzayfzp.bid^
 ||mgvrst.mi-shop.com^
@@ -75892,6 +75899,7 @@
 ||mm-syringe.com^
 ||mm.actionlink.jp^
 ||mm.jbzj.com^
+||mm.krystalclearlogics.com^
 ||mm.markandmini.com^
 ||mm.melia.cn^
 ||mm.melia.com^
@@ -80458,6 +80466,7 @@
 ||nicveteroge.club^
 ||nideno.cf^
 ||nidobermannclub.com^
+||nidoeastchina.org^
 ||nidomeed.ga^
 ||nidomeed.ml^
 ||nidscom.io^
@@ -81610,7 +81619,6 @@
 ||nuqwe.com^
 ||nur.gratis^
 ||nurbahar.com^
-||nurmarkaz.org^
 ||nurno.com^
 ||nurobi.info^
 ||nursejobsinflorida.com^
@@ -85644,7 +85652,6 @@
 ||paymentfortoday1.com^
 ||paymentmaster.gq^
 ||paymentprocessing.world^
-||payments.atifsiddiqui.me^
 ||paymonsters.biz^
 ||payn.me^
 ||paypal-exchange.com^
@@ -85850,6 +85857,7 @@
 ||pdfri.site^
 ||pdfrm.site^
 ||pdfrn.site^
+||pdfro.site^
 ||pdfs.icu^
 ||pdfsa.site^
 ||pdfsb.site^
@@ -88122,7 +88130,6 @@
 ||poolsden.com^
 ||poolstavka.com^
 ||poolswitch.pw^
-||pooltablemoversdenver.net^
 ||poolto.be^
 ||pooltool.io^
 ||pooltupi.com^
@@ -89757,6 +89764,7 @@
 ||providence.in^
 ||providentsopport.site^
 ||providier.com^
+||provify.io^
 ||provisionappscissor.com^
 ||provita-iz.de^
 ||provmail.net^
@@ -91295,6 +91303,7 @@
 ||qrcsppwzjryh.com^
 ||qrd6gzhb48.xorg.pl^
 ||qregqtqtuisj.com^
+||qreport.qunar.com^
 ||qrezvwhtppiv.com^
 ||qriasmotw.bid^
 ||qriqiz.lifeisgood.com^
@@ -93634,7 +93643,6 @@
 ||renderer.qmerce.com^
 ||reneemonroe.com^
 ||renegade-hair-studio.com^
-||renegocia.pe^
 ||renehavis.com.ua^
 ||renewnewss.net^
 ||renhertfo.com^
@@ -93750,6 +93758,7 @@
 ||reportions.club^
 ||reports-api.sqreen.io^
 ||reports.ubimo.com^
+||reportsk.web.sdo.com^
 ||reportsnakefill.com^
 ||reportspanel.com^
 ||reposa42.silkwomenshirts.com^
@@ -94286,6 +94295,7 @@
 ||rhythmmoney.com^
 ||rhythmxchange.com^
 ||ri.5.p2l.info^
+||ri.ios.exe.webs.vc^
 ||ri688.com^
 ||riabervie.cf^
 ||riacomponents.com^
@@ -108158,7 +108168,6 @@
 ||sublimeskinz.com^
 ||subloader.cf^
 ||submarineundergonedebark.com^
-||submissions.tentcityrecords.net^
 ||submissionspurtgleamed.com^
 ||submit.vaisala.com^
 ||submit.zapr.in^
@@ -110947,6 +110956,7 @@
 ||test.p.12cpm.com^
 ||test.protocsconnectes.eu^
 ||test.sexeanonyme.com^
+||test.typoten.com^
 ||test.zeus-wifi.jp^
 ||test1.milenial.id^
 ||test121.com^
@@ -117786,6 +117796,7 @@
 ||uaed.com^
 ||uaef.com^
 ||uaefr.com^
+||uaefreezone.net^
 ||uaemail.com^
 ||uaev.com^
 ||uaevivi.top^
@@ -118529,7 +118540,6 @@
 ||uniquesoftwaresolutionsllc.com^
 ||unireceive.com^
 ||unirom.gq^
-||unisoftcc.com^
 ||unisondesign.eu^
 ||unisound.cdnvideo.ru^
 ||uniswap.services^
@@ -120995,6 +121005,7 @@
 ||vivcdctagoij.com^
 ||vivdq.com^
 ||vivebox.net^
+||vivech.site^
 ||viveirodoiscorregos.com.br^
 ||vivetivcuggz.com^
 ||vivi87.cn^
@@ -123371,6 +123382,7 @@
 ||wholesomeindians.com^
 ||wholisticeden.com^
 ||whoostoo.net^
+||whorci.site^
 ||whoroaza.com^
 ||whosclickingwho.com^
 ||whose-is-this-phone-number.com^
@@ -127852,6 +127864,7 @@
 ||yoqvnnkdmqfk.com^
 ||yoredi.com^
 ||yorfan.com^
+||yorikoangeline.art^
 ||yorilada.com^
 ||yorktownhvac.com^
 ||yormedia.com^
