@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5797,
+            "num_block_rules": 5800,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 37872,
+            "num_block_rules": 37891,
             "num_unblock_rules": 14
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 22684,
+            "num_block_rules": 23114,
             "num_unblock_rules": 0
         },
         {
@@ -476,7 +476,7 @@
             "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1868,
+            "num_block_rules": 1869,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 33885,
+            "num_block_rules": 33898,
             "num_unblock_rules": 0
         },
         {
