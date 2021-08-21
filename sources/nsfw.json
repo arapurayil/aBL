@@ -17,7 +17,7 @@
             "url": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 20669,
+            "num_block_rules": 0,
             "num_unblock_rules": 0
         },
         {
@@ -35,7 +35,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 705,
+            "num_block_rules": 704,
             "num_unblock_rules": 0
         },
         {
