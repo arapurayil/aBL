@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'Main' List
-! Version: 2.08.21
-! Last modified: 21 Aug 2021 12:15:58 UTC
+! Version: 2.08.22
+! Last modified: 22 Aug 2021 00:34:25 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -155,7 +155,6 @@
 ||aafdcq.com^
 ||aagqrr.com^
 ||aahvz.top^
-||aam-data-api.snapchat.com^
 ||abdmi.ru^
 ||abeets.ru^
 ||abid.w38store.ru^
@@ -361,7 +360,6 @@
 ||advert.polonsil.ru^
 ||advertise.ru^
 ||advertiseru.net^
-||advertising.snapchat.com^
 ||advertland.ru^
 ||advertlink.ru^
 ||advertmi.ru^
@@ -691,6 +689,7 @@
 ||akolafovar.com^
 ||aksessuarov.ru^
 ||albanmagnit.ru^
+||albicla.com^
 ||alboist7crphfrg.ru^
 ||alefrfobkoxbgaf.com^
 ||alfainternet.su^
@@ -736,7 +735,6 @@
 ||alslz.top^
 ||altpubli.com^
 ||alwsaz.com^
-||am-api.snapchat.com^
 ||am-investor.ru^
 ||am-schedule.ru^
 ||amads.xyz^
@@ -771,12 +769,10 @@
 ||api.periscope.tv^
 ||api.rnet.plus^
 ||api.smartadv.ru^
-||api.snapchat.com^
 ||api.ztgm17.ru^
 ||api9.net^
 ||apirelay.ru^
 ||apiyandex.site^
-||app-analyticsv2.snapchat.com^
 ||apprefaculty.pro^
 ||appsflybeta.biz^
 ||aprelite.com^
@@ -1045,7 +1041,6 @@
 ||blinklist.com^
 ||block.s2block.com^
 ||block.s2blosh.com^
-||blog.snapchat.com^
 ||blogan.ru^
 ||blogengage.com^
 ||blogg-buzz.com^
@@ -1142,8 +1137,6 @@
 ||bugaga.tut.by^
 ||bukolii.ru^
 ||bumaikr.com^
-||business.snapchat.com^
-||businesshelp.snapchat.com^
 ||bussters.com^
 ||busuu.com^
 ||busyprice.ru^
@@ -1245,47 +1238,6 @@
 ||changetip.com^
 ||changetolink.com^
 ||channels.periscope.tv^
-||chat-gateway-prod.chat.snapchat.com^
-||chat-gateway000-prod.chat.snapchat.com^
-||chat-gateway001-prod.chat.snapchat.com^
-||chat-gateway002-prod.chat.snapchat.com^
-||chat-gateway005-prod.chat.snapchat.com^
-||chat-gateway006-prod.chat.snapchat.com^
-||chat-gateway007-prod.chat.snapchat.com^
-||chat-gateway008-prod.chat.snapchat.com^
-||chat-gateway009-prod.chat.snapchat.com^
-||chat-gateway010-prod.chat.snapchat.com^
-||chat-gateway012-prod.chat.snapchat.com^
-||chat-gateway015-prod.chat.snapchat.com^
-||chat-gateway016-prod.chat.snapchat.com^
-||chat-gateway017-prod.chat.snapchat.com^
-||chat-gateway018-prod.chat.snapchat.com^
-||chat-gateway019-prod.chat.snapchat.com^
-||chat-gateway020-prod.chat.snapchat.com^
-||chat-gateway021-prod.chat.snapchat.com^
-||chat-gateway023-prod.chat.snapchat.com^
-||chat-gateway024-prod.chat.snapchat.com^
-||chat-gateway033-prod.chat.snapchat.com^
-||chat-gateway059-prod.chat.snapchat.com^
-||chat-gateway065-prod.chat.snapchat.com^
-||chat-gateway069-prod.chat.snapchat.com^
-||chat-gateway072-prod.chat.snapchat.com^
-||chat-gateway073-prod.chat.snapchat.com^
-||chat-gateway088-prod.chat.snapchat.com^
-||chat-gateway090-prod.chat.snapchat.com^
-||chat-gateway104-prod.chat.snapchat.com^
-||chat-gateway106-prod.chat.snapchat.com^
-||chat-gateway115-prod.chat.snapchat.com^
-||chat-gateway121-prod.chat.snapchat.com^
-||chat-gateway127-prod.chat.snapchat.com^
-||chat-gateway157-prod.chat.snapchat.com^
-||chat-gateway162-prod.chat.snapchat.com^
-||chat-gateway187-prod.chat.snapchat.com^
-||chat-gateway210-prod.chat.snapchat.com^
-||chat-gateway250-prod.chat.snapchat.com^
-||chat-gateway288-prod.chat.snapchat.com^
-||chat-gateway393-prod.chat.snapchat.com^
-||chat-gateway397-prod.chat.snapchat.com^
 ||chatman-replay-us-east-1.periscope.tv^
 ||chatman-replay-us-west-2.periscope.tv^
 ||cheaptop.ru^
@@ -1550,7 +1502,6 @@
 ||dev-web.periscope.tv^
 ||dev4enki.com^
 ||devaxi.org^
-||developers.snapchat.com^
 ||developersniche.com^
 ||deviantart.com^
 ||devkiforyou.org^
@@ -1611,7 +1562,6 @@
 ||dnoyrz.com^
 ||dnt.twimg.com^
 ||dnudg.com^
-||docs.snapchat.com^
 ||doctorsh.ru^
 ||dogster.com^
 ||doichering.ru^
@@ -1633,6 +1583,7 @@
 ||dotnetkicks.com^
 ||douban.com^
 ||dounwil.ru^
+||douyin.com^
 ||download.mediaplay.ru^
 ||dqzuy.com^
 ||draugiem.lv^
@@ -2025,6 +1976,7 @@
 ||fortsould.pro^
 ||fortuka.com^
 ||forum.globusevent.ru^
+||fotka.com^
 ||fotki.com^
 ||fotkidepo.ru^
 ||fotocash.ru^
@@ -2092,6 +2044,7 @@
 ||g52bxi1v1w.com^
 ||gab.com^
 ||gadgettest.ru^
+||gadu-gadu.pl^
 ||gafdelins.com^
 ||gagacon.com^
 ||gagelivius.com^
@@ -2124,8 +2077,6 @@
 ||gegmanu.info^
 ||geni.com^
 ||gentlemenius.com^
-||geofilters-community-api.snapchat.com^
-||geofilters.snapchat.com^
 ||geotraff.com^
 ||gerberka.com^
 ||gerpkshe.com^
@@ -2150,6 +2101,7 @@
 ||gewrrpygsd.biz^
 ||gfjhgfjfebhccgafaed.ru^
 ||gfstrck.com^
+||gg.pl^
 ||ggsaffiliates.com^
 ||ggtraf.com^
 ||ghanaweb.com^
@@ -2191,7 +2143,6 @@
 ||gnezdo.ru^
 ||go.jetswap.com^
 ||go.media-x.ru^
-||go.snapchat.com^
 ||go.ukrleads.com^
 ||go.xl.ua^
 ||go.zdos.ru^
@@ -2564,7 +2515,6 @@
 ||intelligencehost.net^
 ||intelliworker.kupivip.ru^
 ||intencysrv.com^
-||interact-api.snapchat.com^
 ||interbuddies.com^
 ||interfax.pw^
 ||internet.org^
@@ -2773,7 +2723,6 @@
 ||kisakuku.org^
 ||kissmyads.biz^
 ||kistured.com^
-||kit.snapchat.com^
 ||kit5hgver.com^
 ||kitchenbug.com^
 ||kitchenfilm.ru^
@@ -2887,7 +2836,6 @@
 ||leforma.com^
 ||legandruk.com^
 ||lenmit.com^
-||lensstudio.snapchat.com^
 ||lenta-novostei.com^
 ||lentainform.com^
 ||lenty.ru^
@@ -3065,7 +3013,6 @@
 ||mahaphanin.ru^
 ||mahidevrat.com^
 ||mail.banklife.ru^
-||mail2.support.snapchat.com^
 ||mailget.net^
 ||main-ti-cod.com^
 ||mainadd.com^
@@ -3075,8 +3022,6 @@
 ||manchina.xyz^
 ||manfys.com^
 ||manuelu.com^
-||map.snapchat.com^
-||maps.snapchat.com^
 ||marchtv.ru^
 ||margadoncat.com^
 ||marketgid.com^
@@ -3694,7 +3639,6 @@
 ||olizyr.com^
 ||oltonve.ru^
 ||omasovizac.com^
-||omnicollector.snapchat.com^
 ||omotorax.ru^
 ||omsama.info^
 ||omynews.net^
@@ -3893,12 +3837,10 @@
 ||pkndawf.pro^
 ||pkqeg5z3xffs.info^
 ||placeoff.ru^
-||places-manager-api.snapchat.com^
 ||planetapozitiva.ru^
 ||plantchange.com^
 ||platformbot.xyz^
 ||plaxo.com^
-||play.snapchat.com^
 ||play2.biz^
 ||playahead.se^
 ||playfire.com^
@@ -4391,7 +4333,6 @@
 ||s.newsportalssl1.top^
 ||s.pinimg.com.edgekey.net^
 ||s.sdx.ru^
-||s.snapchat.com^
 ||s.twimg.com^
 ||s1r.tut.by^
 ||s1venus.biz^
@@ -4427,7 +4368,6 @@
 ||sblftg.com^
 ||sc.livetvcdn.net^
 ||scafer.ru^
-||scan.snapchat.com^
 ||scarpbooking.ru^
 ||scelebnow.xyz^
 ||schuelervz.net^
@@ -4590,9 +4530,8 @@
 ||smonstr.ru^
 ||smpbhfiwr.com^
 ||smtp.pics2pay.ru^
-||snapchat-payments-gateway.snapchat.com^
+||snapchat.com^
 ||snapfish.com^
-||snappublisher.snapchat.com^
 ||snipit.org^
 ||sobakapi2sa8la09.com^
 ||socadvnet.com^
@@ -4655,8 +4594,6 @@
 ||st02.net^
 ||stablemoney.ru^
 ||stableprofit.ru^
-||staging.app-analytics.snapchat.com^
-||staging.server-analytics.snapchat.com^
 ||standadv.com^
 ||star.manystars.ru^
 ||stardoll.com^
@@ -4691,7 +4628,6 @@
 ||still-innocent.info^
 ||stirrdup.com^
 ||storage.onlinetv.media^
-||store.snapchat.com^
 ||storm01.ru^
 ||storylink.com^
 ||strands.com^
@@ -4702,8 +4638,6 @@
 ||stripvidz.com^
 ||student.com^
 ||studentscircle.net^
-||studio-app.snapchat.com^
-||studio-crash.snapchat.com^
 ||studivz.net^
 ||stufflinker.com^
 ||stumbleupon.com^
@@ -4713,8 +4647,6 @@
 ||stylemob.com^
 ||stylesheet-js.ru^
 ||subendorse.com^
-||subscriptions-beta.snapchat.com^
-||subscriptions-dev.snapchat.com^
 ||sucior.ru^
 ||sugarloving.com^
 ||sumano.info^
@@ -5411,7 +5343,6 @@
 ||vornz.com^
 ||voronezh136.ru^
 ||vovikshelomov.ru^
-||vox.com^
 ||vozer.voffka.com^
 ||vp1.zkshfbdg.info^
 ||vpath.net^
@@ -5508,7 +5439,6 @@
 ||wguke.com^
 ||whaleserver.com^
 ||whatcl.ru^
-||whatis.snapchat.com^
 ||whatsapp.com^
 ||wheretogo.bid^
 ||whhrux.com^
@@ -5619,6 +5549,7 @@
 ||wwxxww.ru^
 ||wycji.top^
 ||wydpt.com^
+||wykop.pl^
 ||wysmmq.com^
 ||wyuxy.com^
 ||wzor.web-serf.info^
