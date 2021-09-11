@@ -5,8 +5,8 @@
 be used with the 'Main' List**
 
 -   Sources: 13
--   Rules before processing: 48355
--   Rules after processing: 24250
+-   Rules before processing: 48356
+-   Rules after processing: 24251
 
 The **aBL - Addon - NSFW is 49.85% lighter** than its combined sources
 
@@ -18,7 +18,7 @@ The **aBL - Addon - NSFW is 49.85% lighter** than its combined sources
 | 04     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 649            | 0                |
 | 05     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 22             | 0                |
 | 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 99             | 0                |
-| 07     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 16024          | 0                |
+| 07     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 16025          | 0                |
 | 08     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2467           | 0                |
 | 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 15632          | 0                |
 | 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 20             | 0                |
