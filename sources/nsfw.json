@@ -44,7 +44,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 22,
+            "num_block_rules": 21,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 16134,
+            "num_block_rules": 16158,
             "num_unblock_rules": 0
         },
         {
