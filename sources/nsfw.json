@@ -35,7 +35,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 534,
+            "num_block_rules": 533,
             "num_unblock_rules": 0
         },
         {
@@ -44,7 +44,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 21,
+            "num_block_rules": 22,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 16269,
+            "num_block_rules": 16270,
             "num_unblock_rules": 0
         },
         {
