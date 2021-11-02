@@ -53,7 +53,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 83,
+            "num_block_rules": 82,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 16270,
+            "num_block_rules": 16271,
             "num_unblock_rules": 0
         },
         {
