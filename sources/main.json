@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1001,
+            "num_block_rules": 979,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7065,
+            "num_block_rules": 7072,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 41983,
+            "num_block_rules": 41988,
             "num_unblock_rules": 14
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/16.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5467,
+            "num_block_rules": 5483,
             "num_unblock_rules": 3
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17041,
+            "num_block_rules": 17045,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 52771,
+            "num_block_rules": 52813,
             "num_unblock_rules": 0
         },
         {
@@ -296,7 +296,7 @@
             "url": "https://hostfiles.frogeye.fr/firstparty-trackers.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 3520,
+            "num_block_rules": 3526,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 35277,
+            "num_block_rules": 35286,
             "num_unblock_rules": 0
         },
         {
