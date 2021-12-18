@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1277,
+            "num_block_rules": 1273,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7312,
+            "num_block_rules": 7325,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 42721,
+            "num_block_rules": 42732,
             "num_unblock_rules": 14
         },
         {
@@ -197,7 +197,7 @@
             "url": "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 124,
+            "num_block_rules": 125,
             "num_unblock_rules": 0
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17135,
+            "num_block_rules": 17138,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 55908,
+            "num_block_rules": 55947,
             "num_unblock_rules": 0
         },
         {
@@ -260,7 +260,7 @@
             "url": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 124,
+            "num_block_rules": 125,
             "num_unblock_rules": 0
         },
         {
@@ -296,7 +296,7 @@
             "url": "https://hostfiles.frogeye.fr/firstparty-trackers.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 3865,
+            "num_block_rules": 3322,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 35917,
+            "num_block_rules": 35926,
             "num_unblock_rules": 0
         },
         {
