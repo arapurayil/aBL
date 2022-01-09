@@ -4,8 +4,8 @@
 **Blocks social media. Should only be used with the 'Main' List**
 
 -   Sources: 6
--   Rules before processing: 11987
--   Rules after processing: 5842
+-   Rules before processing: 11988
+-   Rules after processing: 5843
 
 The **aBL - Addon - Social Media is 51.26% lighter** than its combined sources
 
@@ -15,6 +15,6 @@ The **aBL - Addon - Social Media is 51.26% lighter** than its combined sources
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 8                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2820           | 8                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 8                |
-| 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 662            | 8                |
+| 05  | [UT1 Blacklists - social](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains)  | -                                                                                                          | 663            | 8                |
 | 06  | [\_ aBL core filter - social](https://abl.arapurayil.com/core/social_filter.txt)                                             | Internal filter - social                                                                                   | 0              | 0                |
 
