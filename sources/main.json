@@ -26,7 +26,7 @@
             "url": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 603,
+            "num_block_rules": 604,
             "num_unblock_rules": 0
         },
         {
@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1118,
+            "num_block_rules": 1149,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 7770,
+            "num_block_rules": 7783,
             "num_unblock_rules": 12
         },
         {
@@ -170,7 +170,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/13.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 332,
+            "num_block_rules": 333,
             "num_unblock_rules": 1
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 50540,
+            "num_block_rules": 50619,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 36662,
+            "num_block_rules": 36728,
             "num_unblock_rules": 0
         },
         {
