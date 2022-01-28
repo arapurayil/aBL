@@ -4,14 +4,14 @@
 **Blocks social media. Should only be used with the 'Main' List**
 
 -   Sources: 6
--   Rules before processing: 11999
--   Rules after processing: 5854
+-   Rules before processing: 12000
+-   Rules after processing: 5855
 
 The **aBL - Addon - Social Media is 51.21% lighter** than its combined sources
 
 | #   | Title                                                                                                                        | Description                                                                                                | Blocking rules | Unblocking rules |
 | --- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4607           | 8                |
+| 01  | [AdGuard Social media filter](https://filters.adtidy.org/extension/chromium/filters/1.txt)                                   | Removes numerous 'Like' and 'Tweet' buttons and other social media integrations on popular websites.       | 4608           | 8                |
 | 02  | [Energized Core Social Blacklist](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/social)   | Core Energized Blacklist.                                                                                  | 3897           | 8                |
 | 03  | [Sinfonietta's Social media hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts)              | -                                                                                                          | 2820           | 8                |
 | 04  | [Tiuxo's hosts - social](https://raw.githubusercontent.com/tiuxo/hosts/master/social)                                        | -                                                                                                          | 4              | 8                |
