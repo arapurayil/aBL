@@ -5,10 +5,10 @@
 be used with the 'Main' List**
 
 -   Sources: 13
--   Rules before processing: 49146
+-   Rules before processing: 49147
 -   Rules after processing: 24777
 
-The **aBL - Addon - NSFW is 49.58% lighter** than its combined sources
+The **aBL - Addon - NSFW is 49.59% lighter** than its combined sources
 
 | #      | Title                                                                                                                                                      | Description                                | Blocking rules | Unblocking rules |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------- | ---------------- |
@@ -17,7 +17,7 @@ The **aBL - Addon - NSFW is 49.58% lighter** than its combined sources
 | 03     | [Core regex rules (main)](https://abl.arapurayil.com/core/regex_rules.txt)                                                                                 | internal list                              | 0              | 0                |
 | 04     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 531            | 0                |
 | 05     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 25             | 0                |
-| 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 87             | 0                |
+| 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 88             | 0                |
 | 07     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 16271          | 0                |
 | 08     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2515           | 0                |
 | 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 16247          | 0                |
