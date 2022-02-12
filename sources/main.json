@@ -26,7 +26,7 @@
             "url": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 612,
+            "num_block_rules": 614,
             "num_unblock_rules": 0
         },
         {
@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1117,
+            "num_block_rules": 1049,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8062,
+            "num_block_rules": 8071,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 43798,
+            "num_block_rules": 43803,
             "num_unblock_rules": 14
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/16.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 5581,
+            "num_block_rules": 5587,
             "num_unblock_rules": 3
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 53026,
+            "num_block_rules": 53066,
             "num_unblock_rules": 0
         },
         {
@@ -323,7 +323,7 @@
             "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 118,
+            "num_block_rules": 121,
             "num_unblock_rules": 0
         },
         {
@@ -332,7 +332,7 @@
             "url": "https://raw.githubusercontent.com/matomo-org/referrer-spam-list/master/spammers.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 2097,
+            "num_block_rules": 2099,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 37113,
+            "num_block_rules": 37114,
             "num_unblock_rules": 0
         },
         {
