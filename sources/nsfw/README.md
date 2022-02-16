@@ -5,8 +5,8 @@
 be used with the 'Main' List**
 
 -   Sources: 13
--   Rules before processing: 50891
--   Rules after processing: 25888
+-   Rules before processing: 50892
+-   Rules after processing: 25889
 
 The **aBL - Addon - NSFW is 49.13% lighter** than its combined sources
 
@@ -17,7 +17,7 @@ The **aBL - Addon - NSFW is 49.13% lighter** than its combined sources
 | 03     | [Core regex rules (main)](https://abl.arapurayil.com/core/regex_rules.txt)                                                                                 | internal list                              | 0              | 0                |
 | 04     | [EasyList adult adservers](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt)                                  | -                                          | 531            | 0                |
 | 05     | [EasyList adult specific](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt)                              | -                                          | 25             | 0                |
-| 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 88             | 0                |
+| 06     | [EasyList adult thirdparty](https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_thirdparty.txt)                                | -                                          | 89             | 0                |
 | 07     | [Energized Porn Core Hosts](https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts-porn)                                   | Core Energized Blacklist.                  | 16271          | 0                |
 | 08     | [Sinfonietta's Gambling hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts)                                              | -                                          | 2520           | 0                |
 | 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 17984          | 0                |
