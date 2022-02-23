@@ -44,7 +44,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 25,
+            "num_block_rules": 26,
             "num_unblock_rules": 0
         },
         {
