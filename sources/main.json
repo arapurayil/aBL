@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 931,
+            "num_block_rules": 908,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8430,
+            "num_block_rules": 8437,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 44938,
+            "num_block_rules": 44987,
             "num_unblock_rules": 14
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/16.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 6441,
+            "num_block_rules": 6439,
             "num_unblock_rules": 3
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4642,
+            "num_block_rules": 4644,
             "num_unblock_rules": 8
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 20371,
+            "num_block_rules": 20375,
             "num_unblock_rules": 9
         },
         {
@@ -197,7 +197,7 @@
             "url": "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 144,
+            "num_block_rules": 141,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 55626,
+            "num_block_rules": 55670,
             "num_unblock_rules": 0
         },
         {
@@ -260,7 +260,7 @@
             "url": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 144,
+            "num_block_rules": 141,
             "num_unblock_rules": 0
         },
         {
@@ -314,7 +314,7 @@
             "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 696,
+            "num_block_rules": 694,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 37380,
+            "num_block_rules": 37383,
             "num_unblock_rules": 0
         },
         {
