@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1169,
+            "num_block_rules": 1182,
             "num_unblock_rules": 0
         },
         {
@@ -53,7 +53,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 793,
+            "num_block_rules": 794,
             "num_unblock_rules": 3
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8481,
+            "num_block_rules": 8490,
             "num_unblock_rules": 12
         },
         {
@@ -71,7 +71,7 @@
             "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 18766,
+            "num_block_rules": 19138,
             "num_unblock_rules": 0
         },
         {
@@ -125,7 +125,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/11.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 1016,
+            "num_block_rules": 1015,
             "num_unblock_rules": 2
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4648,
+            "num_block_rules": 4647,
             "num_unblock_rules": 8
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 20375,
+            "num_block_rules": 20564,
             "num_unblock_rules": 9
         },
         {
@@ -170,7 +170,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/13.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 350,
+            "num_block_rules": 349,
             "num_unblock_rules": 1
         },
         {
@@ -197,7 +197,7 @@
             "url": "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 144,
+            "num_block_rules": 141,
             "num_unblock_rules": 0
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17087,
+            "num_block_rules": 17088,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 55879,
+            "num_block_rules": 56030,
             "num_unblock_rules": 0
         },
         {
@@ -260,7 +260,7 @@
             "url": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 144,
+            "num_block_rules": 141,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 37436,
+            "num_block_rules": 37451,
             "num_unblock_rules": 0
         },
         {
