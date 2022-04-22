@@ -5,8 +5,8 @@
 be used with the 'Main' List**
 
 -   Sources: 13
--   Rules before processing: 51342
--   Rules after processing: 26175
+-   Rules before processing: 51343
+-   Rules after processing: 26176
 
 The **aBL - Addon - NSFW is 49.02% lighter** than its combined sources
 
@@ -23,6 +23,6 @@ The **aBL - Addon - NSFW is 49.02% lighter** than its combined sources
 | 09     | [Sinfonietta's Porn hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)                                               | -                                          | 18304          | 0                |
 | 10     | [Sinfonietta's Snuff hosts](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)                                                    | -                                          | 23             | 0                |
 | 11     | [Tiuxo's hosts - porn](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                                                                          | -                                          | 369            | 0                |
-| 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1304           | 0                |
+| 12     | [UT1 Blacklists - gambling](https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains)                                     | -                                          | 1305           | 0                |
 | 13     | [\_ aBL core filter - nsfw](https://abl.arapurayil.com/core/nsfw_filter.txt)                                                                               | Internal filter - nsfw                     | 0              | 0                |
 
