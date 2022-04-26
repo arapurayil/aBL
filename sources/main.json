@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1299,
+            "num_block_rules": 1282,
             "num_unblock_rules": 0
         },
         {
@@ -53,7 +53,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 814,
+            "num_block_rules": 815,
             "num_unblock_rules": 3
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8395,
+            "num_block_rules": 8400,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 46082,
+            "num_block_rules": 46153,
             "num_unblock_rules": 14
         },
         {
@@ -152,7 +152,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/9.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 223,
+            "num_block_rules": 225,
             "num_unblock_rules": 0
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 19326,
+            "num_block_rules": 19327,
             "num_unblock_rules": 9
         },
         {
@@ -170,7 +170,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/13.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 359,
+            "num_block_rules": 360,
             "num_unblock_rules": 1
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17179,
+            "num_block_rules": 17180,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 60596,
+            "num_block_rules": 60651,
             "num_unblock_rules": 0
         },
         {
@@ -458,7 +458,7 @@
             "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 3677,
+            "num_block_rules": 3678,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 37847,
+            "num_block_rules": 37850,
             "num_unblock_rules": 0
         },
         {
