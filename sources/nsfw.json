@@ -44,7 +44,7 @@
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_specific_block.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 29,
+            "num_block_rules": 30,
             "num_unblock_rules": 0
         },
         {
@@ -107,7 +107,7 @@
             "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/gambling/domains",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1305,
+            "num_block_rules": 1307,
             "num_unblock_rules": 0
         },
         {
