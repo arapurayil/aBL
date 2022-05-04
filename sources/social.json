@@ -8,7 +8,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4698,
+            "num_block_rules": 4699,
             "num_unblock_rules": 9
         },
         {
@@ -44,7 +44,7 @@
             "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/social_networks/domains",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 675,
+            "num_block_rules": 678,
             "num_unblock_rules": 9
         },
         {
