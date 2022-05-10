@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1612,
+            "num_block_rules": 1483,
             "num_unblock_rules": 0
         },
         {
@@ -44,7 +44,7 @@
             "url": "https://adaway.org/hosts.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 7046,
+            "num_block_rules": 7045,
             "num_unblock_rules": 0
         },
         {
@@ -53,7 +53,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 825,
+            "num_block_rules": 824,
             "num_unblock_rules": 3
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8584,
+            "num_block_rules": 8593,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 45595,
+            "num_block_rules": 45259,
             "num_unblock_rules": 14
         },
         {
@@ -108,7 +108,7 @@
             "format": "abp",
             "type": "block",
             "num_block_rules": 409,
-            "num_unblock_rules": 4
+            "num_unblock_rules": 5
         },
         {
             "name": "AdGuard Japanese filter",
@@ -116,7 +116,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/7.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 352,
+            "num_block_rules": 351,
             "num_unblock_rules": 0
         },
         {
@@ -134,7 +134,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 4704,
+            "num_block_rules": 4301,
             "num_unblock_rules": 9
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 19730,
+            "num_block_rules": 19729,
             "num_unblock_rules": 9
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 61273,
+            "num_block_rules": 61287,
             "num_unblock_rules": 0
         },
         {
