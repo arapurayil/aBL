@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1154,
+            "num_block_rules": 1142,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8684,
+            "num_block_rules": 8690,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 45063,
+            "num_block_rules": 45066,
             "num_unblock_rules": 14
         },
         {
@@ -116,7 +116,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/7.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 352,
+            "num_block_rules": 355,
             "num_unblock_rules": 0
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17215,
+            "num_block_rules": 17216,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 61538,
+            "num_block_rules": 61541,
             "num_unblock_rules": 0
         },
         {
@@ -485,7 +485,7 @@
             "url": "https://stopforumspam.com/downloads/toxic_domains_whole.txt",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 38006,
+            "num_block_rules": 38015,
             "num_unblock_rules": 0
         },
         {
