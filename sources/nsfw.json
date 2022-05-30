@@ -71,7 +71,7 @@
             "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 2552,
+            "num_block_rules": 2554,
             "num_unblock_rules": 0
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 18322,
+            "num_block_rules": 18460,
             "num_unblock_rules": 0
         },
         {
