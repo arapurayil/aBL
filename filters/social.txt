@@ -3,8 +3,8 @@
 ! Title: arapurayil's Block List (aBL) - Addon - Social Media
 ! Author: arapurayil
 ! Description: Blocks social media. Should only be used with the 'Main' List
-! Version: 3.06.10
-! Last modified: 10 Jun 2022 12:27:43 UTC
+! Version: 3.06.11
+! Last modified: 11 Jun 2022 00:59:55 UTC
 ! Expires: 12 hours (update frequency)
 ! Home: https://abl.arapurayil.com
 ! Repository: https://github.com/arapurayil/aBL
@@ -1139,6 +1139,7 @@
 ||cdn-my5.ru^
 ||cdn-rtb.sape.ru^
 ||cdn.amzuu.com^
+||cdn.dsmstats.com^
 ||cdn.hunteryvely.com^
 ||cdn.malokacha.club^
 ||cdn.movieads.ru^
