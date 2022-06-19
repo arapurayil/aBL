@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 992,
+            "num_block_rules": 969,
             "num_unblock_rules": 0
         },
         {
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8477,
+            "num_block_rules": 8489,
             "num_unblock_rules": 12
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 45940,
+            "num_block_rules": 45963,
             "num_unblock_rules": 14
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/16.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8996,
+            "num_block_rules": 9110,
             "num_unblock_rules": 3
         },
         {
@@ -206,7 +206,7 @@
             "url": "https://easylist.to/easylist/easyprivacy.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 17374,
+            "num_block_rules": 17375,
             "num_unblock_rules": 0
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 63473,
+            "num_block_rules": 63475,
             "num_unblock_rules": 0
         },
         {
@@ -305,7 +305,7 @@
             "url": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 3293,
+            "num_block_rules": 3309,
             "num_unblock_rules": 0
         },
         {
@@ -323,7 +323,7 @@
             "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 122,
+            "num_block_rules": 121,
             "num_unblock_rules": 0
         },
         {
