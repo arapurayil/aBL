@@ -12,24 +12,6 @@
             "num_unblock_rules": 0
         },
         {
-            "name": "Clefspeare13's pornhosts",
-            "desc": "A consolidated anti porn hosts file.",
-            "url": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts",
-            "format": "domains",
-            "type": "block",
-            "num_block_rules": 0,
-            "num_unblock_rules": 0
-        },
-        {
-            "name": "Core regex rules (main)",
-            "desc": "internal list",
-            "url": "https://abl.arapurayil.com/core/regex_rules.txt",
-            "format": "abp",
-            "type": "regex",
-            "num_block_rules": 0,
-            "num_unblock_rules": 0
-        },
-        {
             "name": "EasyList adult adservers",
             "desc": "-",
             "url": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt",
