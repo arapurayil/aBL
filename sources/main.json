@@ -35,7 +35,7 @@
             "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 1083,
+            "num_block_rules": 1081,
             "num_unblock_rules": 0
         },
         {
@@ -53,8 +53,8 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/14.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 1509,
-            "num_unblock_rules": 6
+            "num_block_rules": 854,
+            "num_unblock_rules": 3
         },
         {
             "name": "AdGuard Chinese filter",
@@ -62,7 +62,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 8793,
+            "num_block_rules": 8803,
             "num_unblock_rules": 12
         },
         {
@@ -71,7 +71,7 @@
             "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 47877,
+            "num_block_rules": 22709,
             "num_unblock_rules": 0
         },
         {
@@ -80,7 +80,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/15.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 45816,
+            "num_block_rules": 45877,
             "num_unblock_rules": 14
         },
         {
@@ -161,7 +161,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/3.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 22298,
+            "num_block_rules": 19616,
             "num_unblock_rules": 9
         },
         {
@@ -188,7 +188,7 @@
             "url": "https://someonewhocares.org/hosts/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 10407,
+            "num_block_rules": 10408,
             "num_unblock_rules": 1
         },
         {
@@ -224,7 +224,7 @@
             "url": "https://raw.githubusercontent.com/AdroitAdorKhan/EnergizedProtection/master/core/hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 64902,
+            "num_block_rules": 64970,
             "num_unblock_rules": 0
         },
         {
@@ -458,7 +458,7 @@
             "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 3643,
+            "num_block_rules": 3644,
             "num_unblock_rules": 0
         },
         {
