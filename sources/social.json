@@ -8,7 +8,7 @@
             "url": "https://filters.adtidy.org/extension/chromium/filters/1.txt",
             "format": "abp",
             "type": "block",
-            "num_block_rules": 3897,
+            "num_block_rules": 3898,
             "num_unblock_rules": 9
         },
         {
@@ -26,7 +26,7 @@
             "url": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts",
             "format": "domains",
             "type": "block",
-            "num_block_rules": 2820,
+            "num_block_rules": 2831,
             "num_unblock_rules": 9
         },
         {
